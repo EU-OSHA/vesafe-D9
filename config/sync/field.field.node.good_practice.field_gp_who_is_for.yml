@@ -1,0 +1,21 @@
+uuid: 4f6756d0-349e-4720-8e95-af1472e85bba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gp_who_is_for
+    - node.type.good_practice
+  module:
+    - text
+id: node.good_practice.field_gp_who_is_for
+field_name: field_gp_who_is_for
+entity_type: node
+bundle: good_practice
+label: 'Who is for?'
+description: 'Please introduce in this box the text of this section.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

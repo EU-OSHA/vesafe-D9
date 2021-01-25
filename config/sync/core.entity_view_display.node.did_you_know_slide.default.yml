@@ -1,0 +1,37 @@
+uuid: eea536b2-33fe-4e74-b263-616b5fb30e0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.did_you_know_slide.body
+    - field.field.node.did_you_know_slide.field_metatags
+    - node.type.did_you_know_slide
+  module:
+    - metatag
+    - text
+    - user
+id: node.did_you_know_slide.default
+targetEntityType: node
+bundle: did_you_know_slide
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_metatags:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

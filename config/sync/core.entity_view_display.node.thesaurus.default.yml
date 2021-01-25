@@ -1,0 +1,96 @@
+uuid: 025cc4c9-a6ad-4bf1-862f-852bff6a1dd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.thesaurus.body
+    - field.field.node.thesaurus.field_context
+    - field.field.node.thesaurus.field_definition
+    - field.field.node.thesaurus.field_full_url
+    - field.field.node.thesaurus.field_metatags
+    - field.field.node.thesaurus.field_notes
+    - field.field.node.thesaurus.field_synonyms
+    - field.field.node.thesaurus.field_term_id
+    - field.field.node.thesaurus.field_term_reference
+    - node.type.thesaurus
+  module:
+    - metatag
+    - text
+    - user
+id: node.thesaurus.default
+targetEntityType: node
+bundle: thesaurus
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_context:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_definition:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_full_url:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_metatags:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_notes:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_synonyms:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_term_id:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_term_reference:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

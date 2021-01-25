@@ -1,0 +1,109 @@
+uuid: a7a7fbf9-e878-47ce-a9f2-5ca585aa1d33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.key_article.body
+    - field.field.node.key_article.field_image
+    - field.field.node.key_article.field_ka_general_risk_factors
+    - field.field.node.key_article.field_ka_general_safety_issues
+    - field.field.node.key_article.field_ka_specific_risk_factors
+    - field.field.node.key_article.field_metatags
+    - field.field.node.key_article.field_publication_date
+    - field.field.node.key_article.field_related_good_practices
+    - field.field.node.key_article.field_subtitle
+    - field.field.node.key_article.field_thumbnail
+    - node.type.key_article
+  module:
+    - datetime
+    - metatag
+    - text
+    - user
+id: node.key_article.default
+targetEntityType: node
+bundle: key_article
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ka_general_risk_factors:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_ka_general_safety_issues:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_entity_id
+    region: content
+  field_ka_specific_risk_factors:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_metatags:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_publication_date:
+    weight: 108
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_related_good_practices:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_subtitle:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_thumbnail:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: 2df6235e-328b-441f-9643-b4f044bf0a4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: url_pattern_for_taxonomy_terms
+label: 'URL Pattern for Taxonomy terms'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:vocabulary]/[term:name]'
+selection_criteria:
+  99f48f6e-17b7-4bee-bcb1-a237be6103b1:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      risk: risk
+      thesaurus: thesaurus
+      vehicle: vehicle
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 99f48f6e-17b7-4bee-bcb1-a237be6103b1
+selection_logic: and
+weight: -5
+relationships: {  }

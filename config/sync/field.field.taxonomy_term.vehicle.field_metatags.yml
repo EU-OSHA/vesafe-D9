@@ -1,0 +1,21 @@
+uuid: 8c096ae7-d5c5-4553-bbc1-69aa81c3c8fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_metatags
+    - taxonomy.vocabulary.vehicle
+  module:
+    - metatag
+id: taxonomy_term.vehicle.field_metatags
+field_name: field_metatags
+entity_type: taxonomy_term
+bundle: vehicle
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

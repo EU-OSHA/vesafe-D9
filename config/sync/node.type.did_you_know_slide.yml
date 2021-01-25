@@ -1,0 +1,18 @@
+uuid: 2d6bbef5-3c63-49d0-9781-02eb944905d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Did you know slide'
+type: did_you_know_slide
+description: 'This content appears in the "Did you know?" section of the home page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

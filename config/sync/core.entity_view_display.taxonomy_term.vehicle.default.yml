@@ -1,0 +1,30 @@
+uuid: b843b7e0-8b16-4ed2-a6aa-f00071930128
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.vehicle.field_metatags
+    - taxonomy.vocabulary.vehicle
+  module:
+    - metatag
+    - text
+id: taxonomy_term.vehicle.default
+targetEntityType: taxonomy_term
+bundle: vehicle
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_metatags:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+hidden: {  }

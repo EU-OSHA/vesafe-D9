@@ -1,0 +1,23 @@
+uuid: c1b86a2e-75f1-4a81-912a-50133d4178ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gp_external_links
+    - node.type.good_practice
+  module:
+    - link
+id: node.good_practice.field_gp_external_links
+field_name: field_gp_external_links
+entity_type: node
+bundle: good_practice
+label: 'External links'
+description: 'Please fill in the Title and URL to access the external link. The link title is limited to 128 characters maximum. You should enter the full URL, including http:// or https://. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

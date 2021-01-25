@@ -1,0 +1,21 @@
+uuid: ac70063b-c813-4f3c-bf6b-edb0cd804b1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.article
+  module:
+    - metatag
+id: node.article.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: article
+label: 'Meta tags'
+description: 'Meta tag module form elements.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

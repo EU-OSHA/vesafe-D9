@@ -1,0 +1,21 @@
+uuid: 22a65135-3a8c-40c2-809f-c0d108e843d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.good_practice
+  module:
+    - metatag
+id: node.good_practice.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: good_practice
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

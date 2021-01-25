@@ -1,0 +1,21 @@
+uuid: b60a4e8a-2536-4b8d-883b-7785e27bc48a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.did_you_know_slide
+  module:
+    - metatag
+id: node.did_you_know_slide.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: did_you_know_slide
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

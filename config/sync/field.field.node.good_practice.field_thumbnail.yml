@@ -1,0 +1,29 @@
+uuid: 9cb3c99f-d852-44d8-99dd-0cf24f100282
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thumbnail
+    - media.type.thumbnail
+    - node.type.good_practice
+id: node.good_practice.field_thumbnail
+field_name: field_thumbnail
+entity_type: node
+bundle: good_practice
+label: Thumbnail
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      thumbnail: thumbnail
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
