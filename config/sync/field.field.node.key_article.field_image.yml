@@ -1,0 +1,33 @@
+uuid: 6548d90a-696f-4cd6-b5a9-01ae34038909
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.key_article
+  module:
+    - image
+id: node.key_article.field_image
+field_name: field_image
+entity_type: node
+bundle: key_article
+label: Image
+description: 'The header image that will be displayed on page.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  alt_field: true
+  default_image: 0
+  file_directory: images/key-articles
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  title_field: true
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

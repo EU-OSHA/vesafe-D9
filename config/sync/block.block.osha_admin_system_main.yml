@@ -1,0 +1,20 @@
+uuid: 33c34042-2069-4b66-a4bc-93bfe3cf380e
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - osha_admin
+id: osha_admin_system_main
+theme: osha_admin
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

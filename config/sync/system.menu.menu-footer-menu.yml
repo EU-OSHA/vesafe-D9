@@ -1,0 +1,8 @@
+uuid: 540fefd3-3f71-4c23-8035-57a6923bb0da
+langcode: und
+status: true
+dependencies: {  }
+id: menu-footer-menu
+label: 'Footer menu'
+description: 'Links that appear at the bottom of the page'
+locked: false

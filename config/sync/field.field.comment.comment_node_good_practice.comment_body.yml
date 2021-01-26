@@ -1,0 +1,21 @@
+uuid: 832d3a27-6e58-4530-91ab-59b8e58b9b2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_good_practice
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_good_practice.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_good_practice
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

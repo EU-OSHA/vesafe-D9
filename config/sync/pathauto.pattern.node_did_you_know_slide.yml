@@ -1,0 +1,21 @@
+uuid: 2bb0982a-268b-45ae-b97f-c5acf17822f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_did_you_know_slide
+label: 'Content - Did you know slide'
+type: 'canonical_entities:node'
+pattern: 'did-you-know/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      did_you_know_slide: did_you_know_slide
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

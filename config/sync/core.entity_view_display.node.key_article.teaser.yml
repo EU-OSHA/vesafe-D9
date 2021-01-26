@@ -1,0 +1,53 @@
+uuid: 4c1cb1ee-a980-4a4e-b40d-0ef04e1e1ad2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.key_article.body
+    - field.field.node.key_article.comment_node_key_article
+    - field.field.node.key_article.field_image
+    - field.field.node.key_article.field_ka_general_risk_factors
+    - field.field.node.key_article.field_ka_general_safety_issues
+    - field.field.node.key_article.field_ka_specific_risk_factors
+    - field.field.node.key_article.field_metatag
+    - field.field.node.key_article.field_publication_date
+    - field.field.node.key_article.field_related_good_practices
+    - field.field.node.key_article.field_thumbnail
+    - node.type.key_article
+  module:
+    - text
+    - user
+id: node.key_article.teaser
+targetEntityType: node
+bundle: key_article
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_key_article: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_image: true
+  field_ka_general_risk_factors: true
+  field_ka_general_safety_issues: true
+  field_ka_specific_risk_factors: true
+  field_metatag: true
+  field_publication_date: true
+  field_related_good_practices: true
+  field_thumbnail: true
+  langcode: true
+  search_api_excerpt: true

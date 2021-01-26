@@ -1,0 +1,19 @@
+uuid: b9e3b15f-239a-4473-a070-6d76d7209f43
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ka_general_safety_issues
+field_name: field_ka_general_safety_issues
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

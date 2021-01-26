@@ -1,0 +1,28 @@
+uuid: 9a34fd3d-125c-4a1f-a133-585542ae0942
+langcode: en
+status: true
+dependencies: {  }
+id: approver
+label: approver
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access media browser'
+  - 'access toolbar'
+  - 'create files'
+  - 'edit any content in to_be_approved'
+  - 'edit any good_practice content'
+  - 'edit any key_article content'
+  - 'edit own good_practice content'
+  - 'edit own key_article content'
+  - 'use manualcrop'
+  - 'use text format full_html'
+  - 'use text format full_html_minimal'
+  - 'view all unpublished content'
+  - 'view moderation history'
+  - 'view own files'
+  - 'view own private files'
+  - 'view private files'
+  - 'view the administration theme'

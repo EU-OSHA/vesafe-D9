@@ -1,0 +1,24 @@
+uuid: 75daeed0-0bcb-41eb-85d3-d55e5a50b9d5
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.who_s_new
+  module:
+    - views
+  theme:
+    - osha_admin
+id: osha_admin_user_new
+theme: osha_admin
+region: ''
+weight: 0
+provider: null
+plugin: 'views_block:who_s_new-block_1'
+settings:
+  id: 'views_block:who_s_new-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '5'
+visibility: {  }

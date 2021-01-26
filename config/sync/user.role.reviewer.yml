@@ -1,0 +1,35 @@
+uuid: fbccc390-675c-46e2-8943-9cce8563d52c
+langcode: en
+status: true
+dependencies: {  }
+id: reviewer
+label: reviewer
+weight: 5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access media browser'
+  - 'access toolbar'
+  - 'create files'
+  - 'create good_practice content'
+  - 'create key_article content'
+  - 'delete any content in draft'
+  - 'edit any content in draft'
+  - 'edit any content in final_draft'
+  - 'edit any content in published'
+  - 'edit any good_practice content'
+  - 'edit any key_article content'
+  - 'edit node reviewers'
+  - 'edit own good_practice content'
+  - 'edit own key_article content'
+  - 'moderate content from final_draft to draft'
+  - 'use manualcrop'
+  - 'use text format full_html'
+  - 'use text format full_html_minimal'
+  - 'view all unpublished content'
+  - 'view moderation history'
+  - 'view own files'
+  - 'view own private files'
+  - 'view private files'
+  - 'view the administration theme'

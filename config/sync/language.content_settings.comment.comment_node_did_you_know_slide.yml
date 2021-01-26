@@ -1,0 +1,11 @@
+uuid: c1f1ad8e-042d-45cb-bb12-4a6aa1537d31
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_did_you_know_slide
+id: comment.comment_node_did_you_know_slide
+target_entity_type_id: comment
+target_bundle: comment_node_did_you_know_slide
+default_langcode: site_default
+language_alterable: false

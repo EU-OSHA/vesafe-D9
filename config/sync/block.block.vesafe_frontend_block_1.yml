@@ -1,0 +1,30 @@
+uuid: 74e9960b-fbce-4e89-afc7-b800e41e82d4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:07bd9854-4a23-46c5-8fc8-000c7823432d'
+  module:
+    - block_content
+    - system
+  theme:
+    - vesafe_theme
+id: vesafe_frontend_block_1
+theme: vesafe_theme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:07bd9854-4a23-46c5-8fc8-000c7823432d'
+settings:
+  id: 'block_content:07bd9854-4a23-46c5-8fc8-000c7823432d'
+  label: '<none>'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

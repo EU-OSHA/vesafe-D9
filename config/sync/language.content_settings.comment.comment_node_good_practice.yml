@@ -1,0 +1,11 @@
+uuid: ca178e28-f0be-46ef-bbea-1776b714d574
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_good_practice
+id: comment.comment_node_good_practice
+target_entity_type_id: comment
+target_bundle: comment_node_good_practice
+default_langcode: site_default
+language_alterable: false

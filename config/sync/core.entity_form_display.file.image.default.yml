@@ -3,9 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
     - field.field.file.image.field_image_alt_text
     - field.field.file.image.field_image_title_text
     - file_entity.type.image
+  module:
+    - path
 _core:
   default_config_hash: HYzof_QiEoo7449yRhD_uJoLXMEAmSafqexxGS9OmjQ
 id: file.image.default
@@ -13,6 +17,22 @@ targetEntityType: file
 bundle: image
 mode: default
 content:
+  field_file_image_alt_text:
+    weight: -4
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_file_image_title_text:
+    weight: -3
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   field_image_alt_text:
     type: string_textfield
     weight: 0

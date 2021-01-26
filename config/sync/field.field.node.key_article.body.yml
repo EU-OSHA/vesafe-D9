@@ -1,0 +1,23 @@
+uuid: 018c3076-30e2-4f18-8b15-89091d1f856e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.key_article
+  module:
+    - text
+id: node.key_article.body
+field_name: body
+entity_type: node
+bundle: key_article
+label: Introduction
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

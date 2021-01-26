@@ -1,0 +1,139 @@
+uuid: 051fbe58-723f-4dd2-aa07-69a3d5393589
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.key_article.body
+    - field.field.node.key_article.comment_node_key_article
+    - field.field.node.key_article.field_image
+    - field.field.node.key_article.field_ka_general_risk_factors
+    - field.field.node.key_article.field_ka_general_safety_issues
+    - field.field.node.key_article.field_ka_specific_risk_factors
+    - field.field.node.key_article.field_metatag
+    - field.field.node.key_article.field_publication_date
+    - field.field.node.key_article.field_related_good_practices
+    - field.field.node.key_article.field_thumbnail
+    - node.type.key_article
+  module:
+    - comment
+    - datetime
+    - file
+    - metatag
+    - path
+    - text
+id: node.key_article.default
+targetEntityType: node
+bundle: key_article
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment_node_key_article:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 2
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_metatag:
+    weight: 122
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_publication_date:
+    weight: 9
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_thumbnail:
+    weight: 1
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_ka_general_risk_factors: true
+  field_ka_general_safety_issues: true
+  field_ka_specific_risk_factors: true
+  field_related_good_practices: true

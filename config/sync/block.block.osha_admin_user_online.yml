@@ -1,0 +1,24 @@
+uuid: 82034c0f-0653-4b2f-ae8c-43b75bad34f3
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.who_s_online
+  module:
+    - views
+  theme:
+    - osha_admin
+id: osha_admin_user_online
+theme: osha_admin
+region: ''
+weight: 0
+provider: null
+plugin: 'views_block:who_s_online-who_s_online_block'
+settings:
+  id: 'views_block:who_s_online-who_s_online_block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '10'
+visibility: {  }

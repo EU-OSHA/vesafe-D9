@@ -1,0 +1,27 @@
+uuid: cabf1306-6a26-47e3-a005-7fc081de167a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gp_factsheet
+    - node.type.good_practice
+  module:
+    - file
+id: node.good_practice.field_gp_factsheet
+field_name: field_gp_factsheet
+entity_type: node
+bundle: good_practice
+label: Factsheet
+description: 'Good practice factsheet file.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  description_field: false
+  file_directory: factsheets
+  file_extensions: 'pdf doc docx odt ods rtf'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

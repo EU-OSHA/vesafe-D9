@@ -8,15 +8,15 @@ dependencies:
     - vesafe_theme
 _core:
   default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: vesafe_theme_content
+id: vesafe_frontend_system_main
 theme: vesafe_theme
 region: content
-weight: 0
+weight: -26
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Main page content'
+  label: ''
   provider: system
   label_display: '0'
 visibility: {  }

@@ -1,0 +1,45 @@
+uuid: c05ad3e2-1ddb-465d-a4dc-8c3756b1b4d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_did_you_know_slide.default
+    - field.field.node.did_you_know_slide.body
+    - field.field.node.did_you_know_slide.comment_node_did_you_know_slide
+    - node.type.did_you_know_slide
+  module:
+    - comment
+    - text
+    - user
+id: node.did_you_know_slide.default
+targetEntityType: node
+bundle: did_you_know_slide
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_did_you_know_slide:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

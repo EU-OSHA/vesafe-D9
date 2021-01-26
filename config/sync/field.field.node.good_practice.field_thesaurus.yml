@@ -1,0 +1,26 @@
+uuid: 37cb7965-38d3-4cb6-b84c-fa18dda0901a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thesaurus
+    - node.type.good_practice
+    - taxonomy.vocabulary.thesaurus
+id: node.good_practice.field_thesaurus
+field_name: field_thesaurus
+entity_type: node
+bundle: good_practice
+label: Thesaurus
+description: 'Please select thesaurus for this content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      thesaurus: thesaurus
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

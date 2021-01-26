@@ -1,0 +1,23 @@
+uuid: 5ff498b4-3fb5-4b92-83ee-51ea74e00d82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.did_you_know_slide
+  module:
+    - text
+id: node.did_you_know_slide.body
+field_name: body
+entity_type: node
+bundle: did_you_know_slide
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

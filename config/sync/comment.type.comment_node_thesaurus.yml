@@ -1,0 +1,8 @@
+uuid: 7e1a8207-140b-4a4c-9155-16873c416c12
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_thesaurus
+label: 'Thesaurus comment'
+target_entity_type_id: node
+description: null

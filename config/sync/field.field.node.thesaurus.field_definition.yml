@@ -1,0 +1,21 @@
+uuid: 6e780058-9fc3-460e-8c06-cfd8a0af586a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_definition
+    - node.type.thesaurus
+  module:
+    - text
+id: node.thesaurus.field_definition
+field_name: field_definition
+entity_type: node
+bundle: thesaurus
+label: Definition
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

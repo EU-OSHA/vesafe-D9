@@ -1,0 +1,21 @@
+uuid: 4951b143-dfd1-4f7c-a677-49903f08605c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_good_practice
+label: 'Content - Good practice'
+type: 'canonical_entities:node'
+pattern: 'good-practices/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      good_practice: good_practice
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }
