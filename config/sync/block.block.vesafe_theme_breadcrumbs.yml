@@ -1,0 +1,22 @@
+uuid: b6655cd1-db3e-4e80-a0a4-9cf1662c6912
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vesafe_theme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: vesafe_theme_breadcrumbs
+theme: vesafe_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
