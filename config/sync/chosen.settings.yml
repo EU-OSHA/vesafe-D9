@@ -11,12 +11,7 @@ placeholder_text_multiple: 'Choose some options'
 placeholder_text_single: 'Choose an option'
 no_results_text: 'No results match'
 max_shown_results: null
-disabled_themes:
-  bartik: '0'
-  claro: '0'
-  seven: '0'
-  bootstrap_barrio: '0'
-  vesafe_theme: '0'
-chosen_include: 0
+disabled_themes: {  }
+chosen_include: 2
 _core:
   default_config_hash: exRaKE0s6uZbfQrl_2WFEcTlc_1t81xEqCLuCCteUSk

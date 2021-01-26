@@ -1,4 +1,4 @@
-uuid: efcde310-40e2-4d4a-842b-1b7c418244af
+uuid: 81c3db12-d0b5-482d-81ee-8e75617c42e8
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,14 @@ id: media.document.media_library
 targetEntityType: media
 bundle: document
 mode: media_library
-content: {  }
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
 hidden:
   created: true
   field_media_document: true

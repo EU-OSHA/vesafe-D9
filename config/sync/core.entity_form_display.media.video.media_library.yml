@@ -1,4 +1,4 @@
-uuid: fcb26bb4-76a5-414b-95c5-112f1330c278
+uuid: 3fca810b-6721-4f73-a15f-daedd208a30e
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,14 @@ id: media.video.media_library
 targetEntityType: media
 bundle: video
 mode: media_library
-content: {  }
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
 hidden:
   created: true
   field_media_video_file: true

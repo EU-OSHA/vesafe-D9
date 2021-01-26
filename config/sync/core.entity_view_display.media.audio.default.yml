@@ -1,4 +1,4 @@
-uuid: 15a75c13-ec93-41cb-b594-2f2aa57c59b5
+uuid: 300f3b58-da00-4df7-8d4a-a70c7627c2c7
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.field.media.audio.field_media_audio_file
     - media.type.audio
   module:
-    - file
+    - file_entity
 _core:
   default_config_hash: SWf3MLdbEKvlx4Vs6iPwDHu5pr1aKT0SJmgp8no73-k
 id: media.audio.default
@@ -27,6 +27,7 @@ content:
     region: content
 hidden:
   created: true
+  langcode: true
   name: true
   thumbnail: true
   uid: true

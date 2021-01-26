@@ -1,4 +1,4 @@
-uuid: 9b924dcf-7abb-4820-b705-9d1be431f528
+uuid: 8e022170-e5da-45a0-8ba8-1c9dcea821bf
 langcode: en
 status: true
 dependencies: {  }
@@ -7,13 +7,6 @@ _core:
 id: taxonomy_term
 label: 'Taxonomy term'
 tags:
+  canonical_url: '[term:url]'
   description: '[term:description]'
-  title: '[term:name] - [current-page:pager] - [site:name]'
-  canonical_url: '[current-page:url:absolute]'
-  shortlink: '[current-page:url:unaliased]'
-  keywords: 'Vehicle safety, Legislation, Safe driving for work, Working on or near a road, Workplace transport safety, OSH, OSHA, EU-OSHA, Occupational safety, Occupational health, European Agency'
-  dcterms_type: text
-  dcterms_description: '[term:description]'
-  dcterms_title: '[term:name]'
-  dcterms_format: text/html
-  dcterms_identifier: '[current-page:url:absolute]'
+  title: '[term:name] | [site:name]'
