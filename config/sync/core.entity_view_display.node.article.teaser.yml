@@ -33,6 +33,7 @@ content:
     region: content
 hidden:
   comment: true
+  field_image: true
   field_metatags: true
   field_publication_date: true
   field_subtitle: true
