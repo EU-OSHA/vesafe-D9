@@ -1,6 +1,6 @@
 uuid: f4776c81-91a2-4b17-bead-e2b9628cfbe8
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - search
