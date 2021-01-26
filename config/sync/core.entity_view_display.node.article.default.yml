@@ -5,9 +5,6 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.field_metatags
-    - field.field.node.article.field_publication_date
-    - field.field.node.article.field_subtitle
     - node.type.article
   module:
     - datetime
@@ -29,29 +26,6 @@ content:
       trim_length: 600
     third_party_settings: {  }
     label: hidden
-  field_metatags:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: metatag_empty_formatter
-    region: content
-  field_publication_date:
-    weight: 3
-    label: hidden
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_subtitle:
-    weight: 4
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   links:
     weight: 1
     region: content
