@@ -7,9 +7,39 @@ dependencies:
     - field.field.node.did_you_know_slide.field_metatags
     - node.type.did_you_know_slide
   module:
+    - field_group
     - metatag
     - path
     - text
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - group_general
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Info
+    group_general:
+      children:
+        - title
+        - body
+      parent_name: group_info
+      weight: 10
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: General
 id: node.did_you_know_slide.default
 targetEntityType: node
 bundle: did_you_know_slide
@@ -17,7 +47,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
+    weight: 2
     settings:
       rows: 9
       summary_rows: 3
@@ -27,12 +57,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_metatags:
-    weight: 122
+    weight: 9
     settings:
       sidebar: true
     third_party_settings: {  }
@@ -40,7 +70,7 @@ content:
     region: content
   path:
     type: path
-    weight: 30
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -48,26 +78,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 4
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 7
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 1
     region: content
     settings:
       size: 60
@@ -75,7 +105,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
