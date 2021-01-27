@@ -1,11 +1,11 @@
 uuid: 5d6b0d69-94a7-43b5-a38f-5ecfdf35ae41
-name: 'VeSafe - Vehicle safety e-guide - European Agency for Safety and Health at Work'
-mail: no-reply@osha.europa.eu
-slogan: 'One stop shop for vehicle safety'
+name: 'Vehicule safety'
+mail: ruben.ramos@bilbomatica.es
+slogan: ''
 page:
-  403: /r4032login
-  404: /page-not-found
-  front: /index.html
+  403: ''
+  404: ''
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

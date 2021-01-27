@@ -1,8 +1,0 @@
-uuid: 3ffebd8b-78b9-45f4-bec4-fe18f01a2bac
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_good_practice
-label: 'Good practice comment'
-target_entity_type_id: node
-description: null

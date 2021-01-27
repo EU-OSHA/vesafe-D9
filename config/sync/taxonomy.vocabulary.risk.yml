@@ -1,8 +1,0 @@
-uuid: 630dfa55-d2e7-4266-a230-2d44c2a46931
-langcode: en
-status: true
-dependencies: {  }
-name: Risk
-vid: risk
-description: 'List of related risks'
-weight: 0

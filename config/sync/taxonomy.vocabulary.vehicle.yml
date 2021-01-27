@@ -1,8 +1,0 @@
-uuid: 562d415f-431a-46b1-81c1-6a74a6d95285
-langcode: en
-status: true
-dependencies: {  }
-name: Vehicle
-vid: vehicle
-description: 'List of vehicles'
-weight: 0

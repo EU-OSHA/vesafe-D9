@@ -16,14 +16,9 @@ mode: default
 content:
   body:
     label: hidden
-    weight: 1
+    type: text_default
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
-hidden:
-  entity_print_view_epub: true
-  entity_print_view_pdf: true
-  entity_print_view_word_docx: true
-  langcode: true
-  search_api_excerpt: true
+hidden: {  }

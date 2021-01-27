@@ -1,8 +1,0 @@
-uuid: 067095a8-5a66-4934-9067-083c4c9efdf0
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_key_article_theme
-label: 'Key article theme comment'
-target_entity_type_id: node
-description: null

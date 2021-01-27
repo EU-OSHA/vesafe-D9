@@ -1,8 +1,0 @@
-uuid: 01d42250-7905-4e3e-8b13-9eb1b199cc08
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_did_you_know_slide
-label: 'Did you know slide comment'
-target_entity_type_id: node
-description: null

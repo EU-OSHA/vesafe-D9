@@ -1,16 +1,13 @@
 favicon:
-  mimetype: image/png
-  path: 'public://logo-vesafe-8_0.png'
+  mimetype: image/vnd.microsoft.icon
+  path: ''
   url: ''
-  use_default: false
+  use_default: true
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
-  logo: true
-  name: true
-  slogan: true
 logo:
   path: ''
   url: ''

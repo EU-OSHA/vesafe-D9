@@ -5,16 +5,15 @@ dependencies: {  }
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
-label: 'authenticated user'
+label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
+  - 'access comments'
   - 'access content'
-  - 'access site map'
-  - 'display EU Cookie Compliance popup'
-  - 'opt-in or out of matomo tracking'
-  - 'use Search Autocomplete'
-  - 'use exclude node title'
-  - 'use manualcrop'
-  - 'use text format filtered_html'
-  - 'view files'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
