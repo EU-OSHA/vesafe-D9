@@ -1,0 +1,8 @@
+uuid: 687d87e0-120f-4873-b5d3-387efd621ca5
+langcode: en
+status: true
+dependencies: {  }
+name: Risk
+vid: risk
+description: 'List of related risks'
+weight: 0
