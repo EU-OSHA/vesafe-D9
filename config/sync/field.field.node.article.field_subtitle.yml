@@ -1,0 +1,21 @@
+uuid: 25ff94ad-6335-4bef-af1c-3cabb33bf01a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.article
+  module:
+    - text
+id: node.article.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: article
+label: Subtitle
+description: 'Please introduce in this box the text of this section.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

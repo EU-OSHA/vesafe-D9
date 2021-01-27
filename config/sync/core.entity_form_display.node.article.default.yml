@@ -6,10 +6,15 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_metatags
+    - field.field.node.article.field_publication_date
+    - field.field.node.article.field_subtitle
     - field.field.node.article.field_tags
     - node.type.article
   module:
     - comment
+    - datetime
+    - metatag
     - path
     - text
 _core:
@@ -41,6 +46,27 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_metatags:
+    weight: 27
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_publication_date:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_subtitle:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   path:
     type: path
     weight: 7
