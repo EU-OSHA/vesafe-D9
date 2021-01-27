@@ -1,0 +1,8 @@
+uuid: 46d00f82-d605-4f5c-8e0d-22eba9a519ed
+langcode: en
+status: true
+dependencies: {  }
+name: Vehicle
+vid: vehicle
+description: 'List of vehicles'
+weight: 0
