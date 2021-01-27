@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.thesaurus.field_definition
     - field.field.node.thesaurus.field_father
     - field.field.node.thesaurus.field_full_url
+    - field.field.node.thesaurus.field_metatags
     - field.field.node.thesaurus.field_notes
     - field.field.node.thesaurus.field_synonyms
     - field.field.node.thesaurus.field_term_id
@@ -40,6 +41,7 @@ hidden:
   field_definition: true
   field_father: true
   field_full_url: true
+  field_metatags: true
   field_notes: true
   field_synonyms: true
   field_term_id: true

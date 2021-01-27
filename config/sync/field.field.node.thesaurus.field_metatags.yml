@@ -1,0 +1,21 @@
+uuid: d4c40234-16a9-4289-aeff-1ce692007dc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.thesaurus
+  module:
+    - metatag
+id: node.thesaurus.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: thesaurus
+label: Metatags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

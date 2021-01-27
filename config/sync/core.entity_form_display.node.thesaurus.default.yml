@@ -8,12 +8,14 @@ dependencies:
     - field.field.node.thesaurus.field_definition
     - field.field.node.thesaurus.field_father
     - field.field.node.thesaurus.field_full_url
+    - field.field.node.thesaurus.field_metatags
     - field.field.node.thesaurus.field_notes
     - field.field.node.thesaurus.field_synonyms
     - field.field.node.thesaurus.field_term_id
     - field.field.node.thesaurus.field_term_reference
     - node.type.thesaurus
   module:
+    - metatag
     - path
     - text
 id: node.thesaurus.default
@@ -70,6 +72,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_metatags:
+    weight: 130
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_notes:
     weight: 128
