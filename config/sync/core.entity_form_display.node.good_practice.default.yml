@@ -23,34 +23,96 @@ dependencies:
     - node.type.good_practice
   module:
     - datetime
+    - field_group
     - link
     - media_library
     - metatag
     - path
     - text
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - group_general
+        - group_media
+        - group_related_information
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Info
+    group_general:
+      children:
+        - title
+        - field_vehicles
+        - field_risks
+        - field_gp_what_is_it
+        - field_gp_who_is_for
+        - field_gp_what_is_the_benefit
+        - field_gp_getting_started
+        - field_publication_date
+        - field_like_count
+      parent_name: group_info
+      weight: 25
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: General
+    group_media:
+      children:
+        - field_media_image
+        - field_media_thumbnail
+        - field_media_gp_factsheet
+      parent_name: group_info
+      weight: 26
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Media
+    group_related_information:
+      children:
+        - field_additional_resources
+        - field_gp_external_links
+        - field_thesaurus
+        - field_thesaurus_2020
+      parent_name: group_info
+      weight: 27
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Related Information'
 id: node.good_practice.default
 targetEntityType: node
 bundle: good_practice
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_additional_resources:
-    weight: 131
+    weight: 1
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -58,7 +120,7 @@ content:
     type: link_default
     region: content
   field_gp_external_links:
-    weight: 132
+    weight: 2
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -66,7 +128,7 @@ content:
     type: link_default
     region: content
   field_gp_getting_started:
-    weight: 127
+    weight: 7
     settings:
       rows: 5
       placeholder: ''
@@ -74,7 +136,7 @@ content:
     type: text_textarea
     region: content
   field_gp_what_is_it:
-    weight: 124
+    weight: 4
     settings:
       rows: 5
       placeholder: ''
@@ -82,7 +144,7 @@ content:
     type: text_textarea
     region: content
   field_gp_what_is_the_benefit:
-    weight: 126
+    weight: 6
     settings:
       rows: 5
       placeholder: ''
@@ -90,7 +152,7 @@ content:
     type: text_textarea
     region: content
   field_gp_who_is_for:
-    weight: 125
+    weight: 5
     settings:
       rows: 5
       placeholder: ''
@@ -98,7 +160,7 @@ content:
     type: text_textarea
     region: content
   field_like_count:
-    weight: 134
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -107,56 +169,46 @@ content:
     region: content
   field_media_gp_factsheet:
     type: media_library_widget
-    weight: 130
+    weight: 17
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_media_image:
-    weight: 128
+    weight: 15
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_media_thumbnail:
-    weight: 129
+    weight: 16
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_metatags:
-    weight: 135
+    weight: 11
     settings:
       sidebar: true
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_publication_date:
-    weight: 133
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_risks:
-    weight: 123
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 3
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_thesaurus:
-    weight: 136
+    weight: 3
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -166,7 +218,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_thesaurus_2020:
-    weight: 137
+    weight: 4
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -176,18 +228,14 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_vehicles:
-    weight: 122
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 2
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   path:
     type: path
-    weight: 30
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -195,26 +243,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 4
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 7
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 1
     region: content
     settings:
       size: 60
@@ -222,7 +270,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
@@ -230,4 +278,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  body: true
