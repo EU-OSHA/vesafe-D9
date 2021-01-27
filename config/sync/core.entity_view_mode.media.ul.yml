@@ -1,0 +1,10 @@
+uuid: 5ff30c24-23b2-4ab7-9e77-9b34cc2aad6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.ul
+label: 'Ultrawide 16:9'
+targetEntityType: media
+cache: true

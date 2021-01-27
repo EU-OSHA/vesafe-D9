@@ -1,0 +1,10 @@
+uuid: fd16cd5e-b111-42cb-8219-ef7c7bd87692
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.standard_4_3
+label: 'Standard 4:3'
+targetEntityType: media
+cache: true

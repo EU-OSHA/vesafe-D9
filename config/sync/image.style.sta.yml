@@ -1,0 +1,17 @@
+uuid: ddac3e91-2a16-4da7-865b-f09568c974d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.standard_4_3
+  module:
+    - crop
+name: sta
+label: 'Standard 4:3'
+effects:
+  795ef540-9cd3-433a-babe-463ce245539f:
+    uuid: 795ef540-9cd3-433a-babe-463ce245539f
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: standard_4_3

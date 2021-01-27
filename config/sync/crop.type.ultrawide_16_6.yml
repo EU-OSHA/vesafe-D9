@@ -1,0 +1,12 @@
+uuid: c317e370-7e7e-4fbe-bdc5-8567a204aa97
+langcode: en
+status: true
+dependencies: {  }
+id: ultrawide_16_6
+label: 'Ultrawide 16:6'
+description: ''
+aspect_ratio: '16:6'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null
