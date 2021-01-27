@@ -715,10 +715,10 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * example.org, with all subdomains included.
  */
 $settings['trusted_host_patterns'] = [
-    '^89\.0\.4\.171$',
-    '^vesafe\.bilbomatica\.es$',
-    '^vesafe\.ddev\.site$',
-  ];
+  '^89\.0\.4\.171$',
+  '^vesafe\.bilbomatica\.es$',
+  '^vesafe\.ddev\.site$',
+];
 
 /**
  * The default list of directories that will be ignored by Drupal's file API.
