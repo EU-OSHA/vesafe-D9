@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Good practice'
 type: good_practice
-description: 'Content appearing in the Good practices section of the vehicle safety portal. You can download the template of the Factsheet <a target="_blank" href="/vehicle-safety/system/files/EU-OSHA_VS_Factsheet%20template.docx">here</a>'
+description: 'Content appearing in the Good practices section of the vehicle safety portal'
 help: ''
 new_revision: true
 preview_mode: 1

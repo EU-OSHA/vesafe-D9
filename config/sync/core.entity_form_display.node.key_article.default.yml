@@ -16,10 +16,76 @@ dependencies:
     - node.type.key_article
   module:
     - datetime
+    - field_group
     - media_library
     - metatag
     - path
     - text
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - group_general
+        - group_media
+        - group_related_information
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Info
+    group_general:
+      children:
+        - title
+        - field_subtitle
+        - body
+        - field_publication_date
+      parent_name: group_info
+      weight: 18
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: General
+    group_media:
+      children:
+        - field_media_image
+        - field_media_thumbnail
+      parent_name: group_info
+      weight: 19
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Media
+    group_related_information:
+      children:
+        - field_ka_general_safety_issues
+        - field_ka_general_risk_factors
+        - field_ka_specific_risk_factors
+        - field_related_good_practices
+      parent_name: group_info
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Related Information'
 id: node.key_article.default
 targetEntityType: node
 bundle: key_article
@@ -27,22 +93,22 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
+    weight: 3
     settings:
       rows: 9
-      summary_rows: 3
       placeholder: ''
-      show_summary: false
+      summary_rows: 5
+      show_summary: true
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_ka_general_risk_factors:
-    weight: 126
+    weight: 13
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -52,7 +118,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_ka_general_safety_issues:
-    weight: 125
+    weight: 12
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -62,7 +128,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_ka_specific_risk_factors:
-    weight: 127
+    weight: 14
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -73,33 +139,33 @@ content:
     region: content
   field_media_image:
     type: media_library_widget
-    weight: 122
+    weight: 20
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_media_thumbnail:
     type: media_library_widget
-    weight: 123
+    weight: 21
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_metatags:
-    weight: 130
+    weight: 17
     settings:
       sidebar: true
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_publication_date:
-    weight: 128
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_related_good_practices:
-    weight: 129
+    weight: 15
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -109,7 +175,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_subtitle:
-    weight: 124
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
@@ -118,7 +184,7 @@ content:
     region: content
   path:
     type: path
-    weight: 30
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -126,26 +192,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 4
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 7
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 1
     region: content
     settings:
       size: 60
@@ -153,7 +219,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
