@@ -1,0 +1,22 @@
+uuid: e80e7dc7-e6f9-4ea9-a98e-e04cbd3b07d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.did_you_know_slide
+id: node.did_you_know_slide.promote
+field_name: promote
+entity_type: node
+bundle: did_you_know_slide
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

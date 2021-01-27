@@ -1,0 +1,32 @@
+uuid: c71a290c-d283-4100-b00f-a524a1b2967c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.did_you_know_slide.body
+    - field.field.node.did_you_know_slide.field_metatags
+    - node.type.did_you_know_slide
+  module:
+    - text
+    - user
+id: node.did_you_know_slide.teaser
+targetEntityType: node
+bundle: did_you_know_slide
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_metatags: true
