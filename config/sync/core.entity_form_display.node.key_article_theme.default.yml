@@ -12,9 +12,57 @@ dependencies:
     - node.type.key_article_theme
   module:
     - datetime
+    - field_group
     - metatag
     - path
     - text
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - group_general
+        - group_re
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Info
+    group_general:
+      children:
+        - title
+        - field_subtitle
+        - body
+        - field_publication_date
+      parent_name: group_info
+      weight: 14
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: General
+    group_re:
+      children:
+        - field_thesaurus
+        - field_thesaurus_2020
+      parent_name: group_info
+      weight: 15
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Related Information'
 id: node.key_article_theme.default
 targetEntityType: node
 bundle: key_article_theme
@@ -22,35 +70,35 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
+    weight: 3
     settings:
       rows: 9
-      summary_rows: 3
       placeholder: ''
-      show_summary: false
+      summary_rows: 5
+      show_summary: true
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_metatags:
-    weight: 124
+    weight: 11
     settings:
       sidebar: true
     third_party_settings: {  }
     type: metatag_firehose
     region: content
   field_publication_date:
-    weight: 123
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_subtitle:
-    weight: 122
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
@@ -58,7 +106,7 @@ content:
     type: text_textarea
     region: content
   field_thesaurus:
-    weight: 125
+    weight: 12
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -68,7 +116,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_thesaurus_2020:
-    weight: 126
+    weight: 13
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -79,7 +127,7 @@ content:
     region: content
   path:
     type: path
-    weight: 30
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -87,26 +135,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 4
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 7
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 1
     region: content
     settings:
       size: 60
@@ -114,7 +162,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
