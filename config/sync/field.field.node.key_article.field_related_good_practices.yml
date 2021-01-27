@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_related_good_practices
+    - node.type.good_practice
     - node.type.key_article
-    - node.type.key_article_theme
 id: node.key_article.field_related_good_practices
 field_name: field_related_good_practices
 entity_type: node
@@ -20,10 +20,10 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      key_article_theme: key_article_theme
+      good_practice: good_practice
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: good_practice
 field_type: entity_reference

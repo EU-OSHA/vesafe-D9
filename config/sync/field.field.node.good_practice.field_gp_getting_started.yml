@@ -1,0 +1,21 @@
+uuid: 8c506df0-53c5-45d3-b692-8b78e2202876
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gp_getting_started
+    - node.type.good_practice
+  module:
+    - text
+id: node.good_practice.field_gp_getting_started
+field_name: field_gp_getting_started
+entity_type: node
+bundle: good_practice
+label: 'Getting started'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

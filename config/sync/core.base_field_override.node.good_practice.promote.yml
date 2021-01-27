@@ -1,0 +1,22 @@
+uuid: 9e6ad9e4-61b3-40ec-b7ae-494e54082941
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.good_practice
+id: node.good_practice.promote
+field_name: promote
+entity_type: node
+bundle: good_practice
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

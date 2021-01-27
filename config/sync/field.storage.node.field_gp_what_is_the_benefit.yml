@@ -1,0 +1,19 @@
+uuid: 97f98e60-d622-4896-a8f7-25be2f350c2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_gp_what_is_the_benefit
+field_name: field_gp_what_is_the_benefit
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

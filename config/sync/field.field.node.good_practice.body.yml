@@ -1,0 +1,23 @@
+uuid: 3b39fc8d-dbad-4e9b-aadb-6ac13fcf20b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.good_practice
+  module:
+    - text
+id: node.good_practice.body
+field_name: body
+entity_type: node
+bundle: good_practice
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

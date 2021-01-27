@@ -1,0 +1,21 @@
+uuid: 8d7fe458-3416-4fb1-ab9a-b689a9d472bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gp_what_is_the_benefit
+    - node.type.good_practice
+  module:
+    - text
+id: node.good_practice.field_gp_what_is_the_benefit
+field_name: field_gp_what_is_the_benefit
+entity_type: node
+bundle: good_practice
+label: 'What is the benefit?'
+description: 'Please introduce in this box the text of this section.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

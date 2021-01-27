@@ -1,0 +1,23 @@
+uuid: b559db01-6aff-4ad1-b809-1ec78bd77609
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_resources
+    - node.type.good_practice
+  module:
+    - link
+id: node.good_practice.field_additional_resources
+field_name: field_additional_resources
+entity_type: node
+bundle: good_practice
+label: 'Related resources'
+description: 'Please fill in the Title and URL to access the related resources. The link title is limited to 128 characters maximum. You should enter the full URL, including http:// or https://. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
