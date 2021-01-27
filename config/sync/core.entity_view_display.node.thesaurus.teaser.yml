@@ -1,0 +1,46 @@
+uuid: 709251bc-d347-4290-a595-57855f02b3bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.thesaurus.body
+    - field.field.node.thesaurus.field_context
+    - field.field.node.thesaurus.field_definition
+    - field.field.node.thesaurus.field_father
+    - field.field.node.thesaurus.field_full_url
+    - field.field.node.thesaurus.field_notes
+    - field.field.node.thesaurus.field_synonyms
+    - field.field.node.thesaurus.field_term_id
+    - field.field.node.thesaurus.field_term_reference
+    - node.type.thesaurus
+  module:
+    - text
+    - user
+id: node.thesaurus.teaser
+targetEntityType: node
+bundle: thesaurus
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_context: true
+  field_definition: true
+  field_father: true
+  field_full_url: true
+  field_notes: true
+  field_synonyms: true
+  field_term_id: true
+  field_term_reference: true

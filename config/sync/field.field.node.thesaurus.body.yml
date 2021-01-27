@@ -1,0 +1,23 @@
+uuid: 5ed425f6-0925-4104-bff5-a39261fd8e06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.thesaurus
+  module:
+    - text
+id: node.thesaurus.body
+field_name: body
+entity_type: node
+bundle: thesaurus
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

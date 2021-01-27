@@ -1,0 +1,21 @@
+uuid: fd904354-2411-45f2-a372-29685af4d2a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notes
+    - node.type.thesaurus
+  module:
+    - text
+id: node.thesaurus.field_notes
+field_name: field_notes
+entity_type: node
+bundle: thesaurus
+label: Notes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

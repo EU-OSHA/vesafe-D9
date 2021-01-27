@@ -1,0 +1,21 @@
+uuid: 78a4bd67-0172-43cf-828b-2c6ee0b4c4bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_context
+    - node.type.thesaurus
+  module:
+    - text
+id: node.thesaurus.field_context
+field_name: field_context
+entity_type: node
+bundle: thesaurus
+label: Context
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
