@@ -1,0 +1,19 @@
+uuid: bd5fa820-4bd2-4067-ba6d-42206942f097
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_ka_specific_risk_factors
+field_name: field_ka_specific_risk_factors
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

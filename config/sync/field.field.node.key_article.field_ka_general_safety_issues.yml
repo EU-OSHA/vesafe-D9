@@ -1,0 +1,29 @@
+uuid: 94fa0731-fa69-40c5-b1e8-d28ab97c7d8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ka_general_safety_issues
+    - node.type.key_article
+    - node.type.key_article_theme
+id: node.key_article.field_ka_general_safety_issues
+field_name: field_ka_general_safety_issues
+entity_type: node
+bundle: key_article
+label: 'General safety issues'
+description: 'Please add general safety issues.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      key_article_theme: key_article_theme
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

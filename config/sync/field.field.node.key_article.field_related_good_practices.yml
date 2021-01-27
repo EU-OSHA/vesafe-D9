@@ -1,0 +1,29 @@
+uuid: 080e5eeb-000e-4fc4-a0df-3a8ee82d50e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_good_practices
+    - node.type.key_article
+    - node.type.key_article_theme
+id: node.key_article.field_related_good_practices
+field_name: field_related_good_practices
+entity_type: node
+bundle: key_article
+label: 'Related good practices'
+description: 'Please add related good practices.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      key_article_theme: key_article_theme
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

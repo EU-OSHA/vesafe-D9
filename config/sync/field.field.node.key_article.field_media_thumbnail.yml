@@ -1,0 +1,29 @@
+uuid: 51fa88ce-0623-4029-9d41-c1f963eb54c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_thumbnail
+    - media.type.image
+    - node.type.key_article
+id: node.key_article.field_media_thumbnail
+field_name: field_media_thumbnail
+entity_type: node
+bundle: key_article
+label: Thumbnail
+description: 'The image that will be used on the views were more than one Key Article is displayed'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 690391c1-bd8a-4aae-be67-db996a5ffef8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_date
+    - node.type.key_article
+  module:
+    - datetime
+id: node.key_article.field_publication_date
+field_name: field_publication_date
+entity_type: node
+bundle: key_article
+label: 'Publication date'
+description: 'Please select the date of publication, if it is not possible to identify leave it empty.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
