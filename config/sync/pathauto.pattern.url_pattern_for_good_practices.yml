@@ -1,0 +1,22 @@
+uuid: b706571f-3d72-4b8d-a447-ec694ee40805
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: url_pattern_for_good_practices
+label: 'URL Pattern for Good Practices'
+type: 'canonical_entities:node'
+pattern: '/good-practices/[node:title]'
+selection_criteria:
+  9e4bc6c9-ab94-415c-99ed-5e79baff4e31:
+    id: node_type
+    bundles:
+      good_practice: good_practice
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9e4bc6c9-ab94-415c-99ed-5e79baff4e31
+selection_logic: and
+weight: -5
+relationships: {  }

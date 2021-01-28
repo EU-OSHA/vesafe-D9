@@ -1,0 +1,70 @@
+nid_list: {  }
+translation_sync: true
+search: true
+_core:
+  default_config_hash: avgYHPM-altr_AzKnQXTMVOX45XPWncreZepSjW8m7c
+content_types:
+  article: all
+  did_you_know_slide: all
+  good_practice: all
+  key_article: all
+  key_article_theme: all
+  page: all
+  thesaurus: all
+content_type_modes:
+  article:
+    - full
+    - rss
+    - search_index
+    - search_result
+    - teaser
+    - token
+    - nodeform
+  did_you_know_slide:
+    - full
+    - rss
+    - search_index
+    - search_result
+    - teaser
+    - token
+    - nodeform
+  good_practice:
+    - full
+    - rss
+    - search_index
+    - search_result
+    - teaser
+    - token
+    - nodeform
+  key_article:
+    - full
+    - rss
+    - search_index
+    - search_result
+    - teaser
+    - token
+    - nodeform
+  key_article_theme:
+    - full
+    - rss
+    - search_index
+    - search_result
+    - teaser
+    - token
+    - nodeform
+  page:
+    - full
+    - rss
+    - search_index
+    - search_result
+    - teaser
+    - token
+    - nodeform
+  thesaurus:
+    - full
+    - rss
+    - search_index
+    - search_result
+    - teaser
+    - token
+    - nodeform

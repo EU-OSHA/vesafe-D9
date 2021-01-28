@@ -1,0 +1,22 @@
+uuid: 9094e961-d522-4a3f-bd95-b51792af39e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - vesafe_theme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: vesafe_theme_help
+theme: vesafe_theme
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

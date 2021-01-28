@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.article.field_publication_date
     - field.field.node.article.field_subtitle
     - field.field.node.article.field_tags
+    - field.field.node.article.layout_builder__layout
     - image.style.medium
     - node.type.article
   module:
@@ -59,3 +60,4 @@ hidden:
   field_publication_date: true
   field_subtitle: true
   field_tags: true
+  layout_builder__layout: true

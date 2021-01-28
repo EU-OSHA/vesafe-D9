@@ -1,0 +1,22 @@
+uuid: d4c3a827-3965-4395-ae45-b220aeea7f0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: url_pattern_for_key_article
+label: 'URL Pattern for Key Article'
+type: 'canonical_entities:node'
+pattern: '/themes/[node:title]'
+selection_criteria:
+  381a7e22-c931-4fa8-a86b-5471c6637557:
+    id: node_type
+    bundles:
+      key_article: key_article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 381a7e22-c931-4fa8-a86b-5471c6637557
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,23 @@
+uuid: 978f0262-2986-4904-b2a0-b9e43e5cdd97
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: url_pattern_for_articles
+label: 'URL Pattern for Articles and Slides'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  dc8f28de-871b-4643-8d7c-b06347e98cd4:
+    id: node_type
+    bundles:
+      article: article
+      did_you_know_slide: did_you_know_slide
+    negate: false
+    context_mapping:
+      node: node
+    uuid: dc8f28de-871b-4643-8d7c-b06347e98cd4
+selection_logic: and
+weight: -5
+relationships: {  }
