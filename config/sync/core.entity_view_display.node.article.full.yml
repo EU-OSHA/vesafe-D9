@@ -53,7 +53,7 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--gV5a-H5kb5g
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--WewpB8JBad4
           section:
             general:
               basic:
@@ -73,9 +73,9 @@ third_party_settings:
                     color: ''
                     opacity: '1'
               sizing:
-                full_width: 0
-                full_width_container: 0
-                full_width_container_title: 0
+                full_width: 1
+                full_width_container: 1
+                full_width_container_title: 1
                 height: auto
                 height_size: '0'
               spacing:
@@ -85,7 +85,7 @@ third_party_settings:
                 extra_class: article-title-container
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-styles--1dZAgwxXDaM
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-styles--7JT2g1cKrtI
           regions:
             first:
               title:
