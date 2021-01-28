@@ -15,11 +15,16 @@
   Drupal.behaviors.VesafeKeyArticle = {
     attach: function (context, settings) {
 
+      var $id = window.location.hash;
+      if ($id === 'undefined' || $id === '') {
+        $id = '#introduction';
+      }
+
       // Run the following functions to control the elements.
-      hiddeElements(window.location.hash);
-      collapseMenuElements(window.location.hash);
-      changePreviusButton(window.location.hash);
-      changeNextButton(window.location.hash);
+      hiddeElements($id);
+      collapseMenuElements($id);
+      changePreviusButton($id);
+      changeNextButton($id);
 
       // Bind on hashchanged to control the element when the hash change.
       $(window).bind('hashchange', function (e){

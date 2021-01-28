@@ -79,10 +79,12 @@
                 <span class="nav-header"  data-toggle="collapse" data-target="#menu-kgsi">{{ 'General safety issues'|t }}</span>
                 <ul class="nav nav-list collapse" id="menu-kgsi">
                   {% for field_element in element['#object'].field_ka_general_safety_issues.value %}
-                    {% set field_ka_general_safety_issues = drupal_entity('node', field_element.target_id, 'full') %}
-                    {% set title = field_ka_general_safety_issues['#node'].title.value %}
-                    {% set link = 'kgsi-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
-                    <li><a class="key-articles-link" href="#{{ link }}">{{ title }}</a></li>
+                    {% if field_element.target_id is not empty %}
+                      {% set field_ka_general_safety_issues = drupal_entity('node', field_element.target_id, 'full') %}
+                      {% set title = field_ka_general_safety_issues['#node'].title.value %}
+                      {% set link = 'kgsi-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
+                      <li><a class="key-articles-link" href="#{{ link }}">{{ title }}</a></li>
+                    {% endif %}
                   {% endfor %}
                 </ul>
               </li>
@@ -90,10 +92,12 @@
                 <span class="nav-header"  data-toggle="collapse" data-target="#menu-kgrf">{{ 'General risk factors'|t }}</span>
                 <ul class="nav nav-list collapse" id="menu-kgrf">
                   {% for field_element in element['#object'].field_ka_general_risk_factors.value %}
-                    {% set field_ka_general_risk_factors = drupal_entity('node', field_element.target_id, 'full') %}
-                    {% set title = field_ka_general_risk_factors['#node'].title.value %}
-                    {% set link = 'kgrf-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
-                    <li><a class="key-articles-link" href="#{{ link }}">{{ title }}</a></li>
+                    {% if field_element.target_id is not empty %}
+                      {% set field_ka_general_risk_factors = drupal_entity('node', field_element.target_id, 'full') %}
+                      {% set title = field_ka_general_risk_factors['#node'].title.value %}
+                      {% set link = 'kgrf-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
+                      <li><a class="key-articles-link" href="#{{ link }}">{{ title }}</a></li>
+                    {% endif %}
                   {% endfor %}
                 </ul>
               </li>
@@ -101,10 +105,12 @@
                 <span class="nav-header"  data-toggle="collapse" data-target="#menu-ksrf">{{ 'Specific risk factors'|t }}</span>
                 <ul class="nav nav-list collapse" id="menu-ksrf">
                   {% for field_element in element['#object'].field_ka_specific_risk_factors.value %}
-                    {% set field_ka_specific_risk_factors = drupal_entity('node', field_element.target_id, 'full') %}
-                    {% set title = field_ka_specific_risk_factors['#node'].title.value %}
-                    {% set link = 'ksrf-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
-                    <li><a class="key-articles-link"href="#{{ link }}">{{ title }}</a></li>
+                    {% if field_element.target_id is not empty %}
+                      {% set field_ka_specific_risk_factors = drupal_entity('node', field_element.target_id, 'full') %}
+                      {% set title = field_ka_specific_risk_factors['#node'].title.value %}
+                      {% set link = 'ksrf-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
+                      <li><a class="key-articles-link" href="#{{ link }}">{{ title }}</a></li>
+                    {% endif %}
                   {% endfor %}
                 </ul>
               </li>
@@ -121,47 +127,53 @@
 
               {# General Safety issues items #}
               {% for field_element in element['#object'].field_ka_general_safety_issues.value %}
-                {% set field_ka_general_safety_issues = drupal_entity('node', field_element.target_id, 'full') %}
-                {% set title = field_ka_general_safety_issues['#node'].title.value %}
-                {% set link = 'kgsi-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
-                {% set body = field_ka_general_safety_issues['#node'].body.value %}
-                {% set nextHref = '#' ~ link %}
-                <div id="{{ link }}" class="key-article-item" data-section="kgsi">
-                  <h2>{{ title }}</h2>
-                  <div class="key-article-item-content">
-                    {{ body|raw }}
+                {% if field_element.target_id is not empty %}
+                  {% set field_ka_general_safety_issues = drupal_entity('node', field_element.target_id, 'full') %}
+                  {% set title = field_ka_general_safety_issues['#node'].title.value %}
+                  {% set link = 'kgsi-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
+                  {% set body = field_ka_general_safety_issues['#node'].body.value %}
+                  {% set nextHref = '#' ~ link %}
+                  <div id="{{ link }}" class="key-article-item" data-section="kgsi">
+                    <h2>{{ title }}</h2>
+                    <div class="key-article-item-content">
+                      {{ body|raw }}
+                    </div>
                   </div>
-                </div>
+                {% endif %}
               {% endfor %}
 
               {# General Risk Factors items #}
               {% for field_element in element['#object'].field_ka_general_risk_factors.value %}
-                {% set field_ka_general_risk_factors = drupal_entity('node', field_element.target_id, 'full') %}
-                {% set title = field_ka_general_risk_factors['#node'].title.value %}
-                {% set link = 'kgrf-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
-                {% set body = field_ka_general_risk_factors['#node'].body.value %}
-                {% set nextHref = '#' ~ link %}
-                <div id="{{ link }}" class="key-article-item" data-section="kgrf">
-                  <h2>{{ title }}</h2>
-                  <div class="key-article-item-content">
-                    {{ body|raw }}
+                {% if field_element.target_id is not empty %}
+                  {% set field_ka_general_risk_factors = drupal_entity('node', field_element.target_id, 'full') %}
+                  {% set title = field_ka_general_risk_factors['#node'].title.value %}
+                  {% set link = 'kgrf-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
+                  {% set body = field_ka_general_risk_factors['#node'].body.value %}
+                  {% set nextHref = '#' ~ link %}
+                  <div id="{{ link }}" class="key-article-item" data-section="kgrf">
+                    <h2>{{ title }}</h2>
+                    <div class="key-article-item-content">
+                      {{ body|raw }}
+                    </div>
                   </div>
-                </div>
+                {% endif %}
               {% endfor %}
 
               {# General Risk Factors items #}
               {% for field_element in element['#object'].field_ka_specific_risk_factors.value %}
-                {% set field_ka_specific_risk_factors = drupal_entity('node', field_element.target_id, 'full') %}
-                {% set title = field_ka_specific_risk_factors['#node'].title.value %}
-                {% set link = 'ksrf-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
-                {% set body = field_ka_specific_risk_factors['#node'].body.value %}
-                {% set nextHref = '#' ~ link %}
-                <div id="{{ link }}" class="key-article-item" data-section="ksrf">
-                  <h2>{{ title }}</h2>
-                  <div class="key-article-item-content">
-                    {{ body|raw }}
+                {% if field_element.target_id is not empty %}
+                  {% set field_ka_specific_risk_factors = drupal_entity('node', field_element.target_id, 'full') %}
+                  {% set title = field_ka_specific_risk_factors['#node'].title.value %}
+                  {% set link = 'ksrf-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
+                  {% set body = field_ka_specific_risk_factors['#node'].body.value %}
+                  {% set nextHref = '#' ~ link %}
+                  <div id="{{ link }}" class="key-article-item" data-section="ksrf">
+                    <h2>{{ title }}</h2>
+                    <div class="key-article-item-content">
+                      {{ body|raw }}
+                    </div>
                   </div>
-                </div>
+                {% endif %}
               {% endfor %}
 
             </div>
