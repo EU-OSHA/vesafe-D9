@@ -19,7 +19,6 @@ content_type_modes:
     - search_result
     - teaser
     - token
-    - nodeform
   did_you_know_slide:
     - full
     - rss
@@ -27,7 +26,6 @@ content_type_modes:
     - search_result
     - teaser
     - token
-    - nodeform
   good_practice:
     - full
     - rss
@@ -35,7 +33,6 @@ content_type_modes:
     - search_result
     - teaser
     - token
-    - nodeform
   key_article:
     - full
     - rss
@@ -43,7 +40,6 @@ content_type_modes:
     - search_result
     - teaser
     - token
-    - nodeform
   key_article_theme:
     - full
     - rss
@@ -51,7 +47,6 @@ content_type_modes:
     - search_result
     - teaser
     - token
-    - nodeform
   page:
     - full
     - rss
@@ -59,7 +54,6 @@ content_type_modes:
     - search_result
     - teaser
     - token
-    - nodeform
   thesaurus:
     - full
     - rss
@@ -67,4 +61,3 @@ content_type_modes:
     - search_result
     - teaser
     - token
-    - nodeform

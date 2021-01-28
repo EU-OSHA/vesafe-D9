@@ -1,0 +1,535 @@
+uuid: 310c5d82-2f83-417f-a0e7-763bcfb23ba5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.key_article.body
+    - field.field.node.key_article.field_ka_general_risk_factors
+    - field.field.node.key_article.field_ka_general_safety_issues
+    - field.field.node.key_article.field_ka_specific_risk_factors
+    - field.field.node.key_article.field_media_image
+    - field.field.node.key_article.field_media_thumbnail
+    - field.field.node.key_article.field_metatags
+    - field.field.node.key_article.field_publication_date
+    - field.field.node.key_article.field_related_good_practices
+    - field.field.node.key_article.field_subtitle
+    - node.type.key_article
+  module:
+    - layout_builder
+    - layoutcomponents
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layoutcomponents_one_column
+        layout_settings:
+          label: ''
+          title:
+            general:
+              title: ''
+              description: ''
+            styles:
+              design:
+                title_color:
+                  settings:
+                    color: '#000000'
+                    opacity: '1'
+                title_type: h1
+                title_align: text-left
+              sizing:
+                title_size: '0'
+              border:
+                title_border: none
+                title_border_size: '0'
+                title_border_color:
+                  settings:
+                    color: '#f75461'
+                    opacity: '1'
+              spacing:
+                title_margin_top: '0'
+                title_margin_bottom: '0'
+              misc:
+                title_extra_class: ''
+                description_extra_class: ''
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--zeaWxjxHPXo
+          section:
+            general:
+              basic:
+                section_type: div
+                section_overwrite: 1
+                section_label: '11611833653'
+                section_delta: '0'
+              structure:
+                section_structure: '12'
+                section_carousel: false
+                section_carousel_slick: none
+            styles:
+              background:
+                image: null
+                background_color:
+                  settings:
+                    color: ''
+                    opacity: '1'
+              sizing:
+                full_width: 1
+                full_width_container: 1
+                full_width_container_title: 1
+                height: auto
+                height_size: '0'
+              spacing:
+                top_padding: '0'
+                bottom_padding: '0'
+              misc:
+                extra_class: safe-driving-work-title-container
+                extra_attributes: ''
+                parallax: 0
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-styles--VMCQr9hRK_I
+          regions:
+            first:
+              title:
+                title: ''
+              styles:
+                title:
+                  type: h1
+                  color:
+                    settings:
+                      color: '#000000'
+                      opacity: '1'
+                    color: '#000000'
+                    opacity: '1'
+                  size: '0'
+                  align: text-left
+                  border: none
+                  border_size: '0'
+                  border_color:
+                    settings:
+                      color: '#f75461'
+                      opacity: '1'
+                    color: '#f75461'
+                    opacity: '1'
+                border:
+                  border: none
+                  size: '0'
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                  radius_top_left: '0'
+                  radius_top_right: '0'
+                  radius_bottom_left: '0'
+                  radius_bottom_right: '0'
+                background:
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                spacing:
+                  paddings: 0
+                  paddings_left: 0
+                  paddings_right: 0
+                misc:
+                  extra_class: ''
+              general:
+                title: ''
+              layout_settings__container__regions__first__active_tab: ''
+        components:
+          91e0ca19-f484-423c-a97c-dfb024215ab8:
+            uuid: 91e0ca19-f484-423c-a97c-dfb024215ab8
+            region: first
+            configuration:
+              id: 'field_block:node:key_article:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: Array
+                      custom: Array
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          3d1ef967-e714-444d-991d-855abb583054:
+            uuid: 3d1ef967-e714-444d-991d-855abb583054
+            region: first
+            configuration:
+              id: 'field_block:node:key_article:field_subtitle'
+              label: Subtitle
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: Array
+                      custom: Array
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layoutcomponents_one_column
+        layout_settings:
+          label: ''
+          title:
+            general:
+              title: ''
+              description: ''
+            styles:
+              design:
+                title_color:
+                  settings:
+                    color: '#000000'
+                    opacity: '1'
+                title_type: h1
+                title_align: text-left
+              sizing:
+                title_size: '0'
+              border:
+                title_border: none
+                title_border_size: '0'
+                title_border_color:
+                  settings:
+                    color: '#f75461'
+                    opacity: '1'
+              spacing:
+                title_margin_top: '0'
+                title_margin_bottom: '0'
+              misc:
+                title_extra_class: ''
+                description_extra_class: ''
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--103oDWuI4WU
+          section:
+            general:
+              basic:
+                section_type: div
+                section_overwrite: 1
+                section_label: '11611834039'
+                section_delta: '1'
+              structure:
+                section_structure: '12'
+                section_carousel: false
+                section_carousel_slick: none
+            styles:
+              background:
+                image: null
+                background_color:
+                  settings:
+                    color: ''
+                    opacity: '1'
+              sizing:
+                full_width: 1
+                full_width_container: 0
+                full_width_container_title: 0
+                height: auto
+                height_size: '0'
+              spacing:
+                top_padding: '0'
+                bottom_padding: '0'
+              misc:
+                extra_class: safe-driving-work-image-container
+                extra_attributes: ''
+                parallax: 0
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-styles--BB_9vmvOwYE
+          regions:
+            first:
+              title:
+                title: ''
+              styles:
+                title:
+                  type: h1
+                  color:
+                    settings:
+                      color: '#000000'
+                      opacity: '1'
+                    color: '#000000'
+                    opacity: '1'
+                  size: '0'
+                  align: text-left
+                  border: none
+                  border_size: '0'
+                  border_color:
+                    settings:
+                      color: '#f75461'
+                      opacity: '1'
+                    color: '#f75461'
+                    opacity: '1'
+                border:
+                  border: none
+                  size: '0'
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                  radius_top_left: '0'
+                  radius_top_right: '0'
+                  radius_bottom_left: '0'
+                  radius_bottom_right: '0'
+                background:
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                spacing:
+                  paddings: 0
+                  paddings_left: 0
+                  paddings_right: 0
+                misc:
+                  extra_class: ''
+              general:
+                title: ''
+              layout_settings__container__regions__first__active_tab: ''
+        components:
+          f1222159-9048-438a-b942-6317444659c7:
+            uuid: f1222159-9048-438a-b942-6317444659c7
+            region: first
+            configuration:
+              id: 'field_block:node:key_article:field_media_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: ultrawide_16_6
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: Array
+                      custom: Array
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layoutcomponents_one_column
+        layout_settings:
+          label: ''
+          title:
+            general:
+              title: ''
+              description: ''
+            styles:
+              design:
+                title_color:
+                  settings:
+                    color: '#000000'
+                    opacity: '1'
+                title_type: h1
+                title_align: text-left
+              sizing:
+                title_size: '0'
+              border:
+                title_border: none
+                title_border_size: '0'
+                title_border_color:
+                  settings:
+                    color: '#f75461'
+                    opacity: '1'
+              spacing:
+                title_margin_top: '0'
+                title_margin_bottom: '0'
+              misc:
+                title_extra_class: ''
+                description_extra_class: ''
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--PwgCjlQKMrE
+          section:
+            general:
+              basic:
+                section_type: div
+                section_overwrite: 1
+                section_label: '11611836184'
+                section_delta: '2'
+              structure:
+                section_structure: '12'
+                section_carousel: false
+                section_carousel_slick: none
+            styles:
+              background:
+                image: null
+                background_color:
+                  settings:
+                    color: ''
+                    opacity: '1'
+              sizing:
+                full_width: 0
+                full_width_container: 0
+                full_width_container_title: 0
+                height: auto
+                height_size: '0'
+              spacing:
+                top_padding: '0'
+                bottom_padding: '0'
+              misc:
+                extra_class: ''
+                extra_attributes: ''
+                parallax: 0
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--znKgTIT28gg
+          regions:
+            first:
+              title:
+                title: ''
+              styles:
+                title:
+                  type: h1
+                  color:
+                    settings:
+                      color: '#000000'
+                      opacity: '1'
+                    color: '#000000'
+                    opacity: '1'
+                  size: '0'
+                  align: text-left
+                  border: none
+                  border_size: '0'
+                  border_color:
+                    settings:
+                      color: '#f75461'
+                      opacity: '1'
+                    color: '#f75461'
+                    opacity: '1'
+                border:
+                  border: none
+                  size: '0'
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                  radius_top_left: '0'
+                  radius_top_right: '0'
+                  radius_bottom_left: '0'
+                  radius_bottom_right: '0'
+                background:
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                spacing:
+                  paddings: 0
+                  paddings_left: 0
+                  paddings_right: 0
+                misc:
+                  extra_class: ''
+              general:
+                title: ''
+              layout_settings__container__regions__first__active_tab: ''
+        components:
+          0812bea6-0c38-47ca-b789-73ae37e9e793:
+            uuid: 0812bea6-0c38-47ca-b789-73ae37e9e793
+            region: first
+            configuration:
+              id: 'field_block:node:key_article:body'
+              label: Introduction
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: Array
+                      custom: Array
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: node.key_article.full
+targetEntityType: node
+bundle: key_article
+mode: full
+content: {  }
+hidden:
+  body: true
+  field_ka_general_risk_factors: true
+  field_ka_general_safety_issues: true
+  field_ka_specific_risk_factors: true
+  field_media_image: true
+  field_media_thumbnail: true
+  field_metatags: true
+  field_publication_date: true
+  field_related_good_practices: true
+  field_subtitle: true
+  links: true

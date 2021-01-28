@@ -1,0 +1,188 @@
+{#
+/**
+ * @file
+ * Theme override for a field.
+ *
+ * To override output, copy the "field.html.twig" from the templates directory
+ * to your theme's directory and customize it, just like customizing other
+ * Drupal templates such as page.html.twig or node.html.twig.
+ *
+ * Instead of overriding the theming for all fields, you can also just override
+ * theming for a subset of fields using
+ * @link themeable Theme hook suggestions. @endlink For example,
+ * here are some theme hook suggestions that can be used for a field_foo field
+ * on an article node type:
+ * - field--node--field-foo--article.html.twig
+ * - field--node--field-foo.html.twig
+ * - field--node--article.html.twig
+ * - field--field-foo.html.twig
+ * - field--text-with-summary.html.twig
+ * - field.html.twig
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the containing element.
+ * - label_hidden: Whether to show the field label or not.
+ * - title_attributes: HTML attributes for the title.
+ * - label: The label for the field.
+ * - multiple: TRUE if a field can contain multiple items.
+ * - items: List of all the field items. Each item contains:
+ *   - attributes: List of HTML attributes for each item.
+ *   - content: The field item's content.
+ * - entity_type: The entity type to which the field belongs.
+ * - field_name: The name of the field.
+ * - field_type: The type of the field.
+ * - label_display: The display settings for the label.
+ *
+ *
+ * @see template_preprocess_field()
+ */
+#}
+{%
+  set classes = [
+  'field',
+  'field--name-' ~ field_name|clean_class,
+  'field--type-' ~ field_type|clean_class,
+  'field--label-' ~ label_display,
+]
+%}
+{%
+  set title_classes = [
+  'field__label',
+  label_display == 'visually_hidden' ? 'visually-hidden',
+]
+%}
+
+{#
+ Inicialize the neccesary fields.
+#}
+{% set field_ka_general_safety_issues = '' %}
+{% set field_ka_general_risk_factors = '' %}
+{% set field_ka_specific_risk_factors = '' %}
+
+{% if label_hidden %}
+  {% if multiple %}
+    <div{{ attributes.addClass(classes, 'field__items') }}>
+      {% for item in items %}
+        <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+      {% endfor %}
+    </div>
+  {% else %}
+    {% for item in items %}
+      <div class="page-content-container-inside container">
+        <div class="row">
+          <div class="key-articles-menu-container col-md-3 col-sm-5">
+            <ul>
+              <li>
+                <a href="#introduction" class="key-articles-link">{{ 'Introduction'|t }}</a>
+              </li>
+              <li>
+                <span class="nav-header"  data-toggle="collapse" data-target="#menu-kgsi">{{ 'General safety issues'|t }}</span>
+                <ul class="nav nav-list collapse" id="menu-kgsi">
+                  {% for field_element in element['#object'].field_ka_general_safety_issues.value %}
+                    {% set field_ka_general_safety_issues = drupal_entity('node', field_element.target_id, 'full') %}
+                    {% set title = field_ka_general_safety_issues['#node'].title.value %}
+                    {% set link = 'kgsi-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
+                    <li><a class="key-articles-link" href="#{{ link }}">{{ title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li>
+                <span class="nav-header"  data-toggle="collapse" data-target="#menu-kgrf">{{ 'General risk factors'|t }}</span>
+                <ul class="nav nav-list collapse" id="menu-kgrf">
+                  {% for field_element in element['#object'].field_ka_general_risk_factors.value %}
+                    {% set field_ka_general_risk_factors = drupal_entity('node', field_element.target_id, 'full') %}
+                    {% set title = field_ka_general_risk_factors['#node'].title.value %}
+                    {% set link = 'kgrf-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
+                    <li><a class="key-articles-link" href="#{{ link }}">{{ title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li>
+                <span class="nav-header"  data-toggle="collapse" data-target="#menu-ksrf">{{ 'Specific risk factors'|t }}</span>
+                <ul class="nav nav-list collapse" id="menu-ksrf">
+                  {% for field_element in element['#object'].field_ka_specific_risk_factors.value %}
+                    {% set field_ka_specific_risk_factors = drupal_entity('node', field_element.target_id, 'full') %}
+                    {% set title = field_ka_specific_risk_factors['#node'].title.value %}
+                    {% set link = 'ksrf-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
+                    <li><a class="key-articles-link"href="#{{ link }}">{{ title }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9 col-sm-12">
+            <div class="key-article-items">
+              <div id="introduction" class="key-article-item" data-section="introduction">
+                <h2>{{ 'Introduction'|t }}</h2>
+                <div class="key-article-item-content">
+                  {{ item.content }}
+                </div>
+              </div>
+
+              {# General Safety issues items #}
+              {% for field_element in element['#object'].field_ka_general_safety_issues.value %}
+                {% set field_ka_general_safety_issues = drupal_entity('node', field_element.target_id, 'full') %}
+                {% set title = field_ka_general_safety_issues['#node'].title.value %}
+                {% set link = 'kgsi-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
+                {% set body = field_ka_general_safety_issues['#node'].body.value %}
+                {% set nextHref = '#' ~ link %}
+                <div id="{{ link }}" class="key-article-item" data-section="kgsi">
+                  <h2>{{ title }}</h2>
+                  <div class="key-article-item-content">
+                    {{ body|raw }}
+                  </div>
+                </div>
+              {% endfor %}
+
+              {# General Risk Factors items #}
+              {% for field_element in element['#object'].field_ka_general_risk_factors.value %}
+                {% set field_ka_general_risk_factors = drupal_entity('node', field_element.target_id, 'full') %}
+                {% set title = field_ka_general_risk_factors['#node'].title.value %}
+                {% set link = 'kgrf-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
+                {% set body = field_ka_general_risk_factors['#node'].body.value %}
+                {% set nextHref = '#' ~ link %}
+                <div id="{{ link }}" class="key-article-item" data-section="kgrf">
+                  <h2>{{ title }}</h2>
+                  <div class="key-article-item-content">
+                    {{ body|raw }}
+                  </div>
+                </div>
+              {% endfor %}
+
+              {# General Risk Factors items #}
+              {% for field_element in element['#object'].field_ka_specific_risk_factors.value %}
+                {% set field_ka_specific_risk_factors = drupal_entity('node', field_element.target_id, 'full') %}
+                {% set title = field_ka_specific_risk_factors['#node'].title.value %}
+                {% set link = 'ksrf-' ~ title|replace({' ' : "", ',' : "", '.' : "", '(' : "", ')' : ""}) %}
+                {% set body = field_ka_specific_risk_factors['#node'].body.value %}
+                {% set nextHref = '#' ~ link %}
+                <div id="{{ link }}" class="key-article-item" data-section="ksrf">
+                  <h2>{{ title }}</h2>
+                  <div class="key-article-item-content">
+                    {{ body|raw }}
+                  </div>
+                </div>
+              {% endfor %}
+
+            </div>
+            <span class="key-article-previous"></span>
+            <span class="key-article-next"></span>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  {% endif %}
+{% else %}
+  <div{{ attributes.addClass(classes) }}>
+    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+    {% if multiple %}
+    <div class='field__items'>
+      {% endif %}
+      {% for item in items %}
+        <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+      {% endfor %}
+      {% if multiple %}
+    </div>
+    {% endif %}
+  </div>
+{% endif %}
