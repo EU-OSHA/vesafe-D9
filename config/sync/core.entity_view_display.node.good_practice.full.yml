@@ -1,8 +1,9 @@
-uuid: 30a03c27-6f4f-44cd-af13-d73a67465690
+uuid: ea75636d-f88e-4da1-87ee-ab76585d83a2
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.good_practice.body
     - field.field.node.good_practice.field_additional_resources
     - field.field.node.good_practice.field_gp_external_links
@@ -23,14 +24,19 @@ dependencies:
     - node.type.good_practice
   module:
     - datetime
+    - layout_builder
     - link
     - metatag
     - text
     - user
-id: node.good_practice.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.good_practice.full
 targetEntityType: node
 bundle: good_practice
-mode: default
+mode: full
 content:
   body:
     label: hidden

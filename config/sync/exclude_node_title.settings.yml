@@ -28,6 +28,7 @@ content_type_modes:
     - token
   good_practice:
     - full
+    - related_good_practices
     - rss
     - search_index
     - search_result
