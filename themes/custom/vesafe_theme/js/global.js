@@ -12,6 +12,55 @@
    *
    * @type {Drupal~behavior}
    */
+  Drupal.behaviors.VesafeAdditionalResources = {
+    attach: function (context, settings) {
+      var $view = $('div.field.field--name-field-additional-resources')
+
+      // Run the function if the view exists.
+      if ($view !== 'undefined' && $view !== '' && $view.length !== 0) {
+        // Include the button
+        $view.append($('<a href="#" class="additional-resources-link-more">' + Drupal.t("See more links") + '</a>').on('click', function () {
+          if ($(this).hasClass('additional-resources-link-less')) {
+            // Hide the elements.
+            hideItems($view);
+            $(this).text(Drupal.t('See more links')).removeClass('additional-resources-link-less').addClass('additional-resources-link-more')
+          }
+          else {
+            // Show the elements.
+            showItems($view);
+            $(this).text(Drupal.t('See fewer links')).removeClass('additional-resources-link-more').addClass('additional-resources-link-less')
+          }
+        }));
+
+        // Hide the elements by default.
+        hideItems($view);
+      }
+
+      // Function to hide the view elements, by default only will be shown 4.
+      function hideItems(view) {
+        var $items = view.find('div.field__item');
+        $items.each(function (i) {
+          if (i > 3) {
+            $($items[i]).hide();
+          }
+        });
+      }
+
+      // Function to show the view elements.
+      function showItems(view) {
+        var $items = view.find('div.field__item');
+        $items.each(function (i) {
+          $($items[i]).show();
+        });
+      }
+    }
+  };
+
+  /**
+   * Attaches the key article links.
+   *
+   * @type {Drupal~behavior}
+   */
   Drupal.behaviors.VesafeKeyArticle = {
     attach: function (context, settings) {
 

@@ -48,9 +48,8 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: some
+        type: none
         options:
-          items_per_page: 5
           offset: 0
       style:
         type: slick
@@ -118,14 +117,14 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 0
+            max_length: 10
             word_boundary: true
             ellipsis: true
-            more_link: false
-            more_link_text: ''
+            more_link: true
+            more_link_text: 'Read more'
             more_link_path: ''
             strip_tags: false
-            trim: false
+            trim: true
             preserve_tags: ''
             html: false
           element_type: ''
