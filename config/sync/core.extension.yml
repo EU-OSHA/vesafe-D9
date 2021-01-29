@@ -2,6 +2,7 @@ module:
   admin_toolbar: 0
   automated_cron: 0
   big_pipe: 0
+  blazy: 0
   block: 0
   block_content: 0
   block_form_alter: 0
@@ -41,6 +42,9 @@ module:
   layout_builder: 0
   layout_discovery: 0
   layoutcomponents: 0
+  lc_simple_text: 0
+  lc_simple_title: 0
+  lc_slick: 0
   link: 0
   media: 0
   media_library: 0
@@ -59,6 +63,9 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
+  slick: 0
+  slick_ui: 0
+  slick_views: 0
   sliderwidget: 0
   system: 0
   taxonomy: 0
