@@ -1,0 +1,138 @@
+uuid: c34c2019-c661-4629-821a-9956cbb90aed
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.good_practice
+    - node.type.key_article
+  module:
+    - content_moderation
+_core:
+  default_config_hash: Ln7YAg2WXZ-5wn9ib-v9qOKFxF2YZLnwSKtX-V455hE
+id: editorial
+label: Editorial
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      label: Archived
+      weight: 2
+      published: false
+      default_revision: true
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -4
+    final_draft:
+      published: false
+      default_revision: false
+      label: 'Final Draft'
+      weight: -3
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 1
+    ready_to_publish:
+      published: false
+      default_revision: false
+      label: 'Ready To Publish'
+      weight: 0
+    to_be_approved:
+      published: false
+      default_revision: false
+      label: 'To Be Approved'
+      weight: -1
+    to_be_reviewed:
+      published: false
+      default_revision: false
+      label: 'To Be Reviewed'
+      weight: -2
+  transitions:
+    archive:
+      label: Archive
+      from:
+        - published
+      to: archived
+      weight: 2
+    archived_draft:
+      label: 'Restore to Draft'
+      from:
+        - archived
+      to: draft
+      weight: 3
+    archived_published:
+      label: Restore
+      from:
+        - archived
+      to: published
+      weight: 4
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: -7
+      from:
+        - draft
+        - published
+    final_draft:
+      label: 'Send to final draft'
+      from:
+        - draft
+      to: final_draft
+      weight: -6
+    publish:
+      label: Publish
+      to: published
+      weight: -2
+      from:
+        - draft
+        - published
+        - ready_to_publish
+    send_back_to_be_reviewed:
+      label: 'Send back to be reviewed'
+      from:
+        - to_be_approved
+      to: to_be_reviewed
+      weight: -1
+    send_back_to_final_draft:
+      label: 'Send back to final draft'
+      from:
+        - to_be_reviewed
+      to: final_draft
+      weight: 0
+    send_for_review:
+      label: 'Send to be reviewed'
+      from:
+        - final_draft
+      to: to_be_reviewed
+      weight: -5
+    send_to_be_approved:
+      label: 'Send to be approved'
+      from:
+        - to_be_reviewed
+      to: to_be_approved
+      weight: -4
+    send_to_be_approved_from_final_draft:
+      label: 'Send to be approved from final draft'
+      from:
+        - final_draft
+      to: to_be_approved
+      weight: 1
+    send_to_publish_from_reviewed:
+      label: 'Send to publish from reviewed'
+      from:
+        - to_be_reviewed
+      to: published
+      weight: 6
+    send_to_ready_to_publish:
+      label: 'Send to ready to publish'
+      from:
+        - to_be_approved
+      to: ready_to_publish
+      weight: -3
+  entity_types:
+    node:
+      - good_practice
+      - key_article
+  default_moderation_state: draft
