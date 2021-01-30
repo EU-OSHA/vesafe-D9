@@ -45,6 +45,8 @@ third_party_settings:
                   settings:
                     color: '#000000'
                     opacity: '1'
+                  color: '#000000'
+                  opacity: '1'
                 title_type: h1
                 title_align: text-left
               sizing:
@@ -56,13 +58,15 @@ third_party_settings:
                   settings:
                     color: '#f75461'
                     opacity: '1'
+                  color: '#f75461'
+                  opacity: '1'
               spacing:
                 title_margin_top: '0'
                 title_margin_bottom: '0'
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--qpiB5rtoslo
+            layout_settings__container__title__container__active_tab: ''
           section:
             general:
               basic:
@@ -72,7 +76,7 @@ third_party_settings:
                 section_delta: '0'
               structure:
                 section_structure: '12'
-                section_carousel: 0
+                section_carousel: false
                 section_carousel_slick: none
             styles:
               background:
@@ -81,6 +85,8 @@ third_party_settings:
                   settings:
                     color: ''
                     opacity: '1'
+                  color: ''
+                  opacity: '1'
               sizing:
                 full_width: 0
                 full_width_container: 0
@@ -94,7 +100,7 @@ third_party_settings:
                 extra_class: ''
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--WG5jWXfLvaI
+            layout_settings__container__section__container__active_tab: ''
           regions:
             first:
               title:
@@ -106,8 +112,6 @@ third_party_settings:
                     settings:
                       color: '#000000'
                       opacity: '1'
-                    color: '#000000'
-                    opacity: '1'
                   size: '0'
                   align: text-left
                   border: none
@@ -116,8 +120,6 @@ third_party_settings:
                     settings:
                       color: '#f75461'
                       opacity: '1'
-                    color: '#f75461'
-                    opacity: '1'
                 border:
                   border: none
                   size: '0'
@@ -125,8 +127,6 @@ third_party_settings:
                     settings:
                       color: ''
                       opacity: '1'
-                    color: ''
-                    opacity: '1'
                   radius_top_left: '0'
                   radius_top_right: '0'
                   radius_bottom_left: '0'
@@ -136,17 +136,15 @@ third_party_settings:
                     settings:
                       color: ''
                       opacity: '1'
-                    color: ''
-                    opacity: '1'
                 spacing:
-                  paddings: 0
+                  paddings: 1
                   paddings_left: 0
                   paddings_right: 0
                 misc:
                   extra_class: ''
               general:
                 title: ''
-              layout_settings__container__regions__first__active_tab: ''
+              layout_settings__container__regions__first__active_tab: edit-layout-settings-container-regions-first-styles--JxKnfQwJTDc
         components:
           d3539560-e9b5-46ef-8d4d-6c49cf348876:
             uuid: d3539560-e9b5-46ef-8d4d-6c49cf348876

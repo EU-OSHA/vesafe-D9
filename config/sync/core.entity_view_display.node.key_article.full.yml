@@ -635,11 +635,11 @@ third_party_settings:
                 title: ''
               layout_settings__container__regions__first__active_tab: ''
         components:
-          205dd448-a4a5-404f-8a36-d62eac98773d:
-            uuid: 205dd448-a4a5-404f-8a36-d62eac98773d
+          7d903624-6249-40a9-aed5-630b3fbf3d0b:
+            uuid: 7d903624-6249-40a9-aed5-630b3fbf3d0b
             region: first
             configuration:
-              id: 'views_block:good_practices-good_practices_key_article'
+              id: 'views_block:good_practices-block_1'
               label: ''
               provider: views
               label_display: visible

@@ -13,20 +13,25 @@ content_types:
   thesaurus: all
 content_type_modes:
   article:
+    - card
     - full
+    - related_good_practices
     - rss
     - search_index
     - search_result
     - teaser
     - token
   did_you_know_slide:
+    - card
     - full
+    - related_good_practices
     - rss
     - search_index
     - search_result
     - teaser
     - token
   good_practice:
+    - card
     - full
     - related_good_practices
     - rss
@@ -35,28 +40,36 @@ content_type_modes:
     - teaser
     - token
   key_article:
+    - card
     - full
+    - related_good_practices
     - rss
     - search_index
     - search_result
     - teaser
     - token
   key_article_theme:
+    - card
     - full
+    - related_good_practices
     - rss
     - search_index
     - search_result
     - teaser
     - token
   page:
+    - card
     - full
+    - related_good_practices
     - rss
     - search_index
     - search_result
     - teaser
     - token
   thesaurus:
+    - card
     - full
+    - related_good_practices
     - rss
     - search_index
     - search_result

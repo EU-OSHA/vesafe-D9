@@ -42,6 +42,7 @@ module:
   layout_builder: 0
   layout_discovery: 0
   layoutcomponents: 0
+  lc_simple_card: 0
   lc_simple_text: 0
   lc_simple_title: 0
   lc_slick: 0
@@ -78,6 +79,7 @@ module:
   user: 0
   video_embed_field: 0
   views_ui: 0
+  extlink: 1
   pathauto: 1
   xmlsitemap: 1
   views: 10
