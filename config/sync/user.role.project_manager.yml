@@ -1,0 +1,41 @@
+uuid: 303b3d5b-ec23-4aa8-a9f1-cf67c337a8ae
+langcode: en
+status: true
+dependencies: {  }
+id: project_manager
+label: 'Project Manager'
+weight: -6
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'create good_practice content'
+  - 'edit any good_practice content'
+  - 'edit own good_practice content'
+  - 'revert all revisions'
+  - 'revert good_practice revisions'
+  - 'use editorial transition archive'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition archived_published'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition final_draft'
+  - 'use editorial transition publish'
+  - 'use editorial transition send_back_to_be_reviewed'
+  - 'use editorial transition send_back_to_draft'
+  - 'use editorial transition send_back_to_final_draft'
+  - 'use editorial transition send_for_review'
+  - 'use editorial transition send_to_be_approved'
+  - 'use editorial transition send_to_be_approved_from_final_draft'
+  - 'use editorial transition send_to_publish_from_reviewed'
+  - 'use editorial transition send_to_ready_to_publish'
+  - 'use editorial transition send_to_ready_to_publish_from_draft'
+  - 'use editorial transition send_to_ready_to_publish_from_published'
+  - 'use editorial transition send_to_ready_to_publish_from_to_be_reviewed'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view good_practice revisions'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view the administration theme'

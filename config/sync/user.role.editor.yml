@@ -1,0 +1,20 @@
+uuid: 6ea2c9f1-df32-41f7-ba2c-c55b9997f428
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: -8
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'create good_practice content'
+  - 'create key_article content'
+  - 'edit own good_practice content'
+  - 'edit own key_article content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition final_draft'
+  - 'view any unpublished content'
+  - 'view the administration theme'

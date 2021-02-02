@@ -1,0 +1,27 @@
+uuid: e2a4d962-5c9d-4b75-a50a-f43cd59016d8
+langcode: en
+status: true
+dependencies: {  }
+id: reviewer
+label: Reviewer
+weight: -7
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'create good_practice content'
+  - 'create key_article content'
+  - 'edit any good_practice content'
+  - 'edit any key_article content'
+  - 'edit own good_practice content'
+  - 'edit own key_article content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition send_back_to_draft'
+  - 'use editorial transition send_for_review'
+  - 'view any unpublished content'
+  - 'view good_practice revisions'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view the administration theme'

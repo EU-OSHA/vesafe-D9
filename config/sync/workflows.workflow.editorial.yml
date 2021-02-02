@@ -79,6 +79,8 @@ type_settings:
       label: 'Send to final draft'
       from:
         - draft
+        - published
+        - ready_to_publish
       to: final_draft
       weight: -6
     publish:
@@ -95,6 +97,12 @@ type_settings:
         - to_be_approved
       to: to_be_reviewed
       weight: -1
+    send_back_to_draft:
+      label: 'Send back to draft'
+      from:
+        - final_draft
+      to: draft
+      weight: 7
     send_back_to_final_draft:
       label: 'Send back to final draft'
       from:
@@ -131,6 +139,24 @@ type_settings:
         - to_be_approved
       to: ready_to_publish
       weight: -3
+    send_to_ready_to_publish_from_draft:
+      label: 'Send to ready to publish from draft'
+      from:
+        - draft
+      to: ready_to_publish
+      weight: 8
+    send_to_ready_to_publish_from_published:
+      label: 'Send to ready to publish from published'
+      from:
+        - published
+      to: ready_to_publish
+      weight: 9
+    send_to_ready_to_publish_from_to_be_reviewed:
+      label: 'Send to ready to publish from to be reviewed'
+      from:
+        - to_be_reviewed
+      to: ready_to_publish
+      weight: 10
   entity_types:
     node:
       - good_practice
