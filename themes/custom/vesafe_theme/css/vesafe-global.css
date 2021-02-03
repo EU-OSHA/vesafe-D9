@@ -1,3 +1,151 @@
+@charset "UTF-8";
+/*Font Family*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@font-face {
+  font-family: "Open Sans", sans-serif;
+}
+/*!* Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome * License - http://fontawesome.io/license(Font:SIL OFL 1.1,CSS:MIT License) */
+@font-face {
+  font-family: "FontAwesome";
+  src: url("https://static.hsappstatic.net/content_shared_assets/static-1.3779/fonts/fontawesome-webfont.eot?v=4.1.0");
+  src: url("https://static.hsappstatic.net/content_shared_assets/static-1.3779/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("https://static.hsappstatic.net/content_shared_assets/static-1.3779/fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("https://static.hsappstatic.net/content_shared_assets/static-1.3779/fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("https://static.hsappstatic.net/content_shared_assets/static-1.3779/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Font colours */
+.text-color-black {
+  color: #333;
+}
 
+.text-color-red {
+  color: #ea4a5e;
+}
+
+.text-color-white {
+  color: #FFF;
+}
+
+/* background colours */
+.bg-color-blue {
+  background: #323a93;
+}
+
+.bg-color-red {
+  background: #ea4a5e;
+}
+
+.bg-color-red-hover {
+  background: #a02b3a;
+}
+
+.bg-color-black {
+  background: #323232;
+}
+
+.bg-color-grey {
+  background: #f7f7f7;
+}
+
+.bg-color-grey-lines {
+  background: #dcdcdc;
+}
+
+.bg-color-grey-dark {
+  background: #9c9c9c;
+}
+
+.bg-color-white {
+  background: #FFF;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+.element-invisible {
+  display: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #FFF;
+}
+
+.breadcrumb a {
+  color: #333;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  font-weight: bold;
+}
+.breadcrumb span.last {
+  color: #ea4a5e;
+}
+
+h1, h2, label {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding-left: 0;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+h2 a {
+  text-decoration: none;
+}
+h2 a:hover {
+  text-decoration: underline;
+  transition: all 1s;
+}
+
+h2.views-field-title a {
+  font-size: 1.2rem;
+  color: #ea4a5e;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: #333;
+}
+h3 a {
+  color: #333;
+  text-decoration: none;
+}
+h3 a:hover {
+  text-decoration: underline;
+  transition: all 1s;
+}
+
+a {
+  color: #ea4a5e;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+a[target=_blank]:after {
+  content: "";
+  font-family: "FontAwesome";
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=vesafe-global.css.map */

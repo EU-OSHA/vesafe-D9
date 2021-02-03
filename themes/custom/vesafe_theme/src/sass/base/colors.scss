@@ -1,1 +1,68 @@
+/*Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*!* Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome * License - http://fontawesome.io/license(Font:SIL OFL 1.1,CSS:MIT License) */
+@font-face {
+  font-family:'FontAwesome';
+  src:url('https://static.hsappstatic.net/content_shared_assets/static-1.3779/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src:url('https://static.hsappstatic.net/content_shared_assets/static-1.3779/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'),
+  url('https://static.hsappstatic.net/content_shared_assets/static-1.3779/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'),
+  url('https://static.hsappstatic.net/content_shared_assets/static-1.3779/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'),
+  url('https://static.hsappstatic.net/content_shared_assets/static-1.3779/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight:normal;
+  font-style:normal;
+}
+
+/* Font colours */
+$text-color-black: #333;
+$text-color-red: #ea4a5e;
+$text-color-white: #FFF;
+
+.text-color-black{
+  color: $text-color-black;
+}
+.text-color-red{
+  color: $text-color-red;
+}
+.text-color-white{
+  color: $text-color-white;
+}
+
+/* background colours */
+$bg-color-blue: #323a93;
+$bg-color-red: #ea4a5e;
+$bg-color-red-hover: #a02b3a;
+$bg-color-black: #323232;
+$bg-color-grey: #f7f7f7;
+$bg-color-grey-lines: #dcdcdc;
+$bg-color-grey-dark: #9c9c9c;
+$bg-color-white: #FFF;
+
+.bg-color-blue{
+  background: $bg-color-blue;
+}
+.bg-color-red{
+  background: $bg-color-red;
+}
+.bg-color-red-hover{
+  background: $bg-color-red-hover;
+}
+.bg-color-black{
+  background: $bg-color-black;
+}
+.bg-color-grey{
+  background: $bg-color-grey;
+}
+.bg-color-grey-lines{
+  background: $bg-color-grey-lines;
+}
+.bg-color-grey-dark{
+  background: $bg-color-grey-dark;
+}
+.bg-color-white{
+  background: $bg-color-white;
+}

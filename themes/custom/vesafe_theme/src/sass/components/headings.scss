@@ -1,0 +1,46 @@
+
+h1, h2, label{
+  font-family: 'Open Sans',sans-serif;
+  color: $text-color-black;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 1.6rem;
+  padding-left: 0;
+  font-weight: 600;
+  margin-bottom: 22px;
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+      transition: all 1s;
+    }
+  }
+}
+
+h2.views-field-title{
+  a{
+    font-size: 1.2rem;
+    color: $text-color-red;
+    font-weight: bold;
+  }
+}
+
+h3{
+  font-size: 1.1rem;
+  color: $text-color-black;
+  a{
+    color: $text-color-black;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+      transition: all 1s;
+    }
+  }
+}

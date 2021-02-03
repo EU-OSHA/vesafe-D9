@@ -1,0 +1,12 @@
+.breadcrumb{
+  a{
+    color: $text-color-black;
+    text-decoration: none;
+    &:hover{
+      font-weight: bold;
+    }
+  }
+  span.last{
+    color: $text-color-red;
+  }
+}

@@ -1,0 +1,20 @@
+
+
+*{
+  margin:0px;
+  padding:0px;
+}
+
+.clearfix{
+  clear: both;
+  float: none;
+}
+
+.element-invisible{
+  display: none;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background: $bg-color-white;
+}
