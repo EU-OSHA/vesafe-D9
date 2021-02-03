@@ -7,4 +7,20 @@ label: Approver
 weight: -5
 is_admin: null
 permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access devel information'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'edit any good_practice content'
+  - 'edit any key_article content'
+  - 'edit own good_practice content'
+  - 'edit own key_article content'
+  - 'use editorial transition send_back_to_be_reviewed'
+  - 'use editorial transition send_for_review'
+  - 'use editorial transition send_to_be_approved_from_final_draft'
+  - 'use editorial transition send_to_ready_to_publish_from_to_be_reviewed'
+  - 'view any unpublished content'
+  - 'view good_practice revisions'
+  - 'view own unpublished content'
   - 'view the administration theme'

@@ -209,6 +209,41 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 1
+          e59b21e9-42fb-404a-a093-0ac5cc105d12:
+            uuid: e59b21e9-42fb-404a-a093-0ac5cc105d12
+            region: first
+            configuration:
+              id: 'field_block:node:good_practice:menu_link'
+              label: 'Menu link'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: Array
+                      custom: Array
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layoutcomponents_one_column
@@ -367,7 +402,12 @@ id: node.good_practice.related_good_practices
 targetEntityType: node
 bundle: good_practice
 mode: related_good_practices
-content: {  }
+content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: first
 hidden:
   body: true
   field_additional_resources: true

@@ -16,5 +16,6 @@ permissions:
   - 'edit own key_article content'
   - 'use editorial transition create_new_draft'
   - 'use editorial transition final_draft'
-  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
   - 'view the administration theme'

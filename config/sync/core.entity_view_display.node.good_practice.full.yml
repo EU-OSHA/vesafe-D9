@@ -184,6 +184,21 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
+            weight: 1
+          0410777d-df54-429f-b67e-456fd84e9b2b:
+            uuid: 0410777d-df54-429f-b67e-456fd84e9b2b
+            region: first
+            configuration:
+              id: 'extra_field_block:node:good_practice:content_moderation_control'
+              label: 'Moderation control'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
             weight: 0
         third_party_settings: {  }
       -
@@ -334,7 +349,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layoutcomponents_two_column
@@ -770,21 +785,6 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 4
-          0410777d-df54-429f-b67e-456fd84e9b2b:
-            uuid: 0410777d-df54-429f-b67e-456fd84e9b2b
-            region: first
-            configuration:
-              id: 'extra_field_block:node:good_practice:content_moderation_control'
-              label: 'Moderation control'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                settings: {  }
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 0
         third_party_settings: {  }
       -
         layout_id: layoutcomponents_one_column
