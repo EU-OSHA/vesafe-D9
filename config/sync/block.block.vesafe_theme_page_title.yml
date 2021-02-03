@@ -9,7 +9,7 @@ _core:
 id: vesafe_theme_page_title
 theme: vesafe_theme
 region: content
-weight: -50
+weight: -4
 provider: null
 plugin: page_title_block
 settings:

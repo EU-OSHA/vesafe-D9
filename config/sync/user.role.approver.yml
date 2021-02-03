@@ -1,0 +1,10 @@
+uuid: 9dd79796-704f-4e8a-8740-9c6a06d749aa
+langcode: en
+status: true
+dependencies: {  }
+id: approver
+label: Approver
+weight: -5
+is_admin: null
+permissions:
+  - 'view the administration theme'
