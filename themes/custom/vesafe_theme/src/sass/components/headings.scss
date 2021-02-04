@@ -15,6 +15,7 @@ h2{
   padding-left: 0;
   font-weight: 600;
   margin-bottom: 22px;
+  margin-top: 22px;
   a{
     text-decoration: none;
     &:hover{
@@ -59,4 +60,79 @@ h3{
   background-size: auto;
   margin-bottom: 30px;
   border:1px solid red;
+  .field--name-title{
+    border-bottom: none;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 15px;
+    font-size: 2.2em;
+  }
+}
+
+
+.block-field-blocknodegood-practicefield-gp-what-is-it h2{
+  &:before{
+    content: "\f128";
+    font-family: "FontAwesome";
+    font-size: 1.375rem;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+    font-weight: normal;
+  }
+}
+.block-field-blocknodegood-practicefield-gp-who-is-for h2{
+  &:before{
+    content: "\f0c0";
+    font-family: "FontAwesome";
+    font-size: 1.375rem;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+    font-weight: normal;
+  }
+}
+
+.block-field-blocknodegood-practicefield-gp-what-is-the-benefit h2{
+  &:before{
+    content: "\f024";
+    font-family: "FontAwesome";
+    font-size: 1.375rem;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+    font-weight: normal;
+  }
+}
+
+.block-field-blocknodegood-practicefield-gp-getting-started h2{
+  &:before{
+    content: "\f041";
+    font-family: "FontAwesome";
+    font-size: 1.375rem;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+    font-weight: normal;
+  }
+}
+
+.block-views-blockgood-practices-good-practices-key-article h2{
+  &:before{
+    content: "\f0e8";
+    font-family: "FontAwesome";
+    font-size: 1.375rem;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+    font-weight: normal;
+  }
+
+}
+
+.block-field-blocknodegood-practicefield-additional-resources h2{
+  &:before{
+    content: "\f0c1";
+    font-family: "FontAwesome";
+    font-size: 1.375rem;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+    font-weight: normal;
+  }
+
 }

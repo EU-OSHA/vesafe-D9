@@ -88,6 +88,49 @@ body {
   color: #ea4a5e;
 }
 
+.slick__arrow {
+  top: 0;
+  right: 0;
+  display: inline-block;
+  bottom: initial;
+  height: auto;
+  margin-top: 0px;
+  position: absolute;
+  width: auto;
+  z-index: 2;
+  transform: translateY(-100%);
+  text-align: right;
+}
+.slick-arrow {
+  border: 0;
+  border-radius: 0%;
+  font-size: 0;
+  height: 45px;
+  pointer-events: auto;
+  position: relative;
+  top: initial;
+  transform: translateY(0%);
+  width: 26px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #333;
+  margin-left: 4px;
+}
+.slick-arrow:before {
+  color: inherit;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.slick-arrow.slick-prev:before {
+  content: "<";
+}
+.slick-arrow.slick-next:before {
+  content: ">";
+}
+
 h1, h2, label {
   font-family: "Open Sans", sans-serif;
   color: #333;
@@ -104,6 +147,7 @@ h2 {
   padding-left: 0;
   font-weight: 600;
   margin-bottom: 22px;
+  margin-top: 22px;
 }
 h2 a {
   text-decoration: none;
@@ -145,6 +189,67 @@ h3 a:hover {
   margin-bottom: 30px;
   border: 1px solid red;
 }
+.article-header .field--name-title {
+  border-bottom: none;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 15px;
+  font-size: 2.2em;
+}
+
+.block-field-blocknodegood-practicefield-gp-what-is-it h2:before {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 1.375rem;
+  margin-right: 10px;
+  vertical-align: text-bottom;
+  font-weight: normal;
+}
+
+.block-field-blocknodegood-practicefield-gp-who-is-for h2:before {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 1.375rem;
+  margin-right: 10px;
+  vertical-align: text-bottom;
+  font-weight: normal;
+}
+
+.block-field-blocknodegood-practicefield-gp-what-is-the-benefit h2:before {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 1.375rem;
+  margin-right: 10px;
+  vertical-align: text-bottom;
+  font-weight: normal;
+}
+
+.block-field-blocknodegood-practicefield-gp-getting-started h2:before {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 1.375rem;
+  margin-right: 10px;
+  vertical-align: text-bottom;
+  font-weight: normal;
+}
+
+.block-views-blockgood-practices-good-practices-key-article h2:before {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 1.375rem;
+  margin-right: 10px;
+  vertical-align: text-bottom;
+  font-weight: normal;
+}
+
+.block-field-blocknodegood-practicefield-additional-resources h2:before {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 1.375rem;
+  margin-right: 10px;
+  vertical-align: text-bottom;
+  font-weight: normal;
+}
 
 a {
   color: #ea4a5e;
@@ -162,10 +267,21 @@ a[target=_blank]:after {
   font-weight: bold;
 }
 
+.field--name-field-media-image.field--type-image {
+  float: none;
+  margin: 0px;
+  border: 2px solid green;
+}
+
+.field--type-image img, .field--name-field-user-picture img {
+  margin: 0px;
+}
+
 .node--view-mode-related-good-practices {
   padding: 0px 7px;
   /* Image */
   /* Text */
+  /* Link */
 }
 .node--view-mode-related-good-practices .field--type-entity-reference {
   margin: 0px;
@@ -215,6 +331,15 @@ a[target=_blank]:after {
 .node--view-mode-related-good-practices .block-field-blocknodegood-practicetitle .field--name-title {
   font-size: 12.8px;
   ine-height: 18.2857px;
+}
+.node--view-mode-related-good-practices .good_practices_key_article-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 10;
+  cursor: pointer;
 }
 .node--view-mode-related-good-practices:hover .field--type-image img {
   transform: scale(1.2);

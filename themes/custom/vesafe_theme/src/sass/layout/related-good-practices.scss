@@ -73,6 +73,17 @@
     ine-height:18.2857px;
   }
 
+  /* Link */
+  .good_practices_key_article-link{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+    cursor:pointer;
+  }
+
   &:hover{
     .field--type-image img{
       transform:scale(1.2);
