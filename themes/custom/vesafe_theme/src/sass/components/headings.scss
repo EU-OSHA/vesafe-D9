@@ -49,17 +49,15 @@ h3{
 
 .article-header{
   margin-top: 15px;
-  //background-color: grey;
   text-align: center;
   overflow: hidden;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image: url(../../../images/lineal-background.png);
+  background-image: url(/sites/vesafe/themes/custom/vesafe_theme/images/lineal-background.png);
   background-repeat: repeat;
   background-position: center top;
   background-size: auto;
   margin-bottom: 30px;
-  border:1px solid red;
   .field--name-title{
     border-bottom: none;
     margin: 0px;
@@ -122,10 +120,14 @@ h3{
     vertical-align: text-bottom;
     font-weight: normal;
   }
-
 }
 
-.block-field-blocknodegood-practicefield-additional-resources h2{
+.block-field-blocknodegood-practicefield-gp-external-links h2{
+  margin-top: 22px;
+  margin-bottom: 11px;
+  font-size: 1.25rem;
+  font-weight: 700;
+
   &:before{
     content: "\f0c1";
     font-family: "FontAwesome";
@@ -134,5 +136,20 @@ h3{
     vertical-align: text-bottom;
     font-weight: normal;
   }
+}
 
+.block-field-blocknodegood-practicefield-additional-resources h2{
+  margin-top: 22px;
+  margin-bottom: 11px;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  &:before{
+    content: "\f055";
+    font-family: "FontAwesome";
+    font-size: 1.375rem;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+    font-weight: normal;
+  }
 }

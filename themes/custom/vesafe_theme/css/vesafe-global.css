@@ -88,6 +88,9 @@ body {
   color: #ea4a5e;
 }
 
+.slick__slide {
+  padding: 0px 7px;
+}
 .slick__arrow {
   top: 0;
   right: 0;
@@ -182,12 +185,11 @@ h3 a:hover {
   overflow: hidden;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image: url(../../../images/lineal-background.png);
+  background-image: url(/sites/vesafe/themes/custom/vesafe_theme/images/lineal-background.png);
   background-repeat: repeat;
   background-position: center top;
   background-size: auto;
   margin-bottom: 30px;
-  border: 1px solid red;
 }
 .article-header .field--name-title {
   border-bottom: none;
@@ -242,8 +244,29 @@ h3 a:hover {
   font-weight: normal;
 }
 
-.block-field-blocknodegood-practicefield-additional-resources h2:before {
+.block-field-blocknodegood-practicefield-gp-external-links h2 {
+  margin-top: 22px;
+  margin-bottom: 11px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.block-field-blocknodegood-practicefield-gp-external-links h2:before {
   content: "";
+  font-family: "FontAwesome";
+  font-size: 1.375rem;
+  margin-right: 10px;
+  vertical-align: text-bottom;
+  font-weight: normal;
+}
+
+.block-field-blocknodegood-practicefield-additional-resources h2 {
+  margin-top: 22px;
+  margin-bottom: 11px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.block-field-blocknodegood-practicefield-additional-resources h2:before {
+  content: "";
   font-family: "FontAwesome";
   font-size: 1.375rem;
   margin-right: 10px;
@@ -259,26 +282,43 @@ a:hover {
   text-decoration: underline;
 }
 
+a[target=_blank] {
+  font-size: 1rem;
+}
 a[target=_blank]:after {
   content: "";
   font-family: "FontAwesome";
   display: inline-block;
   margin-left: 5px;
   font-weight: bold;
+  font-size: 0.875rem;
 }
 
 .field--name-field-media-image.field--type-image {
   float: none;
   margin: 0px;
-  border: 2px solid green;
+}
+.field--name-field-media-image.field--type-image img {
+  width: 100%;
 }
 
 .field--type-image img, .field--name-field-user-picture img {
   margin: 0px;
 }
 
+.field--name-field-risks,
+.field--name-field-vehicles {
+  display: inline-flex;
+  flex-direction: row;
+  margin: 0px;
+  font-size: 0.875rem;
+}
+
+.field--name-field-media-image.field--type-entity-reference {
+  margin-bottom: 10px;
+}
+
 .node--view-mode-related-good-practices {
-  padding: 0px 7px;
   /* Image */
   /* Text */
   /* Link */

@@ -22,7 +22,10 @@
 @import 'layout/header';
 @import 'layout/menu';
 @import 'layout/section';
-@import 'layout/related-good-practices';
+
+
+@import 'displays/good-practices-detail';
+@import 'displays/related-good-practices';
 
 @import 'responsive/common/common-responsive';
 @import 'responsive/mobile/mobile-responsive';
