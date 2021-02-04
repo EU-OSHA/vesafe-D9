@@ -64,7 +64,7 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--sD0N7Tv7i3Y
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--sR_4TOhqNdg
           section:
             general:
               basic:
@@ -93,10 +93,10 @@ third_party_settings:
                 top_padding: '0'
                 bottom_padding: '0'
               misc:
-                extra_class: good-practice-title-container
+                extra_class: 'good-practice-title-container, article-header'
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-styles--qcBjVVQu1qQ
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-styles--FdotBdjaKaI
           regions:
             first:
               title:
@@ -183,21 +183,6 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
-            weight: 1
-          0410777d-df54-429f-b67e-456fd84e9b2b:
-            uuid: 0410777d-df54-429f-b67e-456fd84e9b2b
-            region: first
-            configuration:
-              id: 'extra_field_block:node:good_practice:content_moderation_control'
-              label: 'Moderation control'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                settings: {  }
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
             additional: {  }
             weight: 0
         third_party_settings: {  }
@@ -349,7 +334,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 1
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layoutcomponents_two_column
@@ -785,6 +770,21 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 4
+          0410777d-df54-429f-b67e-456fd84e9b2b:
+            uuid: 0410777d-df54-429f-b67e-456fd84e9b2b
+            region: first
+            configuration:
+              id: 'extra_field_block:node:good_practice:content_moderation_control'
+              label: 'Moderation control'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layoutcomponents_one_column

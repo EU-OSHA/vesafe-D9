@@ -81,8 +81,6 @@ module:
   user: 0
   video_embed_field: 0
   views_ui: 0
-  webform: 0
-  webform_ui: 0
   workflows: 0
   extlink: 1
   pathauto: 1
