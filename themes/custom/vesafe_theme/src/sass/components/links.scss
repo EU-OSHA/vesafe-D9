@@ -4,7 +4,8 @@ a{
   color: $text-color-red;
   text-decoration: none;
   &:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    color: $text-color-red;
   }
 }
 

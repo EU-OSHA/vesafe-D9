@@ -57,7 +57,7 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--zeaWxjxHPXo
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--iaFJ41eYanM
           section:
             general:
               basic:
@@ -67,7 +67,7 @@ third_party_settings:
                 section_delta: '0'
               structure:
                 section_structure: '12'
-                section_carousel: false
+                section_carousel: 0
                 section_carousel_slick: none
             styles:
               background:
@@ -86,10 +86,10 @@ third_party_settings:
                 top_padding: '0'
                 bottom_padding: '0'
               misc:
-                extra_class: safe-driving-work-title-container
+                extra_class: 'safe-driving-work-title-container, article-header'
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-styles--VMCQr9hRK_I
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-styles--W77czDx4my8
           regions:
             first:
               title:
@@ -212,6 +212,16 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 1
+          eac58ea3-7489-4329-bc46-69da34a3ad64:
+            uuid: eac58ea3-7489-4329-bc46-69da34a3ad64
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:key_article:content_moderation_control'
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layoutcomponents_one_column
@@ -653,7 +663,12 @@ id: node.key_article.full
 targetEntityType: node
 bundle: key_article
 mode: full
-content: {  }
+content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: first
 hidden:
   body: true
   field_ka_general_risk_factors: true

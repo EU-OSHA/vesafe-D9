@@ -88,6 +88,9 @@ body {
   color: #ea4a5e;
 }
 
+.slick {
+  padding: 0 24px;
+}
 .slick__slide {
   padding: 0px 7px;
 }
@@ -103,6 +106,7 @@ body {
   z-index: 2;
   transform: translateY(-100%);
   text-align: right;
+  padding: 0 24px;
 }
 .slick-arrow {
   border: 0;
@@ -126,6 +130,9 @@ body {
   color: inherit;
   font-size: 2rem;
   font-weight: bold;
+}
+.slick-arrow:hover:before {
+  color: #ea4a5e;
 }
 .slick-arrow.slick-prev:before {
   content: "<";
@@ -204,7 +211,7 @@ h3 a:hover {
   font-family: "FontAwesome";
   font-size: 1.375rem;
   margin-right: 10px;
-  vertical-align: text-bottom;
+  vertical-align: baseline;
   font-weight: normal;
 }
 
@@ -213,7 +220,7 @@ h3 a:hover {
   font-family: "FontAwesome";
   font-size: 1.375rem;
   margin-right: 10px;
-  vertical-align: text-bottom;
+  vertical-align: baseline;
   font-weight: normal;
 }
 
@@ -222,7 +229,7 @@ h3 a:hover {
   font-family: "FontAwesome";
   font-size: 1.375rem;
   margin-right: 10px;
-  vertical-align: text-bottom;
+  vertical-align: baseline;
   font-weight: normal;
 }
 
@@ -231,7 +238,7 @@ h3 a:hover {
   font-family: "FontAwesome";
   font-size: 1.375rem;
   margin-right: 10px;
-  vertical-align: text-bottom;
+  vertical-align: baseline;
   font-weight: normal;
 }
 
@@ -240,7 +247,7 @@ h3 a:hover {
   font-family: "FontAwesome";
   font-size: 1.375rem;
   margin-right: 10px;
-  vertical-align: text-bottom;
+  vertical-align: baseline;
   font-weight: normal;
 }
 
@@ -255,7 +262,7 @@ h3 a:hover {
   font-family: "FontAwesome";
   font-size: 1.375rem;
   margin-right: 10px;
-  vertical-align: text-bottom;
+  vertical-align: baseline;
   font-weight: normal;
 }
 
@@ -270,7 +277,7 @@ h3 a:hover {
   font-family: "FontAwesome";
   font-size: 1.375rem;
   margin-right: 10px;
-  vertical-align: text-bottom;
+  vertical-align: baseline;
   font-weight: normal;
 }
 
@@ -279,7 +286,8 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #ea4a5e;
 }
 
 a[target=_blank] {
@@ -313,9 +321,35 @@ a[target=_blank]:after {
   margin: 0px;
   font-size: 0.875rem;
 }
+.field--name-field-risks .field__label:after,
+.field--name-field-vehicles .field__label:after {
+  content: ":";
+}
 
 .field--name-field-media-image.field--type-entity-reference {
   margin-bottom: 10px;
+}
+
+.additional-resources-link-more {
+  font-style: italic;
+  font-weight: 700;
+  text-align: right;
+  display: block;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.additional-resources-link-more:before {
+  content: "> ";
+}
+
+.field--name-field-additional-resources a,
+.field--name-field-gp-external-links a {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.field--name-field-gp-getting-started ul {
+  padding-left: 20px;
 }
 
 .node--view-mode-related-good-practices {
@@ -367,6 +401,9 @@ a[target=_blank]:after {
   transform: translate(-50%, -50%);
   z-index: 6;
   width: 100%;
+}
+.node--view-mode-related-good-practices .block-field-blocknodegood-practicefield-gp-what-is-it .field--type-text-long p:after {
+  content: "...";
 }
 .node--view-mode-related-good-practices .block-field-blocknodegood-practicetitle .field--name-title {
   font-size: 12.8px;

@@ -1,4 +1,5 @@
 .slick{
+  padding:0 24px;
   &__slide{
     padding: 0px 7px;
   }
@@ -14,6 +15,7 @@
     z-index: 2;
     transform:translateY(-100%);
     text-align:right;
+    padding:0 24px;
   }
   &-arrow{
     border: 0;
@@ -37,6 +39,12 @@
       color:inherit;
       font-size: 2rem;
       font-weight: bold;
+    }
+
+    &:hover{
+      &:before {
+        color: $text-color-red;
+      }
     }
 
     &.slick-prev{
