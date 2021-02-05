@@ -157,6 +157,12 @@ type_settings:
         - to_be_reviewed
       to: ready_to_publish
       weight: 10
+    to_be_approved_to_approved:
+      label: 'To be Approved to Approved'
+      from:
+        - to_be_approved
+      to: to_be_approved
+      weight: 11
   entity_types:
     node:
       - good_practice
