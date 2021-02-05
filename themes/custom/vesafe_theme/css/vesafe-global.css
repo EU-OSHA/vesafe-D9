@@ -294,12 +294,20 @@ a[target=_blank] {
   font-size: 1rem;
 }
 a[target=_blank]:after {
-  content: "";
-  font-family: "FontAwesome";
+  /*content: "\f08e";
+  font-family: "FontAwesome";*/
   display: inline-block;
   margin-left: 5px;
   font-weight: bold;
   font-size: 0.875rem;
+}
+a[target=_blank] svg.ext {
+  width: 24px;
+  height: 24px;
+  padding-right: 0.2em;
+  fill: #ea4a5e;
+  font-weight: 900;
+  margin-left: 5px;
 }
 
 .field--name-field-media-image.field--type-image {
@@ -350,6 +358,25 @@ a[target=_blank]:after {
 
 .field--name-field-gp-getting-started ul {
   padding-left: 20px;
+}
+
+.key-articles-menu-container > ul {
+  list-style: none;
+}
+.key-articles-menu-container > ul > li > a, .key-articles-menu-container > ul > li > span {
+  background-color: #ea4a5e;
+  margin-bottom: 10px;
+  display: block;
+  padding: 7px 10px;
+  color: #FFF;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.key-articles-menu-container > ul > li > ul a {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  color: #333;
 }
 
 .node--view-mode-related-good-practices {

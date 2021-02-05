@@ -1,0 +1,25 @@
+.key-articles-menu-container{
+  &>ul{
+    list-style: none;
+    &>li{
+      &>a,
+      &>span{
+        background-color: $bg-color-red;
+        margin-bottom: 10px;
+        display: block;
+        padding: 7px 10px;
+        color: $text-color-white;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      &>ul{
+        a{
+          display: block;
+          margin-bottom: 10px;
+          padding-left: 5px;
+          color:$text-color-black;
+        }
+      }
+    }
+  }
+}
