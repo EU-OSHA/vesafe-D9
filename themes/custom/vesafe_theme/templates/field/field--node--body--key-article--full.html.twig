@@ -73,10 +73,10 @@
           <div class="key-articles-menu-container col-md-3 col-sm-5">
             <ul>
               <li>
-                <a href="#introduction" class="key-articles-link">{{ 'Introduction'|t }}</a>
+                <a href="#introduction" class="key-articles-link  header-introduction">{{ 'Introduction'|t }}</a>
               </li>
               <li>
-                <span class="nav-header"  data-toggle="collapse" data-target="#menu-kgsi">{{ 'General safety issues'|t }}</span>
+                <span class="nav-header header-kgsi"  data-toggle="collapse" data-target="#menu-kgsi">{{ 'General safety issues'|t }}</span>
                 <ul class="nav nav-list collapse" id="menu-kgsi">
                   {% for field_element in element['#object'].field_ka_general_safety_issues.value %}
                     {% if field_element.target_id is not empty %}
@@ -89,7 +89,7 @@
                 </ul>
               </li>
               <li>
-                <span class="nav-header"  data-toggle="collapse" data-target="#menu-kgrf">{{ 'General risk factors'|t }}</span>
+                <span class="nav-header header-kgrf"  data-toggle="collapse" data-target="#menu-kgrf">{{ 'General risk factors'|t }}</span>
                 <ul class="nav nav-list collapse" id="menu-kgrf">
                   {% for field_element in element['#object'].field_ka_general_risk_factors.value %}
                     {% if field_element.target_id is not empty %}
@@ -102,7 +102,7 @@
                 </ul>
               </li>
               <li>
-                <span class="nav-header"  data-toggle="collapse" data-target="#menu-ksrf">{{ 'Specific risk factors'|t }}</span>
+                <span class="nav-header header-ksrf"  data-toggle="collapse" data-target="#menu-ksrf">{{ 'Specific risk factors'|t }}</span>
                 <ul class="nav nav-list collapse" id="menu-ksrf">
                   {% for field_element in element['#object'].field_ka_specific_risk_factors.value %}
                     {% if field_element.target_id is not empty %}
