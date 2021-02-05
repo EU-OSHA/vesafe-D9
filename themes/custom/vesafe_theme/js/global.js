@@ -96,6 +96,8 @@
         var $container = $('.key-articles-menu-container');
         $container.find('ul[id!="menu-' + $section + '"]').collapse('hide');
         $container.find('ul#menu-' + $section).collapse('show');
+        $('a.key-articles-link').removeClass('item-active');
+        $('a.key-articles-link[href="' + id +'"]').addClass('item-active');
       }
 
       // Set the link and title of previus button.
