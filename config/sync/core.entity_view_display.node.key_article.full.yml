@@ -57,14 +57,142 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--iaFJ41eYanM
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--d9ykEhwxbdw
+          section:
+            general:
+              basic:
+                section_type: div
+                section_overwrite: 1
+                section_label: '11612578815'
+                section_delta: '0'
+              structure:
+                section_structure: '12'
+                section_carousel: 0
+                section_carousel_slick: none
+            styles:
+              background:
+                image: null
+                background_color:
+                  settings:
+                    color: ''
+                    opacity: '1'
+              sizing:
+                full_width: 0
+                full_width_container: 0
+                full_width_container_title: 0
+                height: auto
+                height_size: '0'
+              spacing:
+                top_padding: '0'
+                bottom_padding: '0'
+              misc:
+                extra_class: ''
+                extra_attributes: ''
+                parallax: 0
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-styles--Lp-icHRFdwo
+          regions:
+            first:
+              title:
+                title: ''
+              styles:
+                title:
+                  type: h1
+                  color:
+                    settings:
+                      color: '#000000'
+                      opacity: '1'
+                    color: '#000000'
+                    opacity: '1'
+                  size: '0'
+                  align: text-left
+                  border: none
+                  border_size: '0'
+                  border_color:
+                    settings:
+                      color: '#f75461'
+                      opacity: '1'
+                    color: '#f75461'
+                    opacity: '1'
+                border:
+                  border: none
+                  size: '0'
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                  radius_top_left: '0'
+                  radius_top_right: '0'
+                  radius_bottom_left: '0'
+                  radius_bottom_right: '0'
+                background:
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                spacing:
+                  paddings: 0
+                  paddings_left: 0
+                  paddings_right: 0
+                misc:
+                  extra_class: ''
+              general:
+                title: ''
+              layout_settings__container__regions__first__active_tab: ''
+        components:
+          eac58ea3-7489-4329-bc46-69da34a3ad64:
+            uuid: eac58ea3-7489-4329-bc46-69da34a3ad64
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:key_article:content_moderation_control'
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layoutcomponents_one_column
+        layout_settings:
+          label: ''
+          title:
+            general:
+              title: ''
+              description: ''
+            styles:
+              design:
+                title_color:
+                  settings:
+                    color: '#000000'
+                    opacity: '1'
+                title_type: h1
+                title_align: text-left
+              sizing:
+                title_size: '0'
+              border:
+                title_border: none
+                title_border_size: '0'
+                title_border_color:
+                  settings:
+                    color: '#f75461'
+                    opacity: '1'
+              spacing:
+                title_margin_top: '0'
+                title_margin_bottom: '0'
+              misc:
+                title_extra_class: ''
+                description_extra_class: ''
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--xiATWnvdl4o
           section:
             general:
               basic:
                 section_type: div
                 section_overwrite: 1
                 section_label: '11611833653'
-                section_delta: '0'
+                section_delta: '1'
               structure:
                 section_structure: '12'
                 section_carousel: 0
@@ -89,7 +217,7 @@ third_party_settings:
                 extra_class: 'safe-driving-work-title-container, article-header'
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-styles--W77czDx4my8
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--nlWaifPBKZ0
           regions:
             first:
               title:
@@ -177,7 +305,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 1
           3d1ef967-e714-444d-991d-855abb583054:
             uuid: 3d1ef967-e714-444d-991d-855abb583054
             region: first
@@ -210,16 +338,6 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
-            weight: 1
-          eac58ea3-7489-4329-bc46-69da34a3ad64:
-            uuid: eac58ea3-7489-4329-bc46-69da34a3ad64
-            region: first
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:key_article:content_moderation_control'
             additional: {  }
             weight: 2
         third_party_settings: {  }
@@ -254,17 +372,17 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--103oDWuI4WU
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--KXGx7IiUsF8
           section:
             general:
               basic:
                 section_type: div
                 section_overwrite: 1
                 section_label: '11611834039'
-                section_delta: '1'
+                section_delta: '2'
               structure:
                 section_structure: '12'
-                section_carousel: false
+                section_carousel: 0
                 section_carousel_slick: none
             styles:
               background:
@@ -286,7 +404,7 @@ third_party_settings:
                 extra_class: safe-driving-work-image-container
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-styles--BB_9vmvOwYE
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--GI3O-b8fnuA
           regions:
             first:
               title:
@@ -407,17 +525,17 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--PwgCjlQKMrE
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--VvGTlPGFHgY
           section:
             general:
               basic:
                 section_type: div
                 section_overwrite: 1
                 section_label: '11611836184'
-                section_delta: '2'
+                section_delta: '3'
               structure:
                 section_structure: '12'
-                section_carousel: false
+                section_carousel: 0
                 section_carousel_slick: none
             styles:
               background:
@@ -439,7 +557,7 @@ third_party_settings:
                 extra_class: ''
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--znKgTIT28gg
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--wPiKPDLEP1c
           regions:
             first:
               title:
@@ -559,14 +677,14 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--VrHMhCOCii8
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--oL0t5y8daIg
           section:
             general:
               basic:
                 section_type: div
-                section_overwrite: 0
+                section_overwrite: 1
                 section_label: '11611852187'
-                section_delta: '0'
+                section_delta: '4'
               structure:
                 section_structure: '12'
                 section_carousel: 0
@@ -591,7 +709,7 @@ third_party_settings:
                 extra_class: ''
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--bmVjEsjIVjA
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--JGoNfeuxVus
           regions:
             first:
               title:
