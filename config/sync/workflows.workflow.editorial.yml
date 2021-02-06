@@ -83,6 +83,12 @@ type_settings:
         - ready_to_publish
       to: final_draft
       weight: -6
+    final_draft_to_final_draft:
+      label: 'Final Draft to Final Draft'
+      from:
+        - final_draft
+      to: final_draft
+      weight: 12
     publish:
       label: Publish
       to: published

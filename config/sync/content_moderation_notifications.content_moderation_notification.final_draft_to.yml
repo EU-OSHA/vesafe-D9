@@ -1,18 +1,19 @@
-uuid: 8483a156-48c0-4a4e-8444-051c62fd9505
+uuid: eebbd072-5144-4945-8599-a78a645d80ef
 langcode: en
 status: true
 dependencies: {  }
-id: from_final_to_draft
+id: final_draft_to
 workflow: editorial
 transitions:
-  send_back_to_draft: send_back_to_draft
+  final_draft_to_final_draft: final_draft_to_final_draft
 roles:
-  project_manager: project_manager
-author: true
+  editor: editor
+  reviewer: reviewer
+author: false
 site_mail: false
 emails: ''
 subject: 'New content peding to review'
 body:
   value: "<p>Dear <a href=\"void(0);\">[user:name],</a></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>There is a new content to be reviewed by you: \"<a href=\"edit-url]\">[node:title]</a>\".</p>\r\n"
   format: basic_html
-label: 'From final to draft'
+label: 'Final Draft to Final Draft'
