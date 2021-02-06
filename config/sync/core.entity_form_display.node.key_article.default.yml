@@ -8,13 +8,14 @@ dependencies:
     - field.field.node.key_article.field_ka_general_safety_issues
     - field.field.node.key_article.field_ka_specific_risk_factors
     - field.field.node.key_article.field_media_image
-    - field.field.node.key_article.field_media_thumbnail
     - field.field.node.key_article.field_metatags
     - field.field.node.key_article.field_publication_date
     - field.field.node.key_article.field_related_good_practices
     - field.field.node.key_article.field_subtitle
     - node.type.key_article
+    - workflows.workflow.editorial
   module:
+    - content_moderation
     - datetime
     - field_group
     - media_library
@@ -144,13 +145,6 @@ content:
       media_types: {  }
     third_party_settings: {  }
     region: content
-  field_media_thumbnail:
-    type: media_library_widget
-    weight: 21
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    region: content
   field_metatags:
     weight: 17
     settings:
@@ -182,6 +176,12 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   path:
     type: path
     weight: 6

@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.key_article.field_ka_general_safety_issues
     - field.field.node.key_article.field_ka_specific_risk_factors
     - field.field.node.key_article.field_media_image
-    - field.field.node.key_article.field_media_thumbnail
     - field.field.node.key_article.field_metatags
     - field.field.node.key_article.field_publication_date
     - field.field.node.key_article.field_related_good_practices
@@ -246,19 +245,33 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 2
+          9c486651-7d40-4207-9960-ece0a91d6fab:
+            uuid: 9c486651-7d40-4207-9960-ece0a91d6fab
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:key_article:content_moderation_control'
+            additional: {  }
+            weight: 3
         third_party_settings: {  }
 id: node.key_article.card
 targetEntityType: node
 bundle: key_article
 mode: card
-content: {  }
+content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: first
 hidden:
   body: true
   field_ka_general_risk_factors: true
   field_ka_general_safety_issues: true
   field_ka_specific_risk_factors: true
   field_media_image: true
-  field_media_thumbnail: true
   field_metatags: true
   field_publication_date: true
   field_related_good_practices: true

@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.key_article.field_ka_general_safety_issues
     - field.field.node.key_article.field_ka_specific_risk_factors
     - field.field.node.key_article.field_media_image
-    - field.field.node.key_article.field_media_thumbnail
     - field.field.node.key_article.field_metatags
     - field.field.node.key_article.field_publication_date
     - field.field.node.key_article.field_related_good_practices
@@ -28,6 +27,11 @@ content:
     label: hidden
     type: text_default
     weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -58,15 +62,6 @@ content:
   field_media_image:
     type: entity_reference_entity_view
     weight: 102
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
-  field_media_thumbnail:
-    type: entity_reference_entity_view
-    weight: 103
     label: above
     settings:
       view_mode: default
