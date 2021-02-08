@@ -222,16 +222,13 @@ third_party_settings:
                 label: hidden
                 type: text_summary_or_trimmed
                 settings:
-                  trim_length: 530
+                  trim_length: 600
                 third_party_settings:
                   linked_field:
                     linked: 0
                     type: custom
                     destination:
-                      field:
-                        field: ''
-                        custom:
-                          custom: Array
+                      field: ''
                       custom: Array
                     advanced:
                       title: ''
