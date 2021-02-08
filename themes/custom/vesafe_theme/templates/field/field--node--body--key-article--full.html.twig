@@ -104,7 +104,7 @@
               <li>
                 <span class="nav-header header-ksrf"  data-toggle="collapse" data-target="#menu-ksrf">{{ 'Specific risk factors'|t }}</span>
                 <ul class="nav nav-list collapse" id="menu-ksrf">
-                  {% for field_element in element['#object'].field_ka_specific_risk_factors.value %}
+                  {% for field_element in element['#object'].fiekey-article-previousld_ka_specific_risk_factors.value %}
                     {% if field_element.target_id is not empty %}
                       {% set field_ka_specific_risk_factors = drupal_entity('node', field_element.target_id, 'full') %}
                       {% set title = field_ka_specific_risk_factors['#node'].title.value %}
@@ -177,8 +177,10 @@
               {% endfor %}
 
             </div>
-            <span class="key-article-previous"></span>
-            <span class="key-article-next"></span>
+            <div class="key-article-next-prev-buttons">
+              <span class="key-article-previous"></span>
+              <span class="key-article-next"></span>
+            </div>
           </div>
         </div>
       </div>

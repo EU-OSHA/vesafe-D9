@@ -94,6 +94,21 @@ body {
 .slick__slide {
   padding: 0px 7px;
 }
+.slick--less .slick {
+  padding: 0 24px;
+  width: 100% !important;
+}
+.slick--less .slick__slide {
+  padding: 0px 7px;
+  width: 25% !important;
+}
+.slick--less .slick-track {
+  text-align: left;
+  width: 100% !important;
+}
+.slick--less .lc-inline_column_first-content-edit {
+  overflow: hidden;
+}
 .slick__arrow {
   top: 0;
   right: 0;
@@ -242,7 +257,8 @@ h3 a:hover {
   font-weight: normal;
 }
 
-.block-views-blockgood-practices-good-practices-key-article h2:before {
+.block-views-blockgood-practices-good-practices-key-article h2:before,
+.block-views-blockgood-practices-block-1 h2:before {
   content: "";
   font-family: "FontAwesome";
   font-size: 1.375rem;
@@ -363,7 +379,7 @@ a[target=_blank] svg.ext {
 .node--type-key-article .field--name-field-media-image.field--type-entity-reference {
   margin-bottom: 30px;
 }
-.node--type-key-article h2 {
+.node--type-key-article .key-article-item h2 {
   margin-top: 0px;
 }
 
@@ -427,6 +443,32 @@ a[target=_blank] svg.ext {
 .key-article-item ul {
   padding-left: 30px;
 }
+.key-article-next-prev-buttons span {
+  border: none;
+  border-radius: 3px;
+  background: #ea4a5e;
+  color: white;
+  padding: 7px 10px;
+}
+.key-article-next-prev-buttons a {
+  color: #FFF;
+}
+.key-article-previous {
+  float: left;
+}
+.key-article-previous:before {
+  content: "<";
+  font-weight: bold;
+  margin-right: 10px;
+}
+.key-article-next {
+  float: right;
+}
+.key-article-next:after {
+  content: ">";
+  font-weight: bold;
+  margin-left: 10px;
+}
 
 .node--view-mode-related-good-practices {
   /* Image */
@@ -457,7 +499,6 @@ a[target=_blank] svg.ext {
 }
 .node--view-mode-related-good-practices .block-field-blocknodegood-practicefield-gp-what-is-it {
   position: absolute;
-  width: 100%;
   height: 100%;
   top: 50%;
   left: 50%;
@@ -483,7 +524,7 @@ a[target=_blank] svg.ext {
 }
 .node--view-mode-related-good-practices .block-field-blocknodegood-practicetitle .field--name-title {
   font-size: 12.8px;
-  ine-height: 18.2857px;
+  line-height: 18.2857px;
 }
 .node--view-mode-related-good-practices .good_practices_key_article-link {
   position: absolute;
@@ -496,9 +537,45 @@ a[target=_blank] svg.ext {
 }
 .node--view-mode-related-good-practices:hover .field--type-image img {
   transform: scale(1.2);
+  transform-origin: center;
 }
 .node--view-mode-related-good-practices:hover .block-field-blocknodegood-practicefield-gp-what-is-it {
   opacity: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .key-articles-menu-container > ul > li > a, .key-articles-menu-container > ul > li > span {
+    color: #ea4a5e;
+    background-color: #FFF;
+  }
+  .key-articles-menu-container > ul > li > ul {
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /*  CAROUSEL  */
+  .slick--less .slick__slide {
+    width: 100% !important;
+  }
+  .slick__slide {
+    width: 100% !important;
+  }
+  .slick-track {
+    width: 100% !important;
+  }
+
+  /*  KEY-ARTICLES  */
+  .key-articles-menu-container {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  /*  KEY-ARTICLES  */
+  .key-articles-menu-container {
+    max-width: 41.66666667% !important;
+    flex: 0 0 41.66666667% !important;
+  }
 }
 
 /*# sourceMappingURL=vesafe-global.css.map */

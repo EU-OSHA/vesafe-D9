@@ -1,0 +1,25 @@
+@media screen and (max-width:767px) {
+
+  /*  CAROUSEL  */
+  .slick {
+    &--less {
+      .slick {
+        &__slide {
+          width: 100% !important;
+        }
+      }
+    }
+    &__slide {
+      width: 100% !important;
+    }
+    &-track{
+      width:100% !important;
+    }
+  }
+
+  /*  KEY-ARTICLES  */
+  .key-articles-menu-container{
+    max-width:100%!important;
+    flex: 0 0 100% !important;
+  }
+}

@@ -2,7 +2,7 @@
   .field--name-field-media-image.field--type-entity-reference{
     margin-bottom:30px;
   }
- h2{
+ .key-article-item h2{
    margin-top:0px;
  }
 }
@@ -103,6 +103,35 @@
   &-item{
     ul{
       padding-left:30px;
+    }
+  }
+  &-next-prev-buttons{
+    span{
+      border: none;
+      border-radius: 3px;
+      background: #ea4a5e;
+      color: white;
+      padding: 7px 10px;
+    }
+    a{
+      color:$text-color-white;
+    }
+  }
+  &-previous{
+    float: left;
+    &:before{
+
+      content: "<";
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  }
+  &-next{
+    float: right;
+    &:after{
+      content: ">";
+      font-weight: bold;
+      margin-left: 10px;
     }
   }
 }

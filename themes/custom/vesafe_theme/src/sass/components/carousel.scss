@@ -3,6 +3,26 @@
   &__slide{
     padding: 0px 7px;
   }
+  &--less{
+      .slick {
+        padding: 0 24px;
+        width: 100% !important;
+
+        &__slide {
+          padding: 0px 7px;
+          width: 25% !important;
+        }
+
+        &-track {
+          text-align: left;
+          width: 100% !important;
+        }
+      }
+    .lc-inline_column_first-content-edit{
+      //height:194px;
+      overflow:hidden;
+    }
+  }
   &__arrow{
     top:0;
     right:0;

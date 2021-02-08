@@ -1,0 +1,18 @@
+@media screen and (max-width:991px) {
+  .key-articles {
+    &-menu-container {
+      & > ul {
+        & > li {
+          & > a,
+          & > span {
+            color: $text-color-red;
+            background-color: $bg-color-white;
+          }
+          &>ul {
+            padding-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}
