@@ -12,7 +12,7 @@ id: webform_contact
 title: 'Contact Us'
 description: ''
 category: ''
-elements: null
+elements: "name:\n  '#type': textfield\n  '#title': 'Your Name'\n  '#required': true\nsurname:\n  '#type': textfield\n  '#title': 'Your Surname'\n  '#required': true\nemail:\n  '#type': email\n  '#title': 'Your Email'\n  '#required': true\nsubject:\n  '#type': textfield\n  '#title': Subject\n  '#required': true\nmessage:\n  '#type': textarea\n  '#title': 'Your Message'\n  '#required': true\ndisclaimer:\n  '#type': webform_markup\n  '#admin_title': Disclaimer\n  '#markup': '<p><a href=\"/sites/vesafe/files/2021-02/disclaimer-contact-us.pdf\" target=\"_blank\">Read the privacy policy</a></p>'"
 css: ''
 javascript: ''
 settings:
@@ -114,7 +114,7 @@ settings:
   draft_pending_multiple_message: ''
   confirmation_type: page
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: 'Thank you, your submission has been received.'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
