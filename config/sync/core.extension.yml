@@ -62,6 +62,9 @@ module:
   meta_position: 0
   metatag: 0
   metatag_dc: 0
+  migrate: 0
+  migrate_plus: 0
+  migrate_tools: 0
   node: 0
   node_revision_delete: 0
   options: 0
