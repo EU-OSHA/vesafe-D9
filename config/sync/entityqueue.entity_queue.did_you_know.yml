@@ -1,0 +1,26 @@
+uuid: b1807fd0-d562-4d05-8d3f-9ddb51849f5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: did_you_know
+label: 'Did you know'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      did_you_know_slide: did_you_know_slide
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

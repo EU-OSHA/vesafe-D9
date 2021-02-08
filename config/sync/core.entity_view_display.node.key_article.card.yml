@@ -223,16 +223,13 @@ third_party_settings:
                 label: hidden
                 type: text_summary_or_trimmed
                 settings:
-                  trim_length: 530
+                  trim_length: 600
                 third_party_settings:
                   linked_field:
                     linked: 0
                     type: custom
                     destination:
-                      field:
-                        field: ''
-                        custom:
-                          custom: Array
+                      field: ''
                       custom: Array
                     advanced:
                       title: ''
@@ -246,12 +243,27 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 2
+          b1df5999-ff2f-4843-86ab-af94b0e049d6:
+            uuid: b1df5999-ff2f-4843-86ab-af94b0e049d6
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:key_article:content_moderation_control'
+            additional: {  }
+            weight: 3
         third_party_settings: {  }
 id: node.key_article.card
 targetEntityType: node
 bundle: key_article
 mode: card
-content: {  }
+content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: first
 hidden:
   body: true
   field_ka_general_risk_factors: true

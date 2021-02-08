@@ -1,0 +1,26 @@
+uuid: 4ea1f74d-f3a9-44d6-a9e5-8e7d0fc00003
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: frontpage_key_articles
+label: 'Frontpage key articles'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      key_article: key_article
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false
