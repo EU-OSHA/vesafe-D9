@@ -385,6 +385,9 @@ content:
     region: first
 hidden:
   body: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_additional_resources: true
   field_gp_external_links: true
   field_gp_getting_started: true
