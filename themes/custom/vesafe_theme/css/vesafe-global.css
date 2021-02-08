@@ -360,6 +360,13 @@ a[target=_blank] svg.ext {
   padding-left: 20px;
 }
 
+.node--type-key-article .field--name-field-media-image.field--type-entity-reference {
+  margin-bottom: 30px;
+}
+.node--type-key-article h2 {
+  margin-top: 0px;
+}
+
 .key-articles-menu-container > ul {
   list-style: none;
 }

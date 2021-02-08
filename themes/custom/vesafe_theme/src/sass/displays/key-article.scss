@@ -1,3 +1,13 @@
+.node--type-key-article{
+  .field--name-field-media-image.field--type-entity-reference{
+    margin-bottom:30px;
+  }
+ h2{
+   margin-top:0px;
+ }
+}
+
+
 .key-articles {
   &-menu-container {
     & > ul {
@@ -87,6 +97,8 @@
 
   }
 }
+
+
 .key-article{
   &-item{
     ul{
