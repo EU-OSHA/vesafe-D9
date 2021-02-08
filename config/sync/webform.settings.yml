@@ -1,0 +1,14 @@
+third_party_settings:
+  webform_entity_print:
+    debug: false
+    template:
+      header: '<h1>[webform_submission:label]</h1>'
+      footer: ''
+      css: "/* Remove page margins and padding and rely on the PDF generator's default margins. */\nbody {\n  margin: 0;\n}\n\n.page {\n  padding: 0;\n}"
+    export_types:
+      pdf:
+        enabled: true
+        link_text: 'Download PDF'
+        link_attributes:
+          class:
+            - button

@@ -1,4 +1,5 @@
 module:
+  webform_clientside_validation: -1
   admin_toolbar: 0
   automated_cron: 0
   big_pipe: 0
@@ -11,6 +12,8 @@ module:
   chosen_field: 0
   chosen_lib: 0
   ckeditor: 0
+  clientside_validation: 0
+  clientside_validation_jquery: 0
   color: 0
   color_field: 0
   comment: 0
@@ -29,6 +32,8 @@ module:
   dynamic_page_cache: 0
   easy_breadcrumb: 0
   editor: 0
+  entity: 0
+  entity_print: 0
   entity_reference_revisions: 0
   entityqueue: 0
   exclude_node_title: 0
@@ -37,11 +42,14 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  gnode: 0
+  group: 0
   help: 0
   history: 0
   image: 0
   image_widget_crop: 0
   inline_entity_form: 0
+  inline_form_errors: 0
   jquery_ui: 0
   jquery_ui_slider: 0
   jquery_ui_tooltip: 0
@@ -91,14 +99,33 @@ module:
   ultimate_cron: 0
   update: 0
   user: 0
+  variationcache: 0
   vesafe_workflow: 0
   video_embed_field: 0
   views_ui: 0
   webform: 0
+  webform_access: 0
+  webform_attachment: 0
+  webform_cards: 0
+  webform_devel: 0
+  webform_entity_print: 0
+  webform_entity_print_attachment: 0
+  webform_group: 0
+  webform_image_select: 0
+  webform_node: 0
+  webform_options_custom: 0
+  webform_options_limit: 0
+  webform_scheduled_email: 0
+  webform_share: 0
+  webform_shortcuts: 0
+  webform_submission_export_import: 0
+  webform_submission_log: 0
+  webform_templates: 0
   webform_ui: 0
   workflows: 0
   extlink: 1
   pathauto: 1
+  webform_bootstrap: 1
   xmlsitemap: 1
   views: 10
   linked_field: 100
