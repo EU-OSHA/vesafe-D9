@@ -14,7 +14,6 @@ dependencies:
     - field.field.node.good_practice.field_like_count
     - field.field.node.good_practice.field_media_gp_factsheet
     - field.field.node.good_practice.field_media_image
-    - field.field.node.good_practice.field_media_thumbnail
     - field.field.node.good_practice.field_metatags
     - field.field.node.good_practice.field_publication_date
     - field.field.node.good_practice.field_risks
@@ -188,8 +187,9 @@ third_party_settings:
               label_display: '0'
               formatter:
                 label: hidden
-                type: text_default
-                settings: {  }
+                type: text_trimmed
+                settings:
+                  trim_length: 100
                 third_party_settings:
                   linked_field:
                     linked: 0
@@ -209,39 +209,14 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 1
-          e59b21e9-42fb-404a-a093-0ac5cc105d12:
-            uuid: e59b21e9-42fb-404a-a093-0ac5cc105d12
+          e5d07750-0504-4315-995d-b30d8820ca32:
+            uuid: e5d07750-0504-4315-995d-b30d8820ca32
             region: first
             configuration:
-              id: 'field_block:node:good_practice:menu_link'
-              label: 'Menu link'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings:
-                  linked_field:
-                    linked: 0
-                    type: custom
-                    destination:
-                      field:
-                        field: ''
-                        custom:
-                          custom: Array
-                      custom: Array
-                    advanced:
-                      title: ''
-                      target: ''
-                      class: ''
-                      rel: ''
-                      text: ''
-                    token: ''
               context_mapping:
                 entity: layout_builder.entity
-                view_mode: view_mode
+              id: 'extra_field_block:node:good_practice:content_moderation_control'
             additional: {  }
             weight: 2
         third_party_settings: {  }
@@ -419,7 +394,6 @@ hidden:
   field_like_count: true
   field_media_gp_factsheet: true
   field_media_image: true
-  field_media_thumbnail: true
   field_metatags: true
   field_publication_date: true
   field_risks: true

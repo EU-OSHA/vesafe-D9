@@ -1,0 +1,109 @@
+.node--type-key-article{
+  .field--name-field-media-image.field--type-entity-reference{
+    margin-bottom:30px;
+  }
+ h2{
+   margin-top:0px;
+ }
+}
+
+
+.key-articles {
+  &-menu-container {
+    & > ul {
+      list-style: none;
+
+      & > li {
+        & > a,
+        & > span {
+          background-color: $bg-color-red;
+          margin-bottom: 10px;
+          display: block;
+          padding: 7px 10px;
+          color: $text-color-white;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+
+        .header-introduction {
+          &:before {
+            content: "\e044";
+            font-family: "Glyphicons Halflings";
+            margin-right: 10px;
+          }
+        }
+
+        .header-kgsi {
+          &:before {
+            content: "\f0fa";
+
+            font-family: "FontAwesome";
+            margin-right: 10px;
+          }
+        }
+
+        .header-kgrf {
+          &:before {
+            content: "\f0e7";
+
+            font-family: "FontAwesome";
+            margin-right: 10px;
+          }
+        }
+
+        .header-ksrf {
+          &:before {
+            content: "\f071";
+
+            font-family: "FontAwesome";
+            margin-right: 10px;
+          }
+        }
+
+        & > ul {
+          .key-articles-link {
+            display: block;
+            margin-bottom: 10px;
+            padding-left: 5px;
+            color: $text-color-black;
+
+            &item-active {
+              font-weight: bold;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    .nav-header {
+      &:after.collapse {
+        content: "\e252";
+        font-family: "Glyphicons Halflings";
+        float: right;
+        font-size: 0.8em;
+        line-height: 25px;
+      }
+
+      &:after {
+
+        content: "\e253";
+        font-family: "Glyphicons Halflings";
+        float: right;
+        font-size: 0.8em;
+        line-height: 25px;
+      }
+    }
+
+  }
+}
+
+
+.key-article{
+  &-item{
+    ul{
+      padding-left:30px;
+    }
+  }
+}
+

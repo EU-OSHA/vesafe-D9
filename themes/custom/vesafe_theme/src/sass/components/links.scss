@@ -4,14 +4,27 @@ a{
   color: $text-color-red;
   text-decoration: none;
   &:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    color: $text-color-red;
   }
 }
 
-a[target="_blank"]:after{
-  content: "\f08e";
-  font-family: "FontAwesome";
-  display: inline-block;
-  margin-left: 5px;
-  font-weight: bold;
+a[target="_blank"]{
+  font-size:1rem;
+  &:after{
+    /*content: "\f08e";
+    font-family: "FontAwesome";*/
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size:0.875rem;
+  }
+  svg.ext {
+    width: 24px;
+    height: 24px;
+    padding-right: 0.2em;
+    fill: $text-color-red;
+    font-weight: 900;
+    margin-left:5px;
+  }
 }

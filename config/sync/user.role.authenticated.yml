@@ -11,8 +11,10 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'access devel information'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'display eu cookie compliance popup'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'

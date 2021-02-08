@@ -14,6 +14,11 @@ label: Editorial
 type: content_moderation
 type_settings:
   states:
+    archived:
+      label: Archived
+      weight: 2
+      published: false
+      default_revision: true
     draft:
       label: Draft
       published: false
@@ -45,25 +50,45 @@ type_settings:
       label: 'To Be Reviewed'
       weight: -2
   transitions:
+    archive:
+      label: Archive
+      from:
+        - published
+      to: archived
+      weight: 2
+    archived_draft:
+      label: 'Restore to Draft'
+      from:
+        - archived
+      to: draft
+      weight: 3
+    archived_published:
+      label: Restore
+      from:
+        - archived
+      to: published
+      weight: 4
     create_new_draft:
       label: 'Create New Draft'
       to: draft
-      weight: -8
+      weight: -7
       from:
         - draft
-    create_new_draft_from_published:
-      label: 'Create New Draft from Published'
-      from:
         - published
-      to: draft
-      weight: -6
     final_draft:
       label: 'Send to final draft'
       from:
         - draft
+        - published
         - ready_to_publish
       to: final_draft
-      weight: -7
+      weight: -6
+    final_draft_to_final_draft:
+      label: 'Final Draft to Final Draft'
+      from:
+        - final_draft
+      to: final_draft
+      weight: 12
     publish:
       label: Publish
       to: published
@@ -83,7 +108,7 @@ type_settings:
       from:
         - final_draft
       to: draft
-      weight: 3
+      weight: 7
     send_back_to_final_draft:
       label: 'Send back to final draft'
       from:
@@ -113,7 +138,7 @@ type_settings:
       from:
         - to_be_reviewed
       to: published
-      weight: 2
+      weight: 6
     send_to_ready_to_publish:
       label: 'Send to ready to publish'
       from:
@@ -125,19 +150,25 @@ type_settings:
       from:
         - draft
       to: ready_to_publish
-      weight: 4
+      weight: 8
     send_to_ready_to_publish_from_published:
       label: 'Send to ready to publish from published'
       from:
         - published
       to: ready_to_publish
-      weight: 5
+      weight: 9
     send_to_ready_to_publish_from_to_be_reviewed:
       label: 'Send to ready to publish from to be reviewed'
       from:
         - to_be_reviewed
       to: ready_to_publish
-      weight: 6
+      weight: 10
+    to_be_approved_to_approved:
+      label: 'To be Approved to Approved'
+      from:
+        - to_be_approved
+      to: to_be_approved
+      weight: 11
   entity_types:
     node:
       - good_practice

@@ -1,0 +1,44 @@
+.field--name-field-risks,
+.field--name-field-vehicles{
+  display:inline-flex;
+  flex-direction: row;
+  margin:0px;
+  font-size:0.875rem;
+  .field__label{
+    &:after{
+      content:":";
+    }
+  }
+}
+
+.field--name-field-media-image.field--type-entity-reference{
+  margin-bottom:10px;
+}
+
+.additional-resources-link-more{
+  font-style: italic;
+  font-weight: 700;
+  text-align: right;
+  display: block;
+  cursor: pointer;
+  font-size:1rem;
+  &:before{
+    content: "> ";
+  }
+}
+
+
+.field--name-field-additional-resources,
+.field--name-field-gp-external-links{
+  a{
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+
+.field--name-field-gp-getting-started{
+  ul{
+    padding-left: 20px;
+  }
+}

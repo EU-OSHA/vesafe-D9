@@ -9,15 +9,16 @@ label: 'URL Pattern for Articles and Slides'
 type: 'canonical_entities:node'
 pattern: '/[node:title]'
 selection_criteria:
-  dc8f28de-871b-4643-8d7c-b06347e98cd4:
+  e1e276e2-8af5-466e-8e9b-ee4ece22663b:
     id: node_type
     bundles:
       article: article
       did_you_know_slide: did_you_know_slide
+      thesaurus: thesaurus
     negate: false
     context_mapping:
       node: node
-    uuid: dc8f28de-871b-4643-8d7c-b06347e98cd4
+    uuid: e1e276e2-8af5-466e-8e9b-ee4ece22663b
 selection_logic: and
 weight: -5
 relationships: {  }

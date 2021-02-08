@@ -1,0 +1,18 @@
+uuid: d7c328b4-606e-4974-88a1-efc7c09cb6d6
+langcode: en
+status: true
+dependencies: {  }
+id: to_be_approved_to_approved
+workflow: editorial
+transitions:
+  to_be_approved_to_approved: to_be_approved_to_approved
+roles:
+  project_manager: project_manager
+author: false
+site_mail: false
+emails: ''
+subject: 'New content peding to review'
+body:
+  value: "<p>Dear <a href=\"void(0);\">[user:name],</a></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>There is a new content to be reviewed by you: \"<a href=\"edit-url]\">[node:title]</a>\".</p>\r\n"
+  format: basic_html
+label: 'To be Approved to Approved'

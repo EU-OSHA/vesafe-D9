@@ -10,6 +10,7 @@
 @import 'components/accordion';
 @import 'components/breadcrumb';
 @import 'components/buttons';
+@import 'components/carousel';
 @import 'components/grid';
 @import 'components/headings';
 @import 'components/helper';
@@ -21,7 +22,11 @@
 @import 'layout/header';
 @import 'layout/menu';
 @import 'layout/section';
-@import 'layout/related-good-practices';
+
+
+@import 'displays/good-practices-detail';
+@import 'displays/key-article';
+@import 'displays/related-good-practices';
 
 @import 'responsive/common/common-responsive';
 @import 'responsive/mobile/mobile-responsive';

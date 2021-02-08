@@ -1,0 +1,19 @@
+uuid: 35fecd0e-0ee2-4bac-8b44-8f149adae9b0
+langcode: en
+status: true
+dependencies: {  }
+id: to_fnal_draft
+workflow: editorial
+transitions:
+  final_draft: final_draft
+roles:
+  editor: editor
+  reviewer: reviewer
+author: false
+site_mail: false
+emails: ''
+subject: 'New content peding to review'
+body:
+  value: "<p>Dear <a href=\"void(0);\">[user:name],</a></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>There is a new content to be reviewed by you: \"<a href=\"edit-url]\">[node:title]</a>\".</p>\r\n"
+  format: basic_html
+label: 'To Final Draft'

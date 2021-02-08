@@ -1,0 +1,11 @@
+.field--name-field-media-image.field--type-image{
+  float:none;
+  margin:0px;
+  img{
+    width:100%;
+  }
+}
+
+.field--type-image img, .field--name-field-user-picture img{
+  margin:0px;
+}
