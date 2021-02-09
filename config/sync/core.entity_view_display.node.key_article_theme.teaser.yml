@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.key_article_theme.field_metatags
     - field.field.node.key_article_theme.field_publication_date
     - field.field.node.key_article_theme.field_subtitle
-    - field.field.node.key_article_theme.field_thesaurus
     - field.field.node.key_article_theme.field_thesaurus_2020
     - node.type.key_article_theme
   module:
@@ -39,5 +38,4 @@ hidden:
   field_metatags: true
   field_publication_date: true
   field_subtitle: true
-  field_thesaurus: true
   field_thesaurus_2020: true

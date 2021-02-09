@@ -7,10 +7,10 @@ dependencies:
     - field.field.node.key_article_theme.field_metatags
     - field.field.node.key_article_theme.field_publication_date
     - field.field.node.key_article_theme.field_subtitle
-    - field.field.node.key_article_theme.field_thesaurus
     - field.field.node.key_article_theme.field_thesaurus_2020
     - node.type.key_article_theme
   module:
+    - content_moderation
     - datetime
     - field_group
     - metatag
@@ -105,16 +105,6 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_thesaurus:
-    weight: 12
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_thesaurus_2020:
     weight: 13
     settings:
@@ -125,6 +115,12 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   path:
     type: path
     weight: 6
