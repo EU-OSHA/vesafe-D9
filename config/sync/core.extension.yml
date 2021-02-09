@@ -11,6 +11,8 @@ module:
   chosen_field: 0
   chosen_lib: 0
   ckeditor: 0
+  clientside_validation: 0
+  clientside_validation_jquery: 0
   color: 0
   color_field: 0
   comment: 0
@@ -29,18 +31,24 @@ module:
   dynamic_page_cache: 0
   easy_breadcrumb: 0
   editor: 0
+  entity: 0
+  entity_print: 0
   entity_reference_revisions: 0
+  entityqueue: 0
   exclude_node_title: 0
   field: 0
   field_group: 0
   field_ui: 0
   file: 0
   filter: 0
+  gnode: 0
+  group: 0
   help: 0
   history: 0
   image: 0
   image_widget_crop: 0
   inline_entity_form: 0
+  inline_form_errors: 0
   jquery_ui: 0
   jquery_ui_slider: 0
   jquery_ui_tooltip: 0
@@ -52,7 +60,6 @@ module:
   lc_simple_title: 0
   lc_slick: 0
   link: 0
-  linkchecker: 0
   mailsystem: 0
   media: 0
   media_library: 0
@@ -62,7 +69,11 @@ module:
   meta_position: 0
   metatag: 0
   metatag_dc: 0
+  migrate: 0
+  migrate_plus: 0
+  migrate_tools: 0
   node: 0
+  node_like: 0
   node_revision_delete: 0
   options: 0
   page_cache: 0
@@ -84,12 +95,14 @@ module:
   toolbar: 0
   tour: 0
   twig_tweak: 0
-  ultimate_cron: 0
   update: 0
   user: 0
+  variationcache: 0
   vesafe_workflow: 0
   video_embed_field: 0
   views_ui: 0
+  webform: 0
+  webform_ui: 0
   workflows: 0
   extlink: 1
   pathauto: 1

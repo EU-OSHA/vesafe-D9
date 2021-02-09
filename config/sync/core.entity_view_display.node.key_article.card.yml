@@ -222,16 +222,13 @@ third_party_settings:
                 label: hidden
                 type: text_summary_or_trimmed
                 settings:
-                  trim_length: 530
+                  trim_length: 600
                 third_party_settings:
                   linked_field:
                     linked: 0
                     type: custom
                     destination:
-                      field:
-                        field: ''
-                        custom:
-                          custom: Array
+                      field: ''
                       custom: Array
                     advanced:
                       title: ''
@@ -268,6 +265,9 @@ content:
     region: first
 hidden:
   body: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_ka_general_risk_factors: true
   field_ka_general_safety_issues: true
   field_ka_specific_risk_factors: true

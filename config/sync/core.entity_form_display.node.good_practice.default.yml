@@ -58,6 +58,7 @@ third_party_settings:
         - field_gp_getting_started
         - field_publication_date
         - field_like_count
+        - field_like
       parent_name: group_info
       weight: 25
       format_type: tab
@@ -72,7 +73,6 @@ third_party_settings:
     group_media:
       children:
         - field_media_image
-        - field_media_thumbnail
         - field_media_gp_factsheet
       parent_name: group_info
       weight: 26
