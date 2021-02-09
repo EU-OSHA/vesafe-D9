@@ -1,0 +1,10 @@
+uuid: 594f0150-e6cb-4e1e-8a25-b49c7c6439c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.card_home
+label: 'Card Home'
+targetEntityType: node
+cache: true
