@@ -70,9 +70,9 @@
     {% for item in items %}
       <div class="page-content-container-inside container">
         <div class="row">
-          <div class="key-articles-menu-container col-md-3 col-sm-5">
-            <h2>{{ 'Index'|t }}</h2>
-            <ul>
+          <div class="key-articles-menu-container col-12 col-md-5 col-lg-3 dropdown">
+            <h2 class="key-menu-arrow-open dropdown-toggle hidden-lg" id="dropdownMenuButton" data-dropdown>{{ 'Index'|t }}</h2>
+            <ul aria-labelledby="dropdownMenuButton">
               <li>
                 <a href="#introduction" class="key-articles-link  header-introduction">{{ 'Introduction'|t }}</a>
               </li>
@@ -117,7 +117,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-9 col-sm-12">
+          <div class="col-md-12 col-lg-9">
             <div class="key-article-items">
               <div id="introduction" class="key-article-item" data-section="introduction">
                 <h2>{{ 'Introduction'|t }}</h2>

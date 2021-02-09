@@ -4,18 +4,12 @@
     padding: 0px 7px;
   }
   &--less{
+    width:100%!important;
       .slick {
         padding: 0 24px;
         width: 100% !important;
-
-        &__slide {
-          padding: 0px 7px;
-          width: 25% !important;
-        }
-
         &-track {
-          text-align: left;
-          width: 100% !important;
+          margin:0px;
         }
       }
     .lc-inline_column_first-content-edit{

@@ -58,6 +58,22 @@
   background: #FFF;
 }
 
+/* Icons */
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot");
+  src: url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff") format("woff"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font: normal normal 16px/1 "Glyphicons Halflings";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 4px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -77,6 +93,17 @@ body {
   background: #FFF;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
 .breadcrumb a {
   color: #333;
   text-decoration: none;
@@ -94,17 +121,15 @@ body {
 .slick__slide {
   padding: 0px 7px;
 }
+.slick--less {
+  width: 100% !important;
+}
 .slick--less .slick {
   padding: 0 24px;
   width: 100% !important;
 }
-.slick--less .slick__slide {
-  padding: 0px 7px;
-  width: 25% !important;
-}
 .slick--less .slick-track {
-  text-align: left;
-  width: 100% !important;
+  margin: 0px;
 }
 .slick--less .lc-inline_column_first-content-edit {
   overflow: hidden;
@@ -154,6 +179,22 @@ body {
 }
 .slick-arrow.slick-next:before {
   content: ">";
+}
+
+.dropdown.open .dropdown-toggle:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  float: right;
+  font-size: 0.8em;
+  line-height: 25px;
+}
+.dropdown-toggle:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  float: right;
+  font-size: 0.8em;
+  line-height: 25px;
+  border: none;
 }
 
 h1, h2, label {
@@ -421,7 +462,7 @@ a[target=_blank] svg.ext {
   padding-left: 5px;
   color: #333;
 }
-.key-articles-menu-container > ul > li > ul .key-articles-linkitem-active {
+.key-articles-menu-container > ul > li > ul .key-articles-link.item-active {
   font-weight: bold;
   text-decoration: none;
 }
@@ -434,6 +475,31 @@ a[target=_blank] svg.ext {
 }
 .key-articles-menu-container .nav-header:after {
   content: "";
+  font-family: "Glyphicons Halflings";
+  float: right;
+  font-size: 0.8em;
+  line-height: 25px;
+}
+.key-articles-menu-container h2 {
+  background-color: #ea4a5e;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  line-height: inherit;
+  display: block;
+  padding: 7px 10px;
+  color: #FFF;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1em;
+}
+.key-articles-menu-container h2:before {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  margin-right: 10px;
+  vertical-align: text-top;
+}
+.key-articles-menu-container h2:after {
+  content: "";
   font-family: "Glyphicons Halflings";
   float: right;
   font-size: 0.8em;
@@ -542,6 +608,9 @@ a[target=_blank] svg.ext {
 .node--view-mode-related-good-practices:hover .block-field-blocknodegood-practicefield-gp-what-is-it {
   opacity: 1;
 }
+.node--view-mode-related-good-practices .field--name-field-media-image.field--type-entity-reference {
+  margin-bottom: 0px;
+}
 
 @media screen and (max-width: 991px) {
   .key-articles-menu-container > ul > li > a, .key-articles-menu-container > ul > li > span {
@@ -554,27 +623,37 @@ a[target=_blank] svg.ext {
 }
 @media screen and (max-width: 767px) {
   /*  CAROUSEL  */
-  .slick--less .slick__slide {
-    width: 100% !important;
+  .slick__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    width: 100%;
+    right: 0px;
+    z-index: 9999;
+    text-decoration: none !important;
   }
-  .slick__slide {
-    width: 100% !important;
+  .slick-arrow {
+    background-color: #ea4a5e;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #FFF;
+    margin: 0px;
+    transform: translateY(-50%);
   }
-  .slick-track {
-    width: 100% !important;
+  .slick-arrow:hover:before {
+    color: #FFF;
   }
-
-  /*  KEY-ARTICLES  */
-  .key-articles-menu-container {
-    max-width: 100% !important;
-    flex: 0 0 100% !important;
+  .slick-prev {
+    left: -18px;
   }
-}
-@media screen and (max-width: 991px) {
-  /*  KEY-ARTICLES  */
-  .key-articles-menu-container {
-    max-width: 41.66666667% !important;
-    flex: 0 0 41.66666667% !important;
+  .slick-next {
+    right: -18px;
   }
 }
 

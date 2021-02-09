@@ -3,7 +3,21 @@
  * Global utilities.
  *
  */
+
+
 (function ($, Drupal) {
+
+  // Toggle Menu
+  $(".dropdown").each(function(){
+    $(this).find('.dropdown-toggle').on('click', function(){
+      let idRef=$(this).attr('id');
+      let $toggleElement=$(this).closest(".dropdown");
+      $toggleElement.stop().toggleClass('open');
+      $toggleElement.find('[aria-labelledby="'+idRef+'"]').stop().slideToggle();
+    });
+  });
+
+
 
   'use strict';
 
@@ -61,6 +75,8 @@
    *
    * @type {Drupal~behavior}
    */
+
+
   Drupal.behaviors.VesafeKeyArticle = {
     attach: function (context, settings) {
 
@@ -145,4 +161,8 @@
     }
   };
 
+
+
+
 })(jQuery, Drupal);
+
