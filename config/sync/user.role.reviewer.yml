@@ -9,7 +9,6 @@ is_admin: null
 permissions:
   - 'access content'
   - 'access content overview'
-  - 'access devel information'
   - 'access media overview'
   - 'access toolbar'
   - 'administer nodes'

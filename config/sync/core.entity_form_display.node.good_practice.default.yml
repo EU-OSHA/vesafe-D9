@@ -10,7 +10,7 @@ dependencies:
     - field.field.node.good_practice.field_gp_what_is_it
     - field.field.node.good_practice.field_gp_what_is_the_benefit
     - field.field.node.good_practice.field_gp_who_is_for
-    - field.field.node.good_practice.field_like_count
+    - field.field.node.good_practice.field_like
     - field.field.node.good_practice.field_media_gp_factsheet
     - field.field.node.good_practice.field_media_image
     - field.field.node.good_practice.field_metatags
@@ -29,6 +29,7 @@ dependencies:
     - link
     - media_library
     - metatag
+    - node_like
     - path
     - text
 third_party_settings:
@@ -161,13 +162,11 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_like_count:
-    weight: 9
-    settings:
-      size: 60
-      placeholder: ''
+  field_like:
+    weight: 101
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: node_like_widget
     region: content
   field_media_gp_factsheet:
     type: media_library_widget

@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.good_practice.field_gp_what_is_it
     - field.field.node.good_practice.field_gp_what_is_the_benefit
     - field.field.node.good_practice.field_gp_who_is_for
-    - field.field.node.good_practice.field_like_count
+    - field.field.node.good_practice.field_like
     - field.field.node.good_practice.field_media_gp_factsheet
     - field.field.node.good_practice.field_media_image
     - field.field.node.good_practice.field_metatags
@@ -63,7 +63,7 @@ hidden:
   field_gp_getting_started: true
   field_gp_what_is_the_benefit: true
   field_gp_who_is_for: true
-  field_like_count: true
+  field_like: true
   field_media_gp_factsheet: true
   field_media_image: true
   field_metatags: true
