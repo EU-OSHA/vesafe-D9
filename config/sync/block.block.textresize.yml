@@ -1,0 +1,20 @@
+uuid: 1e4900a7-d79c-4108-aace-208f05cf71b1
+langcode: en
+status: true
+dependencies:
+  module:
+    - text_resize
+  theme:
+    - vesafe_theme
+id: textresize
+theme: vesafe_theme
+region: header_form
+weight: 0
+provider: null
+plugin: text_resize_block
+settings:
+  id: text_resize_block
+  label: 'Text Resize'
+  provider: text_resize
+  label_display: '0'
+visibility: {  }
