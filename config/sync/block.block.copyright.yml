@@ -1,0 +1,25 @@
+uuid: 3080c979-83df-4de3-82c1-ddc7d5b759ba
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b48cf8cc-26f9-44bc-bd6e-591de84843db'
+  module:
+    - block_content
+  theme:
+    - vesafe_theme
+id: copyright
+theme: vesafe_theme
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:b48cf8cc-26f9-44bc-bd6e-591de84843db'
+settings:
+  id: 'block_content:b48cf8cc-26f9-44bc-bd6e-591de84843db'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
