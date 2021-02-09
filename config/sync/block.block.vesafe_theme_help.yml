@@ -11,7 +11,7 @@ _core:
 id: vesafe_theme_help
 theme: vesafe_theme
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: help_block
 settings:

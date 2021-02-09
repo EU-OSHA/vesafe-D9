@@ -32,9 +32,9 @@ content:
     region: content
   content_moderation_control:
     weight: -20
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_ka_general_risk_factors:
     weight: 106
     label: above

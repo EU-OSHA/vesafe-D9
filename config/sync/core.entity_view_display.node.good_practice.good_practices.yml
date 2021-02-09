@@ -1,15 +1,25 @@
-uuid: 47e32b64-3bd9-400a-985d-22b24a8c8c2f
+uuid: 53b2ca4b-604a-4302-b36a-46bd3faffa90
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
-    - field.field.node.key_article_theme.body
-    - field.field.node.key_article_theme.field_metatags
-    - field.field.node.key_article_theme.field_publication_date
-    - field.field.node.key_article_theme.field_subtitle
-    - field.field.node.key_article_theme.field_thesaurus_2020
-    - node.type.key_article_theme
+    - core.entity_view_mode.node.good_practices
+    - field.field.node.good_practice.body
+    - field.field.node.good_practice.field_additional_resources
+    - field.field.node.good_practice.field_gp_external_links
+    - field.field.node.good_practice.field_gp_getting_started
+    - field.field.node.good_practice.field_gp_what_is_it
+    - field.field.node.good_practice.field_gp_what_is_the_benefit
+    - field.field.node.good_practice.field_gp_who_is_for
+    - field.field.node.good_practice.field_like
+    - field.field.node.good_practice.field_media_gp_factsheet
+    - field.field.node.good_practice.field_media_image
+    - field.field.node.good_practice.field_metatags
+    - field.field.node.good_practice.field_publication_date
+    - field.field.node.good_practice.field_risks
+    - field.field.node.good_practice.field_thesaurus_2020
+    - field.field.node.good_practice.field_vehicles
+    - node.type.good_practice
   module:
     - layout_builder
     - layoutcomponents
@@ -50,17 +60,17 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--gUghRLPrcx8
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--dOL-p2cxsXs
           section:
             general:
               basic:
                 section_type: div
                 section_overwrite: 0
-                section_label: '11611838145'
+                section_label: '11612865834'
                 section_delta: '0'
               structure:
                 section_structure: '12'
-                section_carousel: false
+                section_carousel: 0
                 section_carousel_slick: none
             styles:
               background:
@@ -82,7 +92,7 @@ third_party_settings:
                 extra_class: ''
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--zJpcaCgdkyc
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--1sMLK1KdM4k
           regions:
             first:
               title:
@@ -136,18 +146,51 @@ third_party_settings:
                 title: ''
               layout_settings__container__regions__first__active_tab: ''
         components:
-          fd2374fd-8c70-4a1a-b7b1-34e1be06fe22:
-            uuid: fd2374fd-8c70-4a1a-b7b1-34e1be06fe22
+          578e159b-7593-480b-8e9f-f63639bf56db:
+            uuid: 578e159b-7593-480b-8e9f-f63639bf56db
             region: first
             configuration:
-              id: 'field_block:node:key_article_theme:body'
-              label: Body
+              id: 'field_block:node:good_practice:field_media_image'
+              label: Image
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
-                type: text_default
-                settings: {  }
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: ultrawide_16_6
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: field
+                    destination:
+                      field: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          79b63d4b-0975-42f5-8546-958795d0a48b:
+            uuid: 79b63d4b-0975-42f5-8546-958795d0a48b
+            region: first
+            configuration:
+              id: 'field_block:node:good_practice:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: true
                 third_party_settings:
                   linked_field:
                     linked: 0
@@ -169,20 +212,62 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 1
+          d216a8bd-968f-461b-a057-422cf65669ec:
+            uuid: d216a8bd-968f-461b-a057-422cf65669ec
+            region: first
+            configuration:
+              id: 'field_block:node:good_practice:field_like'
+              label: Like
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: node_like_formatter
+                settings: {  }
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: field
+                    destination:
+                      field: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
-id: node.key_article_theme.full
+id: node.good_practice.good_practices
 targetEntityType: node
-bundle: key_article_theme
-mode: full
+bundle: good_practice
+mode: good_practices
 content: {  }
 hidden:
   body: true
+  content_moderation_control: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_additional_resources: true
+  field_gp_external_links: true
+  field_gp_getting_started: true
+  field_gp_what_is_it: true
+  field_gp_what_is_the_benefit: true
+  field_gp_who_is_for: true
+  field_like: true
+  field_media_gp_factsheet: true
+  field_media_image: true
   field_metatags: true
   field_publication_date: true
-  field_subtitle: true
+  field_risks: true
   field_thesaurus_2020: true
+  field_vehicles: true
   links: true

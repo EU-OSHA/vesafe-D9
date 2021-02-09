@@ -1,0 +1,23 @@
+uuid: a18e2bb3-c6dc-4fae-89c8-be0a129da0c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_like
+    - node.type.good_practice
+  module:
+    - node_like
+id: node.good_practice.field_like
+field_name: field_like
+entity_type: node
+bundle: good_practice
+label: Like
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings: {  }
+field_type: node_like

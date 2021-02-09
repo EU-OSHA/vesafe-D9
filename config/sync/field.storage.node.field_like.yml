@@ -1,0 +1,19 @@
+uuid: 22e130e0-3d23-4abf-8fc9-306195bd487c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - node_like
+id: node.field_like
+field_name: field_like
+entity_type: node
+type: node_like
+settings: {  }
+module: node_like
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

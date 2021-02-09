@@ -11,13 +11,12 @@ dependencies:
     - field.field.node.good_practice.field_gp_what_is_it
     - field.field.node.good_practice.field_gp_what_is_the_benefit
     - field.field.node.good_practice.field_gp_who_is_for
-    - field.field.node.good_practice.field_like_count
+    - field.field.node.good_practice.field_like
     - field.field.node.good_practice.field_media_gp_factsheet
     - field.field.node.good_practice.field_media_image
     - field.field.node.good_practice.field_metatags
     - field.field.node.good_practice.field_publication_date
     - field.field.node.good_practice.field_risks
-    - field.field.node.good_practice.field_thesaurus
     - field.field.node.good_practice.field_thesaurus_2020
     - field.field.node.good_practice.field_vehicles
     - node.type.good_practice
@@ -304,6 +303,206 @@ third_party_settings:
                         field: ''
                         custom:
                           custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layoutcomponents_two_column
+        layout_settings:
+          label: ''
+          title:
+            general:
+              title: ''
+              description: ''
+            styles:
+              design:
+                title_color:
+                  settings:
+                    color: '#000000'
+                    opacity: '1'
+                title_type: h1
+                title_align: text-left
+              sizing:
+                title_size: '0'
+              border:
+                title_border: none
+                title_border_size: '0'
+                title_border_color:
+                  settings:
+                    color: '#f75461'
+                    opacity: '1'
+              spacing:
+                title_margin_top: '0'
+                title_margin_bottom: '0'
+              misc:
+                title_extra_class: ''
+                description_extra_class: ''
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--8jQbiFU46Yk
+          section:
+            general:
+              basic:
+                section_type: div
+                section_overwrite: 0
+                section_label: '11612854315'
+                section_delta: '0'
+              structure:
+                section_structure: 6/6
+                section_carousel: 0
+                section_carousel_slick: none
+            styles:
+              background:
+                image: null
+                background_color:
+                  settings:
+                    color: ''
+                    opacity: '1'
+              sizing:
+                full_width: 0
+                full_width_container: 0
+                full_width_container_title: 0
+                height: auto
+                height_size: '0'
+              spacing:
+                top_padding: '0'
+                bottom_padding: '0'
+              misc:
+                extra_class: ''
+                extra_attributes: ''
+                parallax: 0
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--Rf81vAKkIhY
+          regions:
+            first:
+              title:
+                title: ''
+              styles:
+                title:
+                  type: h1
+                  color:
+                    settings:
+                      color: '#000000'
+                      opacity: '1'
+                    color: '#000000'
+                    opacity: '1'
+                  size: '0'
+                  align: text-left
+                  border: none
+                  border_size: '0'
+                  border_color:
+                    settings:
+                      color: '#f75461'
+                      opacity: '1'
+                    color: '#f75461'
+                    opacity: '1'
+                border:
+                  border: none
+                  size: '0'
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                  radius_top_left: '0'
+                  radius_top_right: '0'
+                  radius_bottom_left: '0'
+                  radius_bottom_right: '0'
+                background:
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                spacing:
+                  paddings: 0
+                  paddings_left: 0
+                  paddings_right: 0
+                misc:
+                  extra_class: ''
+              general:
+                title: ''
+              layout_settings__container__regions__first__active_tab: ''
+            second:
+              title:
+                title: ''
+              styles:
+                title:
+                  type: h1
+                  color:
+                    settings:
+                      color: '#000000'
+                      opacity: '1'
+                    color: '#000000'
+                    opacity: '1'
+                  size: '0'
+                  align: text-left
+                  border: none
+                  border_size: '0'
+                  border_color:
+                    settings:
+                      color: '#f75461'
+                      opacity: '1'
+                    color: '#f75461'
+                    opacity: '1'
+                border:
+                  border: none
+                  size: '0'
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                  radius_top_left: '0'
+                  radius_top_right: '0'
+                  radius_bottom_left: '0'
+                  radius_bottom_right: '0'
+                background:
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                spacing:
+                  paddings: 0
+                  paddings_left: 0
+                  paddings_right: 0
+                misc:
+                  extra_class: ''
+              general:
+                title: ''
+              layout_settings__container__regions__second__active_tab: ''
+        components:
+          a4bd4268-1b85-4e47-bf7e-add6d847ae18:
+            uuid: a4bd4268-1b85-4e47-bf7e-add6d847ae18
+            region: first
+            configuration:
+              id: 'field_block:node:good_practice:field_like'
+              label: Like
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: node_like_formatter
+                settings: {  }
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: field
+                    destination:
+                      field: ''
                       custom: ''
                     advanced:
                       title: ''
@@ -1173,13 +1372,12 @@ hidden:
   field_gp_what_is_it: true
   field_gp_what_is_the_benefit: true
   field_gp_who_is_for: true
-  field_like_count: true
+  field_like: true
   field_media_gp_factsheet: true
   field_media_image: true
   field_metatags: true
   field_publication_date: true
   field_risks: true
-  field_thesaurus: true
   field_thesaurus_2020: true
   field_vehicles: true
   links: true

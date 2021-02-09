@@ -1,0 +1,10 @@
+uuid: 92d1e12d-555a-4186-8c82-006016e91bb1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.good_practices
+label: 'Good Practices'
+targetEntityType: node
+cache: true
