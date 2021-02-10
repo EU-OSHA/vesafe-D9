@@ -7,5 +7,5 @@ dependencies:
 id: header_commission
 title: 'Header - European Commission'
 content:
-  value: "<p><a href=\"https://ec.europa.eu/social/home.jsp?langId=en\"><img alt=\"European commision\" class=\"header-img\" data-entity-type=\"file\" data-entity-uuid=\"df958e8c-97c4-4b59-8225-623f983e238f\" src=\"/sites/vesafe/files/inline-images/europeLogo.png\" /></a></p>\r\n"
+  value: "<p><a href=\"https://ec.europa.eu/social/home.jsp?langId=en\"><img alt=\"European commision\" class=\"header-img\" data-entity-type=\"file\" data-entity-uuid=\"4d3e93da-6afd-4714-9b73-47c95c1b5dea\" src=\"/sites/vesafe/files/inline-images/europeLogo.png\" /></a></p>\r\n"
   format: full_html

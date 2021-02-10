@@ -7,5 +7,5 @@ dependencies:
 id: header_european
 title: 'Header - European Agency'
 content:
-  value: "<p><a href=\"https://osha.europa.eu/\"><img alt=\"European agency\" class=\"header-img\" data-entity-type=\"file\" data-entity-uuid=\"a1659012-a730-480f-b7af-0fb0d197de6a\" src=\"/sites/vesafe/files/inline-images/EU-OSHA-en.png\" /></a></p>\r\n"
+  value: "<p><a href=\"https://osha.europa.eu/\"><img alt=\"European agency\" class=\"header-img\" data-entity-type=\"file\" data-entity-uuid=\"127a8ca7-d41d-449a-a738-1683a8d2b651\" src=\"/sites/vesafe/files/inline-images/EU-OSHA-en.png\" /></a></p>\r\n"
   format: full_html
