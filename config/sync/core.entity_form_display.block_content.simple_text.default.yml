@@ -160,6 +160,13 @@ content:
     third_party_settings: {  }
     type: sliderwidget_widget
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   translation:
     weight: 10
     settings: {  }
