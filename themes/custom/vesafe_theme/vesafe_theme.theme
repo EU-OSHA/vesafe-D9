@@ -51,4 +51,26 @@ function vesafe_theme_preprocess_node(&$variables) {
       ]
     ];
   }
+
+  if ($variables['elements']['#view_mode'] == 'card_home') {
+    $variables['content']['_layout_builder'][0]['first']['link'] = [
+      '#type' => 'link',
+      '#title' => '',
+      '#url' => Url::fromUserInput($variables['url']),
+      '#attributes' => [
+        'class' => ['card_home-link']
+      ]
+    ];
+  }
+
+  if ($variables['elements']['#view_mode'] == 'card') {
+    $variables['content']['_layout_builder'][0]['first']['link'] = [
+      '#type' => 'link',
+      '#title' => '',
+      '#url' => Url::fromUserInput($variables['url']),
+      '#attributes' => [
+        'class' => ['card-link']
+      ]
+    ];
+  }
 }
