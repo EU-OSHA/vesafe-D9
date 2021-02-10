@@ -466,7 +466,7 @@ a[target=_blank] svg.ext {
   font-weight: bold;
   text-decoration: none;
 }
-.key-articles-menu-container .nav-header:after.collapse {
+.key-articles-menu-container .nav-header.collapsed:after {
   content: "";
   font-family: "Glyphicons Halflings";
   float: right;

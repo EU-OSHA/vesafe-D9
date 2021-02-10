@@ -77,7 +77,7 @@
     }
 
     .nav-header {
-      &:after.collapse {
+      &.collapsed:after {
         content: "\e252";
         font-family: "Glyphicons Halflings";
         float: right;
@@ -86,7 +86,6 @@
       }
 
       &:after {
-
         content: "\e253";
         font-family: "Glyphicons Halflings";
         float: right;
