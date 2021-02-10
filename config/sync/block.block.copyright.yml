@@ -1,0 +1,22 @@
+uuid: f21c0b0b-4654-4f1d-a065-efe7d9ec39c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.copyright
+  module:
+    - simple_block
+  theme:
+    - vesafe_theme
+id: copyright
+theme: vesafe_theme
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'simple_block:copyright'
+settings:
+  id: 'simple_block:copyright'
+  label: Copyright
+  provider: simple_block
+  label_display: '0'
+visibility: {  }
