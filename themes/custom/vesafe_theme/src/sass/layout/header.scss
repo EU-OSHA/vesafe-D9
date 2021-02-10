@@ -1,0 +1,46 @@
+
+div[class*="block-simple-blockheader-"]{
+  &+&{
+    border-left:2px solid $bg-color-blue;
+  }
+  a{
+    height:51px;
+    display:inline-block;
+  }
+  p{
+    margin:0px;
+  }
+  .header-img{
+    display:inline-block;
+    max-width: 135px;
+    max-height:51px;
+    width:100%;
+    height:auto;
+  }
+  &.block-simple-blockheader-european{
+    a{
+      padding-right: 10px;
+    }
+    .header-img{}
+  }
+
+  &.block-simple-blockheader-commission{
+    .header-img {
+
+      margin-left: 20px;
+      margin-right: 15px;
+      margin-top: 10px;
+    }
+  }
+
+  &.block-simple-blockheader-vesafe{
+    padding-left:15px;
+    .header-img{
+      height: 51px;
+      width:auto;
+    }
+
+  }
+}
+
+
