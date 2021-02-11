@@ -1,0 +1,11 @@
+uuid: 8e0a77e6-5bd2-48ea-8b67-77d452d5aa02
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: search_api_search
+title: 'Search API Search'
+content:
+  value: "    <form class=\"views-exposed-form form-inline\" data-drupal-selector=\"views-exposed-form-search-api-search-api-block\" action=\"/search-0\" method=\"get\" id=\"views-exposed-form-search-api-search-api-block\" accept-charset=\"UTF-8\" data-drupal-form-fields=\"edit-search-api-fulltext,edit-sort-by,edit-sort-order\" novalidate=\"novalidate\">\r\n      <div class=\"form-row\">\r\n\r\n        <fieldset class=\"js-form-item js-form-type-textfield form-type-textfield js-form-item-search-api-fulltext form-item-search-api-fulltext form-group\">\r\n          <input data-drupal-selector=\"edit-search-api-fulltext\" data-msg-maxlength=\"Fulltext search field has a maximum length of 128.\" type=\"text\" id=\"edit-search-api-fulltext\" name=\"search_api_fulltext\" value=\"\" size=\"30\" maxlength=\"128\" class=\"form-control\">\r\n        </fieldset>\r\n\r\n        <div data-drupal-selector=\"edit-actions\" class=\"form-actions js-form-wrapper form-group\" id=\"edit-actions\"><button data-drupal-selector=\"edit-submit-search-api\" type=\"submit\" id=\"edit-submit-search-api\" value=\"Apply\" class=\"button js-form-submit form-submit btn btn-primary\">Apply</button>\r\n        </div>\r\n\r\n      </div>\r\n\r\n    </form>\r\n"
+  format: full_html

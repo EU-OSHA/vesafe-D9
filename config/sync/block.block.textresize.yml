@@ -9,7 +9,7 @@ dependencies:
 id: textresize
 theme: vesafe_theme
 region: header_form
-weight: 0
+weight: -8
 provider: null
 plugin: text_resize_block
 settings:
