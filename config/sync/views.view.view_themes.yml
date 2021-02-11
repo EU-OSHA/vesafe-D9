@@ -297,6 +297,7 @@ display:
         fields: false
         style: false
         row: false
+        css_class: false
       relationships:
         entityqueue_relationship:
           id: entityqueue_relationship
@@ -379,6 +380,7 @@ display:
           separator: ''
           hide_empty: false
           default_field_elements: true
+      css_class: section-themes-front
     cache_metadata:
       max-age: -1
       contexts:
@@ -420,6 +422,9 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
+      css_class: section-themes
+      defaults:
+        css_class: false
     cache_metadata:
       max-age: -1
       contexts:
