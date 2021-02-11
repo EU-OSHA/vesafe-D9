@@ -35,8 +35,28 @@
     &-next{
       right: -18px;
     }
+    &.unslick{
+      .slick{
+        &__slide{
+          width:100%;
+        }
+      }
+    }
   }
 
+  /*  SCROLL TO TOP  */
+  footer #scroll-top {
+    left: 50%;
+    transform:translate(-50%, -125%);
+  }
 
+  /*  BREADCRUMB  */
+  .breadcrumb{
+    display:none;
+  }
 
+  /*  MENU-HEADER  */
+  .menu-header {
+    margin-bottom: 35px;
+  }
 }

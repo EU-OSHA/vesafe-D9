@@ -17,7 +17,11 @@
     });
   });
 
-
+  // Scroll to top
+  $("#scroll-top").on("click", function(e) {
+    e.preventDefault();
+    $("html, body").stop().animate({"scrollTop": "0px"}, 200);
+  });
 
   'use strict';
 

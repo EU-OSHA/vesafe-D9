@@ -1,0 +1,52 @@
+.node--view-mode-card-home{
+  .field--name-field-media-image.field--type-entity-reference{
+    margin-bottom:0px;
+  }
+  .block-field-blocknodekey-articletitle{
+    a{
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      color: $text-color-red;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      font-size: 1.2em;
+    }
+  }
+  .field--name-body{
+    text-align:center;
+  }
+  .block-field-blocknodekey-articlefield-media-image{
+    position:relative;
+    &:hover{
+      .card_home-link{
+        opacity:0.7;
+      }
+    }
+  }
+  .card_home-link{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    display:inline-block;
+    background-color:$bg-color-red;
+    opacity:0.7;
+    &:before{
+      content: "\f0c1";
+      text-decoration: inherit;
+      display: inline-block;
+      speak: none;
+      font-family: "FontAwesome";
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      font-size: 44px;
+      height: 30px;
+      line-height: 33px;
+      color:$text-color-white;
+    }
+  }
+}
