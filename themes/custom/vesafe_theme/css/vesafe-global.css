@@ -532,17 +532,19 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   flex-direction: row;
   justify-content: space-between;
 }
-.header .navbar {
+
+.navbar {
   padding: 0px;
 }
-.header .navbar.navbar-expand-lg {
+.navbar.navbar-expand-lg {
   background-color: #323a93;
   color: #FFF;
 }
-.header .nav-item {
+
+.nav-item {
   margin: 0 5px;
 }
-.header .nav-item:nth-child(1) .nav-link {
+.nav-item:nth-child(1) .nav-link {
   max-height: 35px;
   overflow: hidden;
   text-align: center;
@@ -554,19 +556,21 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   background-position: center;
   padding: 10px 15px;
 }
-.header .nav-link {
+.nav-link {
   color: #FFF;
   padding-top: 14px;
   padding-bottom: 14px;
   font-size: 1em;
 }
-.header .nav-link.active {
+.nav-link.active {
   border-bottom: 2px solid #FFF;
 }
-.header .menu--main {
+
+.menu--main {
   margin: 0 auto;
 }
-.headerheader .navbar-toggle {
+
+.navbar-toggle {
   position: relative;
   margin-right: 15px;
   padding: 9px 10px;
@@ -580,7 +584,8 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   border: none;
   padding-left: 0px !important;
 }
-.header .sr-only {
+
+.sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -590,9 +595,12 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-.header .icon-bar {
+
+.icon-bar {
   background-color: #FFF !important;
   height: 3px !important;
+  display: inline-block;
+  width: 100%;
 }
 
 .block-views-blockview-did-you-know-view-did-you-know {
