@@ -370,6 +370,13 @@ h3 a:hover {
   margin-right: 5px;
 }
 
+.section-select-a-vehicle-type-or-risk h2:before {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+
 a {
   color: #ea4a5e;
   text-decoration: none;

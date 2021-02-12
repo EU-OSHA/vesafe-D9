@@ -162,3 +162,11 @@ h3{
     margin-right: 5px;
   }
 }
+.section-select-a-vehicle-type-or-risk h2{
+  &:before{
+    content: "\e024";
+    font-family: "Glyphicons Halflings";
+    font-size: 0.8em;
+    margin-right: 5px;
+  }
+}
