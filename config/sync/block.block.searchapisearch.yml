@@ -1,0 +1,22 @@
+uuid: c2cc57a8-81c2-49b9-902c-0c7d5b958dfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.search_api_search
+  module:
+    - simple_block
+  theme:
+    - vesafe_theme
+id: searchapisearch
+theme: vesafe_theme
+region: header_form
+weight: -6
+provider: null
+plugin: 'simple_block:search_api_search'
+settings:
+  id: 'simple_block:search_api_search'
+  label: 'Search API Search'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

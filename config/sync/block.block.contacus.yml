@@ -1,0 +1,22 @@
+uuid: b504c4a5-e211-4fa0-a2d4-bc3eec3e2ced
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.contact_us
+  module:
+    - simple_block
+  theme:
+    - vesafe_theme
+id: contacus
+theme: vesafe_theme
+region: header_form
+weight: -9
+provider: null
+plugin: 'simple_block:contact_us'
+settings:
+  id: 'simple_block:contact_us'
+  label: 'Contac Us'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

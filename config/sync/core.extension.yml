@@ -44,6 +44,7 @@ module:
   filter: 0
   gnode: 0
   group: 0
+  gtranslate: 0
   help: 0
   history: 0
   image: 0
@@ -81,6 +82,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  printfriendly: 0
   quickedit: 0
   r4032login: 0
   rdf: 0
