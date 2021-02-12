@@ -1,4 +1,8 @@
 
+.top-header-container{
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
 div[class*="block-simple-blockheader-"]{
   &+&{
     border-left:2px solid $bg-color-blue;
@@ -42,18 +46,180 @@ div[class*="block-simple-blockheader-"]{
 
   }
 }
-
-
-
-  .header{
-    &-menu-news{
-      display:flex;
-      flex-direction: row;
-    }
-    .push-right{
-      width:100%;
-      display:flex;
-      flex-direction: row;
-      justify-content: space-between;
+.header{
+  &-menu-news{
+    float:left;
+    &>.block{
+      display: inline-block;
     }
   }
+  .push-right{
+    width:100%;
+  }
+  &-blocks{
+    max-width: 273px;
+    min-width: 260px;
+    float: right;
+    font-size: 16px;
+  }
+}
+
+
+.block-simple-blockcontact-us{
+  display: inline-block;
+  p{
+    margin: 0px;
+    border-right: 2px solid $bg-color-blue;
+    padding-right: 12px;
+    font-size: 16px;
+    a{
+      color: $bg-color-blue;
+    }
+  }
+}
+.block-text-resize-block{
+  display: inline-block;
+  a{
+
+    &#text_resize_decrease {
+      display: inline-block;
+      float: inherit;
+      margin: 0px;
+      text-indent: 0px;
+      width: 20px;
+      background: inherit !important;
+      text-transform: lowercase;
+      height: 24px;
+      color: $bg-color-blue;
+      text-decoration: none;
+      text-align: center;
+      font-size: 17px;
+    }
+    &#text_resize_increase {
+      display: inline-block;
+      float: inherit;
+      margin: 0px;
+      text-indent: 0px;
+      width: 20px;
+      background: inherit !important;
+      text-transform: lowercase;
+      height: 24px;
+      color: $bg-color-blue;
+      text-decoration: none;
+      text-align: center;
+      font-size: 29px;
+      line-height: 16px;
+    }
+    sup{
+      display:none;
+    }
+  }
+
+}
+.block-block-printfriendly{
+  display: inline-block;
+  vertical-align:bottom;
+  a{
+    border-left: 2px solid $bg-color-blue;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 9px;
+    width: 30px;
+    overflow: hidden;
+    display: block;
+    height: 22px;
+    font-size: 4px;
+    margin-left: 2px;
+    &:before {
+      content: "\e045";
+      font-family: "Glyphicons Halflings";
+      font-size: 19px;
+      vertical-align: bottom;
+      display: inline-block;
+      color: $bg-color-blue;
+      line-height: 22px;
+    }
+    img{
+      display:none;
+    }
+  }
+}
+.block-simple-blocksearch-api-search{
+  margin-top: 7px;
+  background-color: $bg-color-blue;
+  border-radius: 13px;
+  min-height: 27px;
+  width: 187px;
+  #views-exposed-form-search-api-search-api-block{
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+    .form-item-search-api-fulltext{
+      width: calc(100% - 26px);
+      display: inline-block;
+    }
+    input{
+      width: 100%;
+      height: 21px;
+      padding: 0px;
+      box-shadow: none;
+      border-radius: 0px;
+      border: none;
+      border-bottom: 1px solid $bg-color-white;
+      background-color: $bg-color-blue;
+      outline: none;
+      margin-left: 10px;
+      color: $text-color-white;
+      margin-bottom: 4px;
+    }
+    .form-submit{
+      background-color: $bg-color-blue;
+      padding: 0px;
+      outline: none;
+      border: none;
+      float: right;
+      margin-right: 10px;
+      margin-top: 3px;
+      width:16px;
+      height:22px;
+      color:transparent;
+      overflow: hidden;
+
+      &:before {
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        content: "\e003";
+        color: $text-color-white;
+      }
+    }
+  }
+}
+.block-gtranslate-block{
+  margin-top: 7px;
+  &:before {
+    content: "";
+    background: url(/sites/vesafe/themes/custom/vesafe_theme/images/google-g-logo.png);
+    width: 25px;
+    height: 26px;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: bottom;
+    background-size: cover;
+  }
+  .content{
+    display: inline-block !important;
+  }
+  select{
+    border-color: $bg-color-blue;
+    width: 150px;
+    display: inline-block !important;
+    background-color: $bg-color-white;
+  }
+}
+
+
