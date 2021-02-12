@@ -4,6 +4,14 @@
   &.navbar-expand-lg{
     background-color: $bg-color-blue;
     color:$text-color-white;
+    padding:0px 15px;
+  }
+  &-collapse{
+    overflow-x: visible;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba($bg-color-white, 0.1);
   }
 }
 .nav{
@@ -38,10 +46,10 @@
     margin: 0 auto;
   }
 }
-.navbar-toggle {
+.navbar-toggler {
   position: relative;
   margin-right: 15px;
-  padding: 9px 10px;
+  padding: 9px 5px;
   margin-top: 8px;
   margin-bottom: 8px;
   background-color: transparent;
@@ -50,7 +58,12 @@
   display: block;
   float: left;
   border: none;
-  padding-left: 0px !important;
+  &:focus,
+  &:active{
+    border:none;
+    outline:none;
+    box-shadow: none;
+  }
 }
 .sr-only {
   position: absolute;
@@ -63,8 +76,13 @@
   border: 0;
 }
 .icon-bar {
-  background-color: $bg-color-white !important;
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: white !important;
   height: 3px !important;
-  display:inline-block;
-  width:100%;
+  &+&{
+    margin-top: 4px;
+  }
 }
