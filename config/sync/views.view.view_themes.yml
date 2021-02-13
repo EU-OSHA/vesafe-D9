@@ -367,7 +367,7 @@ display:
         options:
           grouping: {  }
           columns: 3
-          automatic_width: true
+          automatic_width: false
           alignment: horizontal
           col_class_default: false
           col_class_custom: 'views-col col-12 col-md-4'

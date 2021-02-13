@@ -1,0 +1,49 @@
+uuid: d1b7dd50-e223-452e-a8f4-30bd44cc1f47
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - custom_migrations
+id: vesafe_taxonomy_risk
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: vesafe_migrate
+label: 'Terms: Risk'
+source:
+  plugin: d7_taxonomy_term
+  bundle: risk
+process:
+  tid:
+    -
+      plugin: get
+      source: tid
+  vid:
+    -
+      plugin: default_value
+      default_value: risk
+  langcode:
+    -
+      plugin: get
+      source: language
+  name:
+    -
+      plugin: get
+      source: name
+  description/value:
+    -
+      plugin: get
+      source: description
+  weight:
+    -
+      plugin: get
+      source: weight
+  changed:
+    -
+      plugin: get
+      source: timestamp
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies: null
