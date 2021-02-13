@@ -16,3 +16,4 @@ permissions:
   - 'use exclude node title'
   - 'use text format filtered_html'
   - 'view files'
+  - 'view media'

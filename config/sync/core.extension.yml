@@ -60,6 +60,7 @@ module:
   layout_discovery: 0
   layoutcomponents: 0
   lc_simple_card: 0
+  lc_simple_image: 0
   lc_simple_text: 0
   lc_simple_title: 0
   lc_slick: 0

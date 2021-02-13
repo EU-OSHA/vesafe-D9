@@ -7,5 +7,5 @@ dependencies:
 id: contact_us
 title: 'Contac Us'
 content:
-  value: "<p><a href=\"/contact\">Contact Us</a></p>\r\n"
+  value: "<p><a href=\"/content/contact-us\">Contact Us</a></p>\r\n"
   format: full_html
