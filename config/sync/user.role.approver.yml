@@ -18,6 +18,7 @@ permissions:
   - 'edit own good_practice content'
   - 'edit own key_article content'
   - 'use manualcrop'
+  - 'use text format basic_html'
   - 'use text format full_html'
   - 'use text format full_html_minimal'
   - 'view all unpublished content'

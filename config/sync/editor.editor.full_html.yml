@@ -19,21 +19,39 @@ settings:
           items:
             - Bold
             - Italic
+            - Underline
             - Strike
             - Superscript
             - Subscript
             - '-'
             - RemoveFormat
         -
-          name: Linking
+          name: Align
           items:
-            - DrupalLink
-            - DrupalUnlink
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
         -
           name: Lists
           items:
             - BulletedList
             - NumberedList
+        -
+          name: Indent
+          items:
+            - Indent
+            - Outdent
+        -
+          name: State
+          items:
+            - Undo
+            - Redo
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
         -
           name: Media
           items:
@@ -45,19 +63,29 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - FontSize
+            - Font
         -
           name: Tools
           items:
             - ShowBlocks
             - Source
+            - Paste
+            - PasteText
+            - SpecialChar
   plugins:
+    language:
+      language_list: un
     stylescombo:
       styles: ''
+    font:
+      font_names: ''
+      font_sizes: ''
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null
