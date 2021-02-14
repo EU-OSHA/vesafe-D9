@@ -892,7 +892,7 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--cabxw9m5iaE
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--kBz-9pg8EAg
           section:
             general:
               basic:
@@ -901,7 +901,7 @@ third_party_settings:
                 section_label: '11611914650'
                 section_delta: '0'
               structure:
-                section_structure: 8/4
+                section_structure: 9/3
                 section_carousel: 0
                 section_carousel_slick: none
             styles:
@@ -924,7 +924,7 @@ third_party_settings:
                 extra_class: ''
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--9yNJB8exJQU
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--1__IkUhAiAE
           regions:
             first:
               title:
@@ -1213,7 +1213,7 @@ third_party_settings:
             region: second
             configuration:
               id: 'field_block:node:good_practice:field_additional_resources'
-              label: 'Related resources'
+              label: 'Additional resources'
               provider: layout_builder
               label_display: visible
               formatter:

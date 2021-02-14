@@ -88,8 +88,8 @@ third_party_settings:
       label: Media
     group_related_information:
       children:
-        - field_additional_resources
         - field_gp_external_links
+        - field_additional_resources
         - field_thesaurus_2020
       parent_name: group_info
       weight: 27
@@ -114,7 +114,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_additional_resources:
-    weight: 1
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''

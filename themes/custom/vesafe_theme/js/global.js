@@ -37,7 +37,8 @@
       // Run the function if the view exists.
       if ($view !== 'undefined' && $view !== '' && $view.length !== 0) {
         // Include the button
-        $view.append($('<a href="#" class="additional-resources-link-more">' + Drupal.t("See more links") + '</a>').on('click', function () {
+        $view.once('more-link').append($('<a href="#" class="additional-resources-link-more">' + Drupal.t("See more links") + '</a>').on('click', function (e) {
+          e.preventDefault();
           if ($(this).hasClass('additional-resources-link-less')) {
             // Hide the elements.
             hideItems($view);
