@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.good_practice.field_publication_date
     - field.field.node.good_practice.field_risks
     - field.field.node.good_practice.field_thesaurus_2020
+    - field.field.node.good_practice.field_thumbnail
     - field.field.node.good_practice.field_vehicles
     - node.type.good_practice
   module:
@@ -144,38 +145,6 @@ third_party_settings:
                 title: ''
               layout_settings__container__regions__first__active_tab: edit-layout-settings-container-regions-first-styles--JxKnfQwJTDc
         components:
-          d3539560-e9b5-46ef-8d4d-6c49cf348876:
-            uuid: d3539560-e9b5-46ef-8d4d-6c49cf348876
-            region: first
-            configuration:
-              id: 'field_block:node:good_practice:field_media_image'
-              label: Image
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_entity_view
-                settings:
-                  view_mode: standard_4_3
-                third_party_settings:
-                  linked_field:
-                    linked: 1
-                    type: custom
-                    destination:
-                      field: ''
-                      custom: '[node:url]'
-                    advanced:
-                      title: ''
-                      target: ''
-                      class: ''
-                      rel: ''
-                      text: ''
-                    token: ''
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 0
           addecd7f-b0d2-4143-8cc2-4d993a94cdb8:
             uuid: addecd7f-b0d2-4143-8cc2-4d993a94cdb8
             region: first
@@ -207,7 +176,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 1
+            weight: 2
           e5d07750-0504-4315-995d-b30d8820ca32:
             uuid: e5d07750-0504-4315-995d-b30d8820ca32
             region: first
@@ -217,7 +186,39 @@ third_party_settings:
                 entity: layout_builder.entity
               id: 'extra_field_block:node:good_practice:content_moderation_control'
             additional: {  }
-            weight: 2
+            weight: 3
+          df424ab2-0fa2-4674-8c5b-80cb434758ff:
+            uuid: df424ab2-0fa2-4674-8c5b-80cb434758ff
+            region: first
+            configuration:
+              id: 'field_block:node:good_practice:field_thumbnail'
+              label: Thumbnail
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: standard_4_3
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: field
+                    destination:
+                      field: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layoutcomponents_one_column
@@ -400,6 +401,7 @@ hidden:
   field_publication_date: true
   field_risks: true
   field_thesaurus_2020: true
+  field_thumbnail: true
   field_vehicles: true
   langcode: true
   links: true

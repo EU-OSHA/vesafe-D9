@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.key_article.field_publication_date
     - field.field.node.key_article.field_related_good_practices
     - field.field.node.key_article.field_subtitle
+    - field.field.node.key_article.field_thumbnail
     - node.type.key_article
   module:
     - layout_builder
@@ -138,12 +139,12 @@ third_party_settings:
                 title: ''
               layout_settings__container__regions__first__active_tab: edit-layout-settings-container-regions-first-styles--x8BpicuwR_E
         components:
-          752b72be-dce0-4aed-a890-6a3c4a4ff9c5:
-            uuid: 752b72be-dce0-4aed-a890-6a3c4a4ff9c5
+          af0aee22-e4e7-45b3-ad0c-a6fbf9e7429c:
+            uuid: af0aee22-e4e7-45b3-ad0c-a6fbf9e7429c
             region: first
             configuration:
-              id: 'field_block:node:key_article:field_media_image'
-              label: Image
+              id: 'field_block:node:key_article:field_thumbnail'
+              label: Thumbnail
               provider: layout_builder
               label_display: '0'
               formatter:
@@ -375,6 +376,7 @@ hidden:
   field_publication_date: true
   field_related_good_practices: true
   field_subtitle: true
+  field_thumbnail: true
   langcode: true
   links: true
   search_api_excerpt: true

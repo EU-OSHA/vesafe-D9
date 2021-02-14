@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.key_article.field_publication_date
     - field.field.node.key_article.field_related_good_practices
     - field.field.node.key_article.field_subtitle
+    - field.field.node.key_article.field_thumbnail
     - node.type.key_article
     - workflows.workflow.editorial
   module:
@@ -58,7 +59,7 @@ third_party_settings:
     group_media:
       children:
         - field_media_image
-        - field_media_thumbnail
+        - field_thumbnail
       parent_name: group_info
       weight: 19
       format_type: tab
@@ -175,6 +176,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_thumbnail:
+    type: media_library_widget
+    weight: 21
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
     region: content
   langcode:
     type: language_select
