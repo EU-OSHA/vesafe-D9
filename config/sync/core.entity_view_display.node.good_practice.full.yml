@@ -21,10 +21,12 @@ dependencies:
     - field.field.node.good_practice.field_thumbnail
     - field.field.node.good_practice.field_vehicles
     - node.type.good_practice
+    - simple_block.simple_block.return_to_list
     - views.view.good_practices
   module:
     - layout_builder
     - layoutcomponents
+    - simple_block
     - user
     - views
 third_party_settings:
@@ -332,6 +334,8 @@ third_party_settings:
                   settings:
                     color: '#000000'
                     opacity: '1'
+                  color: '#000000'
+                  opacity: '1'
                 title_type: h1
                 title_align: text-left
               sizing:
@@ -343,13 +347,15 @@ third_party_settings:
                   settings:
                     color: '#f75461'
                     opacity: '1'
+                  color: '#f75461'
+                  opacity: '1'
               spacing:
                 title_margin_top: '0'
                 title_margin_bottom: '0'
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--8jQbiFU46Yk
+            layout_settings__container__title__container__active_tab: ''
           section:
             general:
               basic:
@@ -359,7 +365,7 @@ third_party_settings:
                 section_delta: '0'
               structure:
                 section_structure: 6/6
-                section_carousel: 0
+                section_carousel: false
                 section_carousel_slick: none
             styles:
               background:
@@ -368,6 +374,8 @@ third_party_settings:
                   settings:
                     color: ''
                     opacity: '1'
+                  color: ''
+                  opacity: '1'
               sizing:
                 full_width: 0
                 full_width_container: 0
@@ -381,7 +389,7 @@ third_party_settings:
                 extra_class: ''
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--Rf81vAKkIhY
+            layout_settings__container__section__container__active_tab: ''
           regions:
             first:
               title:
@@ -444,8 +452,6 @@ third_party_settings:
                     settings:
                       color: '#000000'
                       opacity: '1'
-                    color: '#000000'
-                    opacity: '1'
                   size: '0'
                   align: text-left
                   border: none
@@ -454,8 +460,6 @@ third_party_settings:
                     settings:
                       color: '#f75461'
                       opacity: '1'
-                    color: '#f75461'
-                    opacity: '1'
                 border:
                   border: none
                   size: '0'
@@ -463,8 +467,6 @@ third_party_settings:
                     settings:
                       color: ''
                       opacity: '1'
-                    color: ''
-                    opacity: '1'
                   radius_top_left: '0'
                   radius_top_right: '0'
                   radius_bottom_left: '0'
@@ -474,8 +476,6 @@ third_party_settings:
                     settings:
                       color: ''
                       opacity: '1'
-                    color: ''
-                    opacity: '1'
                 spacing:
                   paddings: 0
                   paddings_left: 0
@@ -484,7 +484,7 @@ third_party_settings:
                   extra_class: ''
               general:
                 title: ''
-              layout_settings__container__regions__second__active_tab: ''
+              layout_settings__container__regions__second__active_tab: edit-layout-settings-container-regions-second-styles--LRJCaHqOOCA
         components:
           a4bd4268-1b85-4e47-bf7e-add6d847ae18:
             uuid: a4bd4268-1b85-4e47-bf7e-add6d847ae18
@@ -515,6 +515,17 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
+            additional: {  }
+            weight: 0
+          702d035c-4e3e-40d4-bd4b-f1dd88c2d2b0:
+            uuid: 702d035c-4e3e-40d4-bd4b-f1dd88c2d2b0
+            region: second
+            configuration:
+              id: 'simple_block:return_to_list'
+              label: 'Return to list'
+              provider: simple_block
+              label_display: '0'
+              context_mapping: {  }
             additional: {  }
             weight: 0
         third_party_settings: {  }

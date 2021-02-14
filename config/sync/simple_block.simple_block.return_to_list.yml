@@ -1,0 +1,11 @@
+uuid: 2305e70e-4468-4ed1-be9e-2b2343c375ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: return_to_list
+title: 'Return to list'
+content:
+  value: '<a class="back-arrow" href="/good-practices">Return to list</a>'
+  format: full_html
