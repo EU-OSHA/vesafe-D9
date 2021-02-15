@@ -52,3 +52,5 @@ hidden:
   field_publication_date: true
   field_related_good_practices: true
   field_subtitle: true
+  langcode: true
+  search_api_excerpt: true

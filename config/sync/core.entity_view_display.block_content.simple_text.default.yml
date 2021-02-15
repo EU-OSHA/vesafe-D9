@@ -33,3 +33,5 @@ hidden:
   field_st_extra_class: true
   field_st_margin_bottom: true
   field_st_margin_top: true
+  langcode: true
+  search_api_excerpt: true
