@@ -170,3 +170,21 @@ h3{
     margin-right: 5px;
   }
 }
+
+.block-views-blockvehicles-list-vehicles-list h2{
+  &:before{
+    content: "\f1b9";
+    font-family: "FontAwesome";
+    font-size: 1em;
+    margin-right: 5px;
+  }
+}
+
+.block-views-blockvehicles-list-risk-list h2{
+  &:before{
+    content: "\f005" !important;
+    font-family: "FontAwesome";
+    font-size: 1em;
+    margin-right: 5px;
+  }
+}

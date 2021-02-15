@@ -4,24 +4,22 @@
   padding-bottom: 7px;
 }
 div[class*="block-simple-blockheader-"]{
-  &+&{
-    border-left:2px solid $bg-color-blue;
-  }
   a{
-    height:51px;
+   // height:51px;
     display:inline-block;
   }
   p{
     margin:0px;
   }
   .header-img{
-    display:inline-block;
-    max-width: 135px;
-    max-height:51px;
-    width:100%;
-    height:auto;
+    //display:inline-block;
+    //max-width: 135px;
+    //max-height:51px;
+    //width:100%;
+    //height:auto;
   }
   &.block-simple-blockheader-european{
+    border-right:2px solid $bg-color-blue;
     a{
       padding-right: 10px;
     }
@@ -29,19 +27,28 @@ div[class*="block-simple-blockheader-"]{
   }
 
   &.block-simple-blockheader-commission{
+    max-width: 35%;
+    padding-left: 20px;
+    padding-right: 15px;
     .header-img {
-
-      margin-left: 20px;
-      margin-right: 15px;
+      float: left;
+      //max-width: 262px;
+      //max-width: 35%;
+      //margin-right: 15px;
       margin-top: 10px;
+      //margin-left: 20px;
     }
   }
 
   &.block-simple-blockheader-vesafe{
+    border-left:2px solid $bg-color-blue;
     padding-left:15px;
     .header-img{
-      height: 51px;
-      width:auto;
+      //height: 51px;
+      //width:auto;
+      min-width: inherit;
+      width: inherit;
+      height: 95px;
     }
 
   }
@@ -51,6 +58,7 @@ div[class*="block-simple-blockheader-"]{
     float:left;
     &>.block{
       display: inline-block;
+      vertical-align: bottom;
     }
   }
   .push-right{
@@ -166,7 +174,7 @@ div[class*="block-simple-blockheader-"]{
       border-radius: 0px;
       border: none;
       border-bottom: 1px solid $bg-color-white;
-      background-color: $bg-color-blue;
+      background-color: transparent;
       outline: none;
       margin-left: 10px;
       color: $text-color-white;

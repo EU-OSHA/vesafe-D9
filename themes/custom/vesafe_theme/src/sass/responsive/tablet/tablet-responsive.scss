@@ -1,6 +1,34 @@
 @media (min-width:768px) and (max-width:991px){
+
+  /*  MENU-HEADER  */
+
   .navbar-collapse nav {
     padding-bottom: 20px;
   }
+  .top-header-container {
+    max-width: 100%;
+  }
+  div[class*="block-simple-blockheader-"]{
+    &.block-simple-blockheader-european{
+      a{
+        height: 70px;
+      }
+      .header-img{
+        max-width: 169px;
+        height: 70px;
+      }
+    }
 
+    &.block-simple-blockheader-commission{
+      .header-img {
+      }
+    }
+
+    &.block-simple-blockheader-vesafe{
+      max-width: 170px;
+      .header-img{
+        height: 70px;
+      }
+    }
+  }
 }
