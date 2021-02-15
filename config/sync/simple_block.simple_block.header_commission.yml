@@ -1,0 +1,11 @@
+uuid: 3020f219-34c4-446d-b743-d5756f55397a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: header_commission
+title: 'Header - European Commission'
+content:
+  value: "<p><a href=\"https://ec.europa.eu/social/home.jsp?langId=en\"><img alt=\"European commision\" class=\"header-img\" data-entity-type=\"file\" data-entity-uuid=\"4d3e93da-6afd-4714-9b73-47c95c1b5dea\" src=\"/sites/vesafe/files/inline-images/europeLogo.png\" /></a></p>\r\n"
+  format: full_html

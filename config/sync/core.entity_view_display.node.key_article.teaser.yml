@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.key_article.field_publication_date
     - field.field.node.key_article.field_related_good_practices
     - field.field.node.key_article.field_subtitle
+    - field.field.node.key_article.field_thumbnail
     - node.type.key_article
   module:
     - text
@@ -52,5 +53,6 @@ hidden:
   field_publication_date: true
   field_related_good_practices: true
   field_subtitle: true
+  field_thumbnail: true
   langcode: true
   search_api_excerpt: true

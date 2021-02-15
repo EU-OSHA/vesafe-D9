@@ -1,9 +1,36 @@
 .breadcrumb{
+
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: $bg-color-white;
+  border-radius: 0rem;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: -12px;
+  margin-top: 3px;
+  font-size: 0.95em;
+
+  &-item{
+    &.active{
+      color: $text-color-red;
+    }
+    &+&{
+      &:before {
+        display: inline-block;
+        padding-right: .5rem;
+        color: $text-color-black;
+        content: ">";
+      }
+    }
+  }
+
   a{
     color: $text-color-black;
     text-decoration: none;
     &:hover{
       font-weight: bold;
+      color: $text-color-black;
     }
   }
   span.last{

@@ -1,11 +1,11 @@
-uuid: 3080c979-83df-4de3-82c1-ddc7d5b759ba
+uuid: f21c0b0b-4654-4f1d-a065-efe7d9ec39c2
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:b48cf8cc-26f9-44bc-bd6e-591de84843db'
+  config:
+    - simple_block.simple_block.copyright
   module:
-    - block_content
+    - simple_block
   theme:
     - vesafe_theme
 id: copyright
@@ -13,13 +13,10 @@ theme: vesafe_theme
 region: footer_fifth
 weight: 0
 provider: null
-plugin: 'block_content:b48cf8cc-26f9-44bc-bd6e-591de84843db'
+plugin: 'simple_block:copyright'
 settings:
-  id: 'block_content:b48cf8cc-26f9-44bc-bd6e-591de84843db'
+  id: 'simple_block:copyright'
   label: Copyright
-  provider: block_content
+  provider: simple_block
   label_display: '0'
-  status: true
-  info: ''
-  view_mode: full
 visibility: {  }

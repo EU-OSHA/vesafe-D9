@@ -1,0 +1,11 @@
+uuid: b5ac4b13-1b84-41a7-a935-49955827a931
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: copyright
+title: Copyright
+content:
+  value: "<p>© 2021 EU-OSHA | an agency of the European Union</p>\r\n"
+  format: full_html

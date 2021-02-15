@@ -264,6 +264,7 @@ display:
         - 'config:core.entity_view_display.node.did_you_know_slide.teaser'
         - 'config:core.entity_view_display.node.good_practice.default'
         - 'config:core.entity_view_display.node.good_practice.full'
+        - 'config:core.entity_view_display.node.good_practice.good_practices'
         - 'config:core.entity_view_display.node.good_practice.related_good_practices'
         - 'config:core.entity_view_display.node.good_practice.teaser'
         - 'config:core.entity_view_display.node.key_article.card'
@@ -294,6 +295,9 @@ display:
         title: false
         relationships: false
         fields: false
+        style: false
+        row: false
+        css_class: false
       relationships:
         entityqueue_relationship:
           id: entityqueue_relationship
@@ -358,6 +362,25 @@ display:
           view_mode: card_home
           entity_type: node
           plugin_id: rendered_entity
+      style:
+        type: grid
+        options:
+          grouping: {  }
+          columns: 3
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: false
+          col_class_custom: 'views-col col-12 col-md-4'
+          row_class_default: true
+          row_class_custom: ''
+      row:
+        type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
+      css_class: section-themes-front
     cache_metadata:
       max-age: -1
       contexts:
@@ -373,6 +396,7 @@ display:
         - 'config:core.entity_view_display.node.did_you_know_slide.teaser'
         - 'config:core.entity_view_display.node.good_practice.default'
         - 'config:core.entity_view_display.node.good_practice.full'
+        - 'config:core.entity_view_display.node.good_practice.good_practices'
         - 'config:core.entity_view_display.node.good_practice.related_good_practices'
         - 'config:core.entity_view_display.node.good_practice.teaser'
         - 'config:core.entity_view_display.node.key_article.card'
@@ -398,6 +422,9 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
+      css_class: section-themes
+      defaults:
+        css_class: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -413,6 +440,7 @@ display:
         - 'config:core.entity_view_display.node.did_you_know_slide.teaser'
         - 'config:core.entity_view_display.node.good_practice.default'
         - 'config:core.entity_view_display.node.good_practice.full'
+        - 'config:core.entity_view_display.node.good_practice.good_practices'
         - 'config:core.entity_view_display.node.good_practice.related_good_practices'
         - 'config:core.entity_view_display.node.good_practice.teaser'
         - 'config:core.entity_view_display.node.key_article.card'

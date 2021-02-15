@@ -154,3 +154,19 @@ h3{
     font-weight: normal;
   }
 }
+.block-views-blockview-themes-view-key-articles-front-page h2{
+  &:before{
+    content: "\f084";
+    font-family: "FontAwesome";
+    font-size: 0.9em;
+    margin-right: 5px;
+  }
+}
+.section-select-a-vehicle-type-or-risk h2{
+  &:before{
+    content: "\e024";
+    font-family: "Glyphicons Halflings";
+    font-size: 0.8em;
+    margin-right: 5px;
+  }
+}

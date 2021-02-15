@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.key_article.field_publication_date
     - field.field.node.key_article.field_related_good_practices
     - field.field.node.key_article.field_subtitle
+    - field.field.node.key_article.field_thumbnail
     - node.type.key_article
   module:
     - layout_builder
@@ -140,41 +141,6 @@ third_party_settings:
                 title: ''
               layout_settings__container__regions__first__active_tab: ''
         components:
-          b6c2e84f-ef50-4a8e-b53f-ce7cce2131a5:
-            uuid: b6c2e84f-ef50-4a8e-b53f-ce7cce2131a5
-            region: first
-            configuration:
-              id: 'field_block:node:key_article:field_media_image'
-              label: Image
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_entity_view
-                settings:
-                  view_mode: standard_4_3
-                third_party_settings:
-                  linked_field:
-                    linked: 0
-                    type: custom
-                    destination:
-                      field:
-                        field: ''
-                        custom:
-                          custom: Array
-                      custom: Array
-                    advanced:
-                      title: ''
-                      target: ''
-                      class: ''
-                      rel: ''
-                      text: ''
-                    token: ''
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 0
           ce339abd-3e80-4998-99a4-0a7b52a1ff1b:
             uuid: ce339abd-3e80-4998-99a4-0a7b52a1ff1b
             region: first
@@ -209,7 +175,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 1
+            weight: 2
           feb74502-2439-45bc-aced-43c5704d523b:
             uuid: feb74502-2439-45bc-aced-43c5704d523b
             region: first
@@ -241,7 +207,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 2
+            weight: 3
           9c486651-7d40-4207-9960-ece0a91d6fab:
             uuid: 9c486651-7d40-4207-9960-ece0a91d6fab
             region: first
@@ -251,7 +217,39 @@ third_party_settings:
                 entity: layout_builder.entity
               id: 'extra_field_block:node:key_article:content_moderation_control'
             additional: {  }
-            weight: 3
+            weight: 4
+          501bff48-4af2-45d1-b6ef-ca0f802d6e45:
+            uuid: 501bff48-4af2-45d1-b6ef-ca0f802d6e45
+            region: first
+            configuration:
+              id: 'field_block:node:key_article:field_thumbnail'
+              label: Thumbnail
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: standard_4_3
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: field
+                    destination:
+                      field: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
 id: node.key_article.card
 targetEntityType: node
@@ -276,6 +274,7 @@ hidden:
   field_publication_date: true
   field_related_good_practices: true
   field_subtitle: true
+  field_thumbnail: true
   langcode: true
   links: true
   search_api_excerpt: true

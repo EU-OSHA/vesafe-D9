@@ -13,7 +13,6 @@
         }
       }
     .lc-inline_column_first-content-edit{
-      //height:194px;
       overflow:hidden;
     }
   }
@@ -72,5 +71,12 @@
       }
     }
 
+  }
+  &.unslick{
+    .slick{
+      &__slide{
+        width:25%;
+      }
+    }
   }
 }

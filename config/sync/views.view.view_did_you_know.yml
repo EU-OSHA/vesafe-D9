@@ -263,6 +263,7 @@ display:
         operator: AND
         groups:
           1: AND
+      css_class: section-did-you-know
     cache_metadata:
       max-age: -1
       contexts:

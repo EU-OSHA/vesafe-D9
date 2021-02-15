@@ -1,0 +1,22 @@
+uuid: 334f2527-b1b6-4cda-ad8c-30f7f4df750c
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.header_commission
+  module:
+    - simple_block
+  theme:
+    - vesafe_theme
+id: headereuropeancommission
+theme: vesafe_theme
+region: header
+weight: 0
+provider: null
+plugin: 'simple_block:header_commission'
+settings:
+  id: 'simple_block:header_commission'
+  label: 'Header - European Commission'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

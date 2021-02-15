@@ -3,9 +3,9 @@ name: 'VeSafe - Vehicle safety e-guide - European Agency for Safety and Health a
 mail: no-reply@osha.europa.eu
 slogan: 'One stop shop for vehicle safety'
 page:
-  403: /node/26
-  404: /node/27
-  front: /node/19
+  403: ''
+  404: ''
+  front: /node/4206
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

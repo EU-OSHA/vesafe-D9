@@ -1,0 +1,22 @@
+uuid: f1f9bf8d-1dc8-4762-8417-da094672cf3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.header_vesafe
+  module:
+    - simple_block
+  theme:
+    - vesafe_theme
+id: headervesafe
+theme: vesafe_theme
+region: header
+weight: 0
+provider: null
+plugin: 'simple_block:header_vesafe'
+settings:
+  id: 'simple_block:header_vesafe'
+  label: 'Header - Vesafe'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

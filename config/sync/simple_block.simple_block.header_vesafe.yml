@@ -1,0 +1,11 @@
+uuid: df386063-e1d1-49b3-8079-16fc5f85c239
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: header_vesafe
+title: 'Header - Vesafe'
+content:
+  value: "<p><a href=\"/\"><img alt=\"Vesafe logo\" class=\"header-img\" data-entity-type=\"file\" data-entity-uuid=\"73736daf-29f4-4cb8-a5f0-dc8d434731de\" src=\"/sites/vesafe/files/inline-images/logo-vesafe.png\" /></a></p>\r\n"
+  format: full_html

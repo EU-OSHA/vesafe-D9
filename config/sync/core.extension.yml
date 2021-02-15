@@ -12,6 +12,7 @@ module:
   chosen_field: 0
   chosen_lib: 0
   ckeditor: 0
+  ckeditor_font: 0
   clientside_validation: 0
   clientside_validation_jquery: 0
   color: 0
@@ -24,6 +25,7 @@ module:
   contextual: 0
   crop: 0
   ctools: 0
+  custom_migrations: 0
   datetime: 0
   dblog: 0
   devel: 0
@@ -45,6 +47,7 @@ module:
   filter: 0
   gnode: 0
   group: 0
+  gtranslate: 0
   help: 0
   history: 0
   image: 0
@@ -61,6 +64,7 @@ module:
   layout_discovery: 0
   layoutcomponents: 0
   lc_simple_card: 0
+  lc_simple_image: 0
   lc_simple_text: 0
   lc_simple_title: 0
   lc_slick: 0
@@ -75,6 +79,7 @@ module:
   metatag: 0
   metatag_dc: 0
   migrate: 0
+  migrate_drupal: 0
   migrate_plus: 0
   migrate_tools: 0
   node: 0
@@ -84,6 +89,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  printfriendly: 0
   quickedit: 0
   r4032login: 0
   rdf: 0
@@ -91,6 +97,8 @@ module:
   search_api: 0
   search_api_solr: 0
   shortcut: 0
+  simple_block: 0
+  sitemap: 0
   slick: 0
   slick_ui: 0
   slick_views: 0

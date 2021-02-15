@@ -1,0 +1,22 @@
+uuid: 73dc64f4-de07-4830-80a5-dd8a5004720e
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - color_field
+_core:
+  default_config_hash: 6bfFDOsvn2s0sMNkc8WFUy5w_ihkzYlLzwW0HmSf5yM
+id: block_content.field_si_border_color
+field_name: field_si_border_color
+entity_type: block_content
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

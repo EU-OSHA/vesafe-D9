@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.good_practice.field_publication_date
     - field.field.node.good_practice.field_risks
     - field.field.node.good_practice.field_thesaurus_2020
+    - field.field.node.good_practice.field_thumbnail
     - field.field.node.good_practice.field_vehicles
     - node.type.good_practice
   module:
@@ -69,6 +70,7 @@ hidden:
   field_publication_date: true
   field_risks: true
   field_thesaurus_2020: true
+  field_thumbnail: true
   field_vehicles: true
   langcode: true
   search_api_excerpt: true
