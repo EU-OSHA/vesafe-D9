@@ -40,6 +40,7 @@ function vesafe_theme_form_system_theme_settings_alter(&$form, FormStateInterfac
  * Insert the current link into the display to make it clickable.
  */
 function vesafe_theme_preprocess_node(&$variables) {
+  $node = $variables['elements']['#node'];
   // Insert the node link to make the could_be_interesting card clickable.
   if ($variables['elements']['#view_mode'] == 'related_good_practices') {
     $variables['content']['_layout_builder'][0]['first']['link'] = [
@@ -72,5 +73,17 @@ function vesafe_theme_preprocess_node(&$variables) {
         'class' => ['card-link']
       ]
     ];
+
+    if ($node->bundle() == 'good_practice') {
+      $variables['content']['_layout_builder'][2]['second']['read_more'] = [
+        '#type' => 'link',
+        '#title' => t('Read More'),
+        '#url' => Url::fromUserInput($variables['url']),
+        '#attributes' => [
+          'class' => ['card-read-morelink']
+        ]
+      ];
+    }
   }
+
 }
