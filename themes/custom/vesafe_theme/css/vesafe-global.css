@@ -104,6 +104,11 @@ body {
   }
 }
 
+.highlighted-text {
+  font-weight: 700;
+  font-size: 1em;
+}
+
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
@@ -135,6 +140,10 @@ body {
 }
 .breadcrumb span.last {
   color: #ea4a5e;
+}
+
+ol.breadcrumb li:first-child a::before {
+  display: none !important;
 }
 
 .slick {
@@ -434,24 +443,28 @@ a:hover {
   color: #ea4a5e;
 }
 
-a[target=_blank] {
+a[target=_blank],
+a[data-extlink] {
   font-size: 1rem;
 }
-a[target=_blank]:after {
-  /*content: "\f08e";
-  font-family: "FontAwesome";*/
+a[target=_blank]:after,
+a[data-extlink]:after {
+  content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   margin-left: 5px;
   font-weight: bold;
   font-size: 0.875rem;
 }
-a[target=_blank] svg.ext {
+a[target=_blank] svg.ext,
+a[data-extlink] svg.ext {
   width: 24px;
   height: 24px;
   padding-right: 0.2em;
   fill: #ea4a5e;
   font-weight: 900;
   margin-left: 5px;
+  display: none;
 }
 
 .field--name-field-media-image.field--type-image {
@@ -877,6 +890,38 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 }
 .block-views-blockview-did-you-know-view-did-you-know .slick-next {
   right: 0px;
+}
+
+.legislation-block h3,
+.roles-block h3,
+.eguide-block h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+.legislation-block .item-block,
+.roles-block .item-block,
+.eguide-block .item-block {
+  clear: both;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.legislation-block .item-block ul,
+.roles-block .item-block ul,
+.eguide-block .item-block ul {
+  padding-left: 20px;
+}
+.legislation-block .col-sm-8 ul,
+.roles-block .col-sm-8 ul,
+.eguide-block .col-sm-8 ul {
+  margin-left: 30px;
+}
+
+.roles-block .employer-block a[target*=_blank] {
+  color: #ea4a5e;
+  display: block;
+  margin-top: 15px;
 }
 
 .card-rol h3 {
@@ -1315,6 +1360,11 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   /*  BREADCRUMB  */
   .breadcrumb {
     display: none;
+  }
+
+  /*  E-GUIDE ARTICLE  */
+  .eguide-block img {
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {

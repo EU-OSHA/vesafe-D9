@@ -37,3 +37,6 @@
     color: $text-color-red;
   }
 }
+ol.breadcrumb li:first-child a::before{
+  display:none!important;
+}

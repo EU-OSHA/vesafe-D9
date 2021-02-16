@@ -46,3 +46,34 @@
     }
   }
 }
+
+
+.legislation-block,
+.roles-block,
+.eguide-block{
+  h3{
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  .item-block{
+    clear: both;
+    margin-bottom: 25px;
+    overflow: hidden;
+    ul{
+      padding-left: 20px;
+    }
+  }
+
+  .col-sm-8 ul {
+     margin-left: 30px;
+   }
+}
+.roles-block {
+  .employer-block a[target*="_blank"] {
+    color: #ea4a5e;
+    display: block;
+    margin-top: 15px;
+  }
+}

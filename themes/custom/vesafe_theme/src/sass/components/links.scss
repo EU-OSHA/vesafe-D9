@@ -9,11 +9,12 @@ a{
   }
 }
 
-a[target="_blank"]{
+a[target="_blank"],
+a[data-extlink]{
   font-size:1rem;
   &:after{
-    /*content: "\f08e";
-    font-family: "FontAwesome";*/
+    content: "\f08e";
+    font-family: "FontAwesome";
     display: inline-block;
     margin-left: 5px;
     font-weight: bold;
@@ -26,5 +27,6 @@ a[target="_blank"]{
     fill: $text-color-red;
     font-weight: 900;
     margin-left:5px;
+    display:none;
   }
 }
