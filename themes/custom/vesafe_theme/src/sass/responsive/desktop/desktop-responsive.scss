@@ -1,0 +1,19 @@
+@media (min-width:992px) and (max-width:1199px){
+  div[class*="block-simple-blockheader-"]{
+    &.block-simple-blockheader-european{
+      .header-img{
+        max-width: 215px;
+      }
+    }
+
+    &.block-simple-blockheader-commission{
+      .header-img {
+      }
+    }
+
+    &.block-simple-blockheader-vesafe{
+      .header-img{
+      }
+    }
+  }
+}

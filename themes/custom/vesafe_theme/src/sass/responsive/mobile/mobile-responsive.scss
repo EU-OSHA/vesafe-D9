@@ -1,8 +1,33 @@
 @media screen and (max-width:767px) {
 
   /*  MENU-HEADER  */
+
+  .top-header-container {
+    max-width: 100%;
+  }
   .menu-header {
     margin-bottom: 35px;
+  }
+  div[class*="block-simple-blockheader-"]{
+    &.block-simple-blockheader-european{
+      a{
+      }
+      .header-img{
+        height: 70px;
+      }
+    }
+
+    &.block-simple-blockheader-commission{
+      max-width: 195px;
+      .header-img {
+      }
+    }
+
+    &.block-simple-blockheader-vesafe{
+      .header-img{
+        height: 70px;
+      }
+    }
   }
 
   .header-blocks{

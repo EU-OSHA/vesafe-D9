@@ -11,6 +11,7 @@
 @import 'components/breadcrumb';
 @import 'components/buttons';
 @import 'components/carousel';
+@import 'components/chip';
 @import 'components/dropdown';
 @import 'components/grid';
 @import 'components/headings';
@@ -26,6 +27,7 @@
 
 
 @import 'displays/article';
+@import 'displays/card-rol';
 @import 'displays/good-practices-detail';
 @import 'displays/key-article';
 @import 'displays/node--view-mode-card-home';
@@ -34,3 +36,4 @@
 @import 'responsive/common/common-responsive';
 @import 'responsive/mobile/mobile-responsive';
 @import 'responsive/tablet/tablet-responsive';
+@import 'responsive/desktop/desktop-responsive';
