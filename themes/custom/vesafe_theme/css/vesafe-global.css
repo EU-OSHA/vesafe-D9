@@ -879,6 +879,20 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   right: 0px;
 }
 
+.card-rol h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 22px;
+  margin-bottom: 11px;
+}
+.card-rol img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  min-width: 100%;
+  vertical-align: middle;
+}
+
 .field--name-field-risks,
 .field--name-field-vehicles {
   display: inline-flex;
