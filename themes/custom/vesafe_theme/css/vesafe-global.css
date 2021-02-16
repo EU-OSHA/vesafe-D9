@@ -923,9 +923,6 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   display: block;
   margin-top: 15px;
 }
-.roles-block .eguide-block img {
-  margin-bottom: 15px;
-}
 
 .card-rol h3 {
   font-size: 1.2em;
@@ -1363,6 +1360,11 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   /*  BREADCRUMB  */
   .breadcrumb {
     display: none;
+  }
+
+  /*  E-GUIDE ARTICLE  */
+  .eguide-block img {
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
