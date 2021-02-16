@@ -467,6 +467,34 @@ a[data-extlink] svg.ext {
   display: none;
 }
 
+table {
+  background-color: transparent;
+}
+table tr {
+  background-color: transparent;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 22px;
+}
+
+.table-bordered {
+  border: 1px solid #dddddd;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+  border: 1px solid #dddddd;
+}
+
 .field--name-field-media-image.field--type-image {
   float: none;
   margin: 0px;
@@ -922,6 +950,60 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   color: #ea4a5e;
   display: block;
   margin-top: 15px;
+}
+
+.oira-block p {
+  margin-bottom: 20px;
+}
+
+#accessibility ul,
+#privacy-notice ul,
+#legal-notice ul {
+  padding-left: 20px;
+}
+#accessibility h3,
+#privacy-notice h3,
+#legal-notice h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#accessibility .accesibility_table,
+#privacy-notice .accesibility_table,
+#legal-notice .accesibility_table {
+  width: 100% !important;
+}
+#accessibility .accesibility_table tbody > tr:first-child,
+#privacy-notice .accesibility_table tbody > tr:first-child,
+#legal-notice .accesibility_table tbody > tr:first-child {
+  background-color: #ea4a5e;
+  color: #FFF;
+}
+
+#site-map {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+#site-map .site-map-front-page {
+  display: none;
+}
+#site-map .site-map-box ul {
+  padding-left: 1.5em;
+}
+#site-map .site-map-menus ul.site-map-menu {
+  list-style: none;
+}
+#site-map .site-map-menus li {
+  margin-bottom: 10px;
+}
+#site-map .site-map-menus li a {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+#site-map .site-map-menus li a:before {
+  content: "> ";
 }
 
 .card-rol h3 {
