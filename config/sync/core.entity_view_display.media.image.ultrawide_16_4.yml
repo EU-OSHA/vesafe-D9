@@ -1,25 +1,30 @@
-uuid: 8d6e6bbd-5e96-4b7b-b486-c0d9a4da2f95
+uuid: d0f663c7-66d4-4069-a4d6-f06ef5d359d6
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.ultrawide_16_6
+    - core.entity_view_mode.media.ultrawide_16_4
     - field.field.media.image.field_media_image
-    - image.style.ultrawide_16_6
+    - image.style.ultrawide_16_4
     - media.type.image
   module:
     - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 _core:
   default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
-id: media.image.ultrawide_16_6
+id: media.image.ultrawide_16_4
 targetEntityType: media
 bundle: image
-mode: ultrawide_16_6
+mode: ultrawide_16_4
 content:
   field_media_image:
     label: visually_hidden
     settings:
-      image_style: ultrawide_16_6
+      image_style: ultrawide_16_4
       image_link: ''
     third_party_settings: {  }
     type: image

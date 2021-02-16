@@ -32,13 +32,11 @@ content:
       crop_list:
         - square_1_1
         - standard_4_3
-        - ultrawide_16_6
-        - ultrawide_16_9
+        - ultrawide_16_4
       crop_types_required:
         - square_1_1
         - standard_4_3
-        - ultrawide_16_6
-        - ultrawide_16_9
+        - ultrawide_16_4
       show_crop_area: false
     third_party_settings: {  }
     type: image_widget_crop

@@ -1,10 +1,10 @@
-uuid: 5ff30c24-23b2-4ab7-9e77-9b34cc2aad6a
+uuid: da889e62-01ad-4942-b732-5de95d64c3b5
 langcode: en
 status: true
 dependencies:
   module:
     - media
-id: media.ul
-label: 'Ultrawide 16:9'
+id: media.ultrawide_16_4
+label: 'Ultrawide 16:4'
 targetEntityType: media
 cache: true

@@ -7,6 +7,17 @@
 
 (function ($, Drupal) {
 
+  /**
+   * Attaches the key article links.
+   *
+   * @type {Drupal~behavior}
+   */
+  Drupal.behaviors.VesafeGplinks = {
+    attach: function (context, settings) {
+      $('.field--name-field-media-gp-factsheet').find('a').once('gplinks').text(Drupal.t('Download factsheet'));
+    }
+  };
+
   // Toggle Menu
   $(".dropdown").each(function(){
     $(this).find('.dropdown-toggle').on('click', function(){
