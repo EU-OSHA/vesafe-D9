@@ -25,7 +25,6 @@ permissions:
   - 'edit own key_article content'
   - 'moderate content from final_draft to draft'
   - 'use manualcrop'
-  - 'use text format basic_html'
   - 'use text format full_html'
   - 'use text format full_html_minimal'
   - 'view all unpublished content'

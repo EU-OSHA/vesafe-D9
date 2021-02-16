@@ -1,0 +1,15 @@
+uuid: e4b92113-7b60-4123-b03c-1a17f138dca0
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - custom_migrations
+id: vesafe_migrate_media
+label: 'Migrate Vesafe Media'
+description: 'Migration files from D7 to Drupal 8'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: migrate

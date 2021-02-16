@@ -42,7 +42,6 @@ permissions:
   - 'moderate content from ready_to_publish to published'
   - 'moderate content from to_be_approved to ready_to_publish'
   - 'use manualcrop'
-  - 'use text format basic_html'
   - 'use text format full_html'
   - 'use text format full_html_minimal'
   - 'view all unpublished content'

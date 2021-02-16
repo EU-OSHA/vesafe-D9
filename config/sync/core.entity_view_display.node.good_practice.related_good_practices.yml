@@ -177,16 +177,6 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 2
-          e5d07750-0504-4315-995d-b30d8820ca32:
-            uuid: e5d07750-0504-4315-995d-b30d8820ca32
-            region: first
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:good_practice:content_moderation_control'
-            additional: {  }
-            weight: 3
           df424ab2-0fa2-4674-8c5b-80cb434758ff:
             uuid: df424ab2-0fa2-4674-8c5b-80cb434758ff
             region: first
