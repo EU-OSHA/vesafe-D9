@@ -5,7 +5,7 @@ slogan: 'One stop shop for vehicle safety'
 page:
   403: ''
   404: ''
-  front: /node/4206
+  front: /node/4208
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

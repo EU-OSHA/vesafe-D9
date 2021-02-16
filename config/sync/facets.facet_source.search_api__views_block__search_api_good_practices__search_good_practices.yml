@@ -1,0 +1,9 @@
+uuid: c68211f5-862b-411c-98e7-1f973761e94f
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_block__search_api_good_practices__search_good_practices
+name: 'search_api:views_block__search_api_good_practices__search_good_practices'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

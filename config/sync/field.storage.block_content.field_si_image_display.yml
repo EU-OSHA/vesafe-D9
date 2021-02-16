@@ -38,11 +38,11 @@ settings:
       value: thumbnail
       label: 'Thumbnail (100×100)'
     -
+      value: ultrawide_16_4
+      label: 'Ultrawide 16:4'
+    -
       value: ultrawide_16_6
       label: 'Ultrawide 16:6'
-    -
-      value: ultrawide_16_9
-      label: 'Ultrawide 16:9'
     -
       value: wide
       label: 'Wide (1090)'

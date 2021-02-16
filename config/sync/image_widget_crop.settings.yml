@@ -6,10 +6,12 @@ settings:
     square_1_1: square_1_1
     standard_4_3: standard_4_3
     ultrawide_16_4: ultrawide_16_4
+    ultrawide_16_6: ultrawide_16_6
   crop_types_required:
     square_1_1: square_1_1
     standard_4_3: standard_4_3
     ultrawide_16_4: ultrawide_16_4
+    ultrawide_16_6: ultrawide_16_6
   warn_multiple_usages: false
   show_default_crop: true
   notify_apply: false

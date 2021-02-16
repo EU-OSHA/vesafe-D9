@@ -8,8 +8,11 @@ dependencies:
     - search_api
   config:
     - field.storage.node.body
-    - field.storage.node.field_gp_what_is_it
+    - field.storage.node.field_like
     - field.storage.node.field_publication_date
+    - field.storage.node.field_risks
+    - field.storage.node.field_vehicles
+    - field.storage.node.field_gp_what_is_it
     - search_api.server.apache_solr
 third_party_settings:
   search_api_solr:
@@ -73,6 +76,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_gp_what_is_it
+  field_like:
+    label: Like
+    datasource_id: 'entity:node'
+    property_path: field_like
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_like
   field_publication_date:
     label: 'Publication date'
     datasource_id: 'entity:node'
@@ -81,6 +92,22 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_publication_date
+  field_risks:
+    label: Risks
+    datasource_id: 'entity:node'
+    property_path: field_risks
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_risks
+  field_vehicles:
+    label: Vehicles
+    datasource_id: 'entity:node'
+    property_path: field_vehicles
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_vehicles
   title:
     label: Title
     datasource_id: 'entity:node'
