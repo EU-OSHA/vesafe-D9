@@ -392,7 +392,7 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--8thA1VowpJQ
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--5872aRiCMes
           section:
             general:
               basic:
@@ -401,7 +401,7 @@ third_party_settings:
                 section_label: '11613496692'
                 section_delta: '0'
               structure:
-                section_structure: 8/4
+                section_structure: 7/5
                 section_carousel: 0
                 section_carousel_slick: none
             styles:
@@ -424,7 +424,7 @@ third_party_settings:
                 extra_class: ''
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--4neufkQLDvs
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--tfwxc0qAPbI
           regions:
             first:
               title:
