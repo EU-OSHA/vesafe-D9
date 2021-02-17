@@ -9,7 +9,7 @@ use_page_title_as_menu_title_fallback: false
 remove_repeated_segments: true
 term_hierarchy: true
 absolute_paths: true
-hide_single_home_item: false
+hide_single_home_item: true
 title_from_page_when_available: true
 capitalizator_mode: ucwords
 capitalizator_ignored_words: ''
