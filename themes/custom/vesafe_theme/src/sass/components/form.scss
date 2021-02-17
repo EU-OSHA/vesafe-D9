@@ -1,0 +1,38 @@
+form{
+  &.webform-submission-webform-contact-form {
+    .form-group input,
+    .form-group textarea {
+      background-color: $bg-color-grey;
+    }
+  }
+  label{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    &.form-required{
+      &:after{
+        content:"*";
+        margin-left:5px;
+        display:inline-block;
+      }
+    }
+  }
+  .btn-primary{
+    &,
+    &:hover{
+      background-color: $bg-color-red;
+      color: $text-color-white;
+      border: none;
+      margin: 0 auto;
+      display: block;
+      width: 200px;
+    }
+  }
+  #edit-disclaimer{
+    text-align:center;
+    p{
+      margin-bottom:0px;
+    }
+  }
+}
