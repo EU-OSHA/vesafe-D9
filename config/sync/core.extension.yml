@@ -74,6 +74,7 @@ module:
   media_library: 0
   media_library_form_element: 0
   menu_link_content: 0
+  menu_trail_by_path: 0
   menu_ui: 0
   meta_position: 0
   metatag: 0
