@@ -265,6 +265,36 @@ ol.breadcrumb li:first-child a::before {
   border: none;
 }
 
+form.webform-submission-webform-contact-form .form-group input,
+form.webform-submission-webform-contact-form .form-group textarea {
+  background-color: #f7f7f7;
+}
+form label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+form label.form-required:after {
+  content: "*";
+  margin-left: 5px;
+  display: inline-block;
+}
+form .btn-primary, form .btn-primary:hover {
+  background-color: #ea4a5e;
+  color: #FFF;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+}
+form #edit-disclaimer {
+  text-align: center;
+}
+form #edit-disclaimer p {
+  margin-bottom: 0px;
+}
+
 h1, h2, label {
   font-family: "Open Sans", sans-serif;
   color: #333;
