@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.did_you_know_slide.field_metatags
     - node.type.did_you_know_slide
   module:
+    - content_moderation
     - field_group
     - metatag
     - path
@@ -27,7 +28,6 @@ third_party_settings:
       label: Info
     group_general:
       children:
-        - title
         - body
       parent_name: group_info
       weight: 10
@@ -62,7 +62,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_metatags:
-    weight: 9
+    weight: 8
     settings:
       sidebar: true
     third_party_settings: {  }
@@ -70,14 +70,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 1
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 9
     settings: {  }
     region: content
     third_party_settings: {  }
@@ -108,14 +108,6 @@ content:
     weight: 5
     region: content
     third_party_settings: {  }
-  title:
-    type: string_textfield
-    weight: 1
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 2
@@ -126,4 +118,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  title: true

@@ -14,6 +14,7 @@ dependencies:
     - node.type.article
   module:
     - comment
+    - content_moderation
     - datetime
     - field_group
     - metatag
@@ -96,7 +97,7 @@ content:
     weight: 2
     settings:
       rows: 5
-      placeholder: ''
+      placeholder: 'Please introduce in this box the text of this section.'
     third_party_settings: {  }
     type: text_textarea
     region: content
@@ -146,7 +147,7 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Title. Max 255 characters'
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
