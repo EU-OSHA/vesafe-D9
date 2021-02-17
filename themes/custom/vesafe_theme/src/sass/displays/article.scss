@@ -77,3 +77,55 @@
     margin-top: 15px;
   }
 }
+.oira-block p {
+  margin-bottom: 20px;
+}
+
+#accessibility,
+#privacy-notice,
+#legal-notice{
+  ul {
+    padding-left: 20px;
+  }
+  h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .accesibility_table {
+    width: 100% !important;
+    tbody > tr:first-child {
+      background-color: $bg-color-red;
+      color: $text-color-white;
+    }
+  }
+
+}
+
+#site-map{
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  .site-map-front-page {
+    display: none;
+  }
+  .site-map-box ul {
+    padding-left: 1.5em;
+  }
+  .site-map-menus{
+    ul.site-map-menu {
+      list-style: none;
+    }
+    li{
+      margin-bottom: 10px;
+      a {
+        font-size: 1.1em;
+        font-weight: 600;
+        &:before {
+          content: "> ";
+        }
+      }
+    }
+  }
+}
