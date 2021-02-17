@@ -18,9 +18,6 @@
         return decodeURI(results[1]) || 0;
       }
       var $search = $.urlParam('search_api_fulltext');
-      console.log($search);
-      console.log(Drupal.isEmpty($search));
-
       if (!Drupal.isEmpty($.urlParam('search_api_fulltext')) && $search !== 0) {
         $('.search-results-title').show();
       }
@@ -181,7 +178,7 @@
           }
         });
 
-        if ($link_text === 'undefined') {
+        if (typeof $link_href === 'undefined') {
           $button.hide();
         }
         else {
