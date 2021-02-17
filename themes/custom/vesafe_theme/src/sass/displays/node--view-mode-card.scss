@@ -1,0 +1,49 @@
+.node--view-mode-card {
+  background-color: $bg-color-grey;
+  margin-bottom: 30px;
+  position: relative;
+
+  .block-field-blocknodegood-practicetitle {
+    display: block;
+    padding: 15px 20px 5px 20px;
+    min-height: 82px;
+  }
+
+  .node_like-like {
+    color: $bg-color-grey-dark;
+
+    &:before {
+      content: "\e005";
+      font-family: "Glyphicons Halflings";
+      vertical-align: bottom;
+      margin-right: 5px;
+    }
+
+    &:hover {
+      color: $text-color-red;
+    }
+  }
+
+  .block-field-blocknodegood-practicetitle{
+    display: block;
+    padding: 15px 20px 5px 20px;
+    min-height: 82px;
+  }
+
+  .field--name-title {
+    display: block;
+    padding: 15px 20px 5px 20px;
+    min-height: 82px;
+    a{
+      color: #333333;
+      font-size: 1.4em;
+    }
+  }
+  .block-field-blocknodegood-practicefield-gp-what-is-it {
+    padding: 0px 20px 50px 20px;
+    min-height: 127px;
+    position: relative;
+  }
+
+
+}

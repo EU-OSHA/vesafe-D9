@@ -859,7 +859,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 .navbar-nav .nav-link {
   color: #FFF;
   padding-top: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 2px;
   font-size: 1em;
 }
 .navbar-nav .nav-link.active {
@@ -868,6 +868,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 
 .menu--main {
   margin: 0 auto;
+  min-height: 50px;
 }
 
 .navbar-toggler {
@@ -1205,6 +1206,48 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   content: ">";
   font-weight: bold;
   margin-left: 10px;
+}
+
+.node--view-mode-card {
+  background-color: #f7f7f7;
+  margin-bottom: 30px;
+  position: relative;
+}
+.node--view-mode-card .block-field-blocknodegood-practicetitle {
+  display: block;
+  padding: 15px 20px 5px 20px;
+  min-height: 82px;
+}
+.node--view-mode-card .node_like-like {
+  color: #9c9c9c;
+}
+.node--view-mode-card .node_like-like:before {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+.node--view-mode-card .node_like-like:hover {
+  color: #ea4a5e;
+}
+.node--view-mode-card .block-field-blocknodegood-practicetitle {
+  display: block;
+  padding: 15px 20px 5px 20px;
+  min-height: 82px;
+}
+.node--view-mode-card .field--name-title {
+  display: block;
+  padding: 15px 20px 5px 20px;
+  min-height: 82px;
+}
+.node--view-mode-card .field--name-title a {
+  color: #333333;
+  font-size: 1.4em;
+}
+.node--view-mode-card .block-field-blocknodegood-practicefield-gp-what-is-it {
+  padding: 0px 20px 50px 20px;
+  min-height: 127px;
+  position: relative;
 }
 
 .node--view-mode-card-home .field--name-field-media-image.field--type-entity-reference {
