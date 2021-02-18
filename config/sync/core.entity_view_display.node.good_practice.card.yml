@@ -392,7 +392,7 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--5872aRiCMes
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--EKpF--ddorA
           section:
             general:
               basic:
@@ -421,10 +421,10 @@ third_party_settings:
                 top_padding: '0'
                 bottom_padding: '0'
               misc:
-                extra_class: ''
+                extra_class: card-footer
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--tfwxc0qAPbI
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-styles--3dUDWXaBiq0
           regions:
             first:
               title:
