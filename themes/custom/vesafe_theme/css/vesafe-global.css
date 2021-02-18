@@ -583,6 +583,9 @@ table tr {
   border-left: none;
   padding-left: 0px;
 }
+.site-footer .navbar-nav .nav-link.active {
+  border: none;
+}
 
 footer #scroll-top {
   display: block;
@@ -1067,7 +1070,8 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   margin-bottom: 10px;
 }
 
-.additional-resources-link-more {
+.additional-resources-link-more,
+.additional-resources-link-less {
   font-style: italic;
   font-weight: 700;
   text-align: right;
@@ -1075,8 +1079,36 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   cursor: pointer;
   font-size: 1rem;
 }
-.additional-resources-link-more:before {
+.additional-resources-link-more:before,
+.additional-resources-link-less:before {
   content: "> ";
+}
+
+.block-field-blocknodegood-practicefield-like .node_like-like {
+  color: #ea4a5e;
+}
+.block-field-blocknodegood-practicefield-like .node_like-like:before {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+.block-simple-blockreturn-to-list {
+  text-align: right;
+}
+.block-simple-blockreturn-to-list .back-arrow {
+  color: #ea4a5e;
+}
+.block-simple-blockreturn-to-list .back-arrow:after {
+  content: "";
+  background: url(/sites/vesafe/themes/custom/vesafe_theme/images/back-news.png) no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  width: 22px;
+  height: 25px;
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
 .field--name-field-additional-resources a,
@@ -1164,6 +1196,16 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   left: 80px;
   z-index: 200;
 }
+.aside-column .form-item-sort-by .bef-links .bef-link {
+  display: inline-block;
+  margin-left: 10px;
+  color: #333;
+  text-decoration: none;
+}
+.aside-column .form-item-sort-by .bef-links .bef-link--selected {
+  font-weight: 600;
+  color: #ea4a5e;
+}
 .aside-column .form-item-sort-by ul {
   display: inline-flex;
   flex-direction: row;
@@ -1173,6 +1215,36 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 }
 .aside-column .form-item-sort-by li {
   margin-left: 10px;
+}
+.aside-column .form-control {
+  border-color: #ea4a5e !important;
+  box-shadow: none;
+  width: 100%;
+  padding-right: 35px;
+  border-radius: 3px;
+}
+.aside-column .form-submit {
+  border: none;
+  background-color: transparent;
+  color: #ea4a5e;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin-top: 0px;
+  width: 40px;
+  overflow: hidden;
+}
+.aside-column .form-submit:before {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  padding-right: 30px;
+}
+.aside-column .form-submit:hover {
+  background-color: transparent;
+  color: #ea4a5e;
+  border: none;
+  margin-top: 0px;
+  width: 40px;
 }
 .aside-column .block-views-exposed-filter-blocksearch-api-good-practices-search-good-practices {
   position: relative;
@@ -1470,6 +1542,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 }
 .node--view-mode-related-good-practices .field--type-entity-reference {
   margin: 0px;
+  overflow: hidden;
 }
 .node--view-mode-related-good-practices .lc-section:last-of-type {
   padding: 0px;

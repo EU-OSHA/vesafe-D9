@@ -15,7 +15,8 @@
   margin-bottom:10px;
 }
 
-.additional-resources-link-more{
+.additional-resources-link-more,
+.additional-resources-link-less{
   font-style: italic;
   font-weight: 700;
   text-align: right;
@@ -27,7 +28,33 @@
   }
 }
 
-
+.block-field-blocknodegood-practicefield-like{
+  .node_like-like{
+    color: $text-color-red;
+    &:before {
+      content: "\e005";
+      font-family: "Glyphicons Halflings";
+      vertical-align: bottom;
+      margin-right: 5px;
+    }
+  }
+}
+.block-simple-blockreturn-to-list{
+  text-align: right;
+  .back-arrow{
+    color: $text-color-red;
+    &:after {
+      content: "";
+      background: url(/sites/vesafe/themes/custom/vesafe_theme/images/back-news.png) no-repeat;
+      background-size: 100%;
+      display: inline-block;
+      width: 22px;
+      height: 25px;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+  }
+}
 .field--name-field-additional-resources,
 .field--name-field-gp-external-links{
   a{
