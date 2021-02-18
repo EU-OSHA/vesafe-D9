@@ -1,0 +1,118 @@
+.node--view-mode-card {
+  background-color: $bg-color-grey;
+  margin-bottom: 30px;
+  position: relative;
+
+  &.node--unpublished {
+    padding: 0;
+  }
+
+  .block-field-blocknodegood-practicetitle {
+    display: block;
+    padding: 15px 20px 5px 20px;
+    min-height: 82px;
+  }
+
+  .field--name-field-media-image.field--type-entity-reference {
+    margin-bottom: 0px;
+  }
+
+  .node_like-like {
+    color: $bg-color-grey-dark;
+
+    &:before {
+      content: "\e005";
+      font-family: "Glyphicons Halflings";
+      vertical-align: bottom;
+      margin-right: 5px;
+    }
+
+    &:hover {
+      color: $text-color-red;
+    }
+  }
+
+  .block-field-blocknodegood-practicetitle{
+    display: block;
+    padding: 15px 20px 5px 20px;
+    min-height: 82px;
+  }
+
+  .field--name-title {
+    a{
+      color: #333333;
+      font-size: 1.4em;
+    }
+  }
+  .block-field-blocknodegood-practicefield-gp-what-is-it {
+    padding: 0px 20px 50px 20px;
+    min-height: 127px;
+    position: relative;
+  }
+  .field--name-field-media-image{
+    overflow: hidden;
+  }
+
+  .card-read-morelink{
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    font-size: 0.9em;
+    font-weight: 700;
+    font-style: italic;
+    &:before{
+      content: "> ";
+    }
+  }
+  .card-footer{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color:transparent;
+    border:none;
+  }
+  .card-media{
+    position: relative;
+    img{
+      transition: all 0.3s ease-in-out;
+    }
+
+    a {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      background-color: $bg-color-red;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+
+      &:before {
+        content: "\f0c1";
+        text-decoration: inherit;
+        display: inline-block;
+        speak: none;
+        font-family: "FontAwesome";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 44px;
+        height: 30px;
+        line-height: 33px;
+        color: $text-color-white;
+      }
+    }
+
+    &:hover {
+      a {
+        opacity: 0.9;
+      }
+      img{
+        transform: scale(1.2);
+      }
+    }
+  }
+}

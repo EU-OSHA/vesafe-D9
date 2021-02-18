@@ -1,4 +1,4 @@
-uuid: 6510cdf6-5ced-4e88-9884-8b8768869bce
+uuid: 3c8cfc8f-5217-4f93-9524-c4f7e83c8136
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,8 @@ dependencies:
 name: ultrawide_16_6
 label: 'Ultrawide 16:6'
 effects:
-  bd81c924-36c4-46db-ad64-e80e53ab2a3c:
-    uuid: bd81c924-36c4-46db-ad64-e80e53ab2a3c
+  afbfec95-8f9b-43cf-b461-3babd9417f36:
+    uuid: afbfec95-8f9b-43cf-b461-3babd9417f36
     id: crop_crop
     weight: 1
     data:

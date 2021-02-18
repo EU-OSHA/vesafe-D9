@@ -13,11 +13,13 @@
 @import 'components/carousel';
 @import 'components/chip';
 @import 'components/dropdown';
+@import 'components/form';
 @import 'components/grid';
 @import 'components/headings';
 @import 'components/helper';
 @import 'components/links';
 @import 'components/modal';
+@import 'components/table';
 
 @import 'layout/body';
 @import 'layout/footer';
@@ -29,9 +31,12 @@
 @import 'displays/article';
 @import 'displays/card-rol';
 @import 'displays/good-practices-detail';
+@import 'displays/good-practices-main-page';
 @import 'displays/key-article';
+@import 'displays/node--view-mode-card';
 @import 'displays/node--view-mode-card-home';
 @import 'displays/related-good-practices';
+@import 'displays/sitemap';
 
 @import 'responsive/common/common-responsive';
 @import 'responsive/mobile/mobile-responsive';

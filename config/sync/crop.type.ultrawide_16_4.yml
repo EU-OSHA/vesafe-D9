@@ -1,11 +1,11 @@
-uuid: bb4162e5-1b9c-4228-be54-c3020f3182a2
+uuid: 6827cf7e-30fa-42e0-8c05-5c96460cfa60
 langcode: en
 status: true
 dependencies: {  }
-id: ultrawide_16_9
-label: 'Ultrawide 16:9'
+id: ultrawide_16_4
+label: 'Ultrawide 16:4'
 description: ''
-aspect_ratio: '16:9'
+aspect_ratio: '16:4'
 soft_limit_width: null
 soft_limit_height: null
 hard_limit_width: null

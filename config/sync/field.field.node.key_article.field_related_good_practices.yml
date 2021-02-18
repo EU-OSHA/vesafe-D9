@@ -12,7 +12,7 @@ entity_type: node
 bundle: key_article
 label: 'Related good practices'
 description: 'Please add related good practices.'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

@@ -658,7 +658,7 @@ third_party_settings:
                 label: hidden
                 type: entity_reference_entity_view
                 settings:
-                  view_mode: ultrawide_16_6
+                  view_mode: ultrawide_16_4
                 third_party_settings:
                   linked_field:
                     linked: 0
@@ -1191,11 +1191,11 @@ third_party_settings:
                   view_mode: default
                 third_party_settings:
                   linked_field:
-                    linked: 0
+                    linked: 1
                     type: custom
                     destination:
                       field: ''
-                      custom: ''
+                      custom: '/[media:field_media_document:entity:basename]'
                     advanced:
                       title: ''
                       target: ''

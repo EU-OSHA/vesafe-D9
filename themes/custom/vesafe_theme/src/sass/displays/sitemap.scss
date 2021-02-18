@@ -1,0 +1,23 @@
+.sitemap{
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  .nav {
+    list-style: none;
+    flex-direction:column;
+    &-item{
+      margin-bottom: 10px;
+    }
+    &-link {
+      font-size: 1.1em;
+      font-weight: 600;
+      &:before {
+        content: "> ";
+      }
+    }
+  }
+  h2{
+    display:none;
+  }
+}

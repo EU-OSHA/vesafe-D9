@@ -15,10 +15,12 @@ dependencies:
     - field.field.node.key_article.field_subtitle
     - field.field.node.key_article.field_thumbnail
     - node.type.key_article
+    - simple_block.simple_block.return_to_list_themes
     - views.view.good_practices
   module:
     - layout_builder
     - layoutcomponents
+    - simple_block
     - user
     - views
 third_party_settings:
@@ -372,14 +374,143 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--KXGx7IiUsF8
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--tYP0KBUIUw4
+          section:
+            general:
+              basic:
+                section_type: div
+                section_overwrite: 0
+                section_label: '1791613567616'
+                section_delta: '2'
+              structure:
+                section_structure: '12'
+                section_carousel: 0
+                section_carousel_slick: none
+            styles:
+              background:
+                image: null
+                background_color:
+                  settings:
+                    color: ''
+                    opacity: '1'
+              sizing:
+                full_width: 0
+                full_width_container: 0
+                full_width_container_title: 0
+                height: auto
+                height_size: '0'
+              spacing:
+                top_padding: '0'
+                bottom_padding: '0'
+              misc:
+                extra_class: ''
+                extra_attributes: ''
+                parallax: 0
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--FdAAxIqEl-M
+          regions:
+            first:
+              title:
+                title: ''
+              styles:
+                title:
+                  type: h1
+                  color:
+                    settings:
+                      color: '#000000'
+                      opacity: '1'
+                    color: '#000000'
+                    opacity: '1'
+                  size: '0'
+                  align: text-left
+                  border: none
+                  border_size: '0'
+                  border_color:
+                    settings:
+                      color: '#f75461'
+                      opacity: '1'
+                    color: '#f75461'
+                    opacity: '1'
+                border:
+                  border: none
+                  size: '0'
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                  radius_top_left: '0'
+                  radius_top_right: '0'
+                  radius_bottom_left: '0'
+                  radius_bottom_right: '0'
+                background:
+                  color:
+                    settings:
+                      color: ''
+                      opacity: '1'
+                    color: ''
+                    opacity: '1'
+                spacing:
+                  paddings: 0
+                  paddings_left: 0
+                  paddings_right: 0
+                misc:
+                  extra_class: ''
+              general:
+                title: ''
+              layout_settings__container__regions__first__active_tab: ''
+        components:
+          9ede6b86-3193-4a83-809d-8aebcc684da3:
+            uuid: 9ede6b86-3193-4a83-809d-8aebcc684da3
+            region: first
+            configuration:
+              id: 'simple_block:return_to_list_themes'
+              label: 'Return to list themes'
+              provider: simple_block
+              label_display: '0'
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layoutcomponents_one_column
+        layout_settings:
+          label: ''
+          title:
+            general:
+              title: ''
+              description: ''
+            styles:
+              design:
+                title_color:
+                  settings:
+                    color: '#000000'
+                    opacity: '1'
+                title_type: h1
+                title_align: text-left
+              sizing:
+                title_size: '0'
+              border:
+                title_border: none
+                title_border_size: '0'
+                title_border_color:
+                  settings:
+                    color: '#f75461'
+                    opacity: '1'
+              spacing:
+                title_margin_top: '0'
+                title_margin_bottom: '0'
+              misc:
+                title_extra_class: ''
+                description_extra_class: ''
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--ht_WSEOnehY
           section:
             general:
               basic:
                 section_type: div
                 section_overwrite: 1
                 section_label: '11611834039'
-                section_delta: '2'
+                section_delta: '3'
               structure:
                 section_structure: '12'
                 section_carousel: 0
@@ -404,7 +535,7 @@ third_party_settings:
                 extra_class: safe-driving-work-image-container
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--GI3O-b8fnuA
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--29WKrVQlvog
           regions:
             first:
               title:
@@ -470,16 +601,13 @@ third_party_settings:
                 label: hidden
                 type: entity_reference_entity_view
                 settings:
-                  view_mode: ultrawide_16_6
+                  view_mode: ultrawide_16_4
                 third_party_settings:
                   linked_field:
                     linked: 0
                     type: custom
                     destination:
-                      field:
-                        field: ''
-                        custom:
-                          custom: Array
+                      field: ''
                       custom: Array
                     advanced:
                       title: ''
@@ -525,14 +653,14 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--VvGTlPGFHgY
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--E3_jXQRo_aM
           section:
             general:
               basic:
                 section_type: div
                 section_overwrite: 1
                 section_label: '11611836184'
-                section_delta: '3'
+                section_delta: '4'
               structure:
                 section_structure: '12'
                 section_carousel: 0
@@ -557,7 +685,7 @@ third_party_settings:
                 extra_class: ''
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--wPiKPDLEP1c
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--4mA_4_sSYYY
           regions:
             first:
               title:
@@ -677,14 +805,14 @@ third_party_settings:
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--oL0t5y8daIg
+            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--2GoPgurAJQ8
           section:
             general:
               basic:
                 section_type: div
                 section_overwrite: 1
                 section_label: '11611852187'
-                section_delta: '4'
+                section_delta: '5'
               structure:
                 section_structure: '12'
                 section_carousel: 0
@@ -709,7 +837,7 @@ third_party_settings:
                 extra_class: ''
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--JGoNfeuxVus
+            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--dnXjY5mFrLo
           regions:
             first:
               title:

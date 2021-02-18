@@ -7,6 +7,29 @@
 
 (function ($, Drupal) {
 
+
+  Drupal.behaviors.VesafeGpSearch = {
+    attach: function (context, settings) {
+      $.urlParam = function(name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if (results==null) {
+          return null;
+        }
+        return decodeURI(results[1]) || 0;
+      }
+      var $search = $.urlParam('search_api_fulltext');
+      if (!Drupal.isEmpty($.urlParam('search_api_fulltext')) && $search !== 0) {
+        $('.search-results-title').show();
+      }
+    }
+  };
+
+  Drupal.behaviors.VesafeGplinks = {
+    attach: function (context, settings) {
+      $('.field--name-field-media-gp-factsheet').find('a').once('gplinks').text(Drupal.t('Download factsheet'));
+    }
+  };
+
   // Toggle Menu
   $(".dropdown").each(function(){
     $(this).find('.dropdown-toggle').on('click', function(){
@@ -155,7 +178,7 @@
           }
         });
 
-        if ($link_text === 'undefined') {
+        if (typeof $link_href === 'undefined') {
           $button.hide();
         }
         else {

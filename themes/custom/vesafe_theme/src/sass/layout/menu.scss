@@ -39,7 +39,7 @@
     &-link{
       color:$text-color-white;
       padding-top: 14px;
-      padding-bottom: 14px;
+      padding-bottom: 2px;
       font-size: 1em;
       &.active{
         border-bottom:2px solid $text-color-white;
@@ -50,6 +50,7 @@
 .menu{
   &--main{
     margin: 0 auto;
+    min-height: 50px;
   }
 }
 .navbar-toggler {

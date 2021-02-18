@@ -259,6 +259,7 @@ display:
         - 'config:core.entity_view_display.node.article.default'
         - 'config:core.entity_view_display.node.article.full'
         - 'config:core.entity_view_display.node.article.rss'
+        - 'config:core.entity_view_display.node.article.search_index'
         - 'config:core.entity_view_display.node.article.teaser'
         - 'config:core.entity_view_display.node.did_you_know_slide.default'
         - 'config:core.entity_view_display.node.did_you_know_slide.teaser'
@@ -391,6 +392,7 @@ display:
         - 'config:core.entity_view_display.node.article.default'
         - 'config:core.entity_view_display.node.article.full'
         - 'config:core.entity_view_display.node.article.rss'
+        - 'config:core.entity_view_display.node.article.search_index'
         - 'config:core.entity_view_display.node.article.teaser'
         - 'config:core.entity_view_display.node.did_you_know_slide.default'
         - 'config:core.entity_view_display.node.did_you_know_slide.teaser'
@@ -425,6 +427,26 @@ display:
       css_class: section-themes
       defaults:
         css_class: false
+        style: false
+        row: false
+      style:
+        type: grid
+        options:
+          grouping: {  }
+          columns: 3
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: 'views-col col-12 col-md-4'
+          row_class_default: true
+          row_class_custom: ''
+      row:
+        type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -435,6 +457,7 @@ display:
         - 'config:core.entity_view_display.node.article.default'
         - 'config:core.entity_view_display.node.article.full'
         - 'config:core.entity_view_display.node.article.rss'
+        - 'config:core.entity_view_display.node.article.search_index'
         - 'config:core.entity_view_display.node.article.teaser'
         - 'config:core.entity_view_display.node.did_you_know_slide.default'
         - 'config:core.entity_view_display.node.did_you_know_slide.teaser'

@@ -1,0 +1,17 @@
+uuid: 14c6ec87-d50a-4b3f-bc1d-ba2b75ff3492
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.ultrawide_16_4
+  module:
+    - crop
+name: ultrawide_16_4
+label: 'Ultrawide 16:4'
+effects:
+  e9fdb604-07c1-40eb-86f7-fed4e14216ac:
+    uuid: e9fdb604-07c1-40eb-86f7-fed4e14216ac
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: ultrawide_16_4

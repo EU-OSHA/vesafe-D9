@@ -65,4 +65,4 @@ backend_config:
   domain: generic
   environment: default
   optimize: false
-  site_hash: false
+  site_hash: true
