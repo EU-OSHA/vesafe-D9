@@ -3,6 +3,10 @@
   margin-bottom: 30px;
   position: relative;
 
+  &.node--unpublished {
+    padding: 0;
+  }
+
   .block-field-blocknodegood-practicetitle {
     display: block;
     padding: 15px 20px 5px 20px;
@@ -45,6 +49,9 @@
     min-height: 127px;
     position: relative;
   }
+  .field--name-field-media-image{
+    overflow: hidden;
+  }
 
   .card-read-morelink{
     position: absolute;
@@ -64,8 +71,11 @@
     background-color:transparent;
     border:none;
   }
-  .block-field-blocknodegood-practicefield-media-image {
+  .card-media{
     position: relative;
+    img{
+      transition: all 0.3s ease-in-out;
+    }
 
     a {
       position: absolute;
@@ -77,6 +87,7 @@
       background-color: $bg-color-red;
       opacity: 0;
       transition: all 0.3s ease-in-out;
+      overflow: hidden;
 
       &:before {
         content: "\f0c1";
@@ -97,7 +108,10 @@
 
     &:hover {
       a {
-        opacity: 1;
+        opacity: 0.9;
+      }
+      img{
+        transform: scale(1.2);
       }
     }
   }

@@ -1302,6 +1302,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   margin-bottom: 30px;
   position: relative;
 }
+.node--view-mode-card.node--unpublished {
+  padding: 0;
+}
 .node--view-mode-card .block-field-blocknodegood-practicetitle {
   display: block;
   padding: 15px 20px 5px 20px;
@@ -1336,6 +1339,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   min-height: 127px;
   position: relative;
 }
+.node--view-mode-card .field--name-field-media-image {
+  overflow: hidden;
+}
 .node--view-mode-card .card-read-morelink {
   position: absolute;
   bottom: 0px;
@@ -1354,10 +1360,13 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   background-color: transparent;
   border: none;
 }
-.node--view-mode-card .block-field-blocknodegood-practicefield-media-image {
+.node--view-mode-card .card-media {
   position: relative;
 }
-.node--view-mode-card .block-field-blocknodegood-practicefield-media-image a {
+.node--view-mode-card .card-media img {
+  transition: all 0.3s ease-in-out;
+}
+.node--view-mode-card .card-media a {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1367,8 +1376,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   background-color: #ea4a5e;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
-.node--view-mode-card .block-field-blocknodegood-practicefield-media-image a:before {
+.node--view-mode-card .card-media a:before {
   content: "";
   text-decoration: inherit;
   display: inline-block;
@@ -1383,8 +1393,11 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   line-height: 33px;
   color: #FFF;
 }
-.node--view-mode-card .block-field-blocknodegood-practicefield-media-image:hover a {
-  opacity: 1;
+.node--view-mode-card .card-media:hover a {
+  opacity: 0.9;
+}
+.node--view-mode-card .card-media:hover img {
+  transform: scale(1.2);
 }
 
 .node--view-mode-card-home .field--name-field-media-image.field--type-entity-reference {
