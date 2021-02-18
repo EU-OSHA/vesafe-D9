@@ -15,7 +15,7 @@
  */
 #}
 {{ title_prefix }}
-{% if title %}
+{% if title is not empty %}
   <div class="article-header">
     <h1{{ title_attributes.addClass('title') }}>{{ title }}</h1>
   </div>
