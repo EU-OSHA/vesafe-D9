@@ -10,6 +10,8 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_gp_what_is_it
     - field.storage.node.field_publication_date
+    - field.storage.node.field_risks
+    - field.storage.node.field_vehicles
     - search_api.server.apache_solr
 third_party_settings:
   search_api_solr:
@@ -81,6 +83,22 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_publication_date
+  field_risks:
+    label: Risks
+    datasource_id: 'entity:node'
+    property_path: field_risks
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_risks
+  field_vehicles:
+    label: Vehicles
+    datasource_id: 'entity:node'
+    property_path: field_vehicles
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_vehicles
   title:
     label: Title
     datasource_id: 'entity:node'
@@ -115,7 +133,7 @@ processor_settings:
     excerpt_length: 256
     exclude_fields:
       - title
-    prefix: '<strong class="hightlighted">'
+    prefix: '<strong class="highlighted">'
     suffix: '</strong>'
     weights:
       postprocess_query: 0
@@ -124,7 +142,7 @@ processor_settings:
     fields:
       - title
     title: false
-    alt: true
+    alt: false
     tags:
       b: 2
       h1: 5
