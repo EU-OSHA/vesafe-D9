@@ -12,8 +12,8 @@ field_name: body
 entity_type: node
 bundle: did_you_know_slide
 label: Body
-description: ''
-required: false
+description: 'Please introduce in this box the text of this section.'
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''

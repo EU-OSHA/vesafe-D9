@@ -1,0 +1,11 @@
+uuid: 291fda30-e428-48b5-824b-0675b679dacd
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: return_to_list_themes
+title: 'Return to list themes'
+content:
+  value: "<p><a class=\"back-arrow\" href=\"/themes\">Return to list</a></p>\r\n"
+  format: full_html
