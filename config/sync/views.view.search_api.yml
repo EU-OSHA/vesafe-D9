@@ -550,7 +550,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          content: '<h2 class="search-result-title hidden">Results for " {{filters.search_api_fulltext}} " </h2>'
+          content: '<h2 class="search-results-title hidden">Results for " {{filters.search_api_fulltext}} " </h2>'
           plugin_id: text_custom
       footer: {  }
       empty:
