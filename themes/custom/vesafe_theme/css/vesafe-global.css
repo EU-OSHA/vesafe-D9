@@ -265,6 +265,10 @@ ol.breadcrumb li:first-child a::before {
   border: none;
 }
 
+form.webform-submission-webform-contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
 form.webform-submission-webform-contact-form .form-group input,
 form.webform-submission-webform-contact-form .form-group textarea {
   background-color: #f7f7f7;
@@ -358,6 +362,7 @@ h3 a:hover {
   padding: 0px;
   margin-bottom: 15px;
   font-size: 2.2em;
+  font-weight: 400;
 }
 
 .block-field-blocknodegood-practicefield-gp-what-is-it h2:before {
@@ -1044,6 +1049,20 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   content: "> ";
 }
 
+#accessibility {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+#legal-notice {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
 .card-rol h3 {
   font-size: 1.2em;
   font-weight: 600;
@@ -1144,13 +1163,6 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   border-radius: 3px;
   cursor: pointer;
 }
-.aside-column h3:after {
-  content: "" !important;
-  font-family: "Glyphicons Halflings";
-  float: right;
-  font-size: 0.8em;
-  line-height: 25px;
-}
 .aside-column .block-facet-blockrisks h3:before {
   content: "";
   font-family: "FontAwesome";
@@ -1246,6 +1258,23 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   border: none;
   margin-top: 0px;
   width: 40px;
+}
+.aside-column .facets-widget-links h3:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  float: right;
+  font-size: 0.8em;
+  line-height: 22px;
+}
+.aside-column .facets-widget-links.open h3:after {
+  content: "" !important;
+  font-family: "Glyphicons Halflings";
+  float: right;
+  font-size: 0.8em;
+  line-height: 25px;
+}
+.aside-column .facets-widget-links ul {
+  display: none;
 }
 .aside-column .block-views-exposed-filter-blocksearch-api-good-practices-search-good-practices {
   position: relative;
@@ -1773,6 +1802,15 @@ a.node_like-like:hover {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  /*  HEADER  */
+  .sticky-menu {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: white;
+    top: 0px;
+  }
+
   /*  MENU-HEADER  */
   .navbar-collapse nav {
     padding-bottom: 20px;
@@ -1796,7 +1834,17 @@ a.node_like-like:hover {
     height: 70px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
+  /*  HEADER  */
+  .sticky-menu {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: white;
+    top: 0px;
+  }
+
+  /*  MENU-HEADER  */
   div[class*=block-simple-blockheader-].block-simple-blockheader-european .header-img {
     max-width: 215px;
   }

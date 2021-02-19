@@ -1,5 +1,7 @@
 form{
   &.webform-submission-webform-contact-form {
+    max-width: 800px;
+    margin: 0 auto;
     .form-group input,
     .form-group textarea {
       background-color: $bg-color-grey;

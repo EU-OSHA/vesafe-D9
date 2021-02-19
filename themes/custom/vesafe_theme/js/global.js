@@ -40,6 +40,34 @@
     });
   });
 
+
+  // Aside menu
+  $(".aside-column").each(function(){
+    $(this).find('h3').on('click', function(){
+      let $dropdownElement=$(this).closest('.facets-widget-links');
+      $dropdownElement.toggleClass('open')
+      $dropdownElement.find('ul').stop().slideToggle();
+    });
+  });
+
+
+  // Sticky top menu
+  $(window).on("scroll", function(e){
+    e.preventDefault();
+    let $header=$('#header');
+    let headerHeight=$header.outerHeight();
+    let windowScroll=$(this).scrollTop();
+    if(windowScroll>headerHeight) {
+      if(!$header.hasClass("sticky-menu")){
+        $header.addClass("sticky-menu");
+      }
+    }else{
+      $header.removeClass("sticky-menu");
+    }
+  });
+
+
+
   // Scroll to top
   $("#scroll-top").on("click", function(e) {
     e.preventDefault();

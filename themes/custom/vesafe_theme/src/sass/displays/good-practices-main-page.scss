@@ -21,13 +21,6 @@
     font-size: 1em;
     border-radius: 3px;
     cursor: pointer;
-    &:after {
-      content: "\e253" !important;
-      font-family: "Glyphicons Halflings";
-      float: right;
-      font-size: 0.8em;
-      line-height: 25px;
-    }
   }
   .block-facet-blockrisks  h3{
     &:before {
@@ -136,6 +129,35 @@
       width: 40px;
     }
   }
+
+  .facets-widget-links{
+    h3{
+      &:after {
+        content: "\e252";
+        font-family: "Glyphicons Halflings";
+        float: right;
+        font-size: 0.8em;
+        line-height: 22px;
+      }
+
+    }
+    &.open{
+      h3{
+        &:after {
+          content: "\e253" !important;
+          font-family: "Glyphicons Halflings";
+          float: right;
+          font-size: 0.8em;
+          line-height: 25px;
+        }
+
+      }
+    }
+    ul{
+      display:none;
+    }
+  }
+
   .block-views-exposed-filter-blocksearch-api-good-practices-search-good-practices{
     position:relative;
   }

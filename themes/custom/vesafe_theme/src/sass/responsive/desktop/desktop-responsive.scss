@@ -1,4 +1,19 @@
-@media (min-width:992px) and (max-width:1199px){
+@media (min-width:992px){
+
+
+  /*  HEADER  */
+
+  .sticky-menu {
+      position: fixed;
+      z-index: 9999;
+      width: 100%;
+      background-color: white;
+      top: 0px;
+    }
+
+
+  /*  MENU-HEADER  */
+
   div[class*="block-simple-blockheader-"]{
     &.block-simple-blockheader-european{
       .header-img{

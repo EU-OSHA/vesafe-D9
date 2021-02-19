@@ -1,5 +1,16 @@
 @media (min-width:768px) and (max-width:991px){
 
+
+  /*  HEADER  */
+
+  .sticky-menu {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: white;
+    top: 0px;
+  }
+
   /*  MENU-HEADER  */
 
   .navbar-collapse nav {
