@@ -17,20 +17,6 @@
     margin-bottom: 0px;
   }
 
-  .node_like-like {
-    color: $bg-color-grey-dark;
-
-    &:before {
-      content: "\e005";
-      font-family: "Glyphicons Halflings";
-      vertical-align: bottom;
-      margin-right: 5px;
-    }
-
-    &:hover {
-      color: $text-color-red;
-    }
-  }
 
   .block-field-blocknodegood-practicetitle{
     display: block;
@@ -114,5 +100,20 @@
         transform: scale(1.2);
       }
     }
+  }
+}
+
+a.node_like-like {
+  color: $bg-color-grey-dark;
+
+  &:before {
+    content: "\e005";
+    font-family: "Glyphicons Halflings";
+    vertical-align: bottom;
+    margin-right: 5px;
+  }
+
+  &:hover {
+    color: $text-color-red;
   }
 }

@@ -82,6 +82,18 @@
       top: 0px;
       left: 80px;
       z-index:200;
+
+      .bef-link{
+        display: inline-block;
+        margin-left: 10px;
+        color: $text-color-black;
+        text-decoration: none;
+        &--selected{
+          font-weight: 600;
+          color: $text-color-red;
+        }
+      }
+
     }
     ul{
       display:inline-flex;
@@ -92,6 +104,36 @@
     }
     li{
       margin-left:10px;
+    }
+  }
+  .form-control{
+    border-color: $bg-color-red !important;
+    box-shadow: none;
+    width: 100%;
+    padding-right: 35px;
+    border-radius: 3px;
+  }
+  .form-submit{
+    border: none;
+    background-color: transparent;
+    color: $text-color-red;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: 0px;
+    width: 40px;
+    overflow: hidden;
+    &:before{
+      content: "\e003";
+      font-family: "Glyphicons Halflings";
+      padding-right: 30px;
+    }
+    &:hover {
+      background-color: transparent;
+      color: $text-color-red;
+      border: none;
+      margin-top: 0px;
+      width: 40px;
     }
   }
   .block-views-exposed-filter-blocksearch-api-good-practices-search-good-practices{
