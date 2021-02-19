@@ -28,15 +28,9 @@
   }
 }
 
-.block-field-blocknodegood-practicefield-like{
-  .node_like-like{
+.node--type-good-practice.node--view-mode-full{
+  a.node_like-like{
     color: $text-color-red;
-    &:before {
-      content: "\e005";
-      font-family: "Glyphicons Halflings";
-      vertical-align: bottom;
-      margin-right: 5px;
-    }
   }
 }
 .block-simple-blockreturn-to-list{

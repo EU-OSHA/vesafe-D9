@@ -916,6 +916,10 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   margin-top: 4px;
 }
 
+.block-views-blockview-themes-view-key-articles-front-page {
+  margin-bottom: 25px;
+}
+
 .block-views-blockview-did-you-know-view-did-you-know {
   background-color: #f7f7f7;
   text-align: center;
@@ -1053,6 +1057,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   min-width: 100%;
   vertical-align: middle;
 }
+.card-rol p {
+  font-size: 16px;
+}
 
 .field--name-field-risks,
 .field--name-field-vehicles {
@@ -1084,14 +1091,8 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   content: "> ";
 }
 
-.block-field-blocknodegood-practicefield-like .node_like-like {
+.node--type-good-practice.node--view-mode-full a.node_like-like {
   color: #ea4a5e;
-}
-.block-field-blocknodegood-practicefield-like .node_like-like:before {
-  content: "";
-  font-family: "Glyphicons Halflings";
-  vertical-align: bottom;
-  margin-right: 5px;
 }
 
 .block-simple-blockreturn-to-list {
@@ -1385,18 +1386,6 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 .node--view-mode-card .field--name-field-media-image.field--type-entity-reference {
   margin-bottom: 0px;
 }
-.node--view-mode-card .node_like-like {
-  color: #9c9c9c;
-}
-.node--view-mode-card .node_like-like:before {
-  content: "";
-  font-family: "Glyphicons Halflings";
-  vertical-align: bottom;
-  margin-right: 5px;
-}
-.node--view-mode-card .node_like-like:hover {
-  color: #ea4a5e;
-}
 .node--view-mode-card .block-field-blocknodegood-practicetitle {
   display: block;
   padding: 15px 20px 5px 20px;
@@ -1472,6 +1461,19 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   transform: scale(1.2);
 }
 
+a.node_like-like {
+  color: #9c9c9c;
+}
+a.node_like-like:before {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+a.node_like-like:hover {
+  color: #ea4a5e;
+}
+
 .node--view-mode-card-home .field--name-field-media-image.field--type-entity-reference {
   margin-bottom: 0px;
 }
@@ -1486,6 +1488,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 }
 .node--view-mode-card-home .field--name-body {
   text-align: center;
+  font-size: 16px;
 }
 .node--view-mode-card-home .block-field-blocknodekey-articlefield-media-image {
   position: relative;
