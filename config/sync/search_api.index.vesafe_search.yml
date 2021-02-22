@@ -108,6 +108,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_vehicles
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
   title:
     label: Title
     datasource_id: 'entity:node'
@@ -142,7 +150,7 @@ processor_settings:
     excerpt_length: 256
     exclude_fields:
       - title
-    prefix: '<strong class="hightlighted">'
+    prefix: '<strong class="highlighted">'
     suffix: '</strong>'
     weights:
       postprocess_query: 0
@@ -151,7 +159,7 @@ processor_settings:
     fields:
       - title
     title: false
-    alt: true
+    alt: false
     tags:
       b: 2
       h1: 5
