@@ -1,9 +1,0 @@
-uuid: 476300bd-16ea-49a8-bfc5-afb2f7ee4551
-langcode: en
-status: true
-dependencies: {  }
-id: search_api__views_block__search_api__search_api_block
-name: 'search_api:views_block__search_api__search_api_block'
-filter_key: null
-url_processor: query_string
-breadcrumb: {  }

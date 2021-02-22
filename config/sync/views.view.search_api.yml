@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
+    - field.storage.node.field_gp_what_is_it
     - search_api.index.vesafe_search
   module:
     - better_exposed_filters
@@ -41,8 +42,8 @@ display:
           submit_button: Apply
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
+          exposed_sorts_label: 'Sort by:'
+          expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
           text_input_required: 'Select any filter and click on Apply to see results'
@@ -58,7 +59,7 @@ display:
               secondary_label: 'Advanced options'
               secondary_open: false
             sort:
-              plugin_id: default
+              plugin_id: bef_links
               advanced:
                 combine: false
                 combine_rewrite: ''
@@ -97,7 +98,16 @@ display:
             offset_label: Offset
           quantity: 9
       style:
-        type: default
+        type: grid
+        options:
+          grouping: {  }
+          columns: 1
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: 'views-col col-12 col-md-auto'
+          row_class_default: true
+          row_class_custom: ''
       row:
         type: fields
       fields:
@@ -315,6 +325,75 @@ display:
           entity_type: null
           entity_field: null
           plugin_id: search_api_field
+        field_gp_what_is_it:
+          id: field_gp_what_is_it
+          table: search_api_index_vesafe_search
+          field: field_gp_what_is_it
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          plugin_id: search_api_field
         search_api_excerpt:
           id: search_api_excerpt
           table: search_api_index_vesafe_search
@@ -359,12 +438,12 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: ''
+          empty: "<h3>{{ title }}</h3>\r\n<p><strong>Type: </strong>{{ type }}</p>\r\n<p>{{ body }}{{ field_gp_what_is_it }}</p><br>"
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
           link_to_item: false
-          use_highlighting: false
+          use_highlighting: true
           multi_type: separator
           multi_separator: ', '
           plugin_id: search_api
@@ -376,7 +455,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: and
+          operator: or
           value: ''
           group: 1
           exposed: true
@@ -395,24 +474,29 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              editor: '0'
-              reviewer: '0'
-              project_manager: '0'
-              approver: '0'
               administrator: '0'
+              approver: '0'
+              project_manager: '0'
+              reviewer: '0'
+              editor: '0'
             placeholder: ''
+            expose_fields: false
+            searched_fields_id: ''
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: 'Fulltext search'
+            description: null
+            identifier: search_api_fulltext
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items: {  }
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
           parse_mode: terms
           min_length: null
           fields:
@@ -457,19 +541,17 @@ display:
           empty: false
           content: '<div class="search-results-info">Showing @start - @end of @total</div>'
           plugin_id: result
-        entity_block:
-          id: entity_block
+        area_text_custom:
+          id: area_text_custom
           table: views
-          field: entity_block
+          field: area_text_custom
           relationship: none
           group_type: group
           admin_label: ''
           empty: false
           tokenize: true
-          target: ''
-          view_mode: default
-          bypass_access: false
-          plugin_id: entity
+          content: '<h2 class="search-results-title hidden">Results for " {{filters.search_api_fulltext}} " </h2>'
+          plugin_id: text_custom
       footer: {  }
       empty:
         area:
@@ -488,7 +570,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      use_ajax: true
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -497,10 +579,10 @@ display:
         - url
         - url.query_args
         - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_gp_what_is_it'
         - 'config:search_api.index.vesafe_search'
   search_api_block:
     display_plugin: block
@@ -510,6 +592,11 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
+      cache:
+        type: none
+      defaults:
+        cache: false
+      exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -518,8 +605,8 @@ display:
         - url
         - url.query_args
         - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_gp_what_is_it'
         - 'config:search_api.index.vesafe_search'
