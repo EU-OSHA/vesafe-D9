@@ -84,7 +84,7 @@
       {% endif %}
       {# Print last item if we are not on the last page. #}
       {% if items.last %}
-        <li class="page-item">
+        <li class="page-item--last">
           <a href="{{ items.last.href }}" title="{{ 'Go to last page'|t }}"{{ items.last.attributes|without('href', 'title') }} class="page-link">
             <span aria-hidden="true">{{ items.last.text|default('»'|t) }}</span>
             <span class="sr-only">{{ 'Last page'|t }}</span>
