@@ -299,6 +299,10 @@ form #edit-disclaimer p {
   margin-bottom: 0px;
 }
 
+.form-row > fieldset, .form-row > div {
+  padding: 0px !important;
+}
+
 h1, h2, label {
   font-family: "Open Sans", sans-serif;
   color: #333;
