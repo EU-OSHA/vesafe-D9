@@ -506,6 +506,105 @@ a[data-extlink] svg.ext {
   display: none;
 }
 
+.pagination {
+  justify-content: center;
+  align-items: center;
+  margin: 22px 0;
+}
+.pagination li {
+  color: #ea4a5e;
+  font-weight: bold;
+  font-size: 1em;
+  vertical-align: middle;
+}
+.pagination a {
+  color: #ea4a5e;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 0px;
+  background-color: transparent;
+}
+
+.page-item {
+  display: none;
+}
+.page-item.active {
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 4px;
+}
+.page-item.active .page-link {
+  color: #ea4a5e;
+  border: none;
+  background-color: transparent;
+  pointer-events: none;
+}
+.page-item.active .page-link:after {
+  content: "/";
+  display: inline-block;
+  margin-left: 4px;
+}
+.page-item.last {
+  display: inline-block;
+  margin-right: 8px;
+}
+.page-item--first a {
+  width: 30px;
+  height: 32px;
+  text-align: center;
+  overflow: hidden;
+  color: transparent;
+  background: url(/sites/vesafe/themes/custom/vesafe_theme/images/pager-first.png) no-repeat 50%;
+  background-size: 21px;
+}
+.page-item--first a:hover {
+  color: transparent;
+}
+.page-item--previous a {
+  width: 30px;
+  height: 32px;
+  text-align: center;
+  overflow: hidden;
+  color: transparent;
+  background: url(/sites/vesafe/themes/custom/vesafe_theme/images/pager-previous.png) no-repeat 50%;
+  background-size: 21px;
+}
+.page-item--previous a:hover {
+  color: transparent;
+}
+.page-item--last a {
+  width: 30px;
+  height: 32px;
+  text-align: center;
+  overflow: hidden;
+  color: transparent;
+  background: url(/sites/vesafe/themes/custom/vesafe_theme/images/pager-last.png) no-repeat 50%;
+  background-size: 21px;
+}
+.page-item--last a:hover {
+  color: transparent;
+}
+.page-item .page-link {
+  padding: 0px;
+}
+.page-item .page-link:hover {
+  color: #a02b3a;
+  background-color: transparent;
+}
+
+.pager__item--next a {
+  width: 30px;
+  height: 32px;
+  text-align: center;
+  overflow: hidden;
+  color: transparent;
+  background: url(/sites/vesafe/themes/custom/vesafe_theme/images/pager-next.png) no-repeat 50%;
+  background-size: 21px;
+}
+.pager__item--next a:hover {
+  color: transparent;
+}
+
 table {
   background-color: transparent;
 }

@@ -72,9 +72,15 @@
   });
 
 
+  // Pager index
+    $('.pagination').each(function () {
+      let itemLength = $(this).find('.page-item').length;
+      let lastItemIndex=itemLength - 1;
+      $(this).find('.page-item').eq(lastItemIndex).addClass('last');
+    });
 
   // Scroll to top
-  $("#scroll-top").on("click", function(e) {
+  $("#scroll-top").on("click", function (e) {
     e.preventDefault();
     $("html, body").stop().animate({"scrollTop": "0px"}, 200);
   });
