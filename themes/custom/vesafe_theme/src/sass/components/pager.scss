@@ -1,0 +1,17 @@
+.pagination{
+}
+
+.page{
+  &-item{
+    &.active{}
+    &:last-of-type{}
+  }
+  &-link{}
+}
+
+.pager{
+  &__item--first{}
+  &__item--next{}
+  &__item--previous{}
+  &__item--last{}
+}

@@ -18,6 +18,7 @@
 @import 'components/headings';
 @import 'components/helper';
 @import 'components/links';
+@import 'components/pager';
 @import 'components/modal';
 @import 'components/table';
 
@@ -37,6 +38,10 @@
 @import 'displays/node--view-mode-card-home';
 @import 'displays/related-good-practices';
 @import 'displays/sitemap';
+
+
+@import 'block/block-views-blockvehicles';
+
 
 @import 'responsive/common/common-responsive';
 @import 'responsive/mobile/mobile-responsive';

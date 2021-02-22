@@ -593,7 +593,7 @@ table tr {
   padding-left: 0px;
 }
 .site-footer .navbar-nav .nav-link.active {
-  border: none;
+  border-bottom: none;
 }
 
 footer #scroll-top {
@@ -679,6 +679,12 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   float: right;
   font-size: 16px;
 }
+.sticky-menu .header-blocks {
+  max-width: 340px;
+  min-width: 340px;
+  position: relative;
+  margin-top: 18px;
+}
 
 .block-simple-blockcontact-us {
   display: inline-block;
@@ -728,6 +734,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 .block-text-resize-block a sup {
   display: none;
 }
+.sticky-menu .block-text-resize-block {
+  display: none;
+}
 
 .block-block-printfriendly {
   display: inline-block;
@@ -755,6 +764,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   line-height: 22px;
 }
 .block-block-printfriendly a img {
+  display: none;
+}
+.sticky-menu .block-block-printfriendly {
   display: none;
 }
 
@@ -812,6 +824,13 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   content: "";
   color: #FFF;
 }
+.sticky-menu .block-simple-blocksearch-api-search {
+  display: inline-block;
+  max-width: 205px;
+  margin-left: 105px;
+  position: absolute;
+  top: -9px;
+}
 
 .block-gtranslate-block {
   margin-top: 7px;
@@ -834,6 +853,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   width: 150px;
   display: inline-block !important;
   background-color: #FFF;
+}
+.sticky-menu .block-gtranslate-block {
+  display: none;
 }
 
 .navbar {
@@ -1672,6 +1694,10 @@ a.node_like-like:hover {
   display: none;
 }
 
+.block-views-blockvehicles-list-vehicles-list {
+  margin-right: 15px;
+}
+
 @media screen and (max-width: 991px) {
   .key-articles-menu-container > ul > li > a, .key-articles-menu-container > ul > li > span {
     color: #ea4a5e;
@@ -1851,6 +1877,17 @@ a.node_like-like:hover {
   /*  MENU-HEADER  */
   div[class*=block-simple-blockheader-].block-simple-blockheader-european .header-img {
     max-width: 215px;
+  }
+  .sticky-menu div[class*=block-simple-blockheader-].block-simple-blockheader-european .header-img {
+    width: 150px;
+  }
+  .sticky-menu div[class*=block-simple-blockheader-].block-simple-blockheader-commission .header-img {
+    max-width: 135px;
+  }
+  .sticky-menu div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-img {
+    height: 51px;
+    margin-top: 0px;
+    margin: 0px;
   }
 }
 
