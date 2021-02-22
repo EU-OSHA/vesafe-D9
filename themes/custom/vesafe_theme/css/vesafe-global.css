@@ -1274,6 +1274,11 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   border-bottom: 2px solid #dcdcdc;
   font-size: 0.9em;
 }
+.block-views-blocksearch-api-good-practices-search-good-practices .view-empty {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 .aside-column {
   z-index: 4 !important;
