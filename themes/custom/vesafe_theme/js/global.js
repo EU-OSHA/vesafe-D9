@@ -20,6 +20,7 @@
       var $search = $.urlParam('search_api_fulltext');
       if (!Drupal.isEmpty($.urlParam('search_api_fulltext')) && $search !== 0) {
         $('.search-results-title').show();
+        $('.search-results-title').parents('.lc-container-cols').addClass('success-results');
       }
     }
   };
