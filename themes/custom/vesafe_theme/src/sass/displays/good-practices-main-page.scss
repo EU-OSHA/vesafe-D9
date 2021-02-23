@@ -5,8 +5,13 @@
     margin-bottom: 25px;
     padding-bottom: 13px;
     padding-top: 8px;
-    border-bottom: 2px solid $bg-color-grey-lines;
     font-size: 0.9em;
+    h2{
+      border-bottom: 2px solid $bg-color-grey-lines;
+      text-align:left;
+      font-size:inherit;
+      font-weight:inherit;
+    }
   }
 
   .view-empty{
@@ -52,6 +57,34 @@
   .facet-item{
     a{
       color: inherit;
+      &.is-active{
+        font-weight:bold;
+        .facet-item__status {
+          color:transparent;
+          font-style: normal;
+          padding: 0px;
+          line-height: 16px;
+          width: 16px;
+          height: 16px;
+          background-color: $bg-color-grey-dark;
+          display: inline-block;
+          text-align: center;
+          font-size: 0.8em;
+          margin-right: 6px;
+          font-weight: bold;
+          position:relative;
+          &:before{
+            content:'x';
+            color: $text-color-white;
+            display: inline-block;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            z-index:2;
+          }
+        }
+      }
     }
     &__value{}
     &__count{}
@@ -64,10 +97,11 @@
     top:0px;
     left:100%;
     z-index:100;
-    margin-left:24px;
-    width:100vw;
-    max-width:805px;
-    margin-top:8px;
+    margin-left: 31px;
+    width: 100vw;
+    max-width: 823px;
+    margin-top: 8px;
+    border-bottom: 2px solid $bg-color-grey-lines;
     label{
       display:inline-block;
       font-style: italic;
@@ -167,5 +201,8 @@
   .block-views-exposed-filter-blocksearch-api-good-practices-search-good-practices{
     position:relative;
   }
+}
+
+.success-results{
 }
 
