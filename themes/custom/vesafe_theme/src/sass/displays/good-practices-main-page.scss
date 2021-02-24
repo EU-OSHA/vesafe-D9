@@ -145,57 +145,7 @@
     &__count{}
   }
   .form-item-sort-by{
-    display:flex;
-    flex-direction:row;
-    align-items:baseline;
-    position:absolute;
-    top:0px;
-    left:100%;
-    z-index:100;
-    margin-left: 31px;
-    width: 100vw;
-    max-width: 823px;
-    margin-top: 8px;
-    border-bottom: 2px solid $bg-color-grey-lines;
-    padding-bottom:0.5em!important;
-    label{
-      display:inline-block;
-      font-style: italic;
-      font-weight: normal;
-      font-size: .9em;
-      padding-top: 2px;
-    }
-    .bef-links{
-      display:inline-block;
-      position: absolute;
-      top: 0px;
-      left: 80px;
-      z-index:200;
-      left: 44px;
-
-      .bef-link{
-        display: inline-block;
-        margin-left: 10px;
-        color: $text-color-black;
-        text-decoration: none;
-        font-size: 16px;
-        &--selected{
-          font-weight: 600;
-          color: $text-color-red;
-        }
-      }
-
-    }
-    ul{
-      display:inline-flex;
-      flex-direction: row;
-      align-items: baseline;
-      list-style: none;
-      margin:0px;
-    }
-    li{
-      margin-left:10px;
-    }
+    display:none;
   }
   .form-control{
     border-color: $bg-color-red !important;
@@ -261,9 +211,71 @@
   }
 }
 
+.aside-column + div{
+
+  .form-item-sort-by{
+    display:flex;
+    flex-direction:row;
+    align-items:baseline;
+    position:absolute;
+    top:0%;
+    left:0%;
+    z-index:100;
+    width: 100%;
+    margin-top: 8px;
+    border-bottom: 2px solid $bg-color-grey-lines;
+    padding-bottom:0.5em!important;
+    label{
+      display:inline-block;
+      font-style: italic;
+      font-weight: normal;
+      font-size: .9em;
+      padding-top: 2px;
+    }
+    .bef-links{
+      display:inline-block;
+      position: absolute;
+      top: 0px;
+      left: 80px;
+      z-index:200;
+      left: 44px;
+
+      .bef-link{
+        display: inline-block;
+        margin-left: 10px;
+        color: $text-color-black;
+        text-decoration: none;
+        font-size: 16px;
+        &--selected{
+          font-weight: 600;
+          color: $text-color-red;
+        }
+      }
+
+    }
+    ul{
+      display:inline-flex;
+      flex-direction: row;
+      align-items: baseline;
+      list-style: none;
+      margin:0px;
+    }
+    li{
+      margin-left:10px;
+    }
+  }
+  .form-control,
+  .form-actions{
+    display:none;
+  }
+  .block-views-exposed-filter-blocksearch-api-good-practices-search-good-practices{
+    height:0px;
+  }
+}
+
 .success-results{
 
-  .aside-column{
+  .aside-column + div{
     .form-item-sort-by{
       top:38px;
     }
