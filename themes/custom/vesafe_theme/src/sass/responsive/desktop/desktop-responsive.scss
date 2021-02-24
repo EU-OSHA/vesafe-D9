@@ -1,4 +1,4 @@
-@media (min-width:992px){
+@media (min-width:992px) {
 
 
   /*  HEADER  */
@@ -10,7 +10,12 @@
     background-color: white;
     top: 0px;
   }
-
+  .navbar-expand-lg .menu--main .nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width:992px) and (max-width:1199px) {
 
   /*  MENU-HEADER  */
 

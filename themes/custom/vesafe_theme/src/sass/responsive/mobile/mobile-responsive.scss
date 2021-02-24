@@ -11,15 +11,17 @@
   div[class*="block-simple-blockheader-"]{
     &.block-simple-blockheader-european{
       a{
+        height: 70px;
       }
       .header-img{
-        height: 70px;
+        max-width: 169px;
       }
     }
 
     &.block-simple-blockheader-commission{
-      max-width: 195px;
+      max-width:215px;
       .header-img {
+        max-width: 195px;
       }
     }
 
