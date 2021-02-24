@@ -808,20 +808,20 @@ third_party_settings:
                 label: inline
                 type: entity_reference_label
                 settings:
-                  link: true
+                  link: false
                 third_party_settings:
                   linked_field:
-                    linked: 0
-                    type: field
+                    linked: 1
+                    type: custom
                     destination:
                       field: ''
-                      custom: ''
+                      custom: 'internal:/[term:tid]'
                     advanced:
                       title: ''
                       target: ''
                       class: ''
                       rel: ''
-                      text: ''
+                      text: '[term:name]'
                     token: ''
               context_mapping:
                 entity: layout_builder.entity
@@ -840,14 +840,14 @@ third_party_settings:
                 label: inline
                 type: entity_reference_label
                 settings:
-                  link: true
+                  link: false
                 third_party_settings:
                   linked_field:
-                    linked: 0
-                    type: field
+                    linked: 1
+                    type: custom
                     destination:
                       field: ''
-                      custom: ''
+                      custom: 'internal:/[term:tid]'
                     advanced:
                       title: ''
                       target: ''

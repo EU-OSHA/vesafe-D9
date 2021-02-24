@@ -286,7 +286,7 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
+            strip_tags: true
             trim: false
             preserve_tags: ''
             html: false
@@ -357,7 +357,7 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
+            strip_tags: true
             trim: false
             preserve_tags: ''
             html: false
@@ -586,6 +586,50 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: search_api_options
+        nid:
+          id: nid
+          table: search_api_index_vesafe_search
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '!='
+          value:
+            min: ''
+            max: ''
+            value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_numeric
       sorts:
         search_api_relevance:
           id: search_api_relevance
@@ -653,6 +697,11 @@ display:
       arguments: {  }
       display_extenders: {  }
       use_ajax: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+          2: OR
     cache_metadata:
       max-age: -1
       contexts:
@@ -679,6 +728,7 @@ display:
       defaults:
         cache: false
       exposed_block: true
+      block_description: search_api
     cache_metadata:
       max-age: -1
       contexts:
