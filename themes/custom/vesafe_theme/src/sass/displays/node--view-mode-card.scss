@@ -123,10 +123,16 @@ a.node_like-like {
     background-color: $bg-color-white;
     margin-bottom: 25px;
     position: relative;
+
+    .card-media{
+      max-height: 265px;
+      overflow: hidden;
+    }
     .field--name-title{
       font-size: 1.6em;
       font-weight: 600;
       margin-bottom: 22px;
+      margin-top: 22px;
       display: block;
       a {
         color: $text-color-red;
@@ -138,5 +144,9 @@ a.node_like-like {
         font-size: 19.8px;
       }
     }
+  }
+  .block-field-blocknodekey-articlebody{
+    text-align:center;
+    font-size: 16px;
   }
 }

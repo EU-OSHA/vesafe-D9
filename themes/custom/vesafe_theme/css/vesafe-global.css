@@ -1734,10 +1734,15 @@ a.node_like-like:hover {
   margin-bottom: 25px;
   position: relative;
 }
+.view-id-view_themes .node--view-mode-card .card-media {
+  max-height: 265px;
+  overflow: hidden;
+}
 .view-id-view_themes .node--view-mode-card .field--name-title {
   font-size: 1.6em;
   font-weight: 600;
   margin-bottom: 22px;
+  margin-top: 22px;
   display: block;
 }
 .view-id-view_themes .node--view-mode-card .field--name-title a {
@@ -1748,6 +1753,10 @@ a.node_like-like:hover {
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 19.8px;
+}
+.view-id-view_themes .block-field-blocknodekey-articlebody {
+  text-align: center;
+  font-size: 16px;
 }
 
 .node--view-mode-card-home .field--name-field-media-image.field--type-entity-reference {
