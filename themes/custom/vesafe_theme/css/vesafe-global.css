@@ -1729,6 +1729,27 @@ a.node_like-like:hover {
   color: #ea4a5e;
 }
 
+.view-id-view_themes .node--view-mode-card {
+  background-color: #FFF;
+  margin-bottom: 25px;
+  position: relative;
+}
+.view-id-view_themes .node--view-mode-card .field--name-title {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-bottom: 22px;
+  display: block;
+}
+.view-id-view_themes .node--view-mode-card .field--name-title a {
+  color: #ea4a5e;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 19.8px;
+}
+
 .node--view-mode-card-home .field--name-field-media-image.field--type-entity-reference {
   margin-bottom: 0px;
 }
