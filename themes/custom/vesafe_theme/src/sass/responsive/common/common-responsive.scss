@@ -16,6 +16,13 @@
     }
   }
 
+
+  .menu{
+    &--main{
+      padding-bottom: 20px;
+    }
+  }
+
   .success-results{
     .aside-column{
       .form{
@@ -67,47 +74,4 @@
     }
   }
 
-  /*  HEADER  */
-
-  .sticky-menu {
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-    background-color: white;
-    top: 0px;
-  }
-
-
-  /*  MENU-HEADER  */
-
-  div[class*="block-simple-blockheader-"]{
-    &.block-simple-blockheader-european{
-      .header-img{
-        max-width: 215px;
-
-        .sticky-menu &{
-          width:150px;
-        }
-      }
-    }
-
-    &.block-simple-blockheader-commission{
-      .header-img {
-
-        .sticky-menu &{
-          max-width:135px;
-        }
-      }
-    }
-
-    &.block-simple-blockheader-vesafe{
-      .header-img{
-        .sticky-menu &{
-          height: 51px;
-          margin-top: 0px;
-          margin: 0px;
-        }
-      }
-    }
-  }
 }

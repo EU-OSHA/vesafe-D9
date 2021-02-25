@@ -11,15 +11,18 @@
   div[class*="block-simple-blockheader-"]{
     &.block-simple-blockheader-european{
       a{
+        height: 70px;
       }
       .header-img{
-        height: 70px;
+        max-width: 169px;
       }
     }
 
     &.block-simple-blockheader-commission{
-      max-width: 195px;
+      max-width:215px;
+      height:auto;
       .header-img {
+        max-width: 195px;
       }
     }
 
@@ -29,7 +32,6 @@
       }
     }
   }
-
   .header-blocks{
     min-width: inherit;
     max-width: inherit;
@@ -67,6 +69,13 @@
         background-color: transparent;
         border-bottom: 1px solid $bg-color-blue;
         width: calc(100% - 16px);
+      }
+    }
+  }
+  .navbar-nav{
+    .nav{
+      &-link{
+        text-align:center;
       }
     }
   }
@@ -137,5 +146,33 @@
   /*  E-GUIDE ARTICLE  */
   .eguide-block img {
     margin-bottom: 15px;
+  }
+
+
+}
+@media only screen and (max-width: 532px) {
+
+  div[class*="block-simple-blockheader-"] {
+    &.block-simple-blockheader-european {
+      a {
+      }
+
+      .header-img {
+      }
+    }
+
+    &.block-simple-blockheader-commission {
+      max-width: 181px;
+
+      .header-img {
+        clear: both;
+        width: 161px;
+      }
+    }
+
+    &.block-simple-blockheader-vesafe {
+      .header-img {
+      }
+    }
   }
 }

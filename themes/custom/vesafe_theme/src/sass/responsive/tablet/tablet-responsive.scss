@@ -31,6 +31,7 @@
     }
 
     &.block-simple-blockheader-commission{
+      height: auto;
       .header-img {
       }
     }
@@ -42,4 +43,15 @@
       }
     }
   }
+  /*  MENU-MAIN  */
+  .navbar-nav {
+      .nav-link{
+        width:100%;
+        text-align: center;
+        display:inline-block;
+      }
+    }
+
+
+
 }

@@ -303,6 +303,10 @@ form #edit-disclaimer p {
   padding: 0px !important;
 }
 
+.form-group {
+  margin-bottom: 0rem;
+}
+
 h1, h2, label {
   font-family: "Open Sans", sans-serif;
   color: #333;
@@ -727,8 +731,14 @@ footer #scroll-top span {
 }
 
 .top-header-container {
+  padding-right: 0px;
+  padding-left: 0px;
   padding-top: 10px;
   padding-bottom: 7px;
+}
+.sticky-menu .top-header-container {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 div[class*=block-simple-blockheader-] a {
@@ -742,11 +752,21 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-european {
 }
 div[class*=block-simple-blockheader-].block-simple-blockheader-european a {
   padding-right: 10px;
+  height: 95px;
+}
+div[class*=block-simple-blockheader-].block-simple-blockheader-european a img {
+  vertical-align: middle;
 }
 div[class*=block-simple-blockheader-].block-simple-blockheader-commission {
-  max-width: 35%;
-  padding-left: 20px;
+  max-width: 40%;
+  padding-left: 15px;
   padding-right: 15px;
+  height: 100%;
+}
+div[class*=block-simple-blockheader-].block-simple-blockheader-commission .content,
+div[class*=block-simple-blockheader-].block-simple-blockheader-commission p,
+div[class*=block-simple-blockheader-].block-simple-blockheader-commission a {
+  height: 100%;
 }
 div[class*=block-simple-blockheader-].block-simple-blockheader-commission .header-img {
   float: left;
@@ -770,19 +790,27 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   vertical-align: bottom;
 }
 .header .push-right {
-  width: 100%;
+  margin: 0px;
+}
+.header .push-right:after {
+  clear: both;
 }
 .header-blocks {
   max-width: 273px;
   min-width: 260px;
   float: right;
   font-size: 16px;
+  margin-left: auto;
 }
 .sticky-menu .header-blocks {
   max-width: 340px;
   min-width: 340px;
   position: relative;
   margin-top: 18px;
+}
+.header-blocks .region-header-form {
+  padding: 0px;
+  margin: 0px;
 }
 
 .block-simple-blockcontact-us {
@@ -960,11 +988,14 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 .navbar {
   padding: 0px;
 }
-.navbar.navbar-expand-lg {
+.navbar-header-container {
   background-color: #323a93;
   color: #FFF;
-  padding: 0px 15px;
   z-index: 2;
+  position: relative;
+}
+.navbar.navbar-expand-lg {
+  padding: 0px 15px;
 }
 .navbar-collapse {
   overflow-x: visible;
@@ -1443,6 +1474,10 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 }
 .aside-column .block-views-exposed-filter-blocksearch-api-good-practices-search-good-practices {
   position: relative;
+  margin-bottom: 12px;
+}
+.aside-column .block-views-exposed-filter-blocksearch-api-good-practices-search-good-practices .form-row {
+  margin: 0px;
 }
 
 .aside-column + div .form-item-sort-by {
@@ -1937,6 +1972,10 @@ a.node_like-like:hover {
     padding-left: 30px;
   }
 
+  .menu--main {
+    padding-bottom: 20px;
+  }
+
   .success-results .aside-column .form-item-sort-by {
     top: 404%;
     margin-left: 0;
@@ -1970,31 +2009,6 @@ a.node_like-like:hover {
   .aside-column .form-type-textfield {
     width: 100%;
   }
-
-  /*  HEADER  */
-  .sticky-menu {
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-    background-color: white;
-    top: 0px;
-  }
-
-  /*  MENU-HEADER  */
-  div[class*=block-simple-blockheader-].block-simple-blockheader-european .header-img {
-    max-width: 215px;
-  }
-  .sticky-menu div[class*=block-simple-blockheader-].block-simple-blockheader-european .header-img {
-    width: 150px;
-  }
-  .sticky-menu div[class*=block-simple-blockheader-].block-simple-blockheader-commission .header-img {
-    max-width: 135px;
-  }
-  .sticky-menu div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-img {
-    height: 51px;
-    margin-top: 0px;
-    margin: 0px;
-  }
 }
 @media screen and (max-width: 767px) {
   /*  MENU-HEADER  */
@@ -2006,10 +2020,17 @@ a.node_like-like:hover {
     margin-bottom: 35px;
   }
 
-  div[class*=block-simple-blockheader-].block-simple-blockheader-european .header-img {
+  div[class*=block-simple-blockheader-].block-simple-blockheader-european a {
     height: 70px;
   }
+  div[class*=block-simple-blockheader-].block-simple-blockheader-european .header-img {
+    max-width: 169px;
+  }
   div[class*=block-simple-blockheader-].block-simple-blockheader-commission {
+    max-width: 215px;
+    height: auto;
+  }
+  div[class*=block-simple-blockheader-].block-simple-blockheader-commission .header-img {
     max-width: 195px;
   }
   div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-img {
@@ -2056,6 +2077,10 @@ a.node_like-like:hover {
     background-color: transparent;
     border-bottom: 1px solid #323a93;
     width: calc(100% - 16px);
+  }
+
+  .navbar-nav .nav-link {
+    text-align: center;
   }
 
   .block-gtranslate-block {
@@ -2120,6 +2145,15 @@ a.node_like-like:hover {
     margin-bottom: 15px;
   }
 }
+@media only screen and (max-width: 532px) {
+  div[class*=block-simple-blockheader-].block-simple-blockheader-commission {
+    max-width: 181px;
+  }
+  div[class*=block-simple-blockheader-].block-simple-blockheader-commission .header-img {
+    clear: both;
+    width: 161px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   /*  HEADER  */
   .sticky-menu {
@@ -2146,11 +2180,21 @@ a.node_like-like:hover {
     max-width: 169px;
     height: 70px;
   }
+  div[class*=block-simple-blockheader-].block-simple-blockheader-commission {
+    height: auto;
+  }
   div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe {
     max-width: 170px;
   }
   div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-img {
     height: 70px;
+  }
+
+  /*  MENU-MAIN  */
+  .navbar-nav .nav-link {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
   }
 }
 @media (min-width: 992px) {
@@ -2163,6 +2207,12 @@ a.node_like-like:hover {
     top: 0px;
   }
 
+  .navbar-expand-lg .menu--main .nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
   /*  MENU-HEADER  */
   div[class*=block-simple-blockheader-].block-simple-blockheader-european .header-img {
     max-width: 215px;
