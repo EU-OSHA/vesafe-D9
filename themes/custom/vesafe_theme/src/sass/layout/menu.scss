@@ -1,12 +1,15 @@
 
 .navbar {
   padding: 0px;
-
-  &.navbar-expand-lg {
+  &-header-container{
     background-color: $bg-color-blue;
     color: $text-color-white;
-    padding: 0px 15px;
     z-index: 2;
+    position: relative;
+
+  }
+  &.navbar-expand-lg {
+    padding: 0px 15px;
   }
 
   &-collapse {

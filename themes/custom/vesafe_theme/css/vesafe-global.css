@@ -789,6 +789,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   display: inline-block;
   vertical-align: bottom;
 }
+.header .push-right {
+  margin: 0px;
+}
 .header .push-right:after {
   clear: both;
 }
@@ -985,11 +988,14 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 .navbar {
   padding: 0px;
 }
-.navbar.navbar-expand-lg {
+.navbar-header-container {
   background-color: #323a93;
   color: #FFF;
-  padding: 0px 15px;
   z-index: 2;
+  position: relative;
+}
+.navbar.navbar-expand-lg {
+  padding: 0px 15px;
 }
 .navbar-collapse {
   overflow-x: visible;
@@ -1468,6 +1474,10 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 }
 .aside-column .block-views-exposed-filter-blocksearch-api-good-practices-search-good-practices {
   position: relative;
+  margin-bottom: 12px;
+}
+.aside-column .block-views-exposed-filter-blocksearch-api-good-practices-search-good-practices .form-row {
+  margin: 0px;
 }
 
 .aside-column + div .form-item-sort-by {
@@ -1962,6 +1972,10 @@ a.node_like-like:hover {
     padding-left: 30px;
   }
 
+  .menu--main {
+    padding-bottom: 20px;
+  }
+
   .success-results .aside-column .form-item-sort-by {
     top: 404%;
     margin-left: 0;
@@ -2014,6 +2028,7 @@ a.node_like-like:hover {
   }
   div[class*=block-simple-blockheader-].block-simple-blockheader-commission {
     max-width: 215px;
+    height: auto;
   }
   div[class*=block-simple-blockheader-].block-simple-blockheader-commission .header-img {
     max-width: 195px;
@@ -2062,6 +2077,10 @@ a.node_like-like:hover {
     background-color: transparent;
     border-bottom: 1px solid #323a93;
     width: calc(100% - 16px);
+  }
+
+  .navbar-nav .nav-link {
+    text-align: center;
   }
 
   .block-gtranslate-block {
@@ -2124,6 +2143,15 @@ a.node_like-like:hover {
   /*  E-GUIDE ARTICLE  */
   .eguide-block img {
     margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 532px) {
+  div[class*=block-simple-blockheader-].block-simple-blockheader-commission {
+    max-width: 181px;
+  }
+  div[class*=block-simple-blockheader-].block-simple-blockheader-commission .header-img {
+    clear: both;
+    width: 161px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
