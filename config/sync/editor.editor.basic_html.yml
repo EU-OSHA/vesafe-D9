@@ -46,6 +46,9 @@ settings:
       language_list: un
     stylescombo:
       styles: ''
+    font:
+      font_names: ''
+      font_sizes: ''
 image_upload:
   status: true
   scheme: public

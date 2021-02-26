@@ -1,0 +1,15 @@
+uuid: 6a3fe818-a1df-41d6-b966-432853c71828
+langcode: en
+status: true
+dependencies: {  }
+id: staging
+label: Staging
+description: ''
+folder: ''
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

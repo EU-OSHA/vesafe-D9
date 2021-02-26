@@ -714,11 +714,7 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
  */
-$settings['trusted_host_patterns'] = [
-  '^89\.0\.4\.171$',
-  '^vesafe\.bilbomatica\.es$',
-  '^vesafe\.ddev\.site$',
-];
+$settings['trusted_host_patterns'] = [];
 
 /**
  * The default list of directories that will be ignored by Drupal's file API.
@@ -781,6 +777,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 
+// BBDD connection.
 $databases['default']['default'] = [
   'database' => 'vesafe',
   'username' => 'root',
@@ -795,22 +792,29 @@ $databases['default']['default'] = [
 
 $settings['config_sync_directory'] = $app_root . '/' . $site_path . '/config/sync';
 
-// PROD.
+
+// Split configuration.
+$config['config_split.config_split.local']['status'] = FALSE;
+$config['config_split.config_split.develop']['status'] = FALSE;
+$config['config_split.config_split.staging']['status'] = FALSE;
+$config['config_split.config_split.production']['status'] = TRUE;
+
+// PROD settings.
 if (file_exists($app_root . '/' . $site_path . '/settings.production.php')) {
   include $app_root . '/' . $site_path . '/settings.production.php';
 }
 
-// STAGING.
+// STAGING settings.
 if (file_exists($app_root . '/' . $site_path . '/settings.staging.php')) {
   include $app_root . '/' . $site_path . '/settings.staging.php';
 }
 
-// DEVELOP.
+// DEVELOP settings.
 if (file_exists($app_root . '/' . $site_path . '/settings.develop.php')) {
   include $app_root . '/' . $site_path . '/settings.develop.php';
 }
 
-// LOCAL
+// LOCAL settings.
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }

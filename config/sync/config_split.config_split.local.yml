@@ -1,0 +1,18 @@
+uuid: 3b34e2b9-9e9f-459f-ada8-deafe3f42874
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: Local
+description: ''
+folder: sites/vesafe/config/local
+module:
+  custom_migrations: 0
+  devel: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - search_api.server.apache_solr
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
