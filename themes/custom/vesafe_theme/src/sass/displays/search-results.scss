@@ -1,0 +1,23 @@
+.node_search-results.list-group{
+  .list-group-item{
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #dcdcdc;
+    padding-bottom: 25px;
+    h3{
+      font-size: 1.6em;
+      margin-top: 22px;
+      margin-bottom: 11px;
+      line-height: 1.1;
+      a{
+        color: #333333;
+      }
+    }
+    p{
+      strong{
+        background-color: yellow;
+      }
+    }
+  }
+}
