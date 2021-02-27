@@ -6,7 +6,14 @@ id: production
 label: Production
 description: ''
 folder: ''
-module: {  }
+module:
+  authorization: 0
+  authorization_drupal_roles: 0
+  ldap_authentication: 0
+  ldap_authorization: 0
+  ldap_query: 0
+  ldap_servers: 0
+  ldap_user: 0
 theme: {  }
 blacklist: {  }
 graylist: {  }

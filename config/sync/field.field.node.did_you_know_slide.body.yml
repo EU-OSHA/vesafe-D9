@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.body
     - node.type.did_you_know_slide
   module:
+    - linkchecker
     - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
 id: node.did_you_know_slide.body
 field_name: body
 entity_type: node

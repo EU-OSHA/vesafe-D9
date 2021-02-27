@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.field_gp_getting_started
     - node.type.good_practice
   module:
+    - linkchecker
     - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
 id: node.good_practice.field_gp_getting_started
 field_name: field_gp_getting_started
 entity_type: node
