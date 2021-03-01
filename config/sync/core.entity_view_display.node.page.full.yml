@@ -1,35 +1,30 @@
-uuid: c849b5f1-5e39-413c-b1e6-0ed905ffeb2a
+uuid: dd1b42a7-46ff-4063-b3e5-2034c5a18fee
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.page.body
     - node.type.page
   module:
-    - text
+    - layout_builder
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
-id: node.page.default
+id: node.page.full
 targetEntityType: node
 bundle: page
-mode: default
-content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  links:
-    weight: 101
-    region: content
-    settings: {  }
-    third_party_settings: {  }
+mode: full
+content: {  }
 hidden:
+  body: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
   langcode: true
+  links: true
   search_api_excerpt: true
