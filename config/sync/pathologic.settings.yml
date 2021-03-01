@@ -1,0 +1,9 @@
+scheme_whitelist:
+  - http
+  - https
+  - files
+  - internal
+protocol_style: path
+local_paths: "http://vesafe.ddev.site/\r\nhttp://vesafe.bilbomatica.es/vehicle-safety/\r\nhttps://testd9-eguides.osha.europa.eu/vehicle-safety/"
+_core:
+  default_config_hash: EKYCulG-Y3pcObfUpVbl-D9T5DDX6d4hpQ-BVlSBAmw
