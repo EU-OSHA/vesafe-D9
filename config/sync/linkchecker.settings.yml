@@ -10,18 +10,18 @@ extract:
   from_object: false
   from_video: false
   filter_blacklist:
+    editor_file_reference: editor_file_reference
+    filter_url: filter_url
     filter_autop: filter_autop
+    filter_pathologic: filter_pathologic
     blazy_filter: '0'
-    editor_file_reference: '0'
     filter_caption: '0'
-    filter_url: '0'
     filter_align: '0'
     filter_html_image_secure: '0'
     filter_html_escape: '0'
     filter_html: '0'
     filter_htmlcorrector: '0'
     media_embed: '0'
-    filter_pathologic: '0'
 check:
   connections_max: 8
   connections_max_per_domain: 2
