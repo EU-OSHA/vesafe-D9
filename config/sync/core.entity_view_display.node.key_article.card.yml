@@ -134,10 +134,10 @@ third_party_settings:
                   paddings_left: 0
                   paddings_right: 0
                 misc:
-                  extra_class: ''
+                  extra_class: card-media
               general:
                 title: ''
-              layout_settings__container__regions__first__active_tab: edit-layout-settings-container-regions-first-styles--Ws5pptkp4OM
+              layout_settings__container__regions__first__active_tab: edit-layout-settings-container-regions-first-styles--C2TyXqH7UzY
         components:
           501bff48-4af2-45d1-b6ef-ca0f802d6e45:
             uuid: 501bff48-4af2-45d1-b6ef-ca0f802d6e45

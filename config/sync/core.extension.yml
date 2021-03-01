@@ -19,16 +19,16 @@ module:
   color_field: 0
   comment: 0
   config: 0
+  config_filter: 0
+  config_split: 0
   contact: 0
   content_moderation: 0
   content_moderation_notifications: 0
   contextual: 0
   crop: 0
   ctools: 0
-  custom_migrations: 0
   datetime: 0
   dblog: 0
-  devel: 0
   diff: 0
   dynamic_entity_reference: 0
   dynamic_page_cache: 0
@@ -69,6 +69,7 @@ module:
   lc_simple_title: 0
   lc_slick: 0
   link: 0
+  linkchecker: 0
   mailsystem: 0
   media: 0
   media_library: 0
@@ -79,11 +80,6 @@ module:
   meta_position: 0
   metatag: 0
   metatag_dc: 0
-  migrate: 0
-  migrate_drupal: 0
-  migrate_file_to_media: 0
-  migrate_plus: 0
-  migrate_tools: 0
   node: 0
   node_like: 0
   node_revision_delete: 0
@@ -91,6 +87,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  pathologic: 0
   printfriendly: 0
   quickedit: 0
   r4032login: 0
@@ -113,6 +110,7 @@ module:
   toolbar: 0
   tour: 0
   twig_tweak: 0
+  ultimate_cron: 0
   update: 0
   user: 0
   variationcache: 0
@@ -127,6 +125,7 @@ module:
   extlink: 1
   pathauto: 1
   xmlsitemap: 1
+  externalauth: 10
   views: 10
   linked_field: 100
   standard: 1000

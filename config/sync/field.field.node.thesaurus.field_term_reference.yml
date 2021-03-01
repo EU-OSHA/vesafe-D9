@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.field_term_reference
     - node.type.thesaurus
   module:
+    - linkchecker
     - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
 id: node.thesaurus.field_term_reference
 field_name: field_term_reference
 entity_type: node

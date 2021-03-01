@@ -1,0 +1,32 @@
+uuid: 6a3fe818-a1df-41d6-b966-432853c71828
+langcode: en
+status: true
+dependencies: {  }
+id: staging
+label: Staging
+description: ''
+folder: ''
+module:
+  authorization: 0
+  authorization_drupal_roles: 0
+  ldap_authentication: 0
+  ldap_authorization: 0
+  ldap_query: 0
+  ldap_servers: 0
+  ldap_user: 0
+  reroute_email: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - authorization.authorization_profile.osha
+  - authorization.settings
+  - ldap_authentication.settings
+  - ldap_servers.server.osha
+  - ldap_servers.server.osha_write
+  - ldap_servers.settings
+  - ldap_user.settings
+  - ultimate_cron.job.ldap_user_cron
+  - user.role.authenticated
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

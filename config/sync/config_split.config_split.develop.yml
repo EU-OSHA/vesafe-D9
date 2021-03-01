@@ -1,0 +1,16 @@
+uuid: e549cfe1-3b37-4ec6-a240-b0e2146abd34
+langcode: en
+status: true
+dependencies: {  }
+id: develop
+label: Develop
+description: ''
+folder: sites/vesafe/config/develop
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - search_api.server.apache_solr
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
