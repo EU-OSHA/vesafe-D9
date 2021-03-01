@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.field_subtitle
     - node.type.article
   module:
+    - linkchecker
     - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
 id: node.article.field_subtitle
 field_name: field_subtitle
 entity_type: node

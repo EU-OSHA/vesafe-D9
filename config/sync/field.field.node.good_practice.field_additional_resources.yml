@@ -7,6 +7,11 @@ dependencies:
     - node.type.good_practice
   module:
     - link
+    - linkchecker
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: link_link_extractor
 id: node.good_practice.field_additional_resources
 field_name: field_additional_resources
 entity_type: node

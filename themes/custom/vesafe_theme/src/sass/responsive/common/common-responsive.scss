@@ -15,4 +15,63 @@
       }
     }
   }
+
+
+  .menu{
+    &--main{
+      padding-bottom: 20px;
+    }
+  }
+
+  .success-results{
+    .aside-column{
+      .form{
+        &-item-sort-by{
+          top: 404%;
+          margin-left: 0;
+          left: 0%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .aside-column{
+    .lc-inline_column_first-content-edit{
+      margin-bottom:15px;
+      padding: 15px;
+      background-color: $bg-color-grey;
+    }
+    h1{
+      display:block;
+    }
+
+    .form{
+      &-item-sort-by{
+        top: 404%;
+        margin-left: 0;
+        left: 0%;
+        width: 100%;
+      }
+    }
+    .facet-item{
+      a {
+        color: $text-color-red;
+        &.is-active{
+          .facet-item__status {
+            background-color: $bg-color-white;
+            &:before{
+              color: $text-color-red;
+
+            }
+          }
+        }
+
+      }
+    }
+    .form-type-textfield{
+      width:100%;
+    }
+  }
+
 }

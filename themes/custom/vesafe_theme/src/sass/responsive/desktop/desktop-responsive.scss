@@ -1,16 +1,21 @@
-@media (min-width:992px){
+@media (min-width:992px) {
 
 
   /*  HEADER  */
 
   .sticky-menu {
-      position: fixed;
-      z-index: 9999;
-      width: 100%;
-      background-color: white;
-      top: 0px;
-    }
-
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: white;
+    top: 0px;
+  }
+  .navbar-expand-lg .menu--main .nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width:992px) and (max-width:1199px) {
 
   /*  MENU-HEADER  */
 
@@ -18,16 +23,29 @@
     &.block-simple-blockheader-european{
       .header-img{
         max-width: 215px;
+
+        .sticky-menu &{
+          width:150px;
+        }
       }
     }
 
     &.block-simple-blockheader-commission{
       .header-img {
+
+        .sticky-menu &{
+          max-width:135px;
+        }
       }
     }
 
     &.block-simple-blockheader-vesafe{
       .header-img{
+        .sticky-menu &{
+          height: 51px;
+          margin-top: 0px;
+          margin: 0px;
+        }
       }
     }
   }

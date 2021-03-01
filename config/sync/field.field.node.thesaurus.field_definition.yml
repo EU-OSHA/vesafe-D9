@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.field_definition
     - node.type.thesaurus
   module:
+    - linkchecker
     - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
 id: node.thesaurus.field_definition
 field_name: field_definition
 entity_type: node

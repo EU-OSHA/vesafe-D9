@@ -53,12 +53,56 @@
   });
 
 
+  // Aside menu h1 active state
+  let windowWidth=$(window).width();
+  if(windowWidth<992){
+    $(".aside-column").each(function(){
+      $(this).addClass('open');
+      if(!$(this).find('h1').hasClass('active')){
+        $(this).find('h1').addClass('active');
+      }
+    });
+  }
+  else{
+    $(".aside-column").each(function(){
+      $(this).find('h1').removeClass('active');
+    });
+  }
+  $(window).on('resize', function(){
+    let windowWidth=$(window).width();
+    if(windowWidth<992){
+      $(".aside-column").each(function(){
+        $(this).addClass('open');
+        if(!$(this).find('h1').hasClass('active')){
+          $(this).find('h1').addClass('active');
+        }
+      });
+    }
+    else{
+      $(".aside-column").each(function(){
+        $(this).find('h1').removeClass('active');
+      });
+    }
+  });
+
+
   // Aside menu
-  $(".aside-column").each(function () {
-    $(this).find('h3').on('click', function () {
-      let $dropdownElement = $(this).closest('.facets-widget-links');
+  $(".aside-column").each(function(){
+    if($(this).find('.is-active')){
+      let $activeElement=$(this).find('.is-active');
+      $activeElement.closest('.facets-widget-links').toggleClass('open');
+      $activeElement.closest('.facets-widget-links').find('ul').stop().slideDown(0);
+    }
+    $(this).find('h3').on('click', function(){
+      let $dropdownElement=$(this).closest('.facets-widget-links');
       $dropdownElement.toggleClass('open')
       $dropdownElement.find('ul').stop().slideToggle();
+    });
+
+    $(this).find('h1.active').on('click', function(){
+      let $dropdownElement=$(this).closest('.aside-column');
+      $dropdownElement.toggleClass('open')
+      $dropdownElement.find('.lc-inline_column_first-content-edit').stop().slideToggle();
     });
   });
 
@@ -78,6 +122,13 @@
     }
   });
 
+
+  // Pager index
+    $('.pagination').each(function () {
+      let itemLength = $(this).find('.page-item').length;
+      let lastItemIndex=itemLength - 1;
+      $(this).find('.page-item').eq(lastItemIndex).addClass('last');
+    });
 
   // Scroll to top
   $("#scroll-top").on("click", function (e) {
