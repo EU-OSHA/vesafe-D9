@@ -1,0 +1,22 @@
+uuid: cdd62695-aaa4-46ec-8bc6-82f0827bf6f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.gtranslate_machine_tooltip
+  module:
+    - simple_block
+  theme:
+    - vesafe_theme
+id: gtranslatemachinetransaltiontooltip
+theme: vesafe_theme
+region: header_form
+weight: 0
+provider: null
+plugin: 'simple_block:gtranslate_machine_tooltip'
+settings:
+  id: 'simple_block:gtranslate_machine_tooltip'
+  label: 'Gtranslate machine transaltion tooltip'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

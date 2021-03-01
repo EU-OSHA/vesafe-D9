@@ -10,9 +10,9 @@
 
   Drupal.behaviors.VesafeGpSearch = {
     attach: function (context, settings) {
-      $.urlParam = function(name){
+      $.urlParam = function (name) {
         var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-        if (results==null) {
+        if (results == null) {
           return null;
         }
         return decodeURI(results[1]) || 0;
@@ -25,6 +25,17 @@
     }
   };
 
+  // Tooltip for the Gtranslate machine translation
+  Drupal.behaviors.GTranslateTooltip = {
+    attach: function (context, settings) {
+
+      $('span[class*="gtranslate-machine-tooltip"]').tooltip({
+        delay: {show: 0, hide: 1000}
+      });
+
+    }
+  };
+
   Drupal.behaviors.VesafeGplinks = {
     attach: function (context, settings) {
       $('.field--name-field-media-gp-factsheet').find('a').once('gplinks').text(Drupal.t('Download factsheet'));
@@ -32,20 +43,20 @@
   };
 
   // Toggle Menu
-  $(".dropdown").each(function(){
-    $(this).find('.dropdown-toggle').on('click', function(){
-      let idRef=$(this).attr('id');
-      let $toggleElement=$(this).closest(".dropdown");
+  $(".dropdown").each(function () {
+    $(this).find('.dropdown-toggle').on('click', function () {
+      let idRef = $(this).attr('id');
+      let $toggleElement = $(this).closest(".dropdown");
       $toggleElement.stop().toggleClass('open');
-      $toggleElement.find('[aria-labelledby="'+idRef+'"]').stop().slideToggle();
+      $toggleElement.find('[aria-labelledby="' + idRef + '"]').stop().slideToggle();
     });
   });
 
 
   // Aside menu
-  $(".aside-column").each(function(){
-    $(this).find('h3').on('click', function(){
-      let $dropdownElement=$(this).closest('.facets-widget-links');
+  $(".aside-column").each(function () {
+    $(this).find('h3').on('click', function () {
+      let $dropdownElement = $(this).closest('.facets-widget-links');
       $dropdownElement.toggleClass('open')
       $dropdownElement.find('ul').stop().slideToggle();
     });
@@ -53,24 +64,23 @@
 
 
   // Sticky top menu
-  $(window).on("scroll", function(e){
+  $(window).on("scroll", function (e) {
     e.preventDefault();
-    let $header=$('#header');
-    let headerHeight=$header.outerHeight();
-    let windowScroll=$(this).scrollTop();
-    if(windowScroll>headerHeight) {
-      if(!$header.hasClass("sticky-menu")){
+    let $header = $('#header');
+    let headerHeight = $header.outerHeight();
+    let windowScroll = $(this).scrollTop();
+    if (windowScroll > headerHeight) {
+      if (!$header.hasClass("sticky-menu")) {
         $header.addClass("sticky-menu");
       }
-    }else{
+    } else {
       $header.removeClass("sticky-menu");
     }
   });
 
 
-
   // Scroll to top
-  $("#scroll-top").on("click", function(e) {
+  $("#scroll-top").on("click", function (e) {
     e.preventDefault();
     $("html, body").stop().animate({"scrollTop": "0px"}, 200);
   });
@@ -95,8 +105,7 @@
             // Hide the elements.
             hideItems($view);
             $(this).text(Drupal.t('See more links')).removeClass('additional-resources-link-less').addClass('additional-resources-link-more')
-          }
-          else {
+          } else {
             // Show the elements.
             showItems($view);
             $(this).text(Drupal.t('See fewer links')).removeClass('additional-resources-link-more').addClass('additional-resources-link-less')
@@ -149,7 +158,7 @@
       changeNextButton($id);
 
       // Bind on hashchanged to control the element when the hash change.
-      $(window).bind('hashchange', function (e){
+      $(window).bind('hashchange', function (e) {
         hiddeElements(window.location.hash);
         collapseMenuElements(window.location.hash);
         changePreviusButton(window.location.hash);
@@ -170,7 +179,7 @@
         $container.find('ul[id!="menu-' + $section + '"]').collapse('hide');
         $container.find('ul#menu-' + $section).collapse('show');
         $('a.key-articles-link').removeClass('item-active');
-        $('a.key-articles-link[href="' + id +'"]').addClass('item-active');
+        $('a.key-articles-link[href="' + id + '"]').addClass('item-active');
       }
 
       // Set the link and title of previus button.
@@ -178,12 +187,11 @@
         var $button = $('span.key-article-previous');
         if (id === '#' + Drupal.t('introduction')) {
           $button.hide();
-        }
-        else {
+        } else {
           var $links = $('a.key-articles-link');
           var $link_href = '';
           var $link_text = '';
-          $links.each(function (i){
+          $links.each(function (i) {
             if ($($links[i]).attr('href') === id) {
               $link_href = $($links[(i - 1)]).attr('href');
               $link_text = $($links[(i - 1)]).text();
@@ -200,7 +208,7 @@
         var $link_href = '';
         var $link_text = '';
         var $button = $('span.key-article-next');
-        $links.each(function (i){
+        $links.each(function (i) {
           if ($($links[i]).attr('href') === id) {
             $link_href = $($links[(i + 1)]).attr('href');
             $link_text = $($links[(i + 1)]).text();
@@ -209,16 +217,13 @@
 
         if (typeof $link_href === 'undefined') {
           $button.hide();
-        }
-        else {
+        } else {
           $button.html('<a href="' + $link_href + '">' + $link_text + '</a>');
           $button.show();
         }
       }
     }
   };
-
-
 
 
 })(jQuery, Drupal);
