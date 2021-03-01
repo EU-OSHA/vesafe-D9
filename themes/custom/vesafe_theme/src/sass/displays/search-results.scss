@@ -6,13 +6,20 @@
     font-size: 0.9em;
     position: relative;
     h2[style="display: block;"] {
-      border-bottom: 2px solid #dcdcdc;
+      border-bottom: 2px solid $bg-color-grey-lines;
       text-align: left;
       font-size: inherit;
       font-weight: inherit;
       display: block;
       font-style: italic;
       margin: 0px;
+
+      search-results-label {
+        font-size: 1.7em;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 1.42857143;
+      }
     }
     .shown-items {
       margin-top: 11px;
@@ -24,7 +31,7 @@
     padding: 0px;
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid #dcdcdc;
+    border-bottom: 2px solid $bg-color-grey-lines;
     padding-bottom: 25px;
   }
   h3 {
@@ -44,7 +51,7 @@
     background-color: yellow;
   }
   .views-row{
-    border-bottom: 2px solid #dcdcdc;
+    border-bottom: 2px solid $bg-color-grey-lines;
     padding-bottom: 25px;
   }
   br{

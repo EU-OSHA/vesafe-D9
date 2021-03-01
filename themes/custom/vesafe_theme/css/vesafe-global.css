@@ -237,6 +237,10 @@ body {
   margin-top: 0px;
   width: 40px;
 }
+.aside-column .form-submit:focus {
+  outline: none;
+  box-shadow: none;
+}
 .aside-column .facets-widget-links h3:after {
   content: "";
   font-family: "Glyphicons Halflings";
@@ -2036,6 +2040,12 @@ a.node_like-like:hover {
   display: block;
   font-style: italic;
   margin: 0px;
+}
+.block-views-blocksearch-api-search-api-block .view-header h2[style="display: block;"] search-results-label {
+  font-size: 1.7em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.42857143;
 }
 .block-views-blocksearch-api-search-api-block .view-header .shown-items {
   margin-top: 11px;
