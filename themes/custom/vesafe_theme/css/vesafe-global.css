@@ -1750,6 +1750,35 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   margin-left: 10px;
 }
 
+.user-login-form label.form-required:after {
+  background-image: none;
+}
+.user-login-form .form-group {
+  margin-bottom: 15px;
+}
+.user-login-form .btn-primary {
+  color: #333;
+  background-color: #FFF;
+  border: 1px solid #dcdcdc;
+  margin: 0px;
+  width: auto;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+}
+.user-login-form .btn-primary:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border: 1px solid #adadad;
+  margin: 0px;
+  width: auto;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+}
+
 .node--view-mode-card {
   background-color: #f7f7f7;
   margin-bottom: 30px;
