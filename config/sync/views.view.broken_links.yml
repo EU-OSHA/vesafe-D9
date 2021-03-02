@@ -105,7 +105,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Status code'
+          label: Code
           exclude: false
           alter:
             alter_text: true
