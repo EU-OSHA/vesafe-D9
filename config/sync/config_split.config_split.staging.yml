@@ -17,8 +17,14 @@ module:
   matomo: 0
   memcache: 0
   memcache_admin: 0
+  purge: 0
+  purge_processor_cron: 0
+  purge_tokens: 0
+  purge_ui: 0
   reroute_email: 0
   smtp: 0
+  varnish_purge_tags: 0
+  varnish_purger: 0
 theme: {  }
 blacklist: {  }
 graylist: {  }

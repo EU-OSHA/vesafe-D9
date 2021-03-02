@@ -1,0 +1,22 @@
+uuid: 41dde65c-d1fd-4c83-beae-0ee7c81bd0ce
+langcode: en
+status: true
+dependencies: {  }
+id: 9fd73c69e0
+name: Osha
+invalidationtype: tag
+hostname: osha-d9-stg-proxy-ods.mainstrat.com
+port: 6082
+path: /
+request_method: BAN
+scheme: http
+verify: '1'
+headers: {  }
+body: null
+body_content_type: null
+runtime_measurement: true
+timeout: !!float 1
+connect_timeout: !!float 1
+cooldown_time: !!float 0
+max_requests: 100
+http_errors: true
