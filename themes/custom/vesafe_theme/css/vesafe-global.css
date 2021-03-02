@@ -1085,6 +1085,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 
 .header-menu-news {
   float: left;
+  padding-top: 10px;
 }
 .header-menu-news > .block {
   display: inline-block;
@@ -1291,6 +1292,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   text-align: center;
   display: inline-block;
   margin-left: 45px;
+  margin-bottom: 0px;
 }
 .block-simple-blockgtranslate-machine-tooltip .content p:first-child span {
   width: 15px;
@@ -2399,6 +2401,10 @@ a.node_like-like:hover {
     background-color: transparent;
     border-bottom: 1px solid #323a93;
     width: calc(100% - 16px);
+  }
+
+  .block-simple-blockgtranslate-machine-tooltip {
+    display: none;
   }
 
   .navbar-nav .nav-link {
