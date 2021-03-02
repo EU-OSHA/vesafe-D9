@@ -37,6 +37,14 @@ form{
       margin-bottom:0px;
     }
   }
+  .error{
+    color:$text-color-red;
+    display:block;
+    font-weight:400;
+    font-size:1rem;
+    margin-bottom:0px;
+    margin-top:2px;
+  }
 }
 
 .form-row>fieldset, .form-row>div{

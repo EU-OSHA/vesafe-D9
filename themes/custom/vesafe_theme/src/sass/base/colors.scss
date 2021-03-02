@@ -21,6 +21,7 @@
 $text-color-black: #333;
 $text-color-red: #ea4a5e;
 $text-color-white: #FFF;
+$text-color-registry:#000;
 
 .text-color-black{
   color: $text-color-black;
@@ -39,8 +40,12 @@ $bg-color-red-hover: #a02b3a;
 $bg-color-black: #323232;
 $bg-color-grey: #f7f7f7;
 $bg-color-grey-lines: #dcdcdc;
+$bg-color-grey-lines-hover: #adadad;
 $bg-color-grey-dark: #9c9c9c;
 $bg-color-white: #FFF;
+$bg-color-white-hover: #e6e6e6;
+$bg-color-grey-light: #dfdfdf;
+$bg-color-grey-lighter: #ededed;
 
 .bg-color-blue{
   background: $bg-color-blue;

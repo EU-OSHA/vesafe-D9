@@ -35,7 +35,9 @@ features:
 logo:
   use_default: 1
 favicon:
-  use_default: 1
+  use_default: 0
+  path: 'public://favicon_0.ico'
+  mimetype: image/vnd.microsoft.icon
 bootstrap_barrio_source: '0'
 bootstrap_barrio_region_clean_top_header: 0
 bootstrap_barrio_region_class_top_header: row
