@@ -62,7 +62,9 @@ third_party_settings:
                 section_label: '11611829632'
                 section_delta: '0'
               structure:
+                section_structure_sm: 12
                 section_structure: '12'
+                section_structure_lg: '--'
                 section_carousel: 0
                 section_carousel_slick: none
             styles:
@@ -251,7 +253,9 @@ third_party_settings:
                 section_label: '11611832232'
                 section_delta: '1'
               structure:
+                section_structure_sm: 12
                 section_structure: '12'
+                section_structure_lg: '--'
                 section_carousel: false
                 section_carousel_slick: none
             styles:
