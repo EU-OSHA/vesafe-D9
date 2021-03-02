@@ -123,6 +123,17 @@
   });
 
 
+  // Header tooltip
+
+  $('.header').on('mouseenter','.gtranslate-machine-tooltip',function(){
+    $(this).closest('.block-simple-blockgtranslate-machine-tooltip').find('.content').find('p:last-child').removeClass('hidden');
+  });
+
+  $('.header').on('mouseleave','.block-simple-blockgtranslate-machine-tooltip .content p:last-child',function(){
+    $(this).addClass('hidden');
+  });
+
+
   // Pager index
     $('.pagination').each(function () {
       let itemLength = $(this).find('.page-item').length;

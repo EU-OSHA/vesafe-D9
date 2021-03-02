@@ -7,5 +7,5 @@ dependencies:
 id: gtranslate_machine_tooltip
 title: 'Gtranslate machine transaltion tooltip'
 content:
-  value: '<p>(machine translation) <span class="gtranslate-machine-tooltip" title="The translations of this website from the original English are made by a machine translation service developed by Google. Consequently, the quality of those translations might not be accurate in all instances. You can know more about this system on https://en.wikipedia.org/wiki/Google_Translate">?</span></p>'
+  value: "<p>(machine translation) <span class=\"gtranslate-machine-tooltip\" >?</span></p>\r\n<p class=\"hidden\">The translations of this website from the original English are made by a machine translation service developed by Google. Consequently, the quality of those translations might not be accurate in all instances. You can know more about this system on <a href=\"https://en.wikipedia.org/wiki/Google_Translate\" target=\"_blank\">https://en.wikipedia.org/wiki/Google_Translate</a></p>\r\n"
   format: full_html
