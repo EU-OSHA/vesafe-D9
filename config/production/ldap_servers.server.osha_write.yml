@@ -12,7 +12,7 @@ basedn:
   - 'ou=VESAFE,ou=Sites,dc=osha,dc=europa,dc=eu'
 bind_method: service_account
 binddn: 'cn=Reader,dc=osha,dc=europa,dc=eu'
-bindpw:
+bindpw: null
 encryption: none
 grp_derive_from_dn_attr: ''
 grp_derive_from_dn: false
