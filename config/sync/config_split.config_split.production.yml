@@ -5,7 +5,7 @@ dependencies: {  }
 id: production
 label: Production
 description: ''
-folder: ''
+folder: sites/vesafe/config/production
 module:
   authorization: 0
   authorization_drupal_roles: 0
@@ -14,6 +14,9 @@ module:
   ldap_query: 0
   ldap_servers: 0
   ldap_user: 0
+  matomo: 0
+  memcache: 0
+  memcache_admin: 0
 theme: {  }
 blacklist: {  }
 graylist: {  }

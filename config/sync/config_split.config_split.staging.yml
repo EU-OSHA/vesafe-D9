@@ -5,7 +5,7 @@ dependencies: {  }
 id: staging
 label: Staging
 description: ''
-folder: ''
+folder: sites/vesafe/config/staging
 module:
   authorization: 0
   authorization_drupal_roles: 0
@@ -14,19 +14,20 @@ module:
   ldap_query: 0
   ldap_servers: 0
   ldap_user: 0
+  matomo: 0
+  memcache: 0
+  memcache_admin: 0
+  purge: 0
+  purge_processor_cron: 0
+  purge_tokens: 0
+  purge_ui: 0
   reroute_email: 0
+  smtp: 0
+  varnish_purge_tags: 0
+  varnish_purger: 0
 theme: {  }
 blacklist: {  }
-graylist:
-  - authorization.authorization_profile.osha
-  - authorization.settings
-  - ldap_authentication.settings
-  - ldap_servers.server.osha
-  - ldap_servers.server.osha_write
-  - ldap_servers.settings
-  - ldap_user.settings
-  - ultimate_cron.job.ldap_user_cron
-  - user.role.authenticated
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0

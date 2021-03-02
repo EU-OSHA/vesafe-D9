@@ -74,7 +74,9 @@ third_party_settings:
                 section_label: '11612536449'
                 section_delta: '0'
               structure:
+                section_structure_sm: 12
                 section_structure: '12'
+                section_structure_lg: '--'
                 section_carousel: 0
                 section_carousel_slick: none
             styles:
@@ -207,7 +209,9 @@ third_party_settings:
                 section_label: '11612345368'
                 section_delta: '0'
               structure:
+                section_structure_sm: 12
                 section_structure: '12'
+                section_structure_lg: '--'
                 section_carousel: 0
                 section_carousel_slick: none
             styles:
@@ -364,7 +368,9 @@ third_party_settings:
                 section_label: '11612854315'
                 section_delta: '0'
               structure:
+                section_structure_sm: 12
                 section_structure: 6/6
+                section_structure_lg: '--'
                 section_carousel: false
                 section_carousel_slick: none
             styles:
@@ -573,7 +579,9 @@ third_party_settings:
                 section_label: '11612278933'
                 section_delta: '0'
               structure:
+                section_structure_sm: 12
                 section_structure: '12'
+                section_structure_lg: '--'
                 section_carousel: false
                 section_carousel_slick: none
             styles:
@@ -717,7 +725,9 @@ third_party_settings:
                 section_label: '11612442633'
                 section_delta: '0'
               structure:
+                section_structure_sm: 12
                 section_structure: '12'
+                section_structure_lg: '--'
                 section_carousel: 0
                 section_carousel_slick: none
             styles:
@@ -899,7 +909,9 @@ third_party_settings:
                 section_label: '11611914650'
                 section_delta: '0'
               structure:
+                section_structure_sm: 12
                 section_structure: 9/3
+                section_structure_lg: '--'
                 section_carousel: 0
                 section_carousel_slick: none
             styles:
@@ -1270,7 +1282,9 @@ third_party_settings:
                 section_label: '11611924144'
                 section_delta: '0'
               structure:
+                section_structure_sm: 12
                 section_structure: '12'
+                section_structure_lg: '--'
                 section_carousel: 0
                 section_carousel_slick: none
             styles:

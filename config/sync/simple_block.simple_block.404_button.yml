@@ -1,0 +1,11 @@
+uuid: 609e2e96-1c1a-4289-83c2-fc0af742c462
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: 404_button
+title: '404 Button'
+content:
+  value: "<p><a href=\"/\">Return to homepage</a></p>\r\n"
+  format: full_html

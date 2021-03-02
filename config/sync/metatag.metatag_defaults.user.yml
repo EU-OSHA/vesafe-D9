@@ -7,6 +7,15 @@ _core:
 id: user
 label: User
 tags:
-  canonical_url: '[user:url]'
-  description: '[site:name]'
-  title: '[user:display-name] | [site:name]'
+  image_src: '[user:picture:url]'
+  description: 'A guide to good practice for managing work related vehicle risks in the EU, with a specific focus on workplace transport, driving for work and working on or near a road.'
+  title: '[user:name] - [site:name]'
+  canonical_url: '[current-page:url:absolute]'
+  shortlink: '[current-page:url:unaliased]'
+  keywords: 'Vehicle safety, Legislation, Safe driving for work, Working on or near a road, Workplace transport safety, OSH, OSHA, EU-OSHA, Occupational safety, Occupational health, European Agency'
+  dcterms_type: text
+  dcterms_title: '[user:name]'
+  dcterms_format: text/html
+  dcterms_identifier: '[current-page:url:absolute]'
+  dcterms_creator: '[user:name]'
+  dcterms_date: '[user:created:custom:Y-m-d\TH:iP]'
