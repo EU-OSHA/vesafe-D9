@@ -59,6 +59,7 @@ div[class*="block-simple-blockheader-"]{
 .header{
   &-menu-news{
     float:left;
+    padding-top: 10px;
     &>.block{
       display: inline-block;
       vertical-align: bottom;
@@ -272,6 +273,7 @@ div[class*="block-simple-blockheader-"]{
         text-align: center;
         display: inline-block;
         margin-left: 45px;
+        margin-bottom:0px;
         span{
           width: 15px;
           height: 15px;
