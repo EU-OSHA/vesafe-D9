@@ -514,6 +514,14 @@ form #edit-disclaimer {
 form #edit-disclaimer p {
   margin-bottom: 0px;
 }
+form .error {
+  color: #ea4a5e;
+  display: block;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0px;
+  margin-top: 2px;
+}
 
 .form-row > fieldset, .form-row > div {
   padding: 0px !important;
