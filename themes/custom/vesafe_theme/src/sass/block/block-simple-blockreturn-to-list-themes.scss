@@ -1,0 +1,16 @@
+.block-simple-blockreturn-to-list-themes{
+  text-align: right;
+  .back-arrow{
+    &:after{
+      content: "";
+      background: url(/sites/vesafe/themes/custom/vesafe_theme/images/back-news.png) no-repeat;
+      background-size: 100%;
+      display: inline-block;
+      width: 22px;
+      height: 25px;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+  }
+}
+
