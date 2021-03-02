@@ -303,8 +303,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
-          settings: {  }
+          type: text_trimmed
+          settings:
+            trim_length: 250
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -374,8 +375,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
-          settings: {  }
+          type: text_trimmed
+          settings:
+            trim_length: 250
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -657,16 +659,6 @@ display:
           plugin_id: search_api
       title: 'Search API'
       header:
-        result:
-          id: result
-          table: views
-          field: result
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          content: '<div class="search-results-info">Showing @start - @end of @total</div>'
-          plugin_id: result
         area_text_custom:
           id: area_text_custom
           table: views
@@ -676,8 +668,18 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          content: '<h2 class="search-results-title hidden">Results for " {{filters.search_api_fulltext}} " </h2>'
+          content: '<h2 class="search-results-title hidden">Results for:<span class="search-results-label">"{{ filters.search_api_fulltext }}"</span></h2>'
           plugin_id: text_custom
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          content: '<span class="shown-items">Showing @start - @end of @total</span>'
+          plugin_id: result
       footer: {  }
       empty:
         area:
