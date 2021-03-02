@@ -2287,6 +2287,20 @@ a.node_like-like:hover {
   margin-right: 15px;
 }
 
+.block-simple-blockreturn-to-list-themes {
+  text-align: right;
+}
+.block-simple-blockreturn-to-list-themes .back-arrow:after {
+  content: "";
+  background: url(/sites/vesafe/themes/custom/vesafe_theme/images/back-news.png) no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  width: 22px;
+  height: 25px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
 @media screen and (max-width: 991px) {
   .key-articles-menu-container > ul > li > a, .key-articles-menu-container > ul > li > span {
     color: #ea4a5e;
