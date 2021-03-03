@@ -49,6 +49,7 @@
     border-radius: 3px;
     cursor: pointer;
     font-weight:600;
+    margin-bottom: 5px;
   }
   .block-facet-blockrisks  h3{
     &:before {
@@ -113,6 +114,9 @@
   .form-item-sort-by{
     display:none;
   }
+  .form-group{
+    margin-bottom:0px;
+  }
   .form-control{
     border-color: $bg-color-red !important;
     box-shadow: none;
@@ -149,6 +153,7 @@
   }
 
   .facets-widget-links{
+    margin-bottom:10px;
     h3{
       &:after {
         content: "\e252";
