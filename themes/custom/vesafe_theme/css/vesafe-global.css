@@ -2232,11 +2232,11 @@ a.node_like-like:hover {
 .vesafe-workflow-list-widget p {
   display: inline-block;
   background: #fff498;
-  margin-right: 25px !important;
-  position: relative !important;
-  margin-bottom: 10px !important;
-  padding: 10px 15px !important;
-  padding-left: 40px !important;
+  margin-right: 25px;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  padding-left: 40px;
   font-size: 16px;
 }
 .vesafe-workflow-list-widget p:before {
@@ -2258,22 +2258,22 @@ a.node_like-like:hover {
   top: 0;
 }
 .vesafe-workflow-list-widget p.first {
-  padding-left: 10px !important;
+  padding-left: 10px;
 }
 .vesafe-workflow-list-widget p.first:before {
   content: "";
-  border: none !important;
+  border: none;
 }
 .vesafe-workflow-list-widget p.last {
-  padding-right: 10px !important;
+  padding-right: 10px;
 }
 .vesafe-workflow-list-widget p.last:after {
   content: "";
-  border: none !important;
+  border: none;
 }
 .vesafe-workflow-list-widget p.active {
   background: #8d8c81;
-  color: white !important;
+  color: #FFF;
   font-weight: bolder;
 }
 .vesafe-workflow-list-widget p.active:before {
