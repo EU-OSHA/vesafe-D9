@@ -1702,8 +1702,8 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   font-size: 0.9em;
 }
 .block-views-blocksearch-api-good-practices-search-good-practices .view-empty {
-  text-align: center;
-  margin-top: 30px;
+  text-align: left;
+  margin-top: 70px;
   margin-bottom: 30px;
 }
 
@@ -2192,6 +2192,11 @@ a.node_like-like:hover {
 }
 .block-views-blocksearch-api-search-api-block .field-content p:last-of-type {
   margin: 0px;
+}
+.block-views-blocksearch-api-search-api-block .view-empty {
+  text-align: left;
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
 
 .block-views-exposed-filter-blocksearch-api-search-api-block {
