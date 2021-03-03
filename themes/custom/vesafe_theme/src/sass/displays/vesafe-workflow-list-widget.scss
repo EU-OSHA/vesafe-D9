@@ -7,11 +7,11 @@
   p{
     display: inline-block;
     background: #fff498;
-    margin-right: 25px !important;
-    position: relative !important;
-    margin-bottom: 10px !important;
-    padding: 10px 15px !important;
-    padding-left: 40px !important;
+    margin-right: 25px;
+    position: relative ;
+    margin-bottom: 10px ;
+    padding: 10px 15px ;
+    padding-left: 40px ;
     font-size: 16px;
     &:before{
       content: "";
@@ -32,22 +32,22 @@
       top: 0;
     }
     &.first{
-      padding-left: 10px !important;
+      padding-left: 10px ;
       &:before{
         content: "";
-        border: none !important;
+        border: none ;
       }
     }
     &.last{
-      padding-right: 10px !important;
+      padding-right: 10px;
       &:after{
         content: "";
-        border: none !important;
+        border: none ;
       }
     }
     &.active{
       background: #8d8c81;
-      color: white !important;
+      color: $text-color-white ;
       font-weight: bolder;
       &:before{
         border-left: 25px solid #fffbd9;

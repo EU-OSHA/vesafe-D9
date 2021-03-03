@@ -1702,8 +1702,8 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   font-size: 0.9em;
 }
 .block-views-blocksearch-api-good-practices-search-good-practices .view-empty {
-  text-align: center;
-  margin-top: 30px;
+  text-align: left;
+  margin-top: 70px;
   margin-bottom: 30px;
 }
 
@@ -2193,6 +2193,11 @@ a.node_like-like:hover {
 .block-views-blocksearch-api-search-api-block .field-content p:last-of-type {
   margin: 0px;
 }
+.block-views-blocksearch-api-search-api-block .view-empty {
+  text-align: left;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
 
 .block-views-exposed-filter-blocksearch-api-search-api-block {
   position: relative;
@@ -2232,11 +2237,11 @@ a.node_like-like:hover {
 .vesafe-workflow-list-widget p {
   display: inline-block;
   background: #fff498;
-  margin-right: 25px !important;
-  position: relative !important;
-  margin-bottom: 10px !important;
-  padding: 10px 15px !important;
-  padding-left: 40px !important;
+  margin-right: 25px;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  padding-left: 40px;
   font-size: 16px;
 }
 .vesafe-workflow-list-widget p:before {
@@ -2258,22 +2263,22 @@ a.node_like-like:hover {
   top: 0;
 }
 .vesafe-workflow-list-widget p.first {
-  padding-left: 10px !important;
+  padding-left: 10px;
 }
 .vesafe-workflow-list-widget p.first:before {
   content: "";
-  border: none !important;
+  border: none;
 }
 .vesafe-workflow-list-widget p.last {
-  padding-right: 10px !important;
+  padding-right: 10px;
 }
 .vesafe-workflow-list-widget p.last:after {
   content: "";
-  border: none !important;
+  border: none;
 }
 .vesafe-workflow-list-widget p.active {
   background: #8d8c81;
-  color: white !important;
+  color: #FFF;
   font-weight: bolder;
 }
 .vesafe-workflow-list-widget p.active:before {
