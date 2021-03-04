@@ -93,8 +93,6 @@ module:
   r4032login: 0
   rdf: 0
   search: 0
-  search_api: 0
-  search_api_solr: 0
   shortcut: 0
   simple_block: 0
   sitemap: 0
