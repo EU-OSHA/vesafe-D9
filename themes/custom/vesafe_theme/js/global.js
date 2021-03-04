@@ -116,9 +116,11 @@
     if (windowScroll > headerHeight) {
       if (!$header.hasClass("sticky-menu")) {
         $header.addClass("sticky-menu");
+        $('#main-wrapper').css({'margin-top':headerHeight});
       }
     } else {
       $header.removeClass("sticky-menu");
+      $('#main-wrapper').css({'margin-top':'0'});
     }
   });
 
@@ -145,6 +147,15 @@
   $("#scroll-top").on("click", function (e) {
     e.preventDefault();
     $("html, body").stop().animate({"scrollTop": "0px"}, 200);
+  });
+
+  //  Display Show More Links
+  $('.field--name-field-additional-resources').each(function(){
+    let listItemsLength = $(this).find('.field__item').length;
+    if(listItemsLength>=4){
+      $(this).addClass('show-more-links')
+    }
+
   });
 
   'use strict';

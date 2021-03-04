@@ -47,6 +47,24 @@ form{
     margin-bottom:0px;
     margin-top:2px;
   }
+
+  &.approver-form{
+    .form-item-node-id{
+      display:none;
+    }
+  }
+  &.approve-form{
+    display: flex;
+    flex-direction: revert;
+    justify-content: center;
+    align-items: center;
+    button,
+    button:hover{
+      display:inline-block;
+      margin:0 8px;
+      width:auto;
+    }
+  }
 }
 
 .form-row>fieldset, .form-row>div{

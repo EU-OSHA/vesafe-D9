@@ -51,12 +51,20 @@
 }
 .field--name-field-additional-resources,
 .field--name-field-gp-external-links{
+  overflow: hidden;
   a{
     display: block;
     margin-bottom: 15px;
   }
+  .additional-resources-link-more{
+    display:none;
+  }
+  &.show-more-links{
+    .additional-resources-link-more{
+      display:block;
+    }
+  }
 }
-
 
 .field--name-field-gp-getting-started{
   ul{
