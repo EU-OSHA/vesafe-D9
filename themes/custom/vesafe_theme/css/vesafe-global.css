@@ -626,8 +626,11 @@ h3 a:hover {
   margin: 0px;
   padding: 0px;
   margin-bottom: 15px;
-  font-size: 2.2em;
+  font-size: 2.2rem;
   font-weight: 400;
+}
+.article-header .field--name-field-subtitle {
+  font-size: 1rem;
 }
 
 .block-field-blocknodegood-practicefield-gp-what-is-it h2:before {
@@ -1193,6 +1196,18 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 .block-text-resize-block {
   display: inline-block;
 }
+.block-text-resize-block a:before {
+  content: "a";
+  display: inline-block;
+  color: #323a93;
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
 .block-text-resize-block a#text_resize_decrease {
   display: inline-block;
   float: inherit;
@@ -1202,9 +1217,11 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   background: inherit !important;
   text-transform: lowercase;
   height: 24px;
-  color: #323a93;
   text-decoration: none;
   text-align: center;
+  color: transparent;
+  overflow: hidden;
+  position: relative;
   font-size: 17px;
 }
 .block-text-resize-block a#text_resize_increase {
@@ -1216,9 +1233,11 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   background: inherit !important;
   text-transform: lowercase;
   height: 24px;
-  color: #323a93;
   text-decoration: none;
   text-align: center;
+  color: transparent;
+  overflow: hidden;
+  position: relative;
   font-size: 29px;
   line-height: 16px;
 }

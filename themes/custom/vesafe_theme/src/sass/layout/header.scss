@@ -131,6 +131,18 @@ div[class*="block-simple-blockheader-"]{
 .block-text-resize-block{
   display: inline-block;
   a{
+    &:before{
+      content:"a";
+      display:inline-block;
+      color:$bg-color-blue;
+      position:absolute;
+      z-index:4;
+      left:50%;
+      top:50%;
+      transform:translate(-50%, -50%);
+      width:100%;
+      height:100%;
+    }
 
     &#text_resize_decrease {
       display: inline-block;
@@ -141,10 +153,13 @@ div[class*="block-simple-blockheader-"]{
       background: inherit !important;
       text-transform: lowercase;
       height: 24px;
-      color: $bg-color-blue;
       text-decoration: none;
       text-align: center;
+      color:transparent;
+      overflow: hidden;
+      position:relative;
       font-size: 17px;
+
     }
     &#text_resize_increase {
       display: inline-block;
@@ -155,9 +170,11 @@ div[class*="block-simple-blockheader-"]{
       background: inherit !important;
       text-transform: lowercase;
       height: 24px;
-      color: $bg-color-blue;
       text-decoration: none;
       text-align: center;
+      color:transparent;
+      overflow: hidden;
+      position:relative;
       font-size: 29px;
       line-height: 16px;
     }
