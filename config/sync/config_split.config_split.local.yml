@@ -14,6 +14,8 @@ module:
   migrate_file_to_media: 0
   migrate_plus: 0
   migrate_tools: 0
+  search_api: 0
+  search_api_solr: 0
 theme: {  }
 blacklist: {  }
 graylist:
