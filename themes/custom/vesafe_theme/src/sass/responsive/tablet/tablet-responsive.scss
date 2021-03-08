@@ -9,6 +9,12 @@
     width: 100%;
     background-color: white;
     top: 0px;
+
+    .header-menu-news {
+      margin-top: 0px;
+      max-width: 405px;
+      padding-right: 0px;
+    }
   }
 
   /*  MENU-HEADER  */
@@ -18,6 +24,7 @@
   }
   .top-header-container {
     max-width: 100%;
+    position:relative;
   }
   div[class*="block-simple-blockheader-"]{
     &.block-simple-blockheader-european{
@@ -32,7 +39,16 @@
 
     &.block-simple-blockheader-commission{
       height: auto;
+      .sticky-menu &{
+        max-width:135px;
+      }
+      a{
+       // padding:0 15px;
+      }
       .header-img {
+        .sticky-menu &{
+          max-width:100%;
+        }
       }
     }
 

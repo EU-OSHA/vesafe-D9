@@ -4,6 +4,7 @@
 
   .top-header-container {
     max-width: 100%;
+    position:relative;
   }
   .menu-header {
     margin-bottom: 35px;
@@ -36,7 +37,7 @@
     min-width: inherit;
     max-width: inherit;
     width: 100%;
-    position:relative;
+    position:initial;
   }
   .header-menu-news{
     max-width: 100%;
@@ -51,9 +52,9 @@
   .block-block-printfriendly{
     display:none;
   }
-  .block-simple-blocksearch-api-search{
+  .region-header-form .block-simple-blocksearch-api-search{
     position: absolute;
-    bottom: -49px;
+    bottom: -40px;
     right: 15px;
     background-color: $bg-color-white;
     z-index: 9999;
@@ -89,6 +90,10 @@
     width: 324px;
     margin-left: 10px;
     left: 0px;
+  }
+
+  .navbar-nav .nav-link.active {
+    border:none;
   }
 
   /*  CAROUSEL  */
@@ -138,7 +143,7 @@
   /*  SCROLL TO TOP  */
   footer #scroll-top {
     left: 50%;
-    transform:translate(-50%, -125%);
+    transform:translate(-50%, -50%);
   }
 
   /*  BREADCRUMB  */
@@ -151,8 +156,24 @@
     margin-bottom: 15px;
   }
 
+  .card-rol{
+    flex: 0 0 100%;
+    max-width: 100%;
+    p+a{
+      margin-bottom:11px;
+      display:inline-block;
+    }
+  }
+
+  /*  FOOTER  */
+  .site-footer{
+    padding-top: 40px;
+  }
 
 }
+
+/////////////////////////////////////////////////////////////
+
 @media only screen and (max-width: 532px) {
 
   div[class*="block-simple-blockheader-"] {

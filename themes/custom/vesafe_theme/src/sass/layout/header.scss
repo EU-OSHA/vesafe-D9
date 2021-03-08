@@ -1,7 +1,8 @@
 
 .top-header-container {
-  padding-right:0px;
-  padding-left:0px;
+  //padding-right:0px;
+  //padding-left:0px;
+  //width:100%;
   padding-top: 10px;
   padding-bottom: 7px;
 
@@ -29,6 +30,7 @@ div[class*="block-simple-blockheader-"]{
         vertical-align: middle;
         .sticky-menu &{
           width: 150px;
+          height: auto;
         }
       }
     }
@@ -36,9 +38,11 @@ div[class*="block-simple-blockheader-"]{
   }
 
   &.block-simple-blockheader-commission{
-    max-width: 40%;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 38.5%;
+    //padding-left: 15px;
+    //padding-right: 15px;
+    padding-left:20px;
+    padding-right:15px;
     .sticky-menu &{
       margin-top: 0px;
       max-width: 405px;
@@ -49,6 +53,8 @@ div[class*="block-simple-blockheader-"]{
     p,
     a{
       height:100%;
+    }
+    a{
     }
     .header-img {
       float: left;
@@ -72,10 +78,16 @@ div[class*="block-simple-blockheader-"]{
         margin: 0px;
       }
     }
+    .sticky-menu &{
+      max-width:80px;
+    }
 
   }
 }
 .header{
+  &-logo{
+    display:none;
+  }
   &-menu-news{
     float:left;
     padding-top: 10px;
@@ -88,14 +100,13 @@ div[class*="block-simple-blockheader-"]{
     }
   }
   .push-right{
-    margin:0px;
+    //margin:0px;
     &:after{
       clear:both;
     }
   }
   &-blocks{
     max-width: 273px;
-    min-width: 260px;
     float: right;
     font-size: 16px;
     margin-left: auto;
@@ -219,7 +230,7 @@ div[class*="block-simple-blockheader-"]{
 }
 .region-header-form{
   .block-simple-blocksearch-api-search{
-    margin-top: 7px;
+    //margin-top: 7px;
     background-color: $bg-color-blue;
     border-radius: 13px;
     min-height: 27px;
@@ -277,7 +288,7 @@ div[class*="block-simple-blockheader-"]{
       max-width: 205px;
       margin-left: 105px;
       position: absolute;
-      top: -9px;
+      top: -3px;
     }
   }
 }

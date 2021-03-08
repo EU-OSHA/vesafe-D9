@@ -31,11 +31,18 @@
     }
 
     &.block-simple-blockheader-commission{
+      max-width:35%;
+      a{
+        padding:0 15px;
+      }
       .header-img {
-
         .sticky-menu &{
-          max-width:135px;
+          max-width:100%;
         }
+      }
+
+      .sticky-menu &{
+        max-width:135px;
       }
     }
 
