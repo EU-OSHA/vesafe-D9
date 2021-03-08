@@ -452,10 +452,6 @@ ol.breadcrumb li:first-child a::before {
   font-size: 1.3rem;
 }
 
-.slick-initialized .slick__slide {
-  height: 116px;
-}
-
 .chip-container .item-list {
   padding: 0 15px;
 }
@@ -720,6 +716,10 @@ h3 a:hover {
   font-weight: normal;
 }
 
+.block-views-blockgood-practices-good-practices-key-article h2,
+.block-views-blockgood-practices-block-1 h2 {
+  font-size: 1.2rem;
+}
 .block-views-blockgood-practices-good-practices-key-article h2:before,
 .block-views-blockgood-practices-block-1 h2:before {
   content: "";
@@ -1628,6 +1628,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 .block-views-blockview-did-you-know-view-did-you-know .slick-next {
   right: 0px;
 }
+.block-views-blockview-did-you-know-view-did-you-know-initialized .slick__slide {
+  height: 116px;
+}
 
 .legislation-block h3,
 .roles-block h3,
@@ -1869,7 +1872,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 }
 
 .node--type-key-article .field--name-field-media-image.field--type-entity-reference {
-  margin-bottom: 30px;
+  margin-bottom: 42px;
 }
 .node--type-key-article .key-article-item h2 {
   margin-top: 0px;
@@ -1907,11 +1910,16 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   font-family: "FontAwesome";
   margin-right: 10px;
 }
+.key-articles-menu-container > ul > li > ul li {
+  display: block;
+  width: 100%;
+}
 .key-articles-menu-container > ul > li > ul .key-articles-link {
   display: block;
   margin-bottom: 10px;
   padding-left: 5px;
   color: #333;
+  font-size: 1rem;
 }
 .key-articles-menu-container > ul > li > ul .key-articles-link.item-active {
   font-weight: bold;
@@ -2106,6 +2114,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 .node--view-mode-card .card-media:hover img {
   transform: scale(1.2);
 }
+.node--view-mode-card .container:nth-of-type(2) {
+  padding: 0px;
+}
 
 a.node_like-like {
   color: #9c9c9c;
@@ -2122,7 +2133,7 @@ a.node_like-like:hover {
 
 .view-id-view_themes .node--view-mode-card {
   background-color: #FFF;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   position: relative;
 }
 .view-id-view_themes .node--view-mode-card .card-media {
@@ -2454,6 +2465,10 @@ a.node_like-like:hover {
 }
 .sitemap h2 {
   display: none;
+}
+
+.view-view-themes .views-col {
+  margin-bottom: 25px;
 }
 
 .vesafe-workflow-list-widget {
