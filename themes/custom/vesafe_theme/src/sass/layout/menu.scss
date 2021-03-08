@@ -2,6 +2,9 @@
 .navbar {
   padding: 0px;
   &-header-container{
+
+  }
+  &-header{
     background-color: $bg-color-blue;
     color: $text-color-white;
     z-index: 2;
@@ -9,7 +12,7 @@
 
   }
   &.navbar-expand-lg {
-    padding: 0px 15px;
+    //padding: 0px 15px;
   }
 
   &-collapse {

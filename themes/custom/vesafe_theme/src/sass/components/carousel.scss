@@ -82,8 +82,14 @@
 }
 .slide{
   &__caption{
+    padding: 0px;
     p{
       font-size:1.3rem;
     }
   }
+}
+
+
+.slick-initialized .slick__slide{
+  height:116px;
 }

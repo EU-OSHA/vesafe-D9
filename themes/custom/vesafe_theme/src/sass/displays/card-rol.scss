@@ -1,6 +1,10 @@
 .card-rol{
+  width:100%;
+  float: left;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
   h3{
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-top: 22px;
     margin-bottom: 11px;
@@ -14,5 +18,10 @@
   }
   p{
     font-size: 16px;
+  }
+  p+a{
+    &:hover{
+      font-weight: bold;
+    }
   }
 }

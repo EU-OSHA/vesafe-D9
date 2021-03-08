@@ -11,7 +11,7 @@ h1 {
 }
 
 h2{
-  font-size: 1.6rem;
+  font-size: 1.58rem;
   padding-left: 0;
   font-weight: 600;
   margin-bottom: 22px;
@@ -58,13 +58,23 @@ h3{
   background-position: center top;
   background-size: auto;
   margin-bottom: 30px;
+  .container{
+    padding:0px;
+  }
   .field--name-title{
     border-bottom: none;
     margin: 0px;
     padding: 0px;
     margin-bottom: 15px;
-    font-size: 2.2em;
+    font-size: 2.2rem;
     font-weight:400;
+    line-height: 1.1;
+  }
+  .field--name-field-subtitle{
+    font-size:1rem;
+  }
+  p{
+    margin:0px;
   }
 }
 
@@ -173,6 +183,7 @@ h3{
 }
 
 .block-views-blockvehicles-list-vehicles-list h2{
+  font-size: 1.3em;
   &:before{
     content: "\f1b9";
     font-family: "FontAwesome";
@@ -187,5 +198,14 @@ h3{
     font-family: "FontAwesome";
     font-size: 1em;
     margin-right: 5px;
+  }
+}
+.block-roles h2{
+  &:before {
+    content: "\e177";
+    font-family: "Glyphicons Halflings";
+    font-size: 1em;
+    margin-right: 10px;
+    vertical-align: middle;
   }
 }

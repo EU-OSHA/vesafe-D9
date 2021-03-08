@@ -4,16 +4,16 @@
   padding-bottom: 20px;
   color: $text-color-white;
   margin-top: 35px;
+  position:relative;
   &__bottom {
-    letter-spacing: initial;
-    margin-top: 0px;
-    border:none;
-    max-width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    position:relative;
+    //letter-spacing: initial;
+    //margin-top: 0px;
+    //border:none;
+    //max-width: 1170px;
+    //margin-right: auto;
+    //margin-left: auto;
+    //padding-left: 15px;
+    //padding-right: 15px;
   }
   .region{
     display:flex;
@@ -39,7 +39,7 @@
       border-radius: inherit;
       margin-bottom: 10px;
       padding: 0px 15px;
-      line-height:1;
+      line-height: 1.42857143;
     }
     li:first-child a {
       border-left:none;
@@ -67,7 +67,7 @@ footer #scroll-top {
   background-color: $bg-color-red;
   border-radius: 50%;
   text-decoration: none;
-  transform:translate(0%, -125%);
+  transform:translate(0%, -50%);
   &:before {
     content: "\f106";
     font-family: "FontAwesome";
@@ -86,4 +86,10 @@ footer #scroll-top {
   span{
     display:none;
   }
+}
+
+.site-footer__bottom {
+   letter-spacing: initial;
+  margin-top: 0px;
+  border-top: none;
 }
