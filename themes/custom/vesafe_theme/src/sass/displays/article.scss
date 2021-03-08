@@ -49,6 +49,12 @@
       right:0px;
     }
   }
+
+  &-initialized {
+    .slick__slide{
+      height:116px;
+    }
+  }
 }
 
 

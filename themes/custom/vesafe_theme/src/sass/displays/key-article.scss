@@ -1,6 +1,6 @@
 .node--type-key-article{
   .field--name-field-media-image.field--type-entity-reference{
-    margin-bottom:30px;
+    margin-bottom:42px;
   }
  .key-article-item h2{
    margin-top:0px;
@@ -61,11 +61,16 @@
         }
 
         & > ul {
+          li{
+            display:block;
+            width:100%;
+          }
           .key-articles-link {
             display: block;
             margin-bottom: 10px;
             padding-left: 5px;
             color: $text-color-black;
+            font-size:1rem;
 
             &.item-active {
               font-weight: bold;
