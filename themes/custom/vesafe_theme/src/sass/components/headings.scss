@@ -133,6 +133,9 @@ h3{
 .block-views-blockgood-practices-good-practices-key-article h2{
   font-size:1.2rem;
   margin-bottom:11px;
+  .node--type-good-practice &{
+    font-weight: 700;
+  }
   &:before{
     content: "\f0e8";
     font-family: "FontAwesome";
@@ -189,7 +192,7 @@ h3{
   &:before{
     content: "\f084";
     font-family: "FontAwesome";
-    font-size: 0.9rem;
+    font-size: 1.25rem;
     margin-right: 5px;
   }
 }
@@ -197,7 +200,7 @@ h3{
   &:before{
     content: "\e024";
     font-family: "Glyphicons Halflings";
-    font-size: 0.8rem;
+    font-size: 1.25rem;
     margin-right: 5px;
   }
 }
@@ -207,7 +210,7 @@ h3{
   &:before{
     content: "\f1b9";
     font-family: "FontAwesome";
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-right: 5px;
   }
 }
@@ -216,7 +219,7 @@ h3{
   &:before{
     content: "\f005" !important;
     font-family: "FontAwesome";
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-right: 5px;
   }
 }
@@ -224,7 +227,7 @@ h3{
   &:before {
     content: "\e177";
     font-family: "Glyphicons Halflings";
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-right: 10px;
     vertical-align: middle;
   }

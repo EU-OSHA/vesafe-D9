@@ -62,12 +62,20 @@
 
     &.slick-prev{
       &:before{
-        content:"<";
+        content: "\f053";
+        font-family: "FontAwesome";
+        display: block;
+        font-size: 1.7rem;
+        line-height: 53px;
       }
     }
     &.slick-next{
       &:before{
-        content:">";
+        content: "\f054";
+        font-family: "FontAwesome";
+        display: block;
+        font-size: 1.7rem;
+        line-height: 53px;
       }
     }
 

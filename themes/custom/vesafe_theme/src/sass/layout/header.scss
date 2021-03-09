@@ -372,10 +372,12 @@ div[class*="block-simple-blockheader-"]{
       margin-left: 5px;
       cursor: pointer;
       position:relative;
+      border-radius:50%;
+      background-color:$bg-color-black;
+      color:$text-color-white;
       &:after{
-        content: "\f059";
-        font-family: "FontAwesome";
-        font-size: 1.2rem;
+        content: "?";
+        font-size: 0.8rem;
         vertical-align: top;
         margin-top: 0px;
         padding-top: 0px;
@@ -383,7 +385,6 @@ div[class*="block-simple-blockheader-"]{
         top:50%;
         left:50%;
         transform:translate(-50%, -50%);
-        color:$text-color-black;
       }
     }
   }

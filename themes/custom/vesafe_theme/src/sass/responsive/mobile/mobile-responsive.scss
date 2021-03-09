@@ -2,6 +2,13 @@
 
   /*  MENU-HEADER  */
 
+  .header{
+    .navbar-nav{
+      display: table;
+      margin: 0 auto;
+    }
+  }
+
   .top-header-container {
     max-width: 100%;
     position:relative;
