@@ -2,7 +2,7 @@
   .view-header {
     text-align: right;
     padding-bottom: 13px;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     position: relative;
     h2[style="display: block;"] {
       border-bottom: 2px solid $bg-color-grey-lines;
@@ -14,7 +14,7 @@
       margin: 0px;
 
       .search-results-label {
-        font-size: 1.7em;
+        font-size: 1.7rem;
         font-style: normal;
         font-weight: bold;
         line-height: 1.42857143;
@@ -23,7 +23,7 @@
     .shown-items {
       margin-top: 11px;
       display: inline-block;
-      font-size: 0.9em;
+      font-size: 0.9rem;
     }
   }
   .list-group-item{
@@ -34,7 +34,7 @@
     padding-bottom: 25px;
   }
   h3 {
-    font-size: 1.6em;
+    font-size: 1.6rem;
     margin-top: 22px;
     margin-bottom: 11px;
     line-height: 1.1;

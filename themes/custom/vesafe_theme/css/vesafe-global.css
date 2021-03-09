@@ -107,7 +107,7 @@ body {
 
 .highlighted-text {
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 p {
@@ -123,7 +123,7 @@ p {
   background-color: #ea4a5e;
   width: 100%;
   padding: 10px 12px;
-  font-size: 1em;
+  font-size: 1rem;
   border-radius: 3px;
   cursor: pointer;
   display: none;
@@ -132,21 +132,21 @@ p {
 .aside-column h1:before {
   content: "";
   font-family: "FontAwesome";
-  font-size: 1em;
+  font-size: 1rem;
   margin-right: 10px;
 }
 .aside-column h1:after {
   content: "";
   font-family: "Glyphicons Halflings";
   float: right;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   line-height: 22px;
 }
 .aside-column.open h1:after {
   content: "" !important;
   font-family: "Glyphicons Halflings";
   float: right;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   line-height: 25px;
 }
 .aside-column h3 {
@@ -155,7 +155,7 @@ p {
   width: 100%;
   padding: 10px 12px;
   margin: 5px 0px;
-  font-size: 1em;
+  font-size: 1rem;
   border-radius: 3px;
   cursor: pointer;
   font-weight: 600;
@@ -193,7 +193,7 @@ p {
   background-color: #9c9c9c;
   display: inline-block;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   margin-right: 6px;
   font-weight: bold;
   position: relative;
@@ -265,7 +265,7 @@ p {
   content: "" !important;
   font-family: "Glyphicons Halflings";
   float: right;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   line-height: 25px;
 }
 .aside-column .facets-widget-links ul {
@@ -349,7 +349,7 @@ p {
   margin: 0px;
   margin-bottom: -12px;
   margin-top: 3px;
-  font-size: 0.95em;
+  font-size: 0.95rem;
 }
 .breadcrumb-item.active {
   color: #ea4a5e;
@@ -490,14 +490,14 @@ ol.breadcrumb li:first-child a::before {
   content: "";
   font-family: "Glyphicons Halflings";
   float: right;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   line-height: 25px;
 }
 .dropdown-toggle:after {
   content: "";
   font-family: "Glyphicons Halflings";
   float: right;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   line-height: 25px;
   border: none;
 }
@@ -515,6 +515,7 @@ form label {
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold;
+  font-size: 1rem;
 }
 form label.form-required:after {
   content: "*";
@@ -680,6 +681,10 @@ h3 a:hover {
   margin: 0px;
 }
 
+.block-field-blocknodegood-practicefield-gp-what-is-it h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 .block-field-blocknodegood-practicefield-gp-what-is-it h2:before {
   content: "";
   font-family: "FontAwesome";
@@ -689,6 +694,10 @@ h3 a:hover {
   font-weight: normal;
 }
 
+.block-field-blocknodegood-practicefield-gp-who-is-for h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 .block-field-blocknodegood-practicefield-gp-who-is-for h2:before {
   content: "";
   font-family: "FontAwesome";
@@ -698,6 +707,10 @@ h3 a:hover {
   font-weight: normal;
 }
 
+.block-field-blocknodegood-practicefield-gp-what-is-the-benefit h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 .block-field-blocknodegood-practicefield-gp-what-is-the-benefit h2:before {
   content: "";
   font-family: "FontAwesome";
@@ -707,6 +720,10 @@ h3 a:hover {
   font-weight: normal;
 }
 
+.block-field-blocknodegood-practicefield-gp-getting-started h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 .block-field-blocknodegood-practicefield-gp-getting-started h2:before {
   content: "";
   font-family: "FontAwesome";
@@ -716,11 +733,22 @@ h3 a:hover {
   font-weight: normal;
 }
 
-.block-views-blockgood-practices-good-practices-key-article h2,
+.block-views-blockgood-practices-good-practices-key-article h2 {
+  font-size: 1.2rem;
+  margin-bottom: 11px;
+}
+.block-views-blockgood-practices-good-practices-key-article h2:before {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 1.375rem;
+  margin-right: 10px;
+  vertical-align: baseline;
+  font-weight: normal;
+}
+
 .block-views-blockgood-practices-block-1 h2 {
   font-size: 1.2rem;
 }
-.block-views-blockgood-practices-good-practices-key-article h2:before,
 .block-views-blockgood-practices-block-1 h2:before {
   content: "";
   font-family: "FontAwesome";
@@ -733,7 +761,7 @@ h3 a:hover {
 .block-field-blocknodegood-practicefield-gp-external-links h2 {
   margin-top: 22px;
   margin-bottom: 11px;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .block-field-blocknodegood-practicefield-gp-external-links h2:before {
@@ -748,7 +776,7 @@ h3 a:hover {
 .block-field-blocknodegood-practicefield-additional-resources h2 {
   margin-top: 22px;
   margin-bottom: 11px;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .block-field-blocknodegood-practicefield-additional-resources h2:before {
@@ -763,38 +791,38 @@ h3 a:hover {
 .block-views-blockview-themes-view-key-articles-front-page h2:before {
   content: "";
   font-family: "FontAwesome";
-  font-size: 0.9em;
+  font-size: 0.9rem;
   margin-right: 5px;
 }
 
 .section-select-a-vehicle-type-or-risk h2:before {
   content: "";
   font-family: "Glyphicons Halflings";
-  font-size: 0.8em;
+  font-size: 0.8rem;
   margin-right: 5px;
 }
 
 .block-views-blockvehicles-list-vehicles-list h2 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
 .block-views-blockvehicles-list-vehicles-list h2:before {
   content: "";
   font-family: "FontAwesome";
-  font-size: 1em;
+  font-size: 1rem;
   margin-right: 5px;
 }
 
 .block-views-blockvehicles-list-risk-list h2:before {
   content: "" !important;
   font-family: "FontAwesome";
-  font-size: 1em;
+  font-size: 1rem;
   margin-right: 5px;
 }
 
 .block-roles h2:before {
   content: "";
   font-family: "Glyphicons Halflings";
-  font-size: 1em;
+  font-size: 1rem;
   margin-right: 10px;
   vertical-align: middle;
 }
@@ -828,7 +856,7 @@ a[target=_blank] svg.ext,
 a[data-extlink] svg.ext {
   width: 24px;
   height: 24px;
-  padding-right: 0.2em;
+  padding-right: 0.2rem;
   fill: #ea4a5e;
   font-weight: 900;
   margin-left: 5px;
@@ -865,7 +893,7 @@ a[data-extlink] svg.ext {
   margin-bottom: 0;
 }
 .sliding-popup-top .eu-cookie-compliance-message p {
-  font-size: 0.85em;
+  font-size: 0.85rem;
   font-weight: 400;
 }
 .sliding-popup-top .eu-cookie-compliance-message button {
@@ -881,7 +909,7 @@ a[data-extlink] svg.ext {
 }
 .sliding-popup-top .eu-cookie-compliance-buttons {
   float: none;
-  margin: 0 0 1em 0;
+  margin: 0 0 1rem 0;
   max-width: 100%;
   text-align: center;
 }
@@ -898,7 +926,7 @@ a[data-extlink] svg.ext {
   margin: 0;
   cursor: pointer;
   margin-right: 5px;
-  margin-top: 0.7em;
+  margin-top: 0.7rem;
   vertical-align: middle;
   overflow: visible;
   width: auto;
@@ -922,7 +950,7 @@ a[data-extlink] svg.ext {
 .pagination li {
   color: #ea4a5e;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1rem;
   vertical-align: middle;
 }
 .pagination a {
@@ -1115,7 +1143,7 @@ footer #scroll-top {
 footer #scroll-top:before {
   content: "";
   font-family: "FontAwesome";
-  font-size: 3em;
+  font-size: 3rem;
   color: white;
   text-align: center;
   display: block;
@@ -1442,7 +1470,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   height: 15px;
   overflow: hidden;
   display: inline-block;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   vertical-align: middle;
   line-height: 15px;
   margin-left: 5px;
@@ -1454,7 +1482,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   max-width: 300px;
   border-radius: 5px;
   padding: 10px;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   border: 1px solid #323a93;
   z-index: 9999;
   right: 0px;
@@ -1475,7 +1503,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   height: 15px;
   overflow: hidden;
   display: inline-block;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   vertical-align: middle;
   line-height: 15px;
   margin-left: 5px;
@@ -1485,7 +1513,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 .block-simple-blockgtranslate-machine-tooltip .content .gtranslate-machine-tooltip:after {
   content: "";
   font-family: "FontAwesome";
-  font-size: 1.2em;
+  font-size: 1.2rem;
   vertical-align: top;
   margin-top: 0px;
   padding-top: 0px;
@@ -1535,7 +1563,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   color: #FFF;
   padding-top: 14px;
   padding-bottom: 2px;
-  font-size: 1em;
+  font-size: 1rem;
 }
 .navbar-nav .nav-link:focus {
   outline: none;
@@ -1635,7 +1663,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 .legislation-block h3,
 .roles-block h3,
 .eguide-block h3 {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 20px;
   margin-top: 0px;
@@ -1658,6 +1686,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   margin-left: 30px;
 }
 
+.roles-block h2 {
+  margin-top: 36px;
+}
 .roles-block .employer-block a[target*=_blank] {
   color: #ea4a5e;
   display: block;
@@ -1676,7 +1707,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 #accessibility h3,
 #privacy-notice h3,
 #legal-notice h3 {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -1702,7 +1733,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   display: none;
 }
 #site-map .site-map-box ul {
-  padding-left: 1.5em;
+  padding-left: 1.5rem;
 }
 #site-map .site-map-menus ul.site-map-menu {
   list-style: none;
@@ -1711,7 +1742,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   margin-bottom: 10px;
 }
 #site-map .site-map-menus li a {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 #site-map .site-map-menus li a:before {
@@ -1836,9 +1867,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 }
 .block-views-blocksearch-api-good-practices-search-good-practices .view-header {
   text-align: right;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   padding-bottom: 13px;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   position: relative;
 }
 .block-views-blocksearch-api-good-practices-search-good-practices .view-header h2[style="display: block;"] {
@@ -1851,7 +1882,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   margin: 0px;
 }
 .block-views-blocksearch-api-good-practices-search-good-practices .view-header h2[style="display: block;"] .search-results-label {
-  font-size: 1.7em;
+  font-size: 1.7rem;
   font-style: normal;
   font-weight: bold;
   line-height: 1.42857143;
@@ -1859,7 +1890,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 .block-views-blocksearch-api-good-practices-search-good-practices .view-header .shown-items {
   margin-top: 11px;
   display: inline-block;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 .block-views-blocksearch-api-good-practices-search-good-practices .view-empty {
   text-align: left;
@@ -1929,14 +1960,14 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   content: "";
   font-family: "Glyphicons Halflings";
   float: right;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   line-height: 25px;
 }
 .key-articles-menu-container .nav-header:after {
   content: "";
   font-family: "Glyphicons Halflings";
   float: right;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   line-height: 25px;
 }
 .key-articles-menu-container h2 {
@@ -1949,7 +1980,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   color: #FFF;
   border-radius: 3px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1rem;
 }
 .key-articles-menu-container h2:before {
   content: "";
@@ -1961,7 +1992,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   content: "";
   font-family: "Glyphicons Halflings";
   float: right;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   line-height: 25px;
 }
 
@@ -2047,7 +2078,7 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 }
 .node--view-mode-card .field--name-title a {
   color: #333333;
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 .node--view-mode-card .block-field-blocknodegood-practicefield-gp-what-is-it {
   padding: 0px 20px 50px 20px;
@@ -2114,12 +2145,10 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 .node--view-mode-card .card-media:hover img {
   transform: scale(1.2);
 }
-.node--view-mode-card .container:nth-of-type(2) {
-  padding: 0px;
-}
 
 a.node_like-like {
   color: #9c9c9c;
+  font-size: 1rem;
 }
 a.node_like-like:before {
   content: "";
@@ -2141,7 +2170,7 @@ a.node_like-like:hover {
   overflow: hidden;
 }
 .view-id-view_themes .node--view-mode-card .field--name-title {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 22px;
   margin-top: 22px;
@@ -2155,6 +2184,9 @@ a.node_like-like:hover {
   padding-top: 0px;
   padding-bottom: 0px;
   font-size: 19.8px;
+}
+.view-id-view_themes .node--view-mode-card .container:nth-of-type(2) {
+  padding: 0px;
 }
 .view-id-view_themes .block-field-blocknodekey-articlebody {
   text-align: center;
@@ -2274,7 +2306,7 @@ a.node_like-like:hover {
   margin-top: 15px;
   text-decoration: none;
   display: inline-block;
-  font-size: 1em;
+  font-size: 1rem;
   transition: all 0.3s ease-out;
 }
 .page-not-found-actions a:hover {
@@ -2378,7 +2410,7 @@ a.node_like-like:hover {
 .block-views-blocksearch-api-search-api-block .view-header {
   text-align: right;
   padding-bottom: 13px;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   position: relative;
 }
 .block-views-blocksearch-api-search-api-block .view-header h2[style="display: block;"] {
@@ -2391,7 +2423,7 @@ a.node_like-like:hover {
   margin: 0px;
 }
 .block-views-blocksearch-api-search-api-block .view-header h2[style="display: block;"] .search-results-label {
-  font-size: 1.7em;
+  font-size: 1.7rem;
   font-style: normal;
   font-weight: bold;
   line-height: 1.42857143;
@@ -2399,7 +2431,7 @@ a.node_like-like:hover {
 .block-views-blocksearch-api-search-api-block .view-header .shown-items {
   margin-top: 11px;
   display: inline-block;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 .block-views-blocksearch-api-search-api-block .list-group-item {
   padding: 0px;
@@ -2409,7 +2441,7 @@ a.node_like-like:hover {
   padding-bottom: 25px;
 }
 .block-views-blocksearch-api-search-api-block h3 {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   margin-top: 22px;
   margin-bottom: 11px;
   line-height: 1.1;
@@ -2457,8 +2489,9 @@ a.node_like-like:hover {
   margin-bottom: 10px;
 }
 .sitemap .nav-link {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-weight: 600;
+  padding: 0px;
 }
 .sitemap .nav-link:before {
   content: "> ";

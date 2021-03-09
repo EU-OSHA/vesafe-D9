@@ -27,7 +27,7 @@
   .field--name-title {
     a{
       color: #333333;
-      font-size: 1.4em;
+      font-size: 1.4rem;
     }
   }
   .block-field-blocknodegood-practicefield-gp-what-is-it {
@@ -101,16 +101,11 @@
       }
     }
   }
-  .container{
-    &:nth-of-type(2){
-      padding:0px;
-    }
-  }
 }
 
 a.node_like-like {
   color: $bg-color-grey-dark;
-
+  font-size: 1rem;
   &:before {
     content: "\e005";
     font-family: "Glyphicons Halflings";
@@ -134,7 +129,7 @@ a.node_like-like {
       overflow: hidden;
     }
     .field--name-title{
-      font-size: 1.6em;
+      font-size: 1.6rem;
       font-weight: 600;
       margin-bottom: 22px;
       margin-top: 22px;
@@ -147,6 +142,11 @@ a.node_like-like {
         padding-top: 0px;
         padding-bottom: 0px;
         font-size: 19.8px;
+      }
+    }
+    .container{
+      &:nth-of-type(2){
+        padding:0px;
       }
     }
   }

@@ -13,6 +13,7 @@ form{
     max-width: 100%;
     margin-bottom: 5px;
     font-weight: bold;
+    font-size:1rem;
     &.form-required{
       &:after{
         content:"*";
