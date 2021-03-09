@@ -14,11 +14,6 @@ label: Editorial
 type: content_moderation
 type_settings:
   states:
-    archived:
-      label: Archived
-      weight: 2
-      published: false
-      default_revision: true
     draft:
       label: Draft
       published: false
@@ -50,36 +45,22 @@ type_settings:
       label: 'To Be Reviewed'
       weight: -2
   transitions:
-    archive:
-      label: Archive
-      from:
-        - published
-      to: archived
-      weight: 2
-    archived_draft:
-      label: 'Restore to Draft'
-      from:
-        - archived
-      to: draft
-      weight: 3
-    archived_published:
-      label: Restore
-      from:
-        - archived
-      to: published
-      weight: 4
     create_new_draft:
       label: 'Create New Draft'
       to: draft
       weight: -7
       from:
         - draft
+    create_new_draft_from_published:
+      label: 'Create new Draft from Published'
+      from:
         - published
+      to: draft
+      weight: 13
     final_draft:
       label: 'Send to final draft'
       from:
         - draft
-        - published
         - ready_to_publish
       to: final_draft
       weight: -6
@@ -97,6 +78,7 @@ type_settings:
         - draft
         - published
         - ready_to_publish
+        - to_be_approved
     send_back_to_be_reviewed:
       label: 'Send back to be reviewed'
       from:
@@ -115,6 +97,12 @@ type_settings:
         - to_be_reviewed
       to: final_draft
       weight: 0
+    send_back_to_final_draft_from_approved:
+      label: 'Send back to final draft from approved'
+      from:
+        - to_be_approved
+      to: final_draft
+      weight: 14
     send_for_review:
       label: 'Send to be reviewed'
       from:

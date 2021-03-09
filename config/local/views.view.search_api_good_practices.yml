@@ -102,7 +102,7 @@ display:
           automatic_width: false
           alignment: horizontal
           col_class_default: true
-          col_class_custom: 'views-col col-12 col-md-6'
+          col_class_custom: 'views-col col-12 col-md-6 pl-0'
           row_class_default: true
           row_class_custom: ''
       row:

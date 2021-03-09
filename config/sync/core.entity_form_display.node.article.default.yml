@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_image_media
     - field.field.node.article.field_metatags
     - field.field.node.article.field_publication_date
     - field.field.node.article.field_subtitle
@@ -80,6 +81,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_image_media:
+    type: entity_reference_autocomplete
+    weight: 101
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   field_metatags:
     weight: 11
     settings:
