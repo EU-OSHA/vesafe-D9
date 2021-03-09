@@ -80,6 +80,8 @@ h3{
 
 
 .block-field-blocknodegood-practicefield-gp-what-is-it h2{
+  font-size: 1.2rem;
+  font-weight: 700;
   &:before{
     content: "\f128";
     font-family: "FontAwesome";
@@ -90,6 +92,8 @@ h3{
   }
 }
 .block-field-blocknodegood-practicefield-gp-who-is-for h2{
+  font-size: 1.2rem;
+  font-weight: 700;
   &:before{
     content: "\f0c0";
     font-family: "FontAwesome";
@@ -101,6 +105,8 @@ h3{
 }
 
 .block-field-blocknodegood-practicefield-gp-what-is-the-benefit h2{
+  font-size: 1.2rem;
+  font-weight: 700;
   &:before{
     content: "\f024";
     font-family: "FontAwesome";
@@ -112,6 +118,8 @@ h3{
 }
 
 .block-field-blocknodegood-practicefield-gp-getting-started h2{
+  font-size: 1.2rem;
+  font-weight: 700;
   &:before{
     content: "\f041";
     font-family: "FontAwesome";
@@ -122,7 +130,18 @@ h3{
   }
 }
 
-.block-views-blockgood-practices-good-practices-key-article h2,
+.block-views-blockgood-practices-good-practices-key-article h2{
+  font-size:1.2rem;
+  margin-bottom:11px;
+  &:before{
+    content: "\f0e8";
+    font-family: "FontAwesome";
+    font-size: 1.375rem;
+    margin-right: 10px;
+    vertical-align: baseline;
+    font-weight: normal;
+  }
+}
 .block-views-blockgood-practices-block-1 h2{
   font-size:1.2rem;
   &:before{
@@ -138,7 +157,7 @@ h3{
 .block-field-blocknodegood-practicefield-gp-external-links h2{
   margin-top: 22px;
   margin-bottom: 11px;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
 
   &:before{
@@ -154,7 +173,7 @@ h3{
 .block-field-blocknodegood-practicefield-additional-resources h2{
   margin-top: 22px;
   margin-bottom: 11px;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
 
   &:before{
@@ -170,7 +189,7 @@ h3{
   &:before{
     content: "\f084";
     font-family: "FontAwesome";
-    font-size: 0.9em;
+    font-size: 0.9rem;
     margin-right: 5px;
   }
 }
@@ -178,17 +197,17 @@ h3{
   &:before{
     content: "\e024";
     font-family: "Glyphicons Halflings";
-    font-size: 0.8em;
+    font-size: 0.8rem;
     margin-right: 5px;
   }
 }
 
 .block-views-blockvehicles-list-vehicles-list h2{
-  font-size: 1.3em;
+  font-size: 1.3rem;
   &:before{
     content: "\f1b9";
     font-family: "FontAwesome";
-    font-size: 1em;
+    font-size: 1rem;
     margin-right: 5px;
   }
 }
@@ -197,7 +216,7 @@ h3{
   &:before{
     content: "\f005" !important;
     font-family: "FontAwesome";
-    font-size: 1em;
+    font-size: 1rem;
     margin-right: 5px;
   }
 }
@@ -205,7 +224,7 @@ h3{
   &:before {
     content: "\e177";
     font-family: "Glyphicons Halflings";
-    font-size: 1em;
+    font-size: 1rem;
     margin-right: 10px;
     vertical-align: middle;
   }
