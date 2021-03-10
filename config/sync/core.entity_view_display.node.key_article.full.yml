@@ -68,7 +68,9 @@ third_party_settings:
                 section_label: '11612578815'
                 section_delta: '0'
               structure:
+                section_structure_sm: 12
                 section_structure: '12'
+                section_structure_lg: '--'
                 section_carousel: 0
                 section_carousel_slick: none
             styles:
@@ -196,7 +198,9 @@ third_party_settings:
                 section_label: '11611833653'
                 section_delta: '1'
               structure:
+                section_structure_sm: 12
                 section_structure: '12'
+                section_structure_lg: '--'
                 section_carousel: 0
                 section_carousel_slick: none
             styles:
@@ -383,7 +387,9 @@ third_party_settings:
                 section_label: '1791613567616'
                 section_delta: '2'
               structure:
+                section_structure_sm: 12
                 section_structure: '12'
+                section_structure_lg: '--'
                 section_carousel: 0
                 section_carousel_slick: none
             styles:
@@ -486,6 +492,8 @@ third_party_settings:
                   settings:
                     color: '#000000'
                     opacity: '1'
+                  color: '#000000'
+                  opacity: '1'
                 title_type: h1
                 title_align: text-left
               sizing:
@@ -497,13 +505,15 @@ third_party_settings:
                   settings:
                     color: '#f75461'
                     opacity: '1'
+                  color: '#f75461'
+                  opacity: '1'
               spacing:
                 title_margin_top: '0'
                 title_margin_bottom: '0'
               misc:
                 title_extra_class: ''
                 description_extra_class: ''
-            layout_settings__container__title__container__active_tab: edit-layout-settings-container-title-container-general--ht_WSEOnehY
+            layout_settings__container__title__container__active_tab: ''
           section:
             general:
               basic:
@@ -512,8 +522,10 @@ third_party_settings:
                 section_label: '11611834039'
                 section_delta: '3'
               structure:
+                section_structure_sm: 12
                 section_structure: '12'
-                section_carousel: 0
+                section_structure_lg: '--'
+                section_carousel: false
                 section_carousel_slick: none
             styles:
               background:
@@ -522,6 +534,8 @@ third_party_settings:
                   settings:
                     color: ''
                     opacity: '1'
+                  color: ''
+                  opacity: '1'
               sizing:
                 full_width: 1
                 full_width_container: 0
@@ -535,7 +549,7 @@ third_party_settings:
                 extra_class: safe-driving-work-image-container
                 extra_attributes: ''
                 parallax: 0
-            layout_settings__container__section__container__active_tab: edit-layout-settings-container-section-container-general--29WKrVQlvog
+            layout_settings__container__section__container__active_tab: ''
           regions:
             first:
               title:
@@ -547,8 +561,6 @@ third_party_settings:
                     settings:
                       color: '#000000'
                       opacity: '1'
-                    color: '#000000'
-                    opacity: '1'
                   size: '0'
                   align: text-left
                   border: none
@@ -557,8 +569,6 @@ third_party_settings:
                     settings:
                       color: '#f75461'
                       opacity: '1'
-                    color: '#f75461'
-                    opacity: '1'
                 border:
                   border: none
                   size: '0'
@@ -566,8 +576,6 @@ third_party_settings:
                     settings:
                       color: ''
                       opacity: '1'
-                    color: ''
-                    opacity: '1'
                   radius_top_left: '0'
                   radius_top_right: '0'
                   radius_bottom_left: '0'
@@ -577,17 +585,15 @@ third_party_settings:
                     settings:
                       color: ''
                       opacity: '1'
-                    color: ''
-                    opacity: '1'
                 spacing:
-                  paddings: 0
+                  paddings: 1
                   paddings_left: 0
                   paddings_right: 0
                 misc:
                   extra_class: ''
               general:
                 title: ''
-              layout_settings__container__regions__first__active_tab: ''
+              layout_settings__container__regions__first__active_tab: edit-layout-settings-container-regions-first-styles--ycSbwC_MARM
         components:
           ddd93022-15f3-4d9c-b4c1-b03a300ecf3b:
             uuid: ddd93022-15f3-4d9c-b4c1-b03a300ecf3b
@@ -662,7 +668,9 @@ third_party_settings:
                 section_label: '11611836184'
                 section_delta: '4'
               structure:
+                section_structure_sm: 12
                 section_structure: '12'
+                section_structure_lg: '--'
                 section_carousel: 0
                 section_carousel_slick: none
             styles:
@@ -814,7 +822,9 @@ third_party_settings:
                 section_label: '11611852187'
                 section_delta: '5'
               structure:
+                section_structure_sm: 12
                 section_structure: '12'
+                section_structure_lg: '--'
                 section_carousel: 0
                 section_carousel_slick: none
             styles:
