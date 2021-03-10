@@ -668,7 +668,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          content: '<h2 class="search-results-title hidden">Results for " {{filters.search_api_fulltext}} " </h2>'
+          content: '<h2 class="search-results-title hidden">Results for:<span class="search-results-label">"{{ filters.search_api_fulltext }}"</span></h2>'
           plugin_id: text_custom
         result:
           id: result
@@ -678,7 +678,7 @@ display:
           group_type: group
           admin_label: ''
           empty: false
-          content: '<div class="search-results-info">Showing @start - @end of @total</div>'
+          content: '<span class="shown-items">Showing @start - @end of @total</span>'
           plugin_id: result
       footer: {  }
       empty:
