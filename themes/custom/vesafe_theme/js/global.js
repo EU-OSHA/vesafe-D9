@@ -175,7 +175,7 @@
         // Include the button
         $view.once('more-link').append($('<a href="#" class="additional-resources-link-more">' + Drupal.t("See more links") + '</a>').on('click', function (e) {
           e.preventDefault();
-          var $items = view.find('div.field__item');
+          var $items = $view.find('div.field__item');
           if ($items.length > 4) {
             if ($(this).hasClass('additional-resources-link-less')) {
               // Hide the elements.
