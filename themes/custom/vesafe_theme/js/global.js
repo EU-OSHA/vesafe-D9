@@ -175,14 +175,17 @@
         // Include the button
         $view.once('more-link').append($('<a href="#" class="additional-resources-link-more">' + Drupal.t("See more links") + '</a>').on('click', function (e) {
           e.preventDefault();
-          if ($(this).hasClass('additional-resources-link-less')) {
-            // Hide the elements.
-            hideItems($view);
-            $(this).text(Drupal.t('See more links')).removeClass('additional-resources-link-less').addClass('additional-resources-link-more')
-          } else {
-            // Show the elements.
-            showItems($view);
-            $(this).text(Drupal.t('See fewer links')).removeClass('additional-resources-link-more').addClass('additional-resources-link-less')
+          var $items = view.find('div.field__item');
+          if ($items.length > 4) {
+            if ($(this).hasClass('additional-resources-link-less')) {
+              // Hide the elements.
+              hideItems($view);
+              $(this).text(Drupal.t('See more links')).removeClass('additional-resources-link-less').addClass('additional-resources-link-more')
+            } else {
+              // Show the elements.
+              showItems($view);
+              $(this).text(Drupal.t('See fewer links')).removeClass('additional-resources-link-more').addClass('additional-resources-link-less')
+            }
           }
         }));
 
