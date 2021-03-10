@@ -94,6 +94,10 @@ body {
   line-height: 1.42857143;
 }
 
+.node__content {
+  margin-top: 10px;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .hidden-md {
     display: none !important;
@@ -436,10 +440,18 @@ ol.breadcrumb li:first-child a::before {
   color: #ea4a5e;
 }
 .slick-arrow.slick-prev:before {
-  content: "<";
+  content: "";
+  font-family: "FontAwesome";
+  display: block;
+  font-size: 1.7rem;
+  line-height: 53px;
 }
 .slick-arrow.slick-next:before {
-  content: ">";
+  content: "";
+  font-family: "FontAwesome";
+  display: block;
+  font-size: 1.7rem;
+  line-height: 53px;
 }
 .slick.unslick .slick__slide {
   width: 25%;
@@ -665,7 +677,8 @@ h3 a:hover {
 .article-header .container {
   padding: 0px;
 }
-.article-header .field--name-title {
+.article-header .field--name-title,
+.article-header h1 {
   border-bottom: none;
   margin: 0px;
   padding: 0px;
@@ -673,6 +686,7 @@ h3 a:hover {
   font-size: 2.2rem;
   font-weight: 400;
   line-height: 1.1;
+  display: inline-block;
 }
 .article-header .field--name-field-subtitle {
   font-size: 1rem;
@@ -737,6 +751,9 @@ h3 a:hover {
   font-size: 1.2rem;
   margin-bottom: 11px;
 }
+.node--type-good-practice .block-views-blockgood-practices-good-practices-key-article h2 {
+  font-weight: 700;
+}
 .block-views-blockgood-practices-good-practices-key-article h2:before {
   content: "";
   font-family: "FontAwesome";
@@ -791,14 +808,14 @@ h3 a:hover {
 .block-views-blockview-themes-view-key-articles-front-page h2:before {
   content: "";
   font-family: "FontAwesome";
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   margin-right: 5px;
 }
 
 .section-select-a-vehicle-type-or-risk h2:before {
   content: "";
   font-family: "Glyphicons Halflings";
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   margin-right: 5px;
 }
 
@@ -808,21 +825,24 @@ h3 a:hover {
 .block-views-blockvehicles-list-vehicles-list h2:before {
   content: "";
   font-family: "FontAwesome";
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-right: 5px;
 }
 
+.block-views-blockvehicles-list-risk-list h2 {
+  font-size: 1.3rem;
+}
 .block-views-blockvehicles-list-risk-list h2:before {
   content: "" !important;
   font-family: "FontAwesome";
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-right: 5px;
 }
 
 .block-roles h2:before {
   content: "";
   font-family: "Glyphicons Halflings";
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-right: 10px;
   vertical-align: middle;
 }
@@ -1509,11 +1529,13 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   margin-left: 5px;
   cursor: pointer;
   position: relative;
+  border-radius: 50%;
+  background-color: #323232;
+  color: #FFF;
 }
 .block-simple-blockgtranslate-machine-tooltip .content .gtranslate-machine-tooltip:after {
-  content: "";
-  font-family: "FontAwesome";
-  font-size: 1.2rem;
+  content: "?";
+  font-size: 0.8rem;
   vertical-align: top;
   margin-top: 0px;
   padding-top: 0px;
@@ -1521,7 +1543,6 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #333;
 }
 .sticky-menu .block-simple-blockgtranslate-machine-tooltip {
   display: none;
@@ -1558,6 +1579,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   background-repeat: no-repeat;
   background-position: center;
   padding: 10px 15px;
+}
+.navbar-collapse .navbar-nav .nav-item:nth-child(1) .nav-link.active {
+  border-bottom: none;
 }
 .navbar-nav .nav-link {
   color: #FFF;
@@ -1785,6 +1809,9 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
 .card-rol p {
   font-size: 16px;
 }
+.card-rol p + a {
+  font-size: 1rem;
+}
 .card-rol p + a:hover {
   font-weight: bold;
 }
@@ -1795,6 +1822,10 @@ div[class*=block-simple-blockheader-].block-simple-blockheader-vesafe .header-im
   flex-direction: row;
   margin: 0px;
   font-size: 0.875rem;
+}
+.field--name-field-risks .field__label,
+.field--name-field-vehicles .field__label {
+  font-style: italic;
 }
 .field--name-field-risks .field__label:after,
 .field--name-field-vehicles .field__label:after {
@@ -2256,6 +2287,9 @@ a.node_like-like:hover {
 .node--view-mode-card-home .field--type-entity-reference {
   margin: 0px;
 }
+.node--view-mode-card-home .lc-inline_container-section-edit .row .layoutcomponent-column {
+  padding: 0px;
+}
 
 .page-not-found-actions .form-item-search-api-fulltext:before {
   content: "Search";
@@ -2384,8 +2418,7 @@ a.node_like-like:hover {
   content: "...";
 }
 .node--view-mode-related-good-practices .block-field-blocknodegood-practicetitle .field--name-title {
-  font-size: 12.8px;
-  line-height: 18.2857px;
+  font-size: 0.8rem;
 }
 .node--view-mode-related-good-practices .good_practices_key_article-link {
   position: absolute;
@@ -2632,6 +2665,11 @@ a.node_like-like:hover {
 }
 @media screen and (max-width: 767px) {
   /*  MENU-HEADER  */
+  .header .navbar-nav {
+    display: table;
+    margin: 0 auto;
+  }
+
   .top-header-container {
     max-width: 100%;
     position: relative;
@@ -2810,6 +2848,11 @@ a.node_like-like:hover {
     margin-top: 0px;
     max-width: 405px;
     padding-right: 0px;
+  }
+
+  .header .navbar-nav {
+    display: table;
+    margin: 0 auto;
   }
 
   /*  MENU-HEADER  */

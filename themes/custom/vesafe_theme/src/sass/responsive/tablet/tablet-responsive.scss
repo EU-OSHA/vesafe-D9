@@ -17,6 +17,13 @@
     }
   }
 
+  .header{
+    .navbar-nav{
+      display: table;
+      margin: 0 auto;
+    }
+  }
+
   /*  MENU-HEADER  */
 
   .navbar-collapse nav {

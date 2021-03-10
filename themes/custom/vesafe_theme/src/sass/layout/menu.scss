@@ -39,6 +39,10 @@
           background-repeat: no-repeat;
           background-position: center;
           padding: 10px 15px;
+
+          &.active{
+            border-bottom:none;
+          }
         }
       }
     }

@@ -5,6 +5,7 @@
   margin:0px;
   font-size:0.875rem;
   .field__label{
+    font-style: italic;
     &:after{
       content:":";
     }
